@@ -50,5 +50,27 @@
       "url": "https://llm-stats.com/ai-news"
     }
   ],
+  "india_roundup": [
+    {
+      "text": "Google India opens applications for its 2026 AI Startups Accelerator — an equity-free 3-month program kicking off in Bengaluru in June, focused on Agentic AI, Multimodal AI, and Physical AI.",
+      "url": "https://www.newsbytesapp.com/news/science/google-india-opens-applications-for-2026-google-for-startups-accelerator/tldr"
+    },
+    {
+      "text": "IndiaAI Mission launches Innovation Challenge 2026, inviting startups and researchers to build AI solutions for public good across healthcare, agriculture, and education.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+    },
+    {
+      "text": "India's AI startup funding surge continues — capital flowing into B2B AI, deeptech, and industrial automation as investors prioritise profitability alongside growth.",
+      "url": "https://startup.theceo.in/ai-startups-funding-india/"
+    },
+    {
+      "text": "India AI Impact Summit 2026 pre-events underway, bringing together policymakers, researchers, and industry leaders to shape India's national AI roadmap.",
+      "url": "https://impact.indiaai.gov.in/home/pre-summit-events"
+    },
+    {
+      "text": "Government doubles down on inclusive AI — IndiaAI Mission's Centres of Excellence aim to make AI open, affordable, and accessible across Tier 2 and Tier 3 cities.",
+      "url": "https://indiatribune.com/public/year-ender-2025-india-set-to-take-a-big-ai-leap-in-2026-amid-govt-push"
+    }
+  ],
   "closing_insight": "2026 is the year AI stops being experimental and starts being infrastructural — the real race now is not who builds the smartest model, but who ships the most reliable, compliant, and energy-efficient agent ecosystem at scale."
 }

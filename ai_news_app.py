@@ -315,6 +315,28 @@ if quick_hits:
 
 st.markdown("<br>", unsafe_allow_html=True)
 
+# ── India AI Roundup ──────────────────────────────────────────────────────────
+india_stories = data.get("india_roundup", [])
+if india_stories:
+    st.markdown('<div class="section-label">🇮🇳 &nbsp;India AI Roundup</div>', unsafe_allow_html=True)
+    for story in india_stories:
+        if isinstance(story, dict):
+            text      = story.get("text", "")
+            url       = story.get("url", "")
+            link_html = f'<div class="qh-link"><a href="{url}" target="_blank">↗</a></div>' if url else ""
+        else:
+            text      = story
+            link_html = ""
+        st.markdown(f"""
+        <div class="qh-card" style="border-left: 3px solid #f97316;">
+          <div class="qh-dot" style="background:#f97316;"></div>
+          <div class="qh-text">{text}</div>
+          {link_html}
+        </div>
+        """, unsafe_allow_html=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
+
 # ── Closing Insight ───────────────────────────────────────────────────────────
 insight = data.get("closing_insight", "")
 if insight:
