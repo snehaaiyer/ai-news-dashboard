@@ -1,0 +1,45 @@
+name: Daily AI News Update
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 08:00 AM IST (UTC+5:30) every day
+  workflow_dispatch:          # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate today's news
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python update_news.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ai_news_daily.json
+          if git diff --staged --quiet; then
+            echo "ai_news_daily.json unchanged — nothing to commit."
+          else
+            git commit -m "Daily AI news update — $(date +'%B %-d, %Y')"
+            git push origin main
+          fi
