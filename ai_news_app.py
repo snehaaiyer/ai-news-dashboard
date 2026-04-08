@@ -20,7 +20,7 @@ st.set_page_config(
 )
 
 # ── Open Graph meta tags (thumbnail when sharing the link) ────────────────────
-THUMBNAIL_URL = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/{GITHUB_BRANCH}/thumbnail.png"
+THUMBNAIL_URL = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/{GITHUB_BRANCH}/preview.png"
 st.markdown(f"""
 <head>
   <meta property="og:title" content="Daily AI Wrap-Up 🤖" />
