@@ -1,76 +1,76 @@
 {
-  "generated_at": "2026-04-07T08:00:00",
-  "intro": "AI is charging into 2026 on all fronts — from energy-efficient neuro-symbolic models and 10-trillion parameter releases to landmark healthcare automation and a $250B acquisition that reshuffled the industry.",
+  "generated_at": "2026-04-08T08:00:00",
+  "intro": "Wednesday brings a wave of frontier model launches: Anthropic's 10-trillion-parameter Claude Mythos 5, Google's 2-million-token Gemini 3.1 Ultra, and OpenAI doubling down on autonomous computer-use. Behind the headlines, Q1 VC deal value hits a record $267B — almost entirely AI.",
   "top_stories": [
     {
-      "headline": "Energy Breakthrough: Neuro-Symbolic AI Cuts Compute Cost by 100×",
-      "summary": "Researchers have unveiled a neuro-symbolic AI approach that slashes energy use by up to 100× while improving accuracy. The method mirrors human step-by-step reasoning by combining neural networks with symbolic logic — a potential turning point for sustainable AI at scale.",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260405003952.htm"
+      "headline": "Anthropic Launches Claude Mythos 5 — First 10-Trillion-Parameter Model",
+      "summary": "Anthropic has released Claude Mythos 5, the first publicly acknowledged 10-trillion-parameter model. Engineered for high-stakes domains — cybersecurity, academic research, and complex coding — the model raises the bar on reasoning depth and sets a new scale benchmark for the industry. Anthropic has now surpassed $19B in annualised revenue.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
     },
     {
-      "headline": "SpaceX Acquires xAI in $250B Mega-Deal",
-      "summary": "In one of the largest AI acquisitions ever recorded, SpaceX has acquired Elon Musk's xAI for $250 billion. The deal signals a major consolidation in frontier AI and raises questions about the future direction of the Grok model family.",
-      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs"
-    },
-    {
-      "headline": "Utah Becomes First State to Let AI Renew Drug Prescriptions",
-      "summary": "Utah has passed legislation granting AI systems the authority to autonomously renew drug prescriptions, marking a historic milestone in healthcare AI. The move is being closely watched by regulators and medical groups across the country.",
+      "headline": "Google Ships Gemini 3.1 Ultra with 2M-Token Context Window",
+      "summary": "Google's Gemini 3.1 Ultra arrives with a 2-million-token native multimodal context window covering text, image, audio, and video. Alongside it, Gemini 3.1 Flash-Lite promises 2.5× faster responses at just $0.25 per million input tokens — putting affordable long-context inference within reach for most developers.",
       "url": "https://llm-stats.com/ai-news"
     },
     {
-      "headline": "Enterprise AI Agents Cross $600B in Investment as Adoption Surges",
-      "summary": "Gartner projects 40% of enterprise applications will embed task-specific AI agents by end of 2026. Investment in AI agent ecosystems has surpassed $600 billion, with nearly 90% of organizations now using agents in software development workflows.",
-      "url": "https://www.aibmag.com/featured-stories/why-ai-agent-ecosystems-are-enterprise-game-changers-in-2026/"
+      "headline": "GPT-5.4 Gains Native Computer-Use: Agents Can Now Navigate Files, Browsers and Terminals",
+      "summary": "OpenAI's GPT-5.4 series is the first general-purpose model with state-of-the-art native computer-use capabilities. The model can autonomously navigate operating systems, browsers, and terminals — and has already surpassed human-level performance on desktop task benchmarks, moving agentic AI from demo to deployment.",
+      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs"
     },
     {
-      "headline": "Anthropic's MCP Crosses 97 Million Installs — Now Foundational Infrastructure",
-      "summary": "The Model Context Protocol hit 97 million installs in March 2026, transitioning from an experimental standard into the de-facto foundation for building AI agents. Widespread adoption is accelerating integrations across developer tooling, enterprise apps, and cloud platforms.",
-      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+      "headline": "Google TurboQuant Slashes KV-Cache Memory at ICLR 2026",
+      "summary": "Google researchers unveiled TurboQuant at ICLR 2026, a two-step algorithm combining PolarQuant vector rotation with Quantized Johnson-Lindenstrauss compression to dramatically reduce KV-cache memory overhead. The technique could unlock longer context inference on existing hardware without requiring new chips.",
+      "url": "https://www.searchcans.com/blog/ai-model-releases-april-2026-v2/"
+    },
+    {
+      "headline": "Q1 2026 Venture Deal Value Hits Record $267B — AI Dominates",
+      "summary": "Global venture deal value reached $267.2 billion in Q1 2026, with AI accounting for the lion's share. OpenAI alone raised $122 billion and Anthropic closed a $30 billion Series G. OpenAI is also taking early steps toward a public listing as its annualised revenue crosses $25 billion.",
+      "url": "https://llm-stats.com/llm-updates"
     }
   ],
   "quick_hits": [
     {
-      "text": "Google drops Veo 3.1 Fast pricing, making AI video generation more affordable for developers.",
-      "url": "https://techstartups.com/2026/04/06/top-tech-news-today-april-6-2026/"
+      "text": "Coherent Corp expands its Nvidia supply deal following a breakthrough in 400 Gbps silicon photonics, accelerating data transfer inside AI clusters.",
+      "url": "https://www.searchcans.com/blog/ai-model-releases-april-2026-v2/"
     },
     {
-      "text": "Meta's MTIA 400 chip is in testing, with the 450 and 500 variants slated for mass deployment by 2027 to reduce reliance on Nvidia.",
-      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs"
+      "text": "Gartner: only 28% of AI projects in infrastructure and operations deliver meaningful returns; 20% fail outright. ROI discipline is now the dominant enterprise conversation.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
     },
     {
-      "text": "OpenAI's GPT-5.4 'Thinking' scores 83% on GDPVal — at or above human-expert level on economically valuable tasks.",
-      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs"
+      "text": "NVIDIA spotlights physical AI progress during National Robotics Week — latest research covers manipulation, locomotion, and sim-to-real transfer.",
+      "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/"
     },
     {
-      "text": "Colorado AI Act takes effect June 30, 2026; EU AI Act transparency requirements kick in August 2 — compliance deadlines are approaching fast.",
-      "url": "https://drata.com/blog/artificial-intelligence-regulations-state-and-federal-ai-laws-2026"
+      "text": "Morgan Stanley warns most of the world isn't ready for the next AI capability leap — citing infrastructure gaps, regulatory lag, and workforce readiness.",
+      "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/"
     },
     {
-      "text": "Apple CarPlay now supports voice-based ChatGPT interaction via the latest iOS and ChatGPT app updates.",
-      "url": "https://llm-stats.com/ai-news"
+      "text": "Six AI breakthroughs InfoWorld says will define 2026: multimodal reasoning, autonomous agents, efficient inference, synthetic data, AI security, and physical AI.",
+      "url": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html"
     }
   ],
   "india_roundup": [
     {
-      "text": "Google India opens applications for its 2026 AI Startups Accelerator — an equity-free 3-month program kicking off in Bengaluru in June, focused on Agentic AI, Multimodal AI, and Physical AI.",
-      "url": "https://www.newsbytesapp.com/news/science/google-india-opens-applications-for-2026-google-for-startups-accelerator/tldr"
+      "text": "Yotta Data Services is building Asia's largest AI computing hub using Nvidia Blackwell Ultra chips, with a planned IPO by early 2027.",
+      "url": "https://www.cnbc.com/2026/04/02/indian-ai-stocks-to-watch-macquarie.html"
     },
     {
-      "text": "IndiaAI Mission launches Innovation Challenge 2026, inviting startups and researchers to build AI solutions for public good across healthcare, agriculture, and education.",
-      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+      "text": "Macquarie flags India as a potential AI powerhouse: the country ranks 3rd globally in AI funding (2.3% of global capital) and 4th in AI companies founded since 2008.",
+      "url": "https://www.cnbc.com/2026/04/02/indian-ai-stocks-to-watch-macquarie.html"
     },
     {
-      "text": "India's AI startup funding surge continues — capital flowing into B2B AI, deeptech, and industrial automation as investors prioritise profitability alongside growth.",
-      "url": "https://startup.theceo.in/ai-startups-funding-india/"
+      "text": "Sarvam AI continues development of India's sovereign AI model — aiming to deliver a foundation model trained on Indian languages and data.",
+      "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/is-india-ready-for-agentic-ai-the-aidea-of-india-outlook-2026.pdf"
     },
     {
-      "text": "India AI Impact Summit 2026 pre-events underway, bringing together policymakers, researchers, and industry leaders to shape India's national AI roadmap.",
-      "url": "https://impact.indiaai.gov.in/home/pre-summit-events"
+      "text": "Indian enterprise AI adoption accelerates: 47% of organisations now have multiple use cases live, and nearly half have moved over 21% of their GenAI pilots into production.",
+      "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/is-india-ready-for-agentic-ai-the-aidea-of-india-outlook-2026.pdf"
     },
     {
-      "text": "Government doubles down on inclusive AI — IndiaAI Mission's Centres of Excellence aim to make AI open, affordable, and accessible across Tier 2 and Tier 3 cities.",
-      "url": "https://indiatribune.com/public/year-ender-2025-india-set-to-take-a-big-ai-leap-in-2026-amid-govt-push"
+      "text": "IndiaAI Mission's Centres of Excellence push inclusive AI — targeting open, affordable access in Tier 2 and Tier 3 cities as the next frontier.",
+      "url": "https://indiaai.gov.in/news/all"
     }
   ],
-  "closing_insight": "2026 is the year AI stops being experimental and starts being infrastructural — the real race now is not who builds the smartest model, but who ships the most reliable, compliant, and energy-efficient agent ecosystem at scale."
+  "closing_insight": "We are past the era of AI as a research project. Three frontier labs shipped major models on the same day, VC deployed a quarter-trillion dollars in a single quarter, and enterprises are now judged not on whether they adopted AI but on whether they made it pay. The competitive edge has shifted from access to execution."
 }
