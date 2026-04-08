@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate today's news
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC-KEY }}
         run: python update_news.py
 
       - name: Commit and push if changed
