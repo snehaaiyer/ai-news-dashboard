@@ -378,15 +378,8 @@ def render_hit(hit, india=False):
     </div>
     """, unsafe_allow_html=True)
 
-# ── Sidebar ───────────────────────────────────────────────────────────────────
+# ── Sidebar — archive only ────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### 🗞️ Edition")
-    edition = st.radio(
-        "Edition",
-        ["📰 General", "💼 Operator Edition"],
-        label_visibility="collapsed",
-    )
-    st.markdown("---")
     st.markdown("### 📅 Browse Archive")
     st.caption("Pick a past date to read that day's edition.")
     today_date    = datetime.now().date()
@@ -400,8 +393,6 @@ with st.sidebar:
     )
     is_archive = selected_date < today_date
     date_str   = selected_date.strftime("%Y-%m-%d") if is_archive else None
-
-is_operator = edition == "💼 Operator Edition"
 
 # ── Load data ─────────────────────────────────────────────────────────────────
 st.markdown('<meta http-equiv="refresh" content="300">', unsafe_allow_html=True)
@@ -426,11 +417,20 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
-_, btn_col = st.columns([9, 1])
+toggle_col, _, btn_col = st.columns([4, 5, 1])
+with toggle_col:
+    edition = st.radio(
+        "Edition",
+        ["📰 General", "💼 Operator Edition"],
+        horizontal=True,
+        label_visibility="collapsed",
+    )
 with btn_col:
     if st.button("↺ Refresh", use_container_width=True):
         st.cache_data.clear()
         st.rerun()
+
+is_operator = edition == "💼 Operator Edition"
 
 if is_archive:
     st.markdown(
