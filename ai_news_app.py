@@ -394,6 +394,11 @@ with st.sidebar:
     is_archive = selected_date < today_date
     date_str   = selected_date.strftime("%Y-%m-%d") if is_archive else None
 
+# ── Edition state (must be resolved before data loading) ──────────────────────
+if "edition" not in st.session_state:
+    st.session_state["edition"] = "📰 General"
+is_operator = st.session_state["edition"] == "💼 Operator Edition"
+
 # ── Load data ─────────────────────────────────────────────────────────────────
 st.markdown('<meta http-equiv="refresh" content="300">', unsafe_allow_html=True)
 
@@ -419,18 +424,17 @@ st.markdown(f"""
 
 toggle_col, _, btn_col = st.columns([4, 5, 1])
 with toggle_col:
-    edition = st.radio(
+    st.radio(
         "Edition",
         ["📰 General", "💼 Operator Edition"],
         horizontal=True,
         label_visibility="collapsed",
+        key="edition",
     )
 with btn_col:
     if st.button("↺ Refresh", use_container_width=True):
         st.cache_data.clear()
         st.rerun()
-
-is_operator = edition == "💼 Operator Edition"
 
 if is_archive:
     st.markdown(
