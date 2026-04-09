@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-04-09T08:00:00",
+  "big_story": {
+    "headline": "Anthropic's Claude Mythos Preview Is Deployed as an Active Cybersecurity Agent — and It's Already Finding Thousands of Zero-Days",
+    "what_happened": "Anthropic launched Claude Mythos Preview through 'Project Glasswing', a closed partnership with 40+ enterprise customers including Microsoft, Amazon, Apple, Google, CrowdStrike, and Palo Alto Networks. The model is being used autonomously to discover previously unknown vulnerabilities across their systems — and has already surfaced thousands of zero-days.",
+    "why_it_matters": "This is the first time a frontier AI model has been deployed not as a tool but as an autonomous security operator with direct system access at major enterprise scale. It collapses the gap between AI capability and AI deployment — and signals that the next wave of AI value is not in chatbots but in agents doing expert work. The enterprise contract model ($1M+/yr customers) is also a structural shift from API pricing to outcome-based SLAs.",
+    "revenue_impact": "Anthropic's revenue run rate just hit $30B — a number that validates premium enterprise pricing for AI agents over commodity API calls. For competitors, the pressure is now to match not just model capability but deployment trust and enterprise integration depth. For operators selling to enterprises, the message is clear: agents with access rights are the new software contract."
+  },
+  "key_headlines": {
+    "ads_monetization": [
+      {
+        "summary": "Google Gemini 3.1 Ultra lands with a 2M-token context window and native multimodal input.",
+        "implication": "Longer context means Google can now serve ads against much richer user sessions — full documents, long videos, extended conversations — dramatically expanding ad-eligible surface area."
+      },
+      {
+        "summary": "White House outlines 90+ federal AI policy actions covering innovation, infrastructure, and international diplomacy.",
+        "implication": "Federal AI procurement and infrastructure spend is accelerating — a massive distribution opportunity for enterprise AI vendors and a new ad-free revenue channel for platforms with government contracts."
+      }
+    ],
+    "ai_products": [
+      {
+        "summary": "Google releases Gemma 4 open-weights model under Apache 2.0, optimised for reasoning and agentic workflows.",
+        "implication": "Open-weights agentic models lower the barrier for startups to build competing products — compressing margins for API-first AI businesses and accelerating the race to the application layer."
+      },
+      {
+        "summary": "Claude Mythos Preview scores 93.9% on SWE-bench Verified and 94.6% on GPQA Diamond — highest published on both.",
+        "implication": "Benchmark leadership is now a direct sales lever for enterprise deals; expect competitors to respond with their own benchmark pushes within weeks."
+      }
+    ],
+    "distribution": [
+      {
+        "summary": "Rhoda AI launches with $450M Series A and a robotic intelligence platform built on video-predictive control.",
+        "implication": "Physical AI is moving into distribution — robots as delivery and logistics agents create entirely new last-mile surfaces that are outside traditional digital ad inventory entirely."
+      },
+      {
+        "summary": "Anthropic expands compute agreement with Google and Broadcom amid explosive demand.",
+        "implication": "Infrastructure lock-in at the compute layer is the new platform distribution moat — whoever controls GPU access controls who can scale AI products fastest."
+      }
+    ]
+  },
+  "money_moves": {
+    "revenue_shifts": [
+      "Anthropic at $30B ARR signals that premium enterprise AI agents command 10–100× the revenue per customer of API usage — shifting the model from volume to value.",
+      "Google's Gemma 4 open release commoditises base model capability, pushing revenue upstream to fine-tuning, deployment, and orchestration layers."
+    ],
+    "ad_inventory": [
+      "Gemini 3.1 Ultra's 2M-token context window enables ads served against full documents, long-form video sessions, and extended agentic workflows — new inventory Google can monetise at premium CPMs.",
+      "Physical AI (Rhoda's robotics platform) creates out-of-home digital surfaces that are entirely outside current programmatic ecosystems — early movers set the pricing floor."
+    ],
+    "pricing_power": [
+      "Anthropic gains significant pricing power with outcome-based enterprise contracts ($1M+/yr) vs. per-token API pricing — decoupling revenue from raw compute cost.",
+      "Open-weights models (Gemma 4) erode pricing power for commodity inference — API providers must differentiate on speed, reliability, or proprietary fine-tunes."
+    ],
+    "winners": [
+      "Anthropic — $30B ARR, benchmark leadership, and enterprise agent deployments create a compounding moat.",
+      "Google — 2M-token context + Gemma 4 open release + compute infrastructure positions them across every layer of the stack.",
+      "Cybersecurity vendors partnered with Glasswing — zero-day discovery at AI speed is a step-change in their product value."
+    ],
+    "losers": [
+      "Mid-tier API-only AI providers — squeezed between commodity open-weights below and premium agent platforms above.",
+      "Traditional penetration testing firms — autonomous AI vulnerability discovery compresses their core service at scale."
+    ]
+  },
+  "operator_insight": {
+    "company": "Anthropic",
+    "strategy": "Anthropic is executing a deliberate two-tier strategy: an open API layer for developers (volume, ecosystem building) and a closed enterprise agent layer (Project Glasswing) for high-trust, high-value deployments. The enterprise tier is not just a pricing tier — it's a deployment model where Claude has direct system access, not just API access. This creates an entirely different product relationship: Claude as a contractor with a security clearance, not a tool that users prompt.",
+    "why_effective": "The strategy works because it separates commoditised capability (the API, increasingly replicable) from trusted deployment (direct system access, which requires long enterprise sales cycles and security audits that competitors can't shortcut). By anchoring the top of the market with outcome-based contracts before the API market commoditises, Anthropic is building the kind of enterprise stickiness that makes revenue durable regardless of model competition below."
+  },
+  "playbook": {
+    "marketers": [
+      "Audit your ad campaigns for surfaces that depend on short-context AI summaries — Google's 2M-token window means competitors can now serve contextually richer ads against the same user sessions. Refresh your contextual targeting strategy.",
+      "If you sell to enterprises, reframe your AI tooling pitch from 'efficiency' to 'autonomous capability' — Anthropic's Glasswing pricing shows the market will pay a 10× premium for agents that act, not just assist."
+    ],
+    "pms": [
+      "Map which of your product's workflows could be handed to an AI agent with system access rather than a human clicking through a UI — the Glasswing model shows this is now a viable enterprise product category.",
+      "If you're building on API-first AI, accelerate your differentiation strategy now. Open-weights models (Gemma 4) are closing the capability gap with hosted APIs — your moat needs to be data, workflow integration, or distribution, not model quality."
+    ],
+    "founders": [
+      "The $450M Rhoda AI raise signals that physical AI infrastructure is the next platform shift. If your product could extend into robotics or physical automation, now is the time to explore hardware partnerships before the distribution moat closes.",
+      "Consider the 'agent with access rights' model for your enterprise GTM — instead of selling a SaaS seat, sell an AI contractor with defined permissions and measurable outcomes. This unlocks outcome-based pricing and dramatically higher contract values."
+    ]
+  },
+  "trend": "The overarching pattern across today's news is the shift from AI as interface to AI as operator. Claude Mythos is finding vulnerabilities. Gemini Ultra is reading your full document. Rhoda's robots are moving physical goods. In each case, AI is not being prompted — it is being given access and autonomy. This is the monetisation inflection point: the value of AI is no longer in the quality of its answers but in the scope of its permissions.",
+  "tldr": {
+    "insight": "AI's revenue model is bifurcating — commodity API pricing at the bottom, outcome-based agent contracts at the top — and the gap between them is widening fast.",
+    "opportunity": "Enterprise operators who can define clear AI agent permissions and measurable outcomes will unlock 10× contract values compared to standard SaaS pricing.",
+    "risk": "Businesses built on API-first AI differentiation are being squeezed from both sides: open-weights models commoditise capability below, and trusted agent platforms capture all the enterprise value above."
+  }
+}
