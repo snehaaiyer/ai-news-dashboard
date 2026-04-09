@@ -469,16 +469,17 @@ if is_operator:
     big = od.get("big_story", {})
     if big:
         st.markdown('<div class="section-label">🔥 &nbsp;Big Story</div>', unsafe_allow_html=True)
-        st.markdown(f"""
-        <div class="op-big-story">
-          <div class="op-headline">{big.get("headline","")}</div>
-          <div class="op-sub-label">What happened</div>
-          <div class="op-sub-text">{big.get("what_happened","")}</div>
-          <div class="op-sub-label">Why it matters</div>
-          <div class="op-sub-text">{big.get("why_it_matters","")}</div>
-          <div class="op-revenue-box">💰 {big.get("revenue_impact","")}</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="op-big-story">'
+            f'<div class="op-headline">{big.get("headline","")}</div>'
+            f'<div class="op-sub-label">What happened</div>'
+            f'<div class="op-sub-text">{big.get("what_happened","")}</div>'
+            f'<div class="op-sub-label">Why it matters</div>'
+            f'<div class="op-sub-text">{big.get("why_it_matters","")}</div>'
+            f'<div class="op-revenue-box">💰 {big.get("revenue_impact","")}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
 
     # ⚡ Key Headlines
     kh = od.get("key_headlines", {})
@@ -493,20 +494,18 @@ if is_operator:
             items = kh.get(key, [])
             if not items:
                 continue
-            rows_html = ""
-            for item in items:
-                rows_html += f"""
-                <div class="op-row">
-                  <div class="op-row-summary">{item.get("summary","")}</div>
-                  <div class="op-divider"></div>
-                  <div class="op-row-impl">{item.get("implication","")}</div>
-                </div>"""
-            st.markdown(f"""
-            <div class="op-cluster">
-              <div class="op-cluster-title">{label}</div>
-              {rows_html}
-            </div>
-            """, unsafe_allow_html=True)
+            rows_html = "".join(
+                f'<div class="op-row">'
+                f'<div class="op-row-summary">{item.get("summary","")}</div>'
+                f'<div class="op-divider"></div>'
+                f'<div class="op-row-impl">{item.get("implication","")}</div>'
+                f'</div>'
+                for item in items
+            )
+            st.markdown(
+                f'<div class="op-cluster"><div class="op-cluster-title">{label}</div>{rows_html}</div>',
+                unsafe_allow_html=True,
+            )
 
     # 💰 Where the Money Moves
     mm = od.get("money_moves", {})
@@ -516,43 +515,30 @@ if is_operator:
         def money_col(items, css_class="op-money-item"):
             return "".join(f'<div class="{css_class}">{i}</div>' for i in items)
 
-        st.markdown(f"""
-        <div class="op-money">
-          <div class="op-money-grid">
-            <div class="op-money-cell">
-              <div class="op-money-cell-label">Revenue Shifts</div>
-              {money_col(mm.get("revenue_shifts",[]))}
-            </div>
-            <div class="op-money-cell">
-              <div class="op-money-cell-label">Ad Inventory</div>
-              {money_col(mm.get("ad_inventory",[]))}
-            </div>
-            <div class="op-money-cell">
-              <div class="op-money-cell-label">Pricing Power</div>
-              {money_col(mm.get("pricing_power",[]))}
-            </div>
-            <div class="op-money-cell">
-              <div class="op-money-cell-label">🟢 Winners</div>
-              {money_col(mm.get("winners",[]), "op-money-item op-winner")}
-              <div class="op-money-cell-label" style="margin-top:0.6rem;">🔴 Losers</div>
-              {money_col(mm.get("losers",[]), "op-money-item op-loser")}
-            </div>
-          </div>
-        </div>
-        """, unsafe_allow_html=True)
+        money_html = (
+            '<div class="op-money"><div class="op-money-grid">'
+            f'<div class="op-money-cell"><div class="op-money-cell-label">Revenue Shifts</div>{money_col(mm.get("revenue_shifts",[]))}</div>'
+            f'<div class="op-money-cell"><div class="op-money-cell-label">Ad Inventory</div>{money_col(mm.get("ad_inventory",[]))}</div>'
+            f'<div class="op-money-cell"><div class="op-money-cell-label">Pricing Power</div>{money_col(mm.get("pricing_power",[]))}</div>'
+            f'<div class="op-money-cell"><div class="op-money-cell-label">🟢 Winners</div>{money_col(mm.get("winners",[]), "op-money-item op-winner")}'
+            f'<div class="op-money-cell-label" style="margin-top:0.6rem;">🔴 Losers</div>{money_col(mm.get("losers",[]), "op-money-item op-loser")}</div>'
+            '</div></div>'
+        )
+        st.markdown(money_html, unsafe_allow_html=True)
 
     # 🧩 Operator Insight
     oi = od.get("operator_insight", {})
     if oi:
         st.markdown('<div class="section-label">🧩 &nbsp;Operator Insight</div>', unsafe_allow_html=True)
-        st.markdown(f"""
-        <div class="op-insight">
-          <div class="op-insight-company">{oi.get("company","")}</div>
-          <div class="op-sub-text">{oi.get("strategy","")}</div>
-          <div class="op-sub-label">Why it works</div>
-          <div class="op-sub-text" style="margin-bottom:0;">{oi.get("why_effective","")}</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="op-insight">'
+            f'<div class="op-insight-company">{oi.get("company","")}</div>'
+            f'<div class="op-sub-text">{oi.get("strategy","")}</div>'
+            f'<div class="op-sub-label">Why it works</div>'
+            f'<div class="op-sub-text" style="margin-bottom:0;">{oi.get("why_effective","")}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
 
     # 🛠️ Actionable Playbook
     pb = od.get("playbook", {})
@@ -576,25 +562,14 @@ if is_operator:
     tldr = od.get("tldr", {})
     if tldr:
         st.markdown('<div class="section-label">🎯 &nbsp;TL;DR</div>', unsafe_allow_html=True)
-        st.markdown(f"""
-        <div class="op-tldr">
-          <div class="op-tldr-row">
-            <div class="op-tldr-icon">💡</div>
-            <div class="op-tldr-label">Insight</div>
-            <div class="op-tldr-text">{tldr.get("insight","")}</div>
-          </div>
-          <div class="op-tldr-row">
-            <div class="op-tldr-icon">🚀</div>
-            <div class="op-tldr-label">Opportunity</div>
-            <div class="op-tldr-text">{tldr.get("opportunity","")}</div>
-          </div>
-          <div class="op-tldr-row">
-            <div class="op-tldr-icon">⚠️</div>
-            <div class="op-tldr-label">Risk</div>
-            <div class="op-tldr-text">{tldr.get("risk","")}</div>
-          </div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            '<div class="op-tldr">'
+            f'<div class="op-tldr-row"><div class="op-tldr-icon">💡</div><div class="op-tldr-label">Insight</div><div class="op-tldr-text">{tldr.get("insight","")}</div></div>'
+            f'<div class="op-tldr-row"><div class="op-tldr-icon">🚀</div><div class="op-tldr-label">Opportunity</div><div class="op-tldr-text">{tldr.get("opportunity","")}</div></div>'
+            f'<div class="op-tldr-row"><div class="op-tldr-icon">⚠️</div><div class="op-tldr-label">Risk</div><div class="op-tldr-text">{tldr.get("risk","")}</div></div>'
+            '</div>',
+            unsafe_allow_html=True,
+        )
 
     st.markdown(
         '<div class="footer">Operator Edition · Generated daily by Claude &nbsp;·&nbsp; Powered by Streamlit</div>',
