@@ -1,76 +1,76 @@
 {
-  "generated_at": "2026-04-08T08:00:00",
-  "intro": "Wednesday brings a wave of frontier model launches: Anthropic's 10-trillion-parameter Claude Mythos 5, Google's 2-million-token Gemini 3.1 Ultra, and OpenAI doubling down on autonomous computer-use. Behind the headlines, Q1 VC deal value hits a record $267B — almost entirely AI.",
+  "generated_at": "2026-04-09T08:00:00",
+  "intro": "Thursday's big story is Anthropic's Claude Mythos Preview — already finding thousands of zero-day vulnerabilities — as the company's revenue run rate hits $30B. Google drops Gemma 4 open-source, AI security startups raise hundreds of millions, and India's AI accountability push intensifies.",
   "top_stories": [
     {
-      "headline": "Anthropic Launches Claude Mythos 5 — First 10-Trillion-Parameter Model",
-      "summary": "Anthropic has released Claude Mythos 5, the first publicly acknowledged 10-trillion-parameter model. Engineered for high-stakes domains — cybersecurity, academic research, and complex coding — the model raises the bar on reasoning depth and sets a new scale benchmark for the industry. Anthropic has now surpassed $19B in annualised revenue.",
+      "headline": "Anthropic's Claude Mythos Preview Finds Thousands of Zero-Day Vulnerabilities",
+      "summary": "Anthropic has unveiled Claude Mythos Preview, a cybersecurity-focused AI model deployed through 'Project Glasswing' with over 40 partners including Microsoft, Amazon, Apple, Google, and CrowdStrike. The model has already discovered thousands of previously unknown zero-day vulnerabilities across major systems — a landmark moment for AI in offensive and defensive security.",
       "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
     },
     {
-      "headline": "Google Ships Gemini 3.1 Ultra with 2M-Token Context Window",
-      "summary": "Google's Gemini 3.1 Ultra arrives with a 2-million-token native multimodal context window covering text, image, audio, and video. Alongside it, Gemini 3.1 Flash-Lite promises 2.5× faster responses at just $0.25 per million input tokens — putting affordable long-context inference within reach for most developers.",
+      "headline": "Anthropic Revenue Run Rate Hits $30B as Google and Broadcom Expand Compute Deal",
+      "summary": "Anthropic has significantly expanded its compute agreement with Google and Broadcom amid surging demand for Claude models. The company's annualised revenue has rocketed to $30 billion, with more than 1,000 business customers each spending over $1 million annually — signalling a rapid shift from AI experimentation to enterprise production.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+    },
+    {
+      "headline": "Google Releases Gemma 4 — Open Model Built for Reasoning and Agentic Workflows",
+      "summary": "Google has launched Gemma 4, its latest open model series, released under the Apache 2.0 licence. Built specifically for advanced reasoning and agentic workflows, Gemma 4 continues Google's push to make capable open-weight models available to developers worldwide.",
       "url": "https://llm-stats.com/ai-news"
     },
     {
-      "headline": "GPT-5.4 Gains Native Computer-Use: Agents Can Now Navigate Files, Browsers and Terminals",
-      "summary": "OpenAI's GPT-5.4 series is the first general-purpose model with state-of-the-art native computer-use capabilities. The model can autonomously navigate operating systems, browsers, and terminals — and has already surpassed human-level performance on desktop task benchmarks, moving agentic AI from demo to deployment.",
-      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs"
+      "headline": "Rhoda AI Launches with $450M Series A and FutureVision Robotic Intelligence Platform",
+      "summary": "Rhoda AI has publicly launched with $450 million in Series A funding, unveiling FutureVision — a robotic intelligence system built on video-predictive control. The raise signals massive investor appetite for physical AI and embodied intelligence as the next frontier beyond language models.",
+      "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups"
     },
     {
-      "headline": "Google TurboQuant Slashes KV-Cache Memory at ICLR 2026",
-      "summary": "Google researchers unveiled TurboQuant at ICLR 2026, a two-step algorithm combining PolarQuant vector rotation with Quantized Johnson-Lindenstrauss compression to dramatically reduce KV-cache memory overhead. The technique could unlock longer context inference on existing hardware without requiring new chips.",
-      "url": "https://www.searchcans.com/blog/ai-model-releases-april-2026-v2/"
-    },
-    {
-      "headline": "Q1 2026 Venture Deal Value Hits Record $267B — AI Dominates",
-      "summary": "Global venture deal value reached $267.2 billion in Q1 2026, with AI accounting for the lion's share. OpenAI alone raised $122 billion and Anthropic closed a $30 billion Series G. OpenAI is also taking early steps toward a public listing as its annualised revenue crosses $25 billion.",
-      "url": "https://llm-stats.com/llm-updates"
+      "headline": "White House AI Action Plan: 90+ Federal Policy Actions Across Innovation, Infrastructure, and Diplomacy",
+      "summary": "The White House has outlined over 90 federal policy actions spanning three pillars: accelerating AI innovation, building American AI infrastructure, and leading in international AI diplomacy and security. The plan marks the most comprehensive US federal AI policy directive to date and sets the tone for global regulatory conversations.",
+      "url": "https://www.executivegov.com/articles/white-house-ai-plan-policy-update"
     }
   ],
   "quick_hits": [
     {
-      "text": "Coherent Corp expands its Nvidia supply deal following a breakthrough in 400 Gbps silicon photonics, accelerating data transfer inside AI clusters.",
+      "text": "Trent AI emerges from stealth with $13M seed funding to secure AI agents and enterprise workflows against adversarial threats.",
+      "url": "https://fintech.global/2026/04/08/trent-ai-bags-13m-to-secure-ai-agents-and-workflows/"
+    },
+    {
+      "text": "Cyberhill Partners raises $11M to bring AI to enterprise operations, targeting mid-market companies lacking in-house AI expertise.",
+      "url": "https://fintech.global/2026/04/08/cyberhill-partners-lands-11m-to-bring-ai-to-enterprises/"
+    },
+    {
+      "text": "Claude Mythos Preview scores 93.9% on SWE-bench Verified and 94.6% on GPQA Diamond — the highest published scores on both benchmarks.",
+      "url": "https://llm-stats.com/ai-news"
+    },
+    {
+      "text": "Connecticut's General Assembly moves AI policy bills toward a vote, debating the balance between innovation headroom and protections for privacy and civil rights.",
+      "url": "https://bristoledition.org/blog/2026/04/08/in-final-weeks-of-ct-session-ai-policy-bills-come-into-focus/"
+    },
+    {
+      "text": "March 2026 saw over 30 new AI model releases — the highest monthly count ever recorded — from OpenAI, Anthropic, Google, and NVIDIA.",
       "url": "https://www.searchcans.com/blog/ai-model-releases-april-2026-v2/"
-    },
-    {
-      "text": "Gartner: only 28% of AI projects in infrastructure and operations deliver meaningful returns; 20% fail outright. ROI discipline is now the dominant enterprise conversation.",
-      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
-    },
-    {
-      "text": "NVIDIA spotlights physical AI progress during National Robotics Week — latest research covers manipulation, locomotion, and sim-to-real transfer.",
-      "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/"
-    },
-    {
-      "text": "Morgan Stanley warns most of the world isn't ready for the next AI capability leap — citing infrastructure gaps, regulatory lag, and workforce readiness.",
-      "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/"
-    },
-    {
-      "text": "Six AI breakthroughs InfoWorld says will define 2026: multimodal reasoning, autonomous agents, efficient inference, synthetic data, AI security, and physical AI.",
-      "url": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html"
     }
   ],
   "india_roundup": [
     {
-      "text": "Yotta Data Services is building Asia's largest AI computing hub using Nvidia Blackwell Ultra chips, with a planned IPO by early 2027.",
-      "url": "https://www.cnbc.com/2026/04/02/indian-ai-stocks-to-watch-macquarie.html"
+      "text": "IndiaAI Innovation Challenge 2026 opens applications jointly with the Ministry of AYUSH and Ministry of MSME — winners get a two-year contract worth up to ₹1 crore to deploy AI in public health and MSME governance.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
     },
     {
-      "text": "Macquarie flags India as a potential AI powerhouse: the country ranks 3rd globally in AI funding (2.3% of global capital) and 4th in AI companies founded since 2008.",
-      "url": "https://www.cnbc.com/2026/04/02/indian-ai-stocks-to-watch-macquarie.html"
+      "text": "India has emerged as the world's third most competitive country in AI, with PM Modi's vision of democratising technology to address India-centric challenges driving the national roadmap.",
+      "url": "https://indiatribune.com/public/year-ender-2025-india-set-to-take-a-big-ai-leap-in-2026-amid-govt-push"
     },
     {
-      "text": "Sarvam AI continues development of India's sovereign AI model — aiming to deliver a foundation model trained on Indian languages and data.",
+      "text": "Three out of four Indian companies now see AI as existential to their business, and nearly half already have multiple use cases in production — a sharp jump from 2025 figures.",
       "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/is-india-ready-for-agentic-ai-the-aidea-of-india-outlook-2026.pdf"
     },
     {
-      "text": "Indian enterprise AI adoption accelerates: 47% of organisations now have multiple use cases live, and nearly half have moved over 21% of their GenAI pilots into production.",
-      "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/is-india-ready-for-agentic-ai-the-aidea-of-india-outlook-2026.pdf"
+      "text": "India AI Impact Summit 2026 focuses on AI's impact on the creative economy — animation, gaming, and new storytelling formats — alongside regulation and the future of creative work.",
+      "url": "https://impact.indiaai.gov.in/home/pre-summit-events"
     },
     {
-      "text": "IndiaAI Mission's Centres of Excellence push inclusive AI — targeting open, affordable access in Tier 2 and Tier 3 cities as the next frontier.",
-      "url": "https://indiaai.gov.in/news/all"
+      "text": "New plan outlines how India will democratise AI infrastructure — targeting affordable compute access and open datasets for startups and researchers outside metro cities.",
+      "url": "https://dig.watch/updates/how-india-will-democratise-ai-infrastructure"
     }
   ],
-  "closing_insight": "We are past the era of AI as a research project. Three frontier labs shipped major models on the same day, VC deployed a quarter-trillion dollars in a single quarter, and enterprises are now judged not on whether they adopted AI but on whether they made it pay. The competitive edge has shifted from access to execution."
+  "closing_insight": "When an AI model is deployed specifically to find security vulnerabilities — and finds thousands within weeks — we have crossed from AI as productivity tool to AI as active participant in the infrastructure of trust. The implications for defence, regulation, and software supply chains will take years to fully surface."
 }
