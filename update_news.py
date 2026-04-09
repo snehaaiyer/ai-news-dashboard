@@ -28,7 +28,7 @@ SCHEMA_EXAMPLE = """
   "generated_at": "<YYYY-MM-DDTHH:MM:SS — today at 08:00:00>",
   "intro": "2–3 sentence opening hook summarising the day's biggest AI themes",
   "top_stories": [
-    {"headline": "Story headline", "summary": "2–3 sentence summary.", "url": "https://real-source.com/article"},
+    {"headline": "Story headline", "summary": "2–3 sentence summary.", "url": "https://real-source.com/article", "tag": "<one of: Models, Research, Funding, Policy, Industry>"},
     ... (exactly 5 items)
   ],
   "quick_hits": [
@@ -56,7 +56,7 @@ Search the web for the most important AI news published in the last 24–48 hour
 {SCHEMA_EXAMPLE}
 
 Rules:
-- top_stories: 5 significant global AI stories (model releases, major funding rounds, policy, research breakthroughs). Each must have a real URL from the actual source you found.
+- top_stories: 5 significant global AI stories. Each must have a real URL and a "tag" chosen from: Models, Research, Funding, Policy, Industry.
 - quick_hits: 5 shorter items (product updates, metrics, partnerships). Each must have a real URL.
 - india_roundup: 5 items specifically about AI developments in India. Each must have a real URL.
 - generated_at must be exactly: "{generated_at}"
@@ -124,7 +124,16 @@ def main() -> None:
     with open(OUTPUT_FILE, "w") as f:
         json.dump(data, f, indent=2)
 
+    # Save a dated copy to the archive folder
+    archive_dir = Path(__file__).parent / "archive"
+    archive_dir.mkdir(exist_ok=True)
+    archive_date = datetime.now(IST).strftime("%Y-%m-%d")
+    archive_file = archive_dir / f"{archive_date}.json"
+    with open(archive_file, "w") as f:
+        json.dump(data, f, indent=2)
+
     print(f"Written: {OUTPUT_FILE}")
+    print(f"Archive: {archive_file}")
     print(f"  generated_at : {data.get('generated_at', '???')}")
     print(f"  top_stories  : {len(data.get('top_stories', []))}")
     print(f"  quick_hits   : {len(data.get('quick_hits', []))}")

@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-04-08T08:00:00",
+  "intro": "Wednesday brings a wave of frontier model launches: Anthropic's 10-trillion-parameter Claude Mythos 5, Google's 2-million-token Gemini 3.1 Ultra, and OpenAI doubling down on autonomous computer-use. Behind the headlines, Q1 VC deal value hits a record $267B — almost entirely AI.",
+  "top_stories": [
+    {
+      "headline": "Anthropic Launches Claude Mythos 5 — First 10-Trillion-Parameter Model",
+      "summary": "Anthropic has released Claude Mythos 5, the first publicly acknowledged 10-trillion-parameter model. Engineered for high-stakes domains — cybersecurity, academic research, and complex coding — the model raises the bar on reasoning depth and sets a new scale benchmark for the industry. Anthropic has now surpassed $19B in annualised revenue.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "tag": "Models"
+    },
+    {
+      "headline": "Google Ships Gemini 3.1 Ultra with 2M-Token Context Window",
+      "summary": "Google's Gemini 3.1 Ultra arrives with a 2-million-token native multimodal context window covering text, image, audio, and video. Alongside it, Gemini 3.1 Flash-Lite promises 2.5× faster responses at just $0.25 per million input tokens — putting affordable long-context inference within reach for most developers.",
+      "url": "https://llm-stats.com/ai-news",
+      "tag": "Models"
+    },
+    {
+      "headline": "GPT-5.4 Gains Native Computer-Use: Agents Can Now Navigate Files, Browsers and Terminals",
+      "summary": "OpenAI's GPT-5.4 series is the first general-purpose model with state-of-the-art native computer-use capabilities. The model can autonomously navigate operating systems, browsers, and terminals — and has already surpassed human-level performance on desktop task benchmarks, moving agentic AI from demo to deployment.",
+      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs",
+      "tag": "Models"
+    },
+    {
+      "headline": "Google TurboQuant Slashes KV-Cache Memory at ICLR 2026",
+      "summary": "Google researchers unveiled TurboQuant at ICLR 2026, a two-step algorithm combining PolarQuant vector rotation with Quantized Johnson-Lindenstrauss compression to dramatically reduce KV-cache memory overhead. The technique could unlock longer context inference on existing hardware without requiring new chips.",
+      "url": "https://www.searchcans.com/blog/ai-model-releases-april-2026-v2/",
+      "tag": "Research"
+    },
+    {
+      "headline": "Q1 2026 Venture Deal Value Hits Record $267B — AI Dominates",
+      "summary": "Global venture deal value reached $267.2 billion in Q1 2026, with AI accounting for the lion's share. OpenAI alone raised $122 billion and Anthropic closed a $30 billion Series G. OpenAI is also taking early steps toward a public listing as its annualised revenue crosses $25 billion.",
+      "url": "https://llm-stats.com/llm-updates",
+      "tag": "Funding"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Coherent Corp expands its Nvidia supply deal following a breakthrough in 400 Gbps silicon photonics, accelerating data transfer inside AI clusters.",
+      "url": "https://www.searchcans.com/blog/ai-model-releases-april-2026-v2/"
+    },
+    {
+      "text": "Gartner: only 28% of AI projects in infrastructure and operations deliver meaningful returns; 20% fail outright. ROI discipline is now the dominant enterprise conversation.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+    },
+    {
+      "text": "NVIDIA spotlights physical AI progress during National Robotics Week — latest research covers manipulation, locomotion, and sim-to-real transfer.",
+      "url": "https://blogs.nvidia.com/blog/national-robotics-week-2026/"
+    },
+    {
+      "text": "Morgan Stanley warns most of the world isn't ready for the next AI capability leap — citing infrastructure gaps, regulatory lag, and workforce readiness.",
+      "url": "https://fortune.com/2026/03/13/elon-musk-morgan-stanley-ai-leap-2026/"
+    },
+    {
+      "text": "Six AI breakthroughs InfoWorld says will define 2026: multimodal reasoning, autonomous agents, efficient inference, synthetic data, AI security, and physical AI.",
+      "url": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Yotta Data Services is building Asia's largest AI computing hub using Nvidia Blackwell Ultra chips, with a planned IPO by early 2027.",
+      "url": "https://www.cnbc.com/2026/04/02/indian-ai-stocks-to-watch-macquarie.html"
+    },
+    {
+      "text": "Macquarie flags India as a potential AI powerhouse: the country ranks 3rd globally in AI funding (2.3% of global capital) and 4th in AI companies founded since 2008.",
+      "url": "https://www.cnbc.com/2026/04/02/indian-ai-stocks-to-watch-macquarie.html"
+    },
+    {
+      "text": "Sarvam AI continues development of India's sovereign AI model — aiming to deliver a foundation model trained on Indian languages and data.",
+      "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/is-india-ready-for-agentic-ai-the-aidea-of-india-outlook-2026.pdf"
+    },
+    {
+      "text": "Indian enterprise AI adoption accelerates: 47% of organisations now have multiple use cases live, and nearly half have moved over 21% of their GenAI pilots into production.",
+      "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/is-india-ready-for-agentic-ai-the-aidea-of-india-outlook-2026.pdf"
+    },
+    {
+      "text": "IndiaAI Mission's Centres of Excellence push inclusive AI — targeting open, affordable access in Tier 2 and Tier 3 cities as the next frontier.",
+      "url": "https://indiaai.gov.in/news/all"
+    }
+  ],
+  "closing_insight": "We are past the era of AI as a research project. Three frontier labs shipped major models on the same day, VC deployed a quarter-trillion dollars in a single quarter, and enterprises are now judged not on whether they adopted AI but on whether they made it pay. The competitive edge has shifted from access to execution."
+}
