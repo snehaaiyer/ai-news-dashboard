@@ -378,21 +378,14 @@ def render_hit(hit, india=False):
     </div>
     """, unsafe_allow_html=True)
 
-# ── Sidebar — archive only ────────────────────────────────────────────────────
-with st.sidebar:
-    st.markdown("### 📅 Browse Archive")
-    st.caption("Pick a past date to read that day's edition.")
-    today_date    = datetime.now().date()
-    archive_start = date(2026, 4, 8)
-    selected_date = st.date_input(
-        "Date",
-        value=today_date,
-        min_value=archive_start,
-        max_value=today_date,
-        label_visibility="collapsed",
-    )
-    is_archive = selected_date < today_date
-    date_str   = selected_date.strftime("%Y-%m-%d") if is_archive else None
+# ── Archive date state (must be resolved before data loading) ─────────────────
+today_date    = datetime.now().date()
+archive_start = date(2026, 4, 8)
+if "archive_date" not in st.session_state:
+    st.session_state["archive_date"] = today_date
+selected_date = st.session_state["archive_date"]
+is_archive    = selected_date < today_date
+date_str      = selected_date.strftime("%Y-%m-%d") if is_archive else None
 
 # ── Edition state (must be resolved before data loading) ──────────────────────
 if "edition" not in st.session_state:
@@ -435,6 +428,18 @@ with btn_col:
     if st.button("↺ Refresh", use_container_width=True):
         st.cache_data.clear()
         st.rerun()
+
+# ── Archive picker (main page) ────────────────────────────────────────────────
+with st.expander("📅 Browse Archive"):
+    st.caption(f"Editions available from Apr 8 onwards — select a past date to read it.")
+    st.date_input(
+        "Select date",
+        value=selected_date,
+        min_value=archive_start,
+        max_value=today_date,
+        key="archive_date",
+        label_visibility="collapsed",
+    )
 
 if is_archive:
     st.markdown(
