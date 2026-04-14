@@ -1,10 +1,10 @@
 {
   "generated_at": "2026-04-14T18:00:00",
-  "intro": "Tuesday, April 14, 2026: the market is still digesting Monday's GPT-5.4 computer-use launch, but today\u2019s story is execution. Enterprises moved from reaction to deployment planning, while India\u2019s AI investment cycle accelerated with new partnerships and infrastructure commitments.",
+  "intro": "Tuesday, April 14, 2026: enterprise AI moved from announcement energy to deployment execution, with teams prioritizing governed rollout plans, partner-led implementation, and measurable operational outcomes.",
   "top_stories": [
     {
-      "headline": "OpenAI\u2019s GPT-5.4 API Rollout Expands After Monday Launch",
-      "summary": "A day after debuting native computer-use in the API, teams began publishing early integration patterns for task automation across desktop workflows. The key shift is that GPT-5.4 is now being evaluated as an operations layer\u2014not just a chat endpoint. This keeps OpenAI at the center of enterprise agent orchestration conversations heading into Q2.",
+      "headline": "OpenAI GPT-5.4 API Rollout Shifts to Enterprise Implementation",
+      "summary": "Teams published integration patterns for desktop workflow automation and focused on controls, monitoring, and exception handling. The discussion shifted from launch reactions to operating-model design for production use. OpenAI remains central in enterprise agent orchestration evaluations heading into Q2.",
       "url": "https://openai.com/news",
       "tag": "Models"
     },
@@ -77,5 +77,5 @@
       "url": "https://www.niti.gov.in/"
     }
   ],
-  "closing_insight": "Monday proved capability; Tuesday is proving who can deploy AI safely at enterprise speed."
+  "closing_insight": "Tuesday underscored the real differentiator in AI: who can deploy safely and scale outcomes fastest."
 }
