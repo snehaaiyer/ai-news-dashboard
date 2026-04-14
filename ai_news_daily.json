@@ -19,6 +19,26 @@
       "summary": "Infosys began mapping Anthropic-powered assistant use cases to existing enterprise transformation programs. The partnership emphasizes controlled rollout in support, knowledge operations, and internal productivity. Services firms that can package model capability with compliance discipline are positioned to win larger multi-year deals.",
       "url": "https://www.infosys.com/newsroom/press-releases.html",
       "tag": "Industry"
+  "generated_at": "2026-04-14T08:00:00",
+  "intro": "Monday leads with OpenAI's GPT-5.4 \u2014 the first general-purpose AI model with native computer-use capabilities in the API, scoring above human baseline on desktop productivity benchmarks. Meanwhile the India AI Impact Summit drew $200 billion in investment commitments, Infosys partnered with Anthropic, and TCS signed as OpenAI's first HyperVault customer.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Releases GPT-5.4 With Native Computer-Use \u2014 First in the API, Scores Above Human Baseline",
+      "summary": "OpenAI released GPT-5.4, its most capable and efficient frontier model combining reasoning, coding, and agentic workflows. It is the first general-purpose OpenAI model with native computer-use capabilities in the API, scoring 75% on the OSWorld-V benchmark of real desktop productivity tasks \u2014 above the human baseline of 72.4%. Available in ChatGPT as GPT-5.4 Thinking, via the API, and in Codex.",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "tag": "Models"
+    },
+    {
+      "headline": "India AI Impact Summit Draws $200 Billion in AI Investment Commitments",
+      "summary": "The India AI Impact Summit \u2014 the first AI summit hosted by a Global South nation \u2014 resulted in over $200 billion in AI investment commitments. Key announcements included Google's $15 billion AI hub in Visakhapatnam, Reliance's 10 trillion rupee ($110B) data center commitment, and Adani's plan to grow data center capacity from 2 to 5 gigawatts.",
+      "url": "https://www.ciol.com/news/india-ai-impact-summit-2026-200-billion-investments-gpu-expansion-global-commitments-11168405",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Anthropic's Claude Mythos Preview: Scores 97.6% on USAMO 2026 \u2014 Still No Public Release",
+      "summary": "Anthropic confirmed Claude Mythos Preview scored 93.9% on SWE-bench Verified and 97.6% on USAMO 2026 \u2014 the highest published scores on both benchmarks \u2014 but will not be made generally available due to cybersecurity risks. The model is shared only with 11 vetted partners under Project Glasswing and has autonomously discovered thousands of critical zero-day vulnerabilities across major operating systems and browsers.",
+      "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+      "tag": "Models"
     },
     {
       "headline": "TCS Advances OpenAI HyperVault Workstreams as First Named Customer",
