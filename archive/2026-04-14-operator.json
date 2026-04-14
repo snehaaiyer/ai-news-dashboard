@@ -2,7 +2,7 @@
   "generated_at": "2026-04-14T18:00:00",
   "big_story": {
     "headline": "Tuesday Reality Check: GPT-5.4\u2019s Computer-Use Advantage Is Forcing Platform Consolidation",
-    "what_happened": "After Monday\u2019s launch, Tuesday conversations shifted from novelty to rollout strategy as teams tested GPT-5.4 task automation inside real desktop workflows. At the same time, India\u2019s AI investment signals and large SI partnerships (Infosys-Anthropic, TCS-OpenAI HyperVault motion) added distribution muscle on the services side. The combined effect is faster enterprise pressure to choose fewer, deeper AI platform bets.",
+    "what_happened": "Tuesday conversations centered on rollout strategy as teams tested GPT-5.4 task automation inside real desktop workflows. In parallel, India\u2019s AI investment signals and large SI partnerships (Infosys-Anthropic, TCS-OpenAI HyperVault motion) added distribution muscle on the services side. The combined effect is faster enterprise pressure to choose fewer, deeper AI platform bets.",
     "why_it_matters": "Native computer-use in a general-purpose API changes buyer expectations around automation ROI timelines. Enterprises no longer compare only model IQ; they compare orchestration readiness, governance controls, and partner execution capacity. This favors vendors and integrators that can ship production playbooks quickly.",
     "revenue_impact": "Platform ARPU can rise as customers move from seat experiments to workflow-level automation contracts. SIs gain implementation and managed-service revenue as enterprises need policy, monitoring, and change-management layers. Vendors without deployable governance depth risk being relegated to low-margin model commodities."
   },
@@ -23,7 +23,7 @@
         "implication": "PMs should redesign metrics around time-to-outcome and successful multi-step execution."
       },
       {
-        "summary": "Enterprise buyers are elevating control-plane requirements immediately after launch.",
+        "summary": "Enterprise buyers are elevating control-plane requirements as production rollouts accelerate.",
         "implication": "Shipping auditability and permissions is now a revenue feature, not a compliance afterthought."
       }
     ],
