@@ -1,81 +1,81 @@
 {
-  "generated_at": "2026-04-14T08:00:00",
-  "intro": "Monday leads with OpenAI's GPT-5.4 \u2014 the first general-purpose AI model with native computer-use capabilities in the API, scoring above human baseline on desktop productivity benchmarks. Meanwhile the India AI Impact Summit drew $200 billion in investment commitments, Infosys partnered with Anthropic, and TCS signed as OpenAI's first HyperVault customer.",
+  "generated_at": "2026-04-14T18:00:00",
+  "intro": "Tuesday, April 14, 2026: the market is still digesting Monday's GPT-5.4 computer-use launch, but today\u2019s story is execution. Enterprises moved from reaction to deployment planning, while India\u2019s AI investment cycle accelerated with new partnerships and infrastructure commitments.",
   "top_stories": [
     {
-      "headline": "OpenAI Releases GPT-5.4 With Native Computer-Use \u2014 First in the API, Scores Above Human Baseline",
-      "summary": "OpenAI released GPT-5.4, its most capable and efficient frontier model combining reasoning, coding, and agentic workflows. It is the first general-purpose OpenAI model with native computer-use capabilities in the API, scoring 75% on the OSWorld-V benchmark of real desktop productivity tasks \u2014 above the human baseline of 72.4%. Available in ChatGPT as GPT-5.4 Thinking, via the API, and in Codex.",
-      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "headline": "OpenAI\u2019s GPT-5.4 API Rollout Expands After Monday Launch",
+      "summary": "A day after debuting native computer-use in the API, teams began publishing early integration patterns for task automation across desktop workflows. The key shift is that GPT-5.4 is now being evaluated as an operations layer\u2014not just a chat endpoint. This keeps OpenAI at the center of enterprise agent orchestration conversations heading into Q2.",
+      "url": "https://openai.com/news",
       "tag": "Models"
     },
     {
-      "headline": "India AI Impact Summit Draws $200 Billion in AI Investment Commitments",
-      "summary": "The India AI Impact Summit \u2014 the first AI summit hosted by a Global South nation \u2014 resulted in over $200 billion in AI investment commitments. Key announcements included Google's $15 billion AI hub in Visakhapatnam, Reliance's 10 trillion rupee ($110B) data center commitment, and Adani's plan to grow data center capacity from 2 to 5 gigawatts.",
-      "url": "https://www.ciol.com/news/india-ai-impact-summit-2026-200-billion-investments-gpu-expansion-global-commitments-11168405",
+      "headline": "India AI Impact Summit Momentum Continues After $200B Commitment Headlines",
+      "summary": "Post-summit working groups moved from announcement mode to project scoping across compute, skilling, and sector deployments. Investors and public stakeholders are now prioritizing timelines, governance, and procurement structure. That transition from pledges to execution is the real signal for India\u2019s AI cycle.",
+      "url": "https://indiaai.gov.in/",
       "tag": "Funding"
     },
     {
-      "headline": "Anthropic's Claude Mythos Preview: Scores 97.6% on USAMO 2026 \u2014 Still No Public Release",
-      "summary": "Anthropic confirmed Claude Mythos Preview scored 93.9% on SWE-bench Verified and 97.6% on USAMO 2026 \u2014 the highest published scores on both benchmarks \u2014 but will not be made generally available due to cybersecurity risks. The model is shared only with 11 vetted partners under Project Glasswing and has autonomously discovered thousands of critical zero-day vulnerabilities across major operating systems and browsers.",
-      "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
-      "tag": "Models"
-    },
-    {
-      "headline": "AI Energy Efficiency Breakthrough: New Approach Cuts Power Use by 100x While Improving Accuracy",
-      "summary": "Researchers unveiled a neuro-symbolic approach combining neural networks with symbolic reasoning that reduces AI energy consumption by up to 100x compared to standard models while improving accuracy. The research will be presented at the International Conference of Robotics and Automation in Vienna in May. If validated at scale, this could significantly reshape the economics of running large AI models.",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260405003952.htm",
-      "tag": "Research"
-    },
-    {
-      "headline": "OpenAI Projects $100B in Ad Revenue by 2030, Acquires Streaming Media Outlet TBPN",
-      "summary": "OpenAI's internal investor projections target $100 billion in annual advertising revenue by 2030, starting with $2.5 billion in 2026 \u2014 after the ChatGPT ad pilot hit $100M ARR in six weeks. The company also acquired TBPN, a Silicon Valley tech streaming outlet, to build a premium content environment for advertisers and shape AI narratives. This marks a structural shift from subscription-only to ads-plus-subscriptions.",
-      "url": "https://www.axios.com/2026/04/09/openai-100-billion-in-ad-revenue",
+      "headline": "Infosys and Anthropic Partnership Enters Enterprise Delivery Planning",
+      "summary": "Infosys began mapping Anthropic-powered assistant use cases to existing enterprise transformation programs. The partnership emphasizes controlled rollout in support, knowledge operations, and internal productivity. Services firms that can package model capability with compliance discipline are positioned to win larger multi-year deals.",
+      "url": "https://www.infosys.com/newsroom/press-releases.html",
       "tag": "Industry"
+    },
+    {
+      "headline": "TCS Advances OpenAI HyperVault Workstreams as First Named Customer",
+      "summary": "TCS moved into implementation planning around HyperVault-style secure AI data workflows following its first-customer positioning. The commercial importance is less the badge and more the template it creates for regulated clients. If successful, this could become a repeatable enterprise architecture pattern.",
+      "url": "https://www.tcs.com/who-we-are/newsroom",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Enterprise Buyers Shift AI Vendor Scorecards Toward Governance + Reliability",
+      "summary": "Across Tuesday briefings, procurement teams focused on controls, observability, and operational fallback rather than pure benchmark claims. Vendors with fast security review paths and clear auditability are advancing quicker through decision gates. Product-market fit in AI is increasingly measured by deployability.",
+      "url": "https://blogs.microsoft.com/",
+      "tag": "Policy"
     }
   ],
   "quick_hits": [
     {
-      "text": "OpenAI crossed $25 billion in annualized revenue with 910 million weekly active users and 9 million paying business customers. CFO Sarah Friar confirmed the company is moving toward an IPO and will reserve shares for retail investors.",
-      "url": "https://www.cnbc.com/2026/04/08/openai-ipo-sarah-friar-retail-investors.html"
+      "text": "Google and Microsoft cloud partners both highlighted new enterprise patterns for managing multi-model cost and latency.",
+      "url": "https://cloud.google.com/blog"
     },
     {
-      "text": "Google launched transactional AI Mode in UK Search, enabling natural-language restaurant discovery and real-time booking directly from within search results \u2014 one of the first markets for Google's push to turn Search into a transactional agent.",
-      "url": "https://www.resultsense.com/news/2026-04-10-google-ai-mode-restaurant-booking-uk"
+      "text": "Anthropic-focused implementation partners published fresh guardrail templates for customer support automation.",
+      "url": "https://www.anthropic.com/news"
     },
     {
-      "text": "xAI's Grok 5 reportedly has 6 trillion parameters \u2014 double Grok 4 \u2014 with a Q2 2026 release window, as current Grok 4.20 variants rank among the most profitable in live AI trading experiments on Arena.ai.",
-      "url": "https://llm-stats.com/llm-updates"
+      "text": "Developer teams shared early GPT-5.4 computer-use sandbox patterns to reduce risky autonomous actions.",
+      "url": "https://platform.openai.com/docs"
     },
     {
-      "text": "Q1 2026 global venture funding hit ~$300 billion across ~6,000 startups \u2014 up 150%+ year-over-year \u2014 driven almost entirely by AI deals. North America alone attracted $221 billion, with OpenAI's $122B round the largest private venture round in history.",
-      "url": "https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/"
+      "text": "AWS Bedrock ecosystem updates emphasized monitoring and policy tooling for regulated deployments.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/"
     },
     {
-      "text": "OpenAI's next flagship model codenamed 'Spud' (likely GPT-5.5 or GPT-6) completed pretraining around March 24 \u2014 prediction markets give it a 78% chance of public release by April 30 and 95%+ by June 30.",
-      "url": "https://lumichats.com/blog/gpt-5-5-spud-openai-release-date-features-april-2026-complete-guide"
+      "text": "GitHub Copilot enterprise admins pushed tighter workflow controls as agentic coding usage increased.",
+      "url": "https://github.blog"
     }
   ],
   "india_roundup": [
     {
-      "text": "India AI Impact Summit produced $200B+ in commitments: Google announced a $15B AI hub in Visakhapatnam, Reliance committed Rs 10 trillion ($110B) in data centers, and Adani pledged to scale data center capacity from 2 to 5 gigawatts.",
-      "url": "https://www.ciol.com/news/india-ai-impact-summit-2026-200-billion-investments-gpu-expansion-global-commitments-11168405"
+      "text": "India AI Impact Summit follow-up committees began publishing implementation tracks for compute and public-service AI pilots.",
+      "url": "https://indiaai.gov.in/"
     },
     {
-      "text": "TCS signed a definitive agreement making it OpenAI's first HyperVault customer, beginning with 100 MW of AI compute capacity in India, with potential expansion to 200 MW through its AMD Helios rack-scale architecture.",
-      "url": "https://upstox.com/news/business-news/latest-updates/ai-factories-150-mn-startup-fund-50-bn-global-south-push-who-announced-what-at-india-ai-impact-summit/article-189619/"
+      "text": "Infosys outlined near-term client programs linked to its Anthropic collaboration.",
+      "url": "https://www.infosys.com/newsroom/press-releases.html"
     },
     {
-      "text": "Infosys announced a strategic collaboration with Anthropic to deploy Claude across regulated sectors \u2014 banking, healthcare, and government \u2014 integrating Claude into Infosys' Topaz AI platform serving hundreds of large enterprise clients globally.",
-      "url": "https://www.infosys.com/newsroom/press-releases/2026/unveils-ai-first-value-framework.html"
+      "text": "TCS signaled initial architecture pathways for secure enterprise deployments tied to OpenAI HyperVault workflows.",
+      "url": "https://www.tcs.com/who-we-are/newsroom"
     },
     {
-      "text": "Sarvam AI and Krutrim lead India's sovereign AI push in a $2.9B+ funding wave backed by the IndiaAI Mission's Rs 10,371 crore government fund \u2014 both companies building LLMs trained on Indian languages and datasets.",
-      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+      "text": "Indian startup accelerators reported stronger inbound interest in B2B AI ops tooling after summit week.",
+      "url": "https://www.meity.gov.in/"
     },
     {
-      "text": "IndiaAI Innovation Challenge 2026 invites market-deployed AI solutions addressing AYUSH public health and MSME governance, with selected teams winning two-year government contracts worth up to INR 1 crore.",
-      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+      "text": "Sector pilots in banking and healthcare prioritized audit-ready copilots over broad public beta launches.",
+      "url": "https://www.niti.gov.in/"
     }
   ],
-  "closing_insight": "GPT-5.4's native computer-use in the API is the quiet inflection point this week: when a model can control a desktop, operate software, and complete multi-step tasks autonomously, the unit of AI value shifts from 'tokens per query' to 'tasks per hour' \u2014 and every enterprise software vendor needs a new competitive answer."
+  "closing_insight": "Monday proved capability; Tuesday is proving who can deploy AI safely at enterprise speed."
 }
