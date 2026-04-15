@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-04-14T18:00:00",
+  "intro": "Tuesday, April 14, 2026: enterprise AI moved from announcement energy to deployment execution, with teams prioritizing governed rollout plans, partner-led implementation, and measurable operational outcomes.",
+  "top_stories": [
+    {
+      "headline": "OpenAI GPT-5.4 API Rollout Shifts to Enterprise Implementation",
+      "summary": "Teams published integration patterns for desktop workflow automation and focused on controls, monitoring, and exception handling. The discussion shifted from launch reactions to operating-model design for production use. OpenAI remains central in enterprise agent orchestration evaluations heading into Q2.",
+      "url": "https://openai.com/news",
+      "tag": "Models"
+    },
+    {
+      "headline": "India AI Impact Summit Momentum Continues After $200B Commitment Headlines",
+      "summary": "Post-summit working groups moved from announcement mode to project scoping across compute, skilling, and sector deployments. Investors and public stakeholders are now prioritizing timelines, governance, and procurement structure. That transition from pledges to execution is the real signal for India\u2019s AI cycle.",
+      "url": "https://indiaai.gov.in/",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Infosys and Anthropic Partnership Enters Enterprise Delivery Planning",
+      "summary": "Infosys began mapping Anthropic-powered assistant use cases to existing enterprise transformation programs. The partnership emphasizes controlled rollout in support, knowledge operations, and internal productivity. Services firms that can package model capability with compliance discipline are positioned to win larger multi-year deals.",
+      "url": "https://www.infosys.com/newsroom/press-releases.html",
+      "tag": "Industry"
+    },
+    {
+      "headline": "TCS Advances OpenAI HyperVault Workstreams as First Named Customer",
+      "summary": "TCS moved into implementation planning around HyperVault-style secure AI data workflows following its first-customer positioning. The commercial importance is less the badge and more the template it creates for regulated clients. If successful, this could become a repeatable enterprise architecture pattern.",
+      "url": "https://www.tcs.com/who-we-are/newsroom",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Enterprise Buyers Shift AI Vendor Scorecards Toward Governance + Reliability",
+      "summary": "Across Tuesday briefings, procurement teams focused on controls, observability, and operational fallback rather than pure benchmark claims. Vendors with fast security review paths and clear auditability are advancing quicker through decision gates. Product-market fit in AI is increasingly measured by deployability.",
+      "url": "https://blogs.microsoft.com/",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Google and Microsoft cloud partners both highlighted new enterprise patterns for managing multi-model cost and latency.",
+      "url": "https://cloud.google.com/blog"
+    },
+    {
+      "text": "Anthropic-focused implementation partners published fresh guardrail templates for customer support automation.",
+      "url": "https://www.anthropic.com/news"
+    },
+    {
+      "text": "Developer teams shared early GPT-5.4 computer-use sandbox patterns to reduce risky autonomous actions.",
+      "url": "https://platform.openai.com/docs"
+    },
+    {
+      "text": "AWS Bedrock ecosystem updates emphasized monitoring and policy tooling for regulated deployments.",
+      "url": "https://aws.amazon.com/blogs/machine-learning/"
+    },
+    {
+      "text": "GitHub Copilot enterprise admins pushed tighter workflow controls as agentic coding usage increased.",
+      "url": "https://github.blog"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India AI Impact Summit follow-up committees began publishing implementation tracks for compute and public-service AI pilots.",
+      "url": "https://indiaai.gov.in/"
+    },
+    {
+      "text": "Infosys outlined near-term client programs linked to its Anthropic collaboration.",
+      "url": "https://www.infosys.com/newsroom/press-releases.html"
+    },
+    {
+      "text": "TCS signaled initial architecture pathways for secure enterprise deployments tied to OpenAI HyperVault workflows.",
+      "url": "https://www.tcs.com/who-we-are/newsroom"
+    },
+    {
+      "text": "Indian startup accelerators reported stronger inbound interest in B2B AI ops tooling after summit week.",
+      "url": "https://www.meity.gov.in/"
+    },
+    {
+      "text": "Sector pilots in banking and healthcare prioritized audit-ready copilots over broad public beta launches.",
+      "url": "https://www.niti.gov.in/"
+    }
+  ],
+  "closing_insight": "Tuesday underscored the real differentiator in AI: who can deploy safely and scale outcomes fastest."
+}
