@@ -148,7 +148,7 @@ def extract_json(text: str) -> str:
 def generate(client: anthropic.Anthropic, prompt: str, label: str) -> dict:
     print(f"  Generating {label} edition...")
     with client.messages.stream(
-        model="claude-opus-4-6",
+        model="claude-opus-4-7",
         max_tokens=16000,
         thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
