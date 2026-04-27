@@ -268,6 +268,38 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .op-tldr-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #8b949e; min-width: 5rem; margin-top: 0.15rem; }
 .op-tldr-text  { font-size: 0.88rem; color: #c9d1d9; line-height: 1.55; }
 
+.tool-card {
+    background: #0d1117;
+    border: 1px solid #21262d;
+    border-left: 3px solid #f78166;
+    border-radius: 10px;
+    padding: 0.85rem 1.2rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: border-color 0.2s;
+}
+.tool-card:hover { border-color: #f78166; border-left-color: #f78166; }
+.tool-maker-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #f78166;
+    background: #2d1a14;
+    border-radius: 4px;
+    padding: 0.15rem 0.45rem;
+    white-space: nowrap;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+.tool-body { flex: 1; min-width: 0; }
+.tool-name { font-size: 0.92rem; font-weight: 700; color: #e6edf3; margin-bottom: 0.25rem; }
+.tool-what { font-size: 0.84rem; color: #8b949e; line-height: 1.55; }
+.tool-link a { font-size: 0.78rem; color: #58a6ff; text-decoration: none; white-space: nowrap; }
+.tool-link a:hover { text-decoration: underline; }
+
 .empty-state { text-align: center; padding: 5rem 2rem; color: #8b949e; }
 .empty-state .icon { font-size: 3.5rem; margin-bottom: 1rem; }
 .empty-state h2 { color: #e6edf3; font-weight: 700; margin-bottom: 0.5rem; }
@@ -339,6 +371,23 @@ def load_operator(date_str=None):
         with open(LOCAL_OP_FALLBACK) as f:
             return json.load(f)
     return None
+
+def render_tool(tool):
+    name  = tool.get("name", "")
+    maker = tool.get("maker", "")
+    what  = tool.get("what", "")
+    url   = tool.get("url", "")
+    link_html = f'<div class="tool-link"><a href="{url}" target="_blank">↗</a></div>' if url else ""
+    st.markdown(f"""
+    <div class="tool-card">
+      <div class="tool-maker-badge">{maker}</div>
+      <div class="tool-body">
+        <div class="tool-name">{name}</div>
+        <div class="tool-what">{what}</div>
+      </div>
+      {link_html}
+    </div>
+    """, unsafe_allow_html=True)
 
 def tag_html(tag):
     if not tag or tag not in TAG_CONFIG:
@@ -606,12 +655,13 @@ if intro:
     st.markdown(f'<div class="intro-banner">{intro}</div>', unsafe_allow_html=True)
 
 # ── Category filter ───────────────────────────────────────────────────────────
-stories      = data.get("top_stories", [])
-quick_hits   = data.get("quick_hits", [])
+stories       = data.get("top_stories", [])
+quick_hits    = data.get("quick_hits", [])
 india_stories = data.get("india_roundup", [])
+tools         = data.get("tools_products", [])
 
-tab_all, tab_global, tab_india, tab_research, tab_funding, tab_policy, tab_models = st.tabs([
-    "🗂️ All", "🌍 Global", "🇮🇳 India", "🧠 Research", "💰 Funding", "🏛️ Policy", "🤖 Models"
+tab_all, tab_global, tab_tools, tab_india, tab_research, tab_funding, tab_policy, tab_models = st.tabs([
+    "🗂️ All", "🌍 Global", "🛠️ Tools", "🇮🇳 India", "🧠 Research", "💰 Funding", "🏛️ Policy", "🤖 Models"
 ])
 
 # ── All tab ───────────────────────────────────────────────────────────────────
@@ -625,6 +675,11 @@ with tab_all:
         st.markdown('<div class="section-label">⚡ &nbsp;Quick Hits</div>', unsafe_allow_html=True)
         for hit in quick_hits:
             render_hit(hit)
+    st.markdown("<br>", unsafe_allow_html=True)
+    if tools:
+        st.markdown('<div class="section-label">🛠️ &nbsp;Tools &amp; Products</div>', unsafe_allow_html=True)
+        for tool in tools:
+            render_tool(tool)
     st.markdown("<br>", unsafe_allow_html=True)
     if india_stories:
         st.markdown('<div class="section-label">🇮🇳 &nbsp;India AI Roundup</div>', unsafe_allow_html=True)
@@ -647,6 +702,18 @@ with tab_global:
         st.markdown('<div class="section-label">⚡ &nbsp;Quick Hits</div>', unsafe_allow_html=True)
         for hit in quick_hits:
             render_hit(hit)
+
+# ── Tools tab ─────────────────────────────────────────────────────────────────
+with tab_tools:
+    if tools:
+        st.markdown('<div class="section-label">🛠️ &nbsp;Tools &amp; Products</div>', unsafe_allow_html=True)
+        for tool in tools:
+            render_tool(tool)
+    else:
+        st.markdown(
+            '<div style="color:#8b949e;padding:2rem 0;text-align:center;">No tools coverage in this edition.</div>',
+            unsafe_allow_html=True,
+        )
 
 # ── India tab ─────────────────────────────────────────────────────────────────
 with tab_india:

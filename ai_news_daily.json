@@ -55,6 +55,38 @@
       "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/"
     }
   ],
+  "tools_products": [
+    {
+      "name": "DeepSeek V4-Pro & V4-Flash",
+      "maker": "DeepSeek",
+      "what": "Open-weight MoE with 1.6T parameters, 1M-token context, Apache 2.0 — priced at roughly one-seventh of GPT-5.5; runs on Huawei Ascend chips.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "ChatGPT Workspace Agents",
+      "maker": "OpenAI",
+      "what": "Enterprise AI agents embedded inside ChatGPT that can autonomously handle multi-step tasks across documents, email, and third-party tools — launched the same day as Google Cloud Next.",
+      "url": "https://releasebot.io/updates/openai"
+    },
+    {
+      "name": "Deep Research Max",
+      "maker": "Google",
+      "what": "Combines public web search with private enterprise data sources in a single AI research agent — available on Google Cloud and Workspace, directly competing with Perplexity Enterprise.",
+      "url": "https://finance.biggo.com/news/202604240158_Google_Deep_Research_Max_AI_agents_launch"
+    },
+    {
+      "name": "Gemini Enterprise Agent Platform + A2A Protocol",
+      "maker": "Google",
+      "what": "Rebranded Vertex AI with a 200+ model marketplace and the production-grade Agent2Agent (A2A) cross-platform communication protocol for orchestrating multi-agent enterprise workflows.",
+      "url": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era"
+    },
+    {
+      "name": "CommandCore",
+      "maker": "Arinox AI / KOGO",
+      "what": "India's first sovereign agentic 'AI-in-a-box' — air-gapped NVIDIA-Qualcomm hardware running KOGO OS, shipping from ₹10 lakh/unit to defence, BFSI, and government customers.",
+      "url": "https://asanify.com/blog/news/open-source-frontier-ai-april-25-2026/"
+    }
+  ],
   "india_roundup": [
     {
       "text": "PM Modi's India AI Impact Summit 2026 produced the New Delhi Declaration on AI — a multilateral commitment signed by 20+ heads of state covering AI governance, sovereign infrastructure, and equitable access — positioning India as the Global South's AI policy leader.",

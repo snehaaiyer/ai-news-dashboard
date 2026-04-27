@@ -39,6 +39,10 @@ GENERAL_SCHEMA = """
     {"text": "1–2 sentence item.", "url": "https://..."},
     ... (exactly 5 items)
   ],
+  "tools_products": [
+    {"name": "Tool or product name", "maker": "Company", "what": "One sentence on what it does or what's new today.", "url": "https://..."},
+    ... (exactly 5 items)
+  ],
   "india_roundup": [
     {"text": "1–2 sentence item about AI in India.", "url": "https://..."},
     ... (exactly 5 items)
@@ -108,6 +112,7 @@ Search the web for the most important AI news published in the last 24–48 hour
 Rules:
 - top_stories: 5 significant global AI stories. Each needs a real URL and a tag (Models, Research, Funding, Policy, or Industry).
 - quick_hits: 5 shorter items with real URLs.
+- tools_products: 5 noteworthy AI tools or product launches/updates today. Each needs a name, maker, one-sentence "what", and a real URL.
 - india_roundup: 5 India-specific AI items with real URLs.
 - generated_at must be exactly: "{generated_at}"
 - Return ONLY the raw JSON — no markdown fences, no preamble."""
