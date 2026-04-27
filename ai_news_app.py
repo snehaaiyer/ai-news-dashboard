@@ -444,7 +444,7 @@ with st.expander("📅 Browse Archive"):
 if is_archive:
     st.markdown(
         f'<div class="archive-banner">📂 Viewing archive for <strong>{selected_date.strftime("%B %-d, %Y")}</strong> — '
-        f'open the sidebar to change date.</div>',
+        f'use the Browse Archive picker above to change date.</div>',
         unsafe_allow_html=True,
     )
 
