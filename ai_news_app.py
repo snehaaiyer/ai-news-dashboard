@@ -1,8 +1,10 @@
 import streamlit as st
 import json
 import requests
-from datetime import datetime, date
+from datetime import datetime, date, timezone, timedelta
 from pathlib import Path
+
+IST = timezone(timedelta(hours=5, minutes=30))
 
 # ── Config ────────────────────────────────────────────────────────────────────
 GITHUB_USER   = "snehaaiyer"
@@ -339,7 +341,7 @@ def format_generated_at(iso_str):
         return iso_str
 
 def today_display():
-    now = datetime.now()
+    now = datetime.now(IST)
     return now.strftime("%b %-d"), now.strftime("%A")
 
 def render_story(story, idx):
@@ -379,7 +381,7 @@ def render_hit(hit, india=False):
     """, unsafe_allow_html=True)
 
 # ── Archive date state (must be resolved before data loading) ─────────────────
-today_date    = datetime.now().date()
+today_date    = datetime.now(IST).date()
 archive_start = date(2026, 4, 8)
 if "archive_date" not in st.session_state:
     st.session_state["archive_date"] = today_date

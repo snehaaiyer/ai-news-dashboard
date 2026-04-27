@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-04-16T08:00:00",
+  "intro": "Wednesday's lead is OpenAI launching GPT-Rosalind — its first purpose-built life sciences model, tuned for drug discovery and genomics with 50+ scientific tool integrations and partners including Amgen and Moderna. Stanford HAI's 2026 AI Index landed with a stark headline: China has 'nearly erased' the US AI lead, with the benchmark gap at just 2.7% while US AI talent migration dropped 89% since 2017. Enterprise AI agents crossed 79% production adoption as ADP deployed its Payroll Variance agent to 40+ countries.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Launches GPT-Rosalind — First Purpose-Built AI Model for Drug Discovery and Life Sciences",
+      "summary": "OpenAI introduced GPT-Rosalind on April 16, a frontier reasoning model built for biology, drug discovery, and genomics. A dedicated Life Sciences Codex plugin connects to 50+ scientific tools and data sources covering protein structure, functional genomics, biochemistry, and clinical evidence. Early partners include Amgen, Moderna, the Allen Institute, and Thermo Fisher Scientific; the model is available via trusted access in ChatGPT, Codex, and the API.",
+      "url": "https://openai.com/index/introducing-gpt-rosalind/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Stanford AI Index 2026: China Has 'Nearly Erased' the US AI Lead — Gap Now Just 2.7%",
+      "summary": "Fortune's coverage of Stanford HAI's 2026 AI Index found China's benchmark gap to the US has collapsed from 1,300+ Arena points in 2023 to just 39 points today — a 2.7% difference. China achieved this at a fraction of US AI investment while producing more AI citation volume (20.6% vs 12.6%). Most alarming: the number of AI scholars moving to the US dropped 89% since 2017, with a further 80% acceleration in the past year alone.",
+      "url": "https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/",
+      "tag": "Research"
+    },
+    {
+      "headline": "MIT Technology Review: Treating Enterprise AI as an Operating Layer — The New Competitive Moat",
+      "summary": "A major MIT Technology Review analysis published April 16 argues the durable AI advantage is structural, not model-based — companies that embed AI as an operating layer (with proprietary data flywheel, feedback loops, and governance) will compound their lead over companies treating AI as an on-demand API service. The article frames general-purpose model APIs as largely stateless and commoditisable; the operating layer beneath them as where real value accumulates.",
+      "url": "https://www.technologyreview.com/2026/04/16/1135554/treating-enterprise-ai-as-an-operating-layer/",
+      "tag": "Research"
+    },
+    {
+      "headline": "ADP Deploys Payroll Variance AI Agent to 40+ Countries — Enterprise Agents Hit 79% Production Adoption",
+      "summary": "ADP launched its Payroll Variance agent to all enterprise clients globally, enabling natural-language queries over payroll data (e.g. 'which employees had a net pay variance above 10%?') with automated remediation suggestions before errors process. A concurrent survey of 1,900 global IT leaders found 79% of enterprises run AI agents in production and 96% have agents deployed in some form — crossing the threshold from pilot to line-of-business infrastructure.",
+      "url": "https://asanify.com/blog/news/ai-payroll-agents-april-16-2026/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Anthropic Claude Opus 4.7 Goes Live Across Claude, API, Amazon, Google, and Microsoft",
+      "summary": "Anthropic officially released Claude Opus 4.7 across all Claude products, the official API, and cloud deployments on Amazon Bedrock, Google Vertex AI, and Azure AI. The release puts Anthropic's most capable model — which leads Stanford's Arena leaderboard with a 2.7% gap over China's best — into production on every major cloud platform simultaneously, completing Anthropic's multi-cloud distribution strategy.",
+      "url": "https://www.anthropic.com/news",
+      "tag": "Models"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "OpenAI also published research on accelerating the cyber defense ecosystem alongside the GPT-Rosalind launch — a rare dual-day release covering both life sciences and cybersecurity verticals.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "text": "The Global Quantum + AI Challenge officially opened for applications on April 16, awarding $200,000 across five enterprise use-case challenges with a $40,000 prize per category.",
+      "url": "https://thequantuminsider.com/2026/04/16/2026-global-quantum-and-ai-challenge-launches-to-accelerate-practical-enterprise-use-cases/"
+    },
+    {
+      "text": "Microsoft cut the Copilot enterprise discount threshold from 1,500 to 1,000 seats, making the 40% bundle pricing available to mid-market customers for the first time.",
+      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april"
+    },
+    {
+      "text": "Stanford's AI Index found AI investment hit $581B in 2025, with 59% of Americans now optimistic about AI — up from 44% two years earlier — while trust between AI insiders and the general public continues to diverge.",
+      "url": "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report"
+    },
+    {
+      "text": "ADP created a dedicated AI agent marketplace within ADP Marketplace — giving 1.1 million client companies across 140 countries access to third-party agents for the full employee lifecycle.",
+      "url": "https://www.adp.com/what-we-offer/ai-solutions/ai-agents.aspx"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India's AI job market is growing at 34% annually in 2026, with generative AI architects, MLOps engineers, and AI infrastructure leads commanding the highest salaries — driven by the rapid expansion of Global Capability Centers building innovation hubs in India.",
+      "url": "https://www.intentflowai.in/education-and-jobs/ai-jobs-demand-in-india-why-2026-is-the-biggest-hiring-wave-yet/"
+    },
+    {
+      "text": "Despite AI automation compressing traditional IT roles, India's overall IT workforce grew to 59 lakh in 2026 according to NASSCOM — with Global Capability Centers absorbing displaced talent into AI-focused roles faster than headcount declines at legacy service lines.",
+      "url": "https://www.businessworld.in/article/indian-it-heads-into-2026-as-ai-scales-up-reshaping-spending-talent-and-delivery-models-585533"
+    },
+    {
+      "text": "Stanford's AI Index 2026 notes China is matching US benchmark performance at 23x less investment — a frugal-AI dynamic Indian researchers and the IndiaAI Mission are studying as a template for sovereign model development on constrained GPU budgets.",
+      "url": "https://thenextweb.com/news/stanford-ai-index-2026-china-us-performance-gap"
+    },
+    {
+      "text": "India's NASSCOM AI Code Sarathi Engineer-phase hackathon entered its final application stretch — part of a national drive to create the world's largest pipeline of operational AI engineers for both domestic deployment and global talent export.",
+      "url": "https://impact.indiaai.gov.in/home/pre-summit-events"
+    },
+    {
+      "text": "Infosys unveiled its AI First Value Framework ahead of Q4 FY26 results (April 23), positioning Topaz + Cobalt as the company's flagship enterprise AI stack and claiming unique access to a $300B+ AI services opportunity.",
+      "url": "https://www.infosys.com/newsroom/press-releases/2026/unveils-ai-first-value-framework.html"
+    }
+  ],
+  "closing_insight": "GPT-Rosalind launching the same week Stanford confirmed China has nearly closed the US AI gap is not a coincidence in timing — OpenAI is signalling that the US lead will be defended through vertical specialisation and domain moats, not raw benchmark supremacy that China can replicate on a fraction of the compute budget."
+}
