@@ -290,38 +290,52 @@ div[aria-selected="true"] { color: #58a6ff !important; border-bottom: 2px solid 
 """, unsafe_allow_html=True)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-@st.cache_data(ttl=60)
-def load_news(date_str=None):
-    """Load general news for today (date_str=None) or a past date (YYYY-MM-DD)."""
-    if date_str:
-        url = f"{ARCHIVE_BASE_URL}/{date_str}.json"
-    else:
-        url = GITHUB_RAW_URL
+@st.cache_data(ttl=3600)
+def _load_archive_news(date_str):
+    """Cache archive editions for 1 hour — they never change."""
     try:
-        resp = requests.get(url, timeout=8)
+        resp = requests.get(f"{ARCHIVE_BASE_URL}/{date_str}.json", timeout=8)
         if resp.status_code == 200:
             return resp.json(), "github"
     except Exception:
         pass
-    if date_str is None and LOCAL_FALLBACK.exists():
-        with open(LOCAL_FALLBACK) as f:
-            return json.load(f), "local"
     return None, None
 
-@st.cache_data(ttl=60)
-def load_operator(date_str=None):
-    """Load operator edition for today or a past date."""
-    if date_str:
-        url = f"{ARCHIVE_BASE_URL}/{date_str}-operator.json"
-    else:
-        url = OPERATOR_RAW_URL
+@st.cache_data(ttl=3600)
+def _load_archive_operator(date_str):
     try:
-        resp = requests.get(url, timeout=8)
+        resp = requests.get(f"{ARCHIVE_BASE_URL}/{date_str}-operator.json", timeout=8)
         if resp.status_code == 200:
             return resp.json()
     except Exception:
         pass
-    if date_str is None and LOCAL_OP_FALLBACK.exists():
+    return None
+
+def load_news(date_str=None):
+    """Always fetch live data fresh; serve archive from cache."""
+    if date_str:
+        return _load_archive_news(date_str)
+    try:
+        resp = requests.get(GITHUB_RAW_URL, timeout=8)
+        if resp.status_code == 200:
+            return resp.json(), "github"
+    except Exception:
+        pass
+    if LOCAL_FALLBACK.exists():
+        with open(LOCAL_FALLBACK) as f:
+            return json.load(f), "local"
+    return None, None
+
+def load_operator(date_str=None):
+    if date_str:
+        return _load_archive_operator(date_str)
+    try:
+        resp = requests.get(OPERATOR_RAW_URL, timeout=8)
+        if resp.status_code == 200:
+            return resp.json()
+    except Exception:
+        pass
+    if LOCAL_OP_FALLBACK.exists():
         with open(LOCAL_OP_FALLBACK) as f:
             return json.load(f)
     return None
@@ -395,8 +409,6 @@ if "edition" not in st.session_state:
 is_operator = st.session_state["edition"] == "💼 Operator Edition"
 
 # ── Load data ─────────────────────────────────────────────────────────────────
-st.markdown('<meta http-equiv="refresh" content="60">', unsafe_allow_html=True)
-
 data, source   = load_news(date_str)
 op_data        = load_operator(date_str)
 day_short, weekday = today_display()
