@@ -288,7 +288,7 @@ div[aria-selected="true"] { color: #58a6ff !important; border-bottom: 2px solid 
 """, unsafe_allow_html=True)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=60)
 def load_news(date_str=None):
     """Load general news for today (date_str=None) or a past date (YYYY-MM-DD)."""
     if date_str:
@@ -306,7 +306,7 @@ def load_news(date_str=None):
             return json.load(f), "local"
     return None, None
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=60)
 def load_operator(date_str=None):
     """Load operator edition for today or a past date."""
     if date_str:
@@ -393,7 +393,7 @@ if "edition" not in st.session_state:
 is_operator = st.session_state["edition"] == "💼 Operator Edition"
 
 # ── Load data ─────────────────────────────────────────────────────────────────
-st.markdown('<meta http-equiv="refresh" content="300">', unsafe_allow_html=True)
+st.markdown('<meta http-equiv="refresh" content="60">', unsafe_allow_html=True)
 
 data, source   = load_news(date_str)
 op_data        = load_operator(date_str)
