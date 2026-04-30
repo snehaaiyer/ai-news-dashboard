@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-24T08:00:00",
+  "intro": "Friday delivers the biggest single capital event in AI history: Google is committing up to $40 billion to Anthropic at a $350 billion valuation — $10B in cash now, $30B contingent on milestones, plus five gigawatts of Google Cloud compute over five years. Hours later, DeepSeek dropped V4: a 1.6 trillion-parameter open-weight model at roughly one-seventh the cost of GPT-5.5. In New Delhi, PM Modi inaugurated the India AI Impact Summit 2026 with 500+ global leaders and the signing of the New Delhi Declaration on AI.",
+  "top_stories": [
+    {
+      "headline": "Google to Invest Up to $40 Billion in Anthropic — Largest Single AI Investment in History",
+      "summary": "Google announced a landmark investment in Anthropic: $10 billion in cash immediately at a $350 billion valuation, with up to $30 billion more contingent on performance milestones, plus a commitment of five gigawatts of Google Cloud compute over five years. Anthropic's annualised revenue has surpassed $30 billion — up from $9 billion at the end of 2025 — making it the fastest-growing AI company on record. The deal caps a week in which Google also unveiled the Gemini Enterprise Agent Platform and A2A protocol at Cloud Next, cementing its position as the infrastructure backbone for enterprise AI regardless of which model customers choose.",
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "tag": "Funding"
+    },
+    {
+      "headline": "DeepSeek V4 Ships Hours After GPT-5.5 — 1.6T Apache 2.0 at One-Seventh the Cost",
+      "summary": "DeepSeek released V4-Pro and V4-Flash on Friday, hours after OpenAI released GPT-5.5. V4-Pro is a 1.6 trillion-parameter mixture-of-experts model (49B active parameters) with a 1M-token context window, released under Apache 2.0, priced at roughly one-seventh of GPT-5.5 ($5/M input). The model runs on Huawei Ascend chips, underscoring China's push for AI infrastructure independence. Performance trails GPT-5.5 and Claude Opus 4.7 on most benchmarks by an estimated 3–6 month development gap — but the cost-to-capability ratio is the most competitive in any open-weight model to date.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
+      "tag": "Models"
+    },
+    {
+      "headline": "Anthropic ARR Crosses $30 Billion — Fastest Revenue Ramp in AI History",
+      "summary": "Concurrent with Google's investment announcement, Anthropic disclosed that its annualised recurring revenue has exceeded $30 billion — a jump from $9 billion at the end of 2025 representing a more than 3× increase in under four months. The growth is driven primarily by Claude Opus 4.7 adoption across Amazon Bedrock, Google Vertex AI, and Azure, and by the expansion of Claude Enterprise accounts in financial services, healthcare, and government. The $30B ARR figure positions Anthropic as the third-largest AI software company by revenue behind only Microsoft Copilot and OpenAI.",
+      "url": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html",
+      "tag": "Funding"
+    },
+    {
+      "headline": "PM Modi Inaugurates India AI Impact Summit 2026 — New Delhi Declaration Signed by 20+ Heads of State",
+      "summary": "Prime Minister Narendra Modi opened the India AI Impact Summit 2026 at Bharat Mandapam, New Delhi, with more than 500 global attendees including 100 CEOs, 20+ heads of state, and representatives from every major AI company. The New Delhi Declaration on AI was signed by the attending heads of state, covering commitments to AI governance, sovereign infrastructure, and equitable access. The IndiaAI Mission used the Summit to announce a shortlist of 12 organisations — including Sarvam AI, IIT Bombay's BharatGen, and Tech Mahindra — to build indigenous foundational AI models with government compute and funding support.",
+      "url": "https://edunovations.com/currentaffairs/national/india-ai-impact-summit-2026-3/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "VC Deployed $242B Into AI in Q1 2026 — 58% of All April Deals Involve AI or ML",
+      "summary": "New venture capital data shows $242 billion deployed into AI companies in Q1 2026, with 1,314 deals tracked in April alone — of which 764 (58%) involved AI or ML companies. The numbers confirm that the AI funding supercycle that began in late 2024 is accelerating rather than plateauing. Infrastructure, enterprise software, and vertical AI agents are the three highest-conviction investment themes, with average deal sizes in enterprise AI growing 40%+ year-over-year as investors compete for limited allocations in high-conviction companies.",
+      "url": "https://inforcapital.com/blog/2026-04-25-the-ai-funding-supercycle-1314-deals-in-april-show-where-real-capital-is-going/",
+      "tag": "Funding"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Amazon has separately committed up to $25 billion to Anthropic — meaning Anthropic now has up to $65 billion in committed external capital from just two investors, making it the most well-capitalised AI model company that is not a hyperscaler.",
+      "url": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html"
+    },
+    {
+      "text": "DeepSeek V4 runs on Huawei Ascend 910B chips rather than Nvidia GPUs — a deliberate infrastructure independence signal from China's AI ecosystem as US export controls on Nvidia H100/H200 chips tighten.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "Tencent and Alibaba are reportedly in advanced talks to take stakes in DeepSeek — potentially in a first external funding round — which would convert DeepSeek from an independent lab into a jointly-backed Chinese national AI champion.",
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/"
+    },
+    {
+      "text": "Google's five-gigawatt compute commitment to Anthropic represents more than three years of Google's current annual data centre power capacity — the largest cloud infrastructure pledge in history measured by power commitment.",
+      "url": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era"
+    },
+    {
+      "text": "IndiaAI Mission shortlisted 12 organisations to develop indigenous foundational models: Sarvam AI, Soket AI, Gnani AI, IIT Bombay's BharatGen, Fractal Analytics, Tech Mahindra Maker's Lab, and six others — each receiving government compute and funding under the IndiaAI Innovation Challenge 2026.",
+      "url": "https://ddnews.gov.in/en/indiaai-mission-shortlists-12-teams-for-indigenous-ai-models-minister-updates-rajya-sabha/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "DeepSeek V4-Pro",
+      "maker": "DeepSeek",
+      "what": "Open-weight MoE model with 1.6T parameters (49B active), 1M-token context window, Apache 2.0 licence — priced at roughly one-seventh of GPT-5.5 and running on Huawei Ascend chips.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "DeepSeek V4-Flash",
+      "maker": "DeepSeek",
+      "what": "Faster, lower-cost variant of DeepSeek V4-Pro optimised for high-throughput inference tasks — Apache 2.0, designed for enterprises needing open-weight frontier models at sub-GPT-5.5 pricing.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "Gemini Enterprise Agent Platform",
+      "maker": "Google",
+      "what": "Rebranded Vertex AI with 200+ model marketplace, no-code Agent Designer, and production-grade A2A protocol — now Google Cloud's primary enterprise AI product backed by $40B Anthropic investment.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Claude Opus 4.7 on Bedrock/Vertex",
+      "maker": "Anthropic",
+      "what": "Primary driver of Anthropic's $30B ARR — available via Amazon Bedrock, Google Vertex AI, and Azure with Google's five-gigawatt compute pledge ensuring availability at scale.",
+      "url": "https://www.anthropic.com/news/claude-opus-4-7"
+    },
+    {
+      "name": "GPT-Rosalind",
+      "maker": "OpenAI",
+      "what": "Limited-access life sciences model for drug discovery, clinical trial analysis, and biomedical research — announced alongside the Codex GitHub Plugin expansion for specialist enterprise verticals.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "PM Modi opened the India AI Impact Summit at Bharat Mandapam with 500+ global leaders — the Summit produced the New Delhi Declaration on AI, signed by 20+ heads of state, covering governance, sovereign infrastructure, and equitable access commitments.",
+      "url": "https://edunovations.com/currentaffairs/national/india-ai-impact-summit-2026-3/"
+    },
+    {
+      "text": "IndiaAI Mission shortlisted 12 organisations to develop indigenous foundational models, including Sarvam AI, IIT Bombay's BharatGen, and Tech Mahindra Maker's Lab — each receiving government compute and funding under the IndiaAI Innovation Challenge 2026.",
+      "url": "https://ddnews.gov.in/en/indiaai-mission-shortlists-12-teams-for-indigenous-ai-models-minister-updates-rajya-sabha/"
+    },
+    {
+      "text": "NVIDIA deepened its IndiaAI Mission partnership at the Summit — committing GPU infrastructure and developer tooling to all 12 shortlisted model-building organisations, expanding India presence from data centres into the sovereign model layer.",
+      "url": "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/"
+    },
+    {
+      "text": "Google's $15 billion AI infrastructure commitment for India (announced at Cloud Next) was reinforced at the India AI Impact Summit — covering data centres, sovereign cloud capacity, and developer tooling for the IndiaAI Mission.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-india/"
+    },
+    {
+      "text": "India's AI and DPDP regulatory framework is accelerating — mandatory AI content labelling and DPDP Act enforcement timelines discussed at the Summit, with companies told to expect enforcement rules in Q2 2026.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    }
+  ],
+  "closing_insight": "Google committing $40 billion to Anthropic on the same day DeepSeek ships an open-weight frontier model at one-seventh the cost of GPT-5.5 is the starkest compression of the AI market's two simultaneous forces: capital concentration at the top and cost destruction at the open-source layer. Both forces are accelerating."
+}

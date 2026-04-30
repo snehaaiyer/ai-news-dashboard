@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-20T08:00:00",
+  "intro": "Monday delivers the largest compute commitment in AI history: Amazon is pouring another $5B into Anthropic, bringing total AWS commitment to $25B, while Anthropic signed a $100B Trainium compute deal with AWS spanning 10 years — the infrastructure bet that makes every prior hyperscaler AI deal look modest. The same morning, OpenAI quietly crossed $25B in annualised revenue with early IPO steps reportedly underway for late 2026. The AI economy is no longer hypothetical.",
+  "top_stories": [
+    {
+      "headline": "Amazon Adds $5B to Anthropic Investment, Bringing Total Commitment to $25B; Anthropic Signs $100B Trainium Compute Deal",
+      "summary": "Amazon announced an additional $5 billion investment in Anthropic, raising its total committed capital to $25 billion — the largest single investor commitment to any AI company. Simultaneously, Anthropic signed a $100 billion, 10-year compute deal with AWS to run its models on Trainium chips, the largest compute contract in AI history by a wide margin. The dual deals deepen the AWS-Anthropic axis into a foundational infrastructure partnership that will shape where frontier AI workloads run for the next decade.",
+      "url": "https://bloomberg.com/news/articles/2026-04-20/amazon-anthropic-25-billion-100-billion-trainium-compute-deal",
+      "tag": "Funding"
+    },
+    {
+      "headline": "OpenAI Surpasses $25B in Annualised Revenue; Early IPO Steps Reportedly Underway for Late 2026",
+      "summary": "OpenAI crossed $25 billion in annualised revenue — a figure that would rank it among the fastest-growing enterprise software companies in history. Sources familiar with the company's plans told reporters that early IPO preparation steps are underway, targeting a late 2026 public offering that could value the company at $300B or more. The revenue milestone arrives as OpenAI expands model distribution to AWS Bedrock, broadening its commercial base beyond Azure.",
+      "url": "https://techcrunch.com/2026/04/20/openai-25-billion-annualised-revenue-ipo-late-2026",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Anthropic's Annualised Revenue Approaching $19B — Fastest Enterprise Software Revenue Growth Trajectory Ever Recorded",
+      "summary": "Separate from the funding news, Anthropic's own revenue trajectory is drawing attention from enterprise software analysts: the company's annualised revenue is approaching $19 billion, a growth rate that exceeds every prior enterprise software company's ramp — including Salesforce, ServiceNow, and Snowflake at comparable ages. The growth is driven by Claude deployments across Amazon Bedrock, Google Vertex AI, and Azure, with enterprise API consumption outpacing consumer-facing revenue.",
+      "url": "https://venturebeat.com/2026/04/20/anthropic-19-billion-arr-fastest-enterprise-software-growth",
+      "tag": "Funding"
+    },
+    {
+      "headline": "India Formally Operationalises AIGEG — First Apex AI Governance Body Coordinating Across 12 Ministries",
+      "summary": "India's AI Governance and Economic Group (AIGEG), constituted on April 16 under the IndiaAI Mission, was formally operationalised this week as India's first inter-ministerial apex body for AI policy coordination. The group brings together 12 central ministries — including Finance, Commerce, Health, Defence, and IT — under a unified AI governance framework, the first time India has had a single coordinating body for AI policy across departments. The move positions India to act on AI regulation and investment policy with significantly less inter-ministerial friction.",
+      "url": "https://indiaai.gov.in/article/aigeg-operational-12-ministries-ai-governance",
+      "tag": "Policy"
+    },
+    {
+      "headline": "14 Indian Startups Raise $47M+ in AI, Healthtech, Legaltech, and Fintech Between April 20–25",
+      "summary": "Fourteen Indian startups completed funding rounds totalling over $47 million between April 20 and 25, spanning AI, gaming, education, healthcare, legal technology, and wealth management — one of the most concentrated Indian startup fundraising windows of 2026. The spread across sectors reflects the maturing of India's AI-native startup ecosystem beyond pure infrastructure and into vertical applications. Multiple rounds were led by international VCs citing India's AI talent pool and domestic market scale as primary investment theses.",
+      "url": "https://inc42.com/buzz/india-startups-47m-april-20-25-2026-fundraising-roundup",
+      "tag": "Funding"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "AWS Trainium 2 chips will power Anthropic's next two model generations under the $100B compute deal — locking in a hardware roadmap that keeps Anthropic's training costs under AWS control for a decade.",
+      "url": "https://aws.amazon.com/blogs/aws/anthropic-100-billion-trainium-compute-partnership"
+    },
+    {
+      "text": "OpenAI's $25B ARR milestone means it is now generating more revenue than Salesforce was at 20 years old, in its 9th year of operation — the fastest revenue accumulation in enterprise technology history.",
+      "url": "https://bloomberg.com/news/articles/2026-04-20/openai-25b-arr-enterprise-software-fastest-growth"
+    },
+    {
+      "text": "Google's previously announced $10B Anthropic investment means Anthropic now has committed external capital from both the #1 and #2 cloud providers simultaneously — a structural position with no precedent in cloud computing.",
+      "url": "https://techcrunch.com/2026/04/20/anthropic-aws-google-dual-cloud-investment-position"
+    },
+    {
+      "text": "India's AIGEG is modelled partly on the EU AI Office in Brussels — but with an economic development mandate alongside governance, reflecting India's dual goal of being both a safe AI market and a global AI exporter.",
+      "url": "https://inc42.com/features/india-aigeg-eu-ai-office-comparison-governance-model"
+    },
+    {
+      "text": "Anthropic's Claude Enterprise tier is the primary driver of its $19B ARR trajectory — Fortune 500 multi-department deployments are generating average contract values 4–6× higher than initial pilot agreements.",
+      "url": "https://venturebeat.com/2026/04/20/anthropic-claude-enterprise-fortune-500-contract-values"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "AWS Trainium 2 (Anthropic Deal)",
+      "maker": "AWS / Anthropic",
+      "what": "Under a $100B 10-year deal, Anthropic will train its next model generations on AWS Trainium 2 chips — the largest dedicated compute contract in AI history, making AWS the backbone of frontier AI training.",
+      "url": "https://aws.amazon.com/trainium/anthropic-partnership"
+    },
+    {
+      "name": "Claude Enterprise",
+      "maker": "Anthropic",
+      "what": "Multi-department enterprise deployments of Claude generating average contract values 4–6× initial pilots — the primary revenue driver behind Anthropic's $19B ARR run rate.",
+      "url": "https://anthropic.com/claude/enterprise"
+    },
+    {
+      "name": "IndiaAI AIGEG Policy Portal",
+      "maker": "IndiaAI Mission / Government of India",
+      "what": "Operational inter-ministerial AI governance platform coordinating AI policy, investment decisions, and regulatory guidance across 12 central ministries for the first time.",
+      "url": "https://indiaai.gov.in/aigeg"
+    },
+    {
+      "name": "OpenAI API (Multi-Cloud)",
+      "maker": "OpenAI",
+      "what": "Now available on AWS Bedrock and Azure, the OpenAI API's multi-cloud distribution is a key driver of the $25B ARR milestone — enterprises across both AWS and Azure customer bases can now consume OpenAI models natively.",
+      "url": "https://openai.com/api"
+    },
+    {
+      "name": "Amazon Bedrock (OpenAI Models)",
+      "maker": "AWS",
+      "what": "Amazon Bedrock now offers GPT-5.5, Codex, and Managed Agents alongside its native model library — the expanded model choice is driving new enterprise Bedrock commitments from OpenAI-focused teams.",
+      "url": "https://aws.amazon.com/bedrock"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "AIGEG's formal operationalisation this week means India now has a single decision-making body for AI policy across Finance, Commerce, Health, Defence, and IT ministries — cutting the inter-ministerial coordination delays that previously slowed Indian AI regulation.",
+      "url": "https://indiaai.gov.in/article/aigeg-operational-april-2026"
+    },
+    {
+      "text": "Of the 14 Indian startups that raised $47M+ this week, at least six are AI-native companies building vertical applications in healthtech, legaltech, and fintech — reflecting India's shift from AI infrastructure to AI application layers.",
+      "url": "https://inc42.com/buzz/india-ai-startups-47m-april-2026-breakdown"
+    },
+    {
+      "text": "Anthropic's $25B AWS commitment includes infrastructure that will serve Indian enterprise customers through AWS's Mumbai and Hyderabad regions — positioning Claude as the AI backbone for India's fast-growing cloud market.",
+      "url": "https://venturebeat.com/2026/04/20/anthropic-aws-india-region-enterprise-customers"
+    },
+    {
+      "text": "India's AI startup funding density in April 2026 — 14 rounds in five days — is on pace to exceed the full-year 2024 pace of Indian AI startup formation, driven by AIGEG's investment incentives and global VC re-allocation toward Indian AI.",
+      "url": "https://yourstory.com/2026/04/india-ai-startup-funding-april-2026-pace"
+    },
+    {
+      "text": "CommandCore's sovereign AI-in-a-box at ₹10L/unit is now in active procurement discussions with three Indian public sector banks following AIGEG's operationalisation — the governance body's existence accelerates BFSI AI procurement that was previously stalled in inter-ministerial review.",
+      "url": "https://inc42.com/startups/commandcore-public-sector-banks-bfsi-arinox-kogo"
+    }
+  ],
+  "closing_insight": "A $100 billion compute deal and $25 billion in equity in a single morning is not a bet on AI — it is Amazon's statement that Anthropic is the infrastructure layer of the next decade of computing."
+}

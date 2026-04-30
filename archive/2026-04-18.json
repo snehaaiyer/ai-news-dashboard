@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-18T08:00:00",
+  "intro": "Saturday brings a seismic shift in AI distribution: Microsoft and OpenAI formally ended their exclusivity deal, and within 24 hours AWS put GPT-5.5, Codex, and Managed Agents onto Amazon Bedrock — two years of Azure lock-in dissolved overnight. Cursor 3 reinvents the developer IDE around AI agents running in parallel, and Canva AI 2.0 drops at Canva Create 2026, turning a design tool into an agentic platform for 220 million users.",
+  "top_stories": [
+    {
+      "headline": "Microsoft-OpenAI Exclusivity Ends; AWS Gets GPT-5.5 and Codex on Bedrock Immediately",
+      "summary": "Microsoft and OpenAI formally dissolved their cloud exclusivity arrangement, shattering two years of Azure-only distribution. Within one day, AWS rolled out GPT-5.5, Codex, and Managed Agents on Amazon Bedrock in limited preview — the first time OpenAI models are available natively outside Azure. The move reshapes enterprise cloud AI procurement and puts AWS in direct competition with Azure for OpenAI workloads.",
+      "url": "https://techcrunch.com/2026/04/18/microsoft-openai-exclusivity-ends-aws-bedrock-gpt55",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Cursor 3 Launches: Agent-First IDE Runs Parallel AI Agents Across Local, SSH, and Cloud",
+      "summary": "Cursor 3 is the biggest release since the team forked VS Code, introducing an entirely new Agents Window that lets developers assign complete coding tasks to multiple AI agents running simultaneously across local machines, SSH connections, and cloud environments. The shift from copilot-style autocomplete to full agentic task delegation marks a fundamental change in how software is written. Early access developers report completing multi-hour refactors in under 20 minutes.",
+      "url": "https://venturebeat.com/2026/04/18/cursor-3-launch-agent-first-ide-parallel-agents",
+      "tag": "Models"
+    },
+    {
+      "headline": "App Store New App Releases Up 104% Year-Over-Year in April, Driven by AI-Native Apps",
+      "summary": "TechCrunch analysis of App Store data shows new app releases have more than doubled year-over-year in April 2026, with AI-native applications driving the surge. Worldwide releases were already up 60% in Q1 2026 before April's acceleration. AI companion apps, productivity tools, and coding assistants are the three leading categories by new release volume.",
+      "url": "https://techcrunch.com/2026/04/18/app-store-releases-up-104-percent-ai-native-apps",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Canva AI 2.0 Debuts at Canva Create 2026 with Memory, Layered Object Intelligence, and Agent Designer",
+      "summary": "Canva unveiled AI 2.0 at its annual Create conference, introducing Memory Library (persistent brand and user context), Layered Object Intelligence (AI-native understanding of design elements), Connectors (integration with third-party data sources), and a no-code Agent Designer. With 220 million users, the rollout is the largest AI design platform upgrade in history. Canva is explicitly positioning itself as an agentic creative platform, not just a design tool.",
+      "url": "https://venturebeat.com/2026/04/18/canva-ai-2-launch-canva-create-2026-memory-agents",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Midjourney V8.1 Cuts HD Mode Costs by 67%, Doubles Speed",
+      "summary": "Midjourney shipped V8.1 with HD mode running 3× faster and 3× cheaper than V8.0, and standard resolution 50% faster at 25% lower cost. The update is explicitly focused on stability and production reliability rather than capability jumps. The dramatic price reduction in HD mode makes high-resolution image generation economically viable for high-volume commercial use cases for the first time.",
+      "url": "https://axios.com/2026/04/18/midjourney-v81-hd-mode-faster-cheaper",
+      "tag": "Models"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "OpenAI's Codex model is now available on Amazon Bedrock in limited preview alongside GPT-5.5, marking the first time an OpenAI coding model is accessible outside Azure.",
+      "url": "https://aws.amazon.com/blogs/aws/openai-gpt55-codex-managed-agents-amazon-bedrock"
+    },
+    {
+      "text": "Cursor's new Agents Window supports running up to 10 parallel agents simultaneously, with each agent maintaining its own context window and tool access.",
+      "url": "https://cursor.sh/blog/cursor-3-agents-window"
+    },
+    {
+      "text": "Canva's no-code Agent Designer allows non-technical users to build multi-step AI workflows inside Canva without writing a single line of code.",
+      "url": "https://techcrunch.com/2026/04/18/canva-ai-agent-designer-no-code"
+    },
+    {
+      "text": "Midjourney's V8.1 stability update follows a series of V8 quality complaints from professional users and marks a deliberate pivot toward production-grade reliability.",
+      "url": "https://venturebeat.com/2026/04/18/midjourney-v81-stability-production"
+    },
+    {
+      "text": "Apple's App Store processed more AI-native app submissions in April 2026's first two weeks than in the entirety of Q3 2025.",
+      "url": "https://techcrunch.com/2026/04/18/apple-app-store-ai-native-submissions-record"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Cursor 3",
+      "maker": "Anysphere",
+      "what": "Agent-first IDE that runs multiple AI coding agents in parallel across local, SSH, and cloud environments via a new Agents Window.",
+      "url": "https://cursor.sh/changelog/cursor-3"
+    },
+    {
+      "name": "Canva AI 2.0",
+      "maker": "Canva",
+      "what": "Upgraded AI platform with Memory Library, Layered Object Intelligence, external Connectors, and a no-code Agent Designer for building custom AI workflows.",
+      "url": "https://canva.com/create-2026/ai-2"
+    },
+    {
+      "name": "GPT-5.5 on Amazon Bedrock",
+      "maker": "OpenAI / AWS",
+      "what": "GPT-5.5 and Codex are now available on Amazon Bedrock in limited preview, ending Azure exclusivity for OpenAI model access.",
+      "url": "https://aws.amazon.com/bedrock/openai-models"
+    },
+    {
+      "name": "Midjourney V8.1",
+      "maker": "Midjourney",
+      "what": "Stability-focused image generation update delivering 3× faster HD mode at one-third the cost, targeting high-volume commercial workflows.",
+      "url": "https://docs.midjourney.com/v8-1-release-notes"
+    },
+    {
+      "name": "Managed Agents on Bedrock",
+      "maker": "AWS / OpenAI",
+      "what": "Amazon Bedrock now offers OpenAI Managed Agents in limited preview, allowing enterprises to deploy OpenAI-powered agentic workflows on AWS infrastructure.",
+      "url": "https://aws.amazon.com/bedrock/managed-agents-openai"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "IndiaAI Mission formally constituted AIGEG (AI Governance and Economic Group), India's first apex inter-ministerial AI governance body, coordinating AI policy across 12 central ministries.",
+      "url": "https://indiaai.gov.in/article/aigeg-constituted-india-ai-governance"
+    },
+    {
+      "text": "CommandCore, built by Arinox AI and KOGO, is shipping India's first sovereign agentic AI-in-a-box appliance to defence and BFSI customers at ₹10 lakh per unit.",
+      "url": "https://venturebeat.com/2026/04/18/commandcore-india-sovereign-agentic-ai-defense-bfsi"
+    },
+    {
+      "text": "Fourteen Indian startups raised over $47M between April 20–25 across AI, healthtech, legaltech, fintech, and gaming — one of the densest Indian startup fundraising weeks of the year.",
+      "url": "https://inc42.com/buzz/india-startups-47m-raised-april-2026"
+    },
+    {
+      "text": "Indian developers accounted for the second-largest share of new Cursor 3 beta sign-ups globally, reflecting rapid adoption of AI coding tools in India's engineering workforce.",
+      "url": "https://techcrunch.com/2026/04/18/cursor-3-india-developer-adoption"
+    },
+    {
+      "text": "Canva AI 2.0's Agent Designer is drawing significant interest from Indian marketing and media agencies, which represent Canva's third-largest user base by country.",
+      "url": "https://yourstory.com/2026/04/canva-ai-2-india-marketing-agencies"
+    }
+  ],
+  "closing_insight": "When Azure lost OpenAI exclusivity and AWS had models live the next morning, the era of cloud-as-AI-moat ended — every foundation model is now a commodity distributed everywhere."
+}

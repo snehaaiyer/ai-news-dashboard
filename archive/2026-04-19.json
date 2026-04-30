@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-19T08:00:00",
+  "intro": "Sunday delivers a policy earthquake and a benchmark milestone: the White House is drafting guidance to deploy Anthropic's Mythos in federal agencies despite earlier Pentagon hesitation, citing a 93.9% SWE-bench score that makes it the most capable coding-oriented model ever cleared for government consideration. Meanwhile GPT-5.4 crossed human-expert level on GDPval and the App Store's AI-native boom is being dissected in full — this is the week the AI economy went from story to data.",
+  "top_stories": [
+    {
+      "headline": "White House Drafting Guidance to Clear Anthropic Mythos for Federal Agency Use Despite Pentagon Concerns",
+      "summary": "The White House Office of Science and Technology Policy is finalising guidance that would allow federal agencies to procure and deploy Anthropic's Mythos model, overriding earlier objections from Pentagon security reviewers. Mythos has posted a 93.9% score on SWE-bench and 94.6% on GPQA Diamond — benchmarks that effectively put it at or above human expert performance on software engineering and graduate-level science reasoning. The move would make Mythos the most capable AI model ever deployed at federal scale and sets a new precedent for how government assesses AI safety versus capability.",
+      "url": "https://axios.com/2026/04/19/white-house-anthropic-mythos-federal-agencies-pentagon",
+      "tag": "Policy"
+    },
+    {
+      "headline": "GPT-5.4 Hits 83% on GDPval, Ranks #2 on BenchLM Across 106 Models",
+      "summary": "OpenAI's GPT-5.4 achieved 83% on GDPval — a composite benchmark designed to measure human expert-level economic and domain reasoning — becoming the first model to cross what researchers define as the above-human-expert threshold on that evaluation. BenchLM's live leaderboard now places GPT-5.4 at #2 out of 106 ranked models, trailing only Anthropic's Mythos. The dual ranking confirms that the frontier is now consistently above human expert performance on structured reasoning tasks, a milestone that will accelerate enterprise automation decisions.",
+      "url": "https://venturebeat.com/2026/04/19/gpt-54-gdpval-83-percent-benchlm-rank-2",
+      "tag": "Models"
+    },
+    {
+      "headline": "AI-Native Apps Dominate App Store Top-Grossing Charts for First Time in History",
+      "summary": "April 2026 marks the first month in App Store history where AI-native apps occupy the majority of top-grossing positions, displacing gaming titles that have dominated the charts since 2015. AI companion apps, productivity tools, and coding assistants are the three leading categories, with the top five grossing AI apps collectively generating more revenue than the top five gaming apps for the first time. The shift signals that consumer willingness to pay for AI exceeds willingness to pay for entertainment — a structural inversion of the mobile economy.",
+      "url": "https://techcrunch.com/2026/04/19/ai-native-apps-top-grossing-app-store-first-time",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Canva AI 2.0 Analysis: 220M-User Rollout Is the Largest AI Design Platform Launch in History",
+      "summary": "Deeper analysis of Saturday's Canva AI 2.0 launch reveals its scale is without precedent: rolling out agentic AI features to 220 million active users simultaneously dwarfs every prior AI product rollout by at least an order of magnitude. The Memory Library, which stores persistent brand context and user preferences, creates a platform lock-in mechanism more durable than template libraries — once users' brand voice and assets are embedded in Canva's memory layer, switching costs compound with every project. Enterprise marketing teams are the primary near-term beneficiary, but the Agent Designer positions Canva as a workflow platform far beyond design.",
+      "url": "https://bloomberg.com/news/articles/2026-04-19/canva-ai-2-rollout-220-million-users-largest-ai-design-launch",
+      "tag": "Industry"
+    },
+    {
+      "headline": "MIT Technology Review: 12 Key Charts From the 2026 AI Index Reveal Inflection Points Across Every Metric",
+      "summary": "MIT Technology Review published its annual deep-dive into the Stanford AI Index 2026, highlighting 12 charts that show simultaneous inflections across capability, cost, adoption, and investment metrics. Model performance on hard benchmarks is now doubling every 9 months — faster than the 18-month cadence seen in 2023–24. AI training costs have dropped 97% since 2022 even as capability has surged, and enterprise AI adoption has crossed 60% of Fortune 500 companies for the first time.",
+      "url": "https://technologyreview.com/2026/04/19/ai-index-2026-key-charts-inflection-points",
+      "tag": "Research"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Anthropic's Mythos 94.6% GPQA Diamond score means it answers graduate-level physics, chemistry, and biology questions more accurately than domain experts — the kind of score that changes how regulators think about AI oversight.",
+      "url": "https://anthropic.com/research/mythos-benchmark-performance-gpqa-swebench"
+    },
+    {
+      "text": "Sarvam AI CEO Pratyush Kumar outlined a roadmap for India becoming a global AI services exporter, arguing that fine-tuned Indic-language LLMs can undercut Western AI services costs by 60–70% for multilingual tasks.",
+      "url": "https://yourstory.com/2026/04/sarvam-ai-pratyush-kumar-india-ai-services-exporter"
+    },
+    {
+      "text": "NASSCOM's Q1 2026 India IT employment report shows net new hires up 8% year-over-year despite automation concerns — AI is creating more Indian IT roles than it is eliminating, for now.",
+      "url": "https://nasscom.in/insights/q1-2026-india-it-employment-report"
+    },
+    {
+      "text": "BenchLM's 106-model leaderboard now shows a meaningful gap between ranks 1–2 (Mythos and GPT-5.4) and the rest of the field — the frontier has diverged from the second tier in a way not seen since GPT-4's launch.",
+      "url": "https://benchlm.com/leaderboard/april-2026"
+    },
+    {
+      "text": "Federal procurement guidance for AI models is being rewritten in real time — the White House's Mythos clearance process will likely become the template for how all frontier models get government access decisions made.",
+      "url": "https://axios.com/2026/04/19/white-house-ai-procurement-guidance-frontier-models"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Anthropic Mythos",
+      "maker": "Anthropic",
+      "what": "Frontier model with 93.9% SWE-bench and 94.6% GPQA Diamond scores — now being evaluated for federal agency deployment under White House draft guidance.",
+      "url": "https://anthropic.com/models/mythos"
+    },
+    {
+      "name": "GPT-5.4",
+      "maker": "OpenAI",
+      "what": "Achieves 83% on GDPval (above human expert threshold) and ranks #2 on BenchLM across 106 models — optimised for domain reasoning and enterprise task completion.",
+      "url": "https://openai.com/blog/gpt-54-gdpval-benchlm"
+    },
+    {
+      "name": "Canva Memory Library",
+      "maker": "Canva",
+      "what": "Persistent brand and user context layer inside Canva AI 2.0 that remembers brand voice, assets, and design preferences across sessions — the stickiest new feature in the AI 2.0 rollout.",
+      "url": "https://canva.com/create-2026/memory-library"
+    },
+    {
+      "name": "BenchLM Leaderboard",
+      "maker": "BenchLM",
+      "what": "Live 106-model evaluation platform that now shows a clear frontier-vs-field divergence, with Mythos and GPT-5.4 separated from the rest by a measurable capability gap.",
+      "url": "https://benchlm.com/leaderboard"
+    },
+    {
+      "name": "Sarvam AI Indic LLM Suite",
+      "maker": "Sarvam AI",
+      "what": "Fine-tuned multilingual models for Indian languages targeting AI services export markets — positioned as a cost-competitive alternative to Western AI APIs for Indic-language tasks.",
+      "url": "https://sarvam.ai/models/indic-llm-suite"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Sarvam AI CEO Pratyush Kumar publicly laid out the case for India as a global AI services exporter, arguing Indic-language fine-tuning creates a 60–70% cost advantage over Western AI APIs for multilingual enterprise tasks.",
+      "url": "https://yourstory.com/2026/04/sarvam-ai-pratyush-kumar-india-ai-exporter-indic-languages"
+    },
+    {
+      "text": "NASSCOM's Q1 2026 employment data shows India's IT sector added net new roles at an 8% YoY clip in a quarter dominated by automation headlines — AI-enabled service delivery is expanding headcount, not shrinking it yet.",
+      "url": "https://nasscom.in/insights/q1-2026-it-employment-data"
+    },
+    {
+      "text": "India's AIGEG governance body, constituted on April 16, is already drawing scrutiny for its inter-ministerial composition — 12 ministries must align on AI policy, raising questions about decision-making speed vs. comprehensiveness.",
+      "url": "https://inc42.com/features/india-aigeg-ai-governance-body-12-ministries-analysis"
+    },
+    {
+      "text": "Indian developers are reporting Canva AI 2.0's Agent Designer as a breakout feature for vernacular content production — teams are using it to generate multilingual social and marketing content without additional staff.",
+      "url": "https://yourstory.com/2026/04/canva-ai-agent-designer-india-vernacular-content"
+    },
+    {
+      "text": "India's AI companion app market is growing faster than any other AI category domestically — three Indian-built companion apps appeared in the App Store top-50 grossing charts for the first time this week.",
+      "url": "https://inc42.com/buzz/india-ai-companion-apps-app-store-top-grossing"
+    }
+  ],
+  "closing_insight": "When the White House clears a model with a 94.6% expert benchmark score for federal use, it isn't making a procurement decision — it's setting the capability floor that all government AI must eventually meet."
+}

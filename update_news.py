@@ -155,9 +155,9 @@ def generate(client: anthropic.Anthropic, prompt: str, label: str) -> dict:
     with client.messages.stream(
         model="claude-opus-4-7",
         max_tokens=16000,
-        thinking={"type": "adaptive"},
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         messages=[{"role": "user", "content": prompt}],
+        extra_headers={"anthropic-beta": "web-search-2025-03-05"},
     ) as stream:
         response = stream.get_final_message()
 

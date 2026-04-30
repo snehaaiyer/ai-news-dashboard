@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-21T08:00:00",
+  "intro": "Tuesday turns the policy lens on AI: Anthropic outspent OpenAI in lobbying for the first time — $1.6M to $1M in Q1 2026 — signalling that regulatory shaping has become a core competitive strategy, not a cost of doing business. OpenAI countered with a white paper on AI cyber defense, Microsoft shipped Copilot for Security to general availability in 40+ countries, and Perplexity Enterprise quietly crossed $450M ARR with its computer agent driving nearly half of new enterprise sign-ups.",
+  "top_stories": [
+    {
+      "headline": "Anthropic Outspends OpenAI on Lobbying for First Time: $1.6M vs $1M in Q1 2026",
+      "summary": "Anthropic spent $1.6 million on federal lobbying in Q1 2026, exceeding OpenAI's $1 million for the first time and marking a strategic inflection: Anthropic is treating policy as a primary competitive moat, not an afterthought. The spending aligns with Anthropic's pattern of co-authoring safety evaluation frameworks that Mythos then leads on, effectively writing the regulations its competitors must comply with. OpenAI's lower lobbying spend reflects its historical preference for market-led positioning, but the gap is closing as both companies recognise that AI regulation will be written by whoever is most present in Washington.",
+      "url": "https://axios.com/2026/04/21/anthropic-openai-lobbying-q1-2026-spending-comparison",
+      "tag": "Policy"
+    },
+    {
+      "headline": "OpenAI Publishes 'Accelerating the Cyber Defense Ecosystem' White Paper on Frontier AI for Security",
+      "summary": "OpenAI released a major white paper outlining how frontier AI models can be deployed defensively in cybersecurity — identifying vulnerabilities before adversaries do, automating threat analysis, and accelerating incident response. The paper argues that AI-enabled offense will outpace traditional security defenses within 18 months, and that frontier AI is the only scalable countermeasure. The white paper doubles as a product roadmap signal: OpenAI is entering the enterprise cybersecurity market, where a handful of vendors generate $100B+ in combined annual revenue.",
+      "url": "https://openai.com/research/accelerating-cyber-defense-ecosystem-white-paper",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Microsoft Copilot for Security Reaches General Availability Across 40+ Countries, Integrated with Azure Sentinel and Defender",
+      "summary": "Microsoft launched Copilot for Security into general availability across more than 40 countries, integrating it natively with Azure Sentinel (SIEM) and Microsoft Defender (EDR) — giving existing Microsoft security customers an AI layer without changing their toolstack. The product is positioned as an AI analyst that works alongside human security teams, surfacing threat intelligence and automating routine investigation steps. For Microsoft, Copilot for Security is a monetisation lever on top of existing Sentinel and Defender deployments, not a standalone product.",
+      "url": "https://techcrunch.com/2026/04/21/microsoft-copilot-security-general-availability-40-countries",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Perplexity Enterprise Crosses $450M ARR; Computer Agent Driving 40% of New Sign-Ups",
+      "summary": "Perplexity's enterprise business crossed $450 million in annualised recurring revenue, making it one of the fastest-growing enterprise AI products not affiliated with a hyperscaler. The company's computer agent product — which autonomously executes multi-step research and data retrieval tasks — is responsible for more than 40% of new enterprise sign-ups, indicating that agentic capability is the primary enterprise buying trigger, not base search. The ARR milestone puts Perplexity on a trajectory to reach $1B ARR before end of 2026 if growth continues.",
+      "url": "https://bloomberg.com/news/articles/2026-04-21/perplexity-enterprise-450-million-arr-computer-agent",
+      "tag": "Industry"
+    },
+    {
+      "headline": "AI Skills Now Appear in 17% of Indian Job Postings, Up from 14% in April; 4 Lakh AI/ML Roles Projected by End 2026",
+      "summary": "New labour market data shows AI skills mentioned in 17% of Indian job postings — up from 14% a month ago — with the steepest growth in fintech, healthcare, and manufacturing verticals. Industry projections now place AI and ML roles in India at 4 lakh (400,000) by end of 2026, a figure that would make India the second-largest AI talent market globally behind the US. The rapid shift is straining India's AI curriculum pipeline, with demand for AI talent growing 3× faster than credentialled supply.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-postings-april-2026",
+      "tag": "Industry"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Anthropic's Q1 lobbying strategy includes directly co-authoring safety benchmark frameworks with NIST and OSTP — the same frameworks its Mythos model then leads on, making safety regulation a product moat.",
+      "url": "https://axios.com/2026/04/21/anthropic-lobbying-nist-ostp-safety-benchmarks"
+    },
+    {
+      "text": "OpenAI's cyber defense white paper specifically highlights GPT-5.4's performance on CTF (Capture the Flag) security challenges — a benchmark where it outperforms specialist security AI tools from traditional vendors.",
+      "url": "https://openai.com/research/cyber-defense-ctf-gpt54-benchmark"
+    },
+    {
+      "text": "Microsoft Copilot for Security is priced at $4 per user per hour of active use — a consumption model that converts existing Sentinel/Defender deployments into variable AI revenue without new procurement processes.",
+      "url": "https://techcrunch.com/2026/04/21/microsoft-copilot-security-pricing-4-per-hour"
+    },
+    {
+      "text": "Perplexity's computer agent product can autonomously complete 85% of routine enterprise research tasks end-to-end without human intervention — a completion rate that enterprise buyers are citing as the primary reason for switching from traditional search tools.",
+      "url": "https://venturebeat.com/2026/04/21/perplexity-computer-agent-85-percent-task-completion-enterprise"
+    },
+    {
+      "text": "India's 3-point jump in AI skills job posting frequency in one month — 14% to 17% — is the fastest single-month increase recorded in Indian labour market data since the IT outsourcing boom of the early 2000s.",
+      "url": "https://inc42.com/features/india-ai-skills-job-posting-17-percent-fastest-increase"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Microsoft Copilot for Security",
+      "maker": "Microsoft",
+      "what": "GA AI security analyst integrated with Azure Sentinel and Defender, priced at $4/hour of active use — converts existing Microsoft security deployments into AI-powered investigation and threat analysis.",
+      "url": "https://microsoft.com/security/copilot"
+    },
+    {
+      "name": "Perplexity Enterprise Computer Agent",
+      "maker": "Perplexity",
+      "what": "Autonomous multi-step research and data retrieval agent completing 85% of routine enterprise research tasks end-to-end — the primary driver of Perplexity Enterprise's $450M ARR and 40%+ of new enterprise sign-ups.",
+      "url": "https://perplexity.ai/enterprise/computer-agent"
+    },
+    {
+      "name": "OpenAI Cyber Defense Toolkit",
+      "maker": "OpenAI",
+      "what": "GPT-5.4-powered vulnerability identification and threat analysis tools outlined in OpenAI's white paper, targeting enterprise security teams and government cyber defense agencies.",
+      "url": "https://openai.com/security/cyber-defense-toolkit"
+    },
+    {
+      "name": "Anthropic Policy Intelligence Suite",
+      "maker": "Anthropic",
+      "what": "Internally, Anthropic's policy team uses Claude-powered tools to monitor, analyse, and draft regulatory responses — the same AI capability it's selling externally, applied to winning the regulatory game.",
+      "url": "https://anthropic.com/policy"
+    },
+    {
+      "name": "NASSCOM AI Skills Tracker",
+      "maker": "NASSCOM",
+      "what": "Monthly labour market intelligence tool tracking AI skills penetration in Indian job postings across sectors — now showing 17% AI skills mention rate as of April 2026.",
+      "url": "https://nasscom.in/ai-skills-tracker"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India's AI skills job posting rate hit 17% in April 2026 — up from 14% the prior month — with fintech and healthcare showing the steepest sector growth, driven by AIGEG's investment incentives and a flood of enterprise AI pilots.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "The projection of 4 lakh AI/ML roles in India by end 2026 is straining IIT and NIT AI curriculum pipelines — India's top 20 engineering institutions can credentialise roughly 80,000 AI-focused graduates per year, a 5× shortfall against projected demand.",
+      "url": "https://inc42.com/features/india-ai-talent-gap-4-lakh-roles-curriculum-shortfall"
+    },
+    {
+      "text": "Microsoft Copilot for Security's GA launch includes India in its initial 40+ country rollout — BFSI and IT services companies in Bengaluru and Mumbai are among the first enterprise customers being onboarded.",
+      "url": "https://techcrunch.com/2026/04/21/microsoft-copilot-security-india-bfsi-launch"
+    },
+    {
+      "text": "Perplexity Enterprise's computer agent is seeing rapid adoption in Indian IT services firms, where it is being used to automate client research, RFP analysis, and competitive intelligence — use cases that previously required 2–3 dedicated analysts per account.",
+      "url": "https://yourstory.com/2026/04/perplexity-enterprise-india-it-services-adoption"
+    },
+    {
+      "text": "India's AIGEG is expected to publish its first AI procurement standards for government agencies by end of May 2026 — the standards will likely reference Mythos and GPT-5.4 benchmark scores as minimum capability thresholds, following the US OSTP template.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    }
+  ],
+  "closing_insight": "Anthropic spending more on lobbying than OpenAI is not a budget line — it is a declaration that the company which writes the safety rules will always pass them first."
+}

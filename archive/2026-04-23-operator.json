@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-23T08:00:00",
+  "big_story": {
+    "headline": "GPT-5.5 at $5/M Input Is OpenAI's Super App Declaration — But the Real Pricing Signal Is the 6× Premium on the Pro Tier",
+    "what_happened": "OpenAI released GPT-5.5 on Thursday with two pricing tiers: standard at $5/M input and $30/M output, and Pro at $30/M input and $180/M output — a 6× premium for the Pro tier. The model is the most capable publicly available model for agentic tasks including computer use, code execution, research, and multi-tool workflows. Greg Brockman called it a step toward 'more agentic and intuitive computing.'",
+    "why_it_matters": "The 6× Pro premium is the pricing signal that matters more than the standard price. OpenAI is establishing that reasoning intensity — not token volume — is the pricing axis for frontier AI. A task that requires GPT-5.5 Pro to reason through a complex workflow and execute computer use commands is worth $180/M output, not $30/M. This is the same pricing logic that lets consulting firms charge 10× more for a senior partner than a junior analyst. OpenAI is pricing cognitive intensity, not compute cost.",
+    "revenue_impact": "If even 20% of enterprise API volume migrates from GPT-5.4 ($2.50/M input) to GPT-5.5 standard ($5/M input), OpenAI's API revenue doubles on the same volume. If 5% migrates to GPT-5.5 Pro ($30/M input), that segment becomes the highest-margin revenue line in OpenAI's API business at 12× the input price of GPT-5.4. The pro tier creates a revenue concentration in high-intensity enterprise workflows that is structurally similar to Salesforce Einstein's pricing model — charge enterprise customers a premium for AI that delivers measurable business outcomes."
+  },
+  "key_headlines": {
+    "ads_monetization": [
+      {
+        "summary": "Perplexity crossed $450M ARR with its Computer agent product driving 40%+ of new enterprise sign-ups — the clearest data point yet that agentic products convert to enterprise revenue faster than chat products.",
+        "implication": "The Perplexity data point is a benchmark for every enterprise AI product: if your agentic feature isn't driving 30-40% of your new enterprise conversions, it is underperforming relative to the market standard being set right now."
+      },
+      {
+        "summary": "Google Deep Research Max (GA) combines web search and private enterprise data in a single agent — directly competing with Perplexity Enterprise and OpenAI's Deep Research on the same week GPT-5.5 shipped.",
+        "implication": "Three enterprise research agents hitting GA within a 48-hour window (GPT-5.5 agentic research, Google Deep Research Max, Perplexity Computer) means the enterprise research agent category will be won or lost on integration depth and data source breadth, not model quality."
+      }
+    ],
+    "ai_products": [
+      {
+        "summary": "GPT-5.5 can operate software, move across tools, write and execute code, and complete multi-step tasks autonomously — what TechCrunch calls OpenAI's clearest step toward a ChatGPT super app.",
+        "implication": "A super app strategy converts every ChatGPT session from a conversational event (low ARPU) into a workflow execution event (high ARPU) — the same transition that made WeChat more valuable than SMS and Uber more valuable than a taxi dispatch service."
+      },
+      {
+        "summary": "GPT-5.5 system card includes a $25,000 bio safety bug bounty running April 28–July 27 — OpenAI's first public model safety bounty at this scale.",
+        "implication": "A public safety bounty is a credibility signal aimed at regulated enterprise buyers: it demonstrates that OpenAI is confident enough in GPT-5.5's safety properties to invite adversarial testing rather than obscuring them — directly countering Anthropic's Constitutional AI differentiation."
+      }
+    ],
+    "distribution": [
+      {
+        "summary": "Anthropic outspent OpenAI in federal lobbying for the first time in Q1 2026 ($1.6M vs $1M) — the first quarter Anthropic treated policy as a core distribution channel rather than a compliance cost.",
+        "implication": "Lobbying spending by AI companies is a leading indicator of government procurement strategy: Anthropic is investing in the regulatory framework that makes Claude the default choice for federal agencies and regulated industries — a distribution channel that is years ahead of competitors to catch up."
+      },
+      {
+        "summary": "OpenAI expanded Codex GitHub plugin access — repository-level code generation, review, and refactoring inside GitHub without leaving the existing developer workflow.",
+        "implication": "Embedding Codex inside GitHub (used by 100M+ developers) is OpenAI's developer distribution play: every developer who uses Codex inside GitHub is a potential ChatGPT Enterprise lead and a daily active user of OpenAI's most sticky product."
+      }
+    ]
+  },
+  "money_moves": {
+    "revenue_shifts": [
+      "GPT-5.5 Pro at $30/M input is a 12× price increase over GPT-5.4 on the same enterprise workflow — the first time OpenAI has priced a new model tier at an order-of-magnitude premium over its predecessor.",
+      "Perplexity's $450M ARR with 40% driven by Computer agent confirms that agentic AI commands enterprise pricing that conversational AI cannot: the ARPU difference between a chat user and an agent user is likely 10-20×.",
+      "Anthropic's lobbying investment shift signals upcoming government contract revenue: regulated industry and federal procurement AI spend in the US is estimated at $8-12B annually, and Anthropic is positioning itself as the compliance-safe default."
+    ],
+    "ad_inventory": [
+      "GPT-5.5 agentic computer use creates a new category of AI-driven ad inventory: every automated purchase, booking, or form submission completed by GPT-5.5 on behalf of a user is a conversion event that bypasses traditional ad-attributed pathways.",
+      "Deep Research Max's enterprise data integration creates a private-data-aware search agent that can surface internal product information alongside public web content — the first enterprise AI surface that can serve both internal knowledge management and external market intelligence simultaneously.",
+      "Codex GitHub integration puts OpenAI inside the developer workflow at the point of code creation — a high-intent surface where developer tool advertising, enterprise seat upsell, and AI usage data collection are all available."
+    ],
+    "pricing_power": [
+      "OpenAI gains pricing power through the Pro tier — enterprise customers with complex agentic workflows will pay $30/M input without comparing it to GPT-5.4 pricing, because the capability gap justifies a different budget line entirely.",
+      "Anthropic gains regulatory pricing power — its lobbying investment is buying a framework where 'AI safety certification' becomes a procurement requirement, and Anthropic's Constitutional AI methodology is the only viable path to certification.",
+      "Perplexity gains pricing power in enterprise research — $450M ARR with agent-driven sign-ups means it can raise enterprise pricing without churn risk, as research agents that are embedded in daily workflows are stickier than any SaaS subscription."
+    ],
+    "winners": [
+      "OpenAI — GPT-5.5 with dual pricing tiers creates two distinct revenue streams: volume API revenue at $5/M and high-margin agentic revenue at $30/M, with the enterprise mix moving toward the latter as agent adoption grows.",
+      "Anthropic — lobbying primacy in Q1 2026 sets it up as the compliance-default AI for federal agencies and regulated industries, a procurement channel that OpenAI and Google have historically underinvested in.",
+      "Perplexity — $450M ARR driven by agents, not chat, validates its pivot to computer agents as the highest-ARPU enterprise AI product category before most competitors have shipped a competing product."
+    ],
+    "losers": [
+      "Mid-tier API providers at $2-4/M pricing — GPT-5.5 standard at $5/M anchors the 'best available model' price at a level that makes mid-tier providers appear cheap rather than competitively priced.",
+      "Enterprise AI projects built on pure chat interfaces — Perplexity's data that agents drive 40% of enterprise conversions vs chat's remainder is a boardroom argument against any AI initiative that hasn't added agentic capability.",
+      "Traditional market research and enterprise intelligence vendors — Deep Research Max combining web and private data in a single agent interface directly competes with the deliverable that strategy consulting and research firms charge $50-500K to produce."
+    ]
+  },
+  "operator_insight": {
+    "company": "OpenAI",
+    "strategy": "GPT-5.5's dual pricing tier is the clearest expression of OpenAI's super app revenue strategy: capture the maximum number of users at a competitive $5/M standard price, then convert high-value enterprise workflows to the Pro tier at $30/M where reasoning intensity justifies a 6× premium. The super app framing (TechCrunch's description, not OpenAI's language) is the long-term vision: a single interface where businesses delegate complex multi-step work, and OpenAI's revenue model shifts from per-token to per-outcome pricing as agentic capabilities mature.",
+    "why_effective": "The Pro tier premium is effective because it pre-emptively segments the market: price-sensitive API users get a better model at $5/M (acceptable), while enterprise customers with complex workflows pay $30/M for the reasoning capability that actually solves their problem (also acceptable). The result is a pricing structure where OpenAI captures the full surplus from high-value use cases without competing on price for commodity inference. This is the SaaS playbook: free/cheap tier for adoption, premium tier for revenue, enterprise tier for margin."
+  },
+  "playbook": {
+    "marketers": [
+      "Upgrade your AI pipeline testing to include GPT-5.5 standard immediately — at $5/M input it is price-competitive with GPT-5.4 and the capability improvement in contextual understanding directly improves ad copy quality, audience targeting logic, and A/B test interpretation.",
+      "Map your highest-value customer workflows to GPT-5.5 Pro's agentic capabilities — if your product involves multi-step research, document creation, or software operation, Pro's $30/M input pricing becomes defensible when you can show the workflow outcome value."
+    ],
+    "pms": [
+      "Benchmark your enterprise feature set against the three GA research agents this week (GPT-5.5, Deep Research Max, Perplexity Computer) — if your product's research or knowledge management features don't match what these agents do natively, your enterprise differentiation is narrowing fast.",
+      "The Perplexity data point (agents drive 40% of enterprise conversions) is your board presentation slide: if your roadmap doesn't include an agentic feature for H2 2026, you are leaving the highest-converting enterprise product category unaddressed."
+    ],
+    "founders": [
+      "GPT-5.5 Pro's $180/M output pricing tells you exactly how to price your vertical AI product: if your agent delivers a workflow outcome worth $10,000 to an enterprise, charging $500/month for access is a 98% discount to the value delivered — price toward the outcome, not the API cost.",
+      "Anthropic's lobbying primacy means government and regulated industry AI contracts are going to require safety certifications within 18 months — if your product is built on Claude, you inherit Anthropic's regulatory positioning; if it's built on OpenAI, start the safety documentation now."
+    ]
+  },
+  "trend": "Thursday April 23 is the day when enterprise AI pricing moved from 'what does the model cost?' to 'what is the workflow outcome worth?' GPT-5.5 Pro at $180/M output, Perplexity Computer at $450M ARR, and Deep Research Max combining web and private data all signal the same shift: the unit of AI value is no longer a token or a query, it is a completed task. The companies that price for task completion will capture enterprise margin; the companies that price for tokens will commoditise.",
+  "tldr": {
+    "insight": "GPT-5.5 Pro's 6× premium over standard is OpenAI's declaration that reasoning intensity — not token volume — is the future pricing axis for frontier AI, separating commodity inference from enterprise workflow execution.",
+    "opportunity": "The three enterprise research agents GA this week (GPT-5.5, Deep Research Max, Perplexity Computer) are all in price-discovery mode — first enterprise buyers who evaluate and negotiate contracts this week set the benchmark that late adopters pay a premium to match.",
+    "risk": "Any enterprise AI product that hasn't added agentic capability by Q3 2026 is ceding the highest-ARPU user segment (40% of Perplexity's enterprise conversions) to competitors who ship agents first."
+  }
+}

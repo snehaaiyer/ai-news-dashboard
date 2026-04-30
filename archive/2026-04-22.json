@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-22T08:00:00",
+  "intro": "Wednesday is Google Cloud Next day — the company unveiled the Gemini Enterprise Agent Platform (rebrand of Vertex AI), the production-grade Agent2Agent protocol, 8th-gen TPUs, and a $750M partner fund. OpenAI counter-programmed with ChatGPT Workspace Agents on the same day. The enterprise AI agent war became a two-front head-to-head in real time.",
+  "top_stories": [
+    {
+      "headline": "Google Cloud Next 2026: Gemini Enterprise Agent Platform, A2A Protocol, and $750M Partner Fund",
+      "summary": "Google rebranded Vertex AI as the Gemini Enterprise Agent Platform — a unified build, scale, govern, and optimise stack for enterprise AI agents. Key launches: the production-grade Agent2Agent (A2A) cross-platform agent protocol, no-code Agent Designer, agent Inbox, and a 200+ model marketplace including Anthropic's Claude Opus 4.7. Google committed $750M to accelerate partners' agentic AI development across its 120,000-member partner ecosystem.",
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next26",
+      "tag": "Industry"
+    },
+    {
+      "headline": "OpenAI Launches ChatGPT Workspace Agents on Google Cloud Next Day — Deliberate Counter-Programming",
+      "summary": "OpenAI released ChatGPT Workspace Agents on the same day as Google Cloud Next 2026, enabling enterprise users to deploy autonomous AI agents across documents, email, and third-party tools directly inside ChatGPT. The timing was deliberate — occupying the enterprise AI news cycle alongside Google's keynote. Salesforce simultaneously expanded its Google Cloud partnership to connect Agentforce with Gemini, joining both sides of the agent war.",
+      "url": "https://openai.com/news/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Google Launches 8th-Generation TPUs — TPU 8t Delivers 3× Higher Compute Than Previous Generation",
+      "summary": "Google announced TPU 8t (training) and TPU 8i (inference) at Cloud Next, with TPU 8t delivering nearly 3× the compute throughput of the prior generation and 2× better performance-per-watt. The chips are optimised for the long context windows and sequential reasoning required by agentic AI workloads. Google Cloud customers get priority access before any external hardware buyer.",
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up",
+      "tag": "Models"
+    },
+    {
+      "headline": "Google Cloud Next: 10 Workspace AI Announcements — Agent Designer, Skills, Projects, and Lyria 3 Audio",
+      "summary": "Google's Workspace track at Cloud Next landed 10 major announcements including a no-code Agent Designer, a Skills library for reusable agent capabilities, Projects for long-running agent workflows, and Lyria 3 for professional-grade AI audio generation. Direct access to Gemini 3.1 Pro for complex workflows and Gemini 3.1 Flash Image for visual assets was confirmed for all Workspace Enterprise tiers.",
+      "url": "https://workspace.google.com/blog/product-announcements/10-more-announcements-workspace-at-next-2026",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Google Data Agent Kit Turns VS Code and Gemini CLI Into Autonomous Data Workspaces",
+      "summary": "Google released the Cloud Data Agent Kit at Next — a portable suite of MCP tools, skills, and plugins that transforms VS Code and Gemini CLI into native data workspaces capable of orchestrating multi-step data engineering outcomes autonomously. The kit positions Google Cloud as the data infrastructure layer for enterprise AI agents, directly competing with Snowflake's Cortex and Databricks' AI/BI.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "tag": "Industry"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Salesforce expanded its Google Cloud partnership to connect Agentforce directly with Gemini Enterprise, enabling cross-platform agent workflows between Salesforce CRM data and Google's AI infrastructure.",
+      "url": "https://www.eweek.com/news/google-ai-agent-tools-enterprise-cloud-next/"
+    },
+    {
+      "text": "Google Cloud committed to delivering five gigawatts of computing capacity to Anthropic over five years as part of the Cloud Next infrastructure announcements — separate from the investment deal announced two days later.",
+      "url": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era"
+    },
+    {
+      "text": "Google's A2A (Agent2Agent) protocol launched as open standard for cross-platform agent communication — enabling agents built on different AI platforms (Google, OpenAI, Anthropic) to communicate and coordinate tasks.",
+      "url": "https://digitrendz.blog/tech-news/171709/google-cloud-next-2026-ai-agents-workspace-studio-and-the-full-stack-bet/"
+    },
+    {
+      "text": "Perplexity's Computer agent product is now driving 40%+ of all new enterprise sign-ups as the company crossed $450M ARR — a new data point on how agentic products convert to enterprise revenue faster than chat products.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+    },
+    {
+      "text": "Microsoft Copilot for Security entered general availability across 40+ countries at Cloud Next week, integrating with Azure Sentinel and Defender for autonomous security triage and response.",
+      "url": "https://www.artificialintelligence-news.com/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Gemini Enterprise Agent Platform",
+      "maker": "Google",
+      "what": "Unified platform for building, scaling, governing, and optimising enterprise AI agents — replaces Vertex AI with a no-code Agent Designer, agent Inbox, Skills library, and 200+ model marketplace.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Agent2Agent (A2A) Protocol",
+      "maker": "Google",
+      "what": "Open production-grade standard for cross-platform AI agent communication — enables agents on different AI stacks to delegate tasks, share context, and coordinate multi-step workflows.",
+      "url": "https://digitrendz.blog/tech-news/171709/google-cloud-next-2026-ai-agents-workspace-studio-and-the-full-stack-bet/"
+    },
+    {
+      "name": "ChatGPT Workspace Agents",
+      "maker": "OpenAI",
+      "what": "Enterprise AI agents embedded inside ChatGPT that autonomously handle multi-step tasks across documents, email, calendar, and connected third-party tools.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "name": "Google Cloud Data Agent Kit",
+      "maker": "Google",
+      "what": "Portable suite of MCP tools and plugins that turns VS Code and Gemini CLI into autonomous data workspaces capable of orchestrating multi-step data engineering pipelines.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Lyria 3",
+      "maker": "Google",
+      "what": "Professional-grade AI audio generation model now available inside Google Workspace — generates music, voice, and sound design assets directly in document and presentation workflows.",
+      "url": "https://workspace.google.com/blog/product-announcements/10-more-announcements-workspace-at-next-2026"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Google announced $15 billion in AI infrastructure investment in India at the AI Impact Summit — including data centres, sovereign cloud capacity, and developer tooling to support India's IndiaAI Mission.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/ai-impact-summit-2026-india/"
+    },
+    {
+      "text": "India's AIGEG (AI Governance and Economic Group) — the country's first apex inter-ministerial AI governance body, constituted on April 16 — held its first coordination meeting this week across 12 ministries.",
+      "url": "https://www.aicerts.ai/news/ai-startup-funding-in-india-defies-global-slowdown/"
+    },
+    {
+      "text": "Adani Group reaffirmed its $100 billion AI data centre commitment using renewable energy in India by 2035, with an additional $150 billion earmarked for server manufacturing and sovereign cloud — the largest single industrial AI infrastructure pledge in Indian history.",
+      "url": "https://erp.today/india-ai-impact-summit-2026-infrastructure-ai-hosting"
+    },
+    {
+      "text": "14 Indian startups raised over $47 million this week across AI, gaming, education, healthcare, legaltech, and wealth-tech — with AI-led household services and enterprise CloudOps/SRE emerging as the highest-conviction funding themes.",
+      "url": "https://www.newskart.com/recent-startup-funding-updates-in-india-21-27-april-2026/"
+    },
+    {
+      "text": "AI skills now feature in 17% of all Indian job postings — up from 14% just weeks ago — as enterprises accelerate AI hiring in advance of the agentic wave; AI/ML roles projected to reach 4 lakh positions by end of 2026.",
+      "url": "https://aifundingtracker.com/top-ai-startups-india/"
+    }
+  ],
+  "closing_insight": "Google shipping A2A as an open standard on the same day OpenAI launches Workspace Agents is the enterprise AI equivalent of two platforms dropping competing operating systems on launch day — the winner of the agent orchestration standard wins the infrastructure margin on every enterprise AI deployment for the next decade."
+}

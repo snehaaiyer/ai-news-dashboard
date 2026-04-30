@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-23T08:00:00",
+  "intro": "Thursday belongs to GPT-5.5 — OpenAI's smartest model yet, shipping to Plus, Pro, Business, and Enterprise users today with significantly better contextual understanding, agentic computer use, and Greg Brockman calling it a step toward 'more agentic and intuitive computing.' The model is TechCrunch's pick for OpenAI's clearest move yet toward a ChatGPT super app. Google's Cloud Next continues in Las Vegas on day two.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Releases GPT-5.5 — Smarter Context, Agentic Computer Use, Available to All Paid Tiers Today",
+      "summary": "OpenAI released GPT-5.5 on Thursday, describing it as its smartest and most intuitive model to date with substantially better contextual understanding and agentic task execution. The model can write and debug code, research online, analyse data, create documents, operate software, and move across tools until a task is complete. GPT-5.5 is available to Plus, Pro, Business, and Enterprise users in ChatGPT; GPT-5.5 Pro is available to Pro, Business, and Enterprise. API pricing: $5/M input, $30/M output for standard; $30/M input, $180/M output for Pro.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "tag": "Models"
+    },
+    {
+      "headline": "TechCrunch: GPT-5.5 Brings OpenAI 'One Step Closer to an AI Super App'",
+      "summary": "TechCrunch's analysis of GPT-5.5 frames it as the clearest signal yet that OpenAI is building toward a unified AI super app — a single interface where users delegate complex, multi-step work across software, research, and creation. Greg Brockman called it a 'big advancement toward more agentic and intuitive computing.' Axios reported GPT-5.5's internal codename was 'Spud.'",
+      "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Google Cloud Next Day 2: Deep Research Max Goes GA — Combines Web and Private Enterprise Data",
+      "summary": "On Cloud Next's second day, Google announced general availability of Deep Research Max, which combines public web search with private enterprise data sources in a single AI research agent available on Google Cloud and Workspace. The product directly competes with Perplexity Enterprise and OpenAI's Deep Research. Deep Research Max runs on Gemini 3.1 Pro and supports connections to enterprise knowledge bases, SharePoint, Confluence, and Google Drive.",
+      "url": "https://finance.biggo.com/news/202604240158_Google_Deep_Research_Max_AI_agents_launch",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Perplexity Crosses $450M ARR — Computer Agent Driving 40%+ of New Enterprise Sign-Ups",
+      "summary": "Perplexity disclosed that its Computer agent product is now responsible for more than 40% of all new enterprise sign-ups, pushing the company past $450M in annualised recurring revenue. The milestone confirms that agentic products convert to enterprise revenue significantly faster than conversational AI products — a data point that will reshape how investors and product teams prioritise agent development.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Anthropic Outspent OpenAI in Lobbying for First Time in Q1 2026 — $1.6M vs $1M",
+      "summary": "Q1 2026 lobbying disclosures show Anthropic spent $1.6 million on federal lobbying versus OpenAI's $1 million — both record highs and the first quarter Anthropic exceeded OpenAI. The spend signals Anthropic views regulatory framing as a core competitive advantage, particularly around AI safety standards that would disadvantage less safety-focused rivals in government procurement and regulated industry markets.",
+      "url": "https://www.axios.com/2026/04/21/anthropic-outspends-openai-biggest-lobbying-quarter",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "GPT-5.5 system card released alongside the model — OpenAI confirmed bio safety challenge with $25,000 bug bounty running April 28–July 27 for universal jailbreak detection, the first public model safety bounty of this scale.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/"
+    },
+    {
+      "text": "CNBC confirmed GPT-5.5 pricing: $5/M input, $30/M output (standard) and $30/M input, $180/M output (Pro) — the Pro tier pricing is 6× higher, signalling OpenAI is pricing reasoning intensity, not just token count.",
+      "url": "https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html"
+    },
+    {
+      "text": "Google Cloud Next Day 2 confirmed Project Mariner — Google's managed web-browsing agent — is available to enterprise customers who want autonomous agents that can navigate the public web on their behalf.",
+      "url": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era"
+    },
+    {
+      "text": "OpenAI's Codex expanded its GitHub Copilot plugin to broader access — letting developers invoke Codex directly inside GitHub for repository-level code generation, review, and refactoring without leaving their development workflow.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    },
+    {
+      "text": "Microsoft confirmed Copilot for Security is now generally available in 40+ countries with Azure Sentinel and Defender integration — autonomous security triage and response is now a shipping enterprise product, not a preview.",
+      "url": "https://www.artificialintelligence-news.com/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "GPT-5.5",
+      "maker": "OpenAI",
+      "what": "OpenAI's smartest model — better contextual understanding, agentic computer use across software and tools; available today to all paid ChatGPT tiers and via API at $5/M input.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "name": "Deep Research Max",
+      "maker": "Google",
+      "what": "AI research agent combining public web search with private enterprise data (SharePoint, Confluence, Google Drive) — available in Workspace and Google Cloud, competing with Perplexity Enterprise.",
+      "url": "https://finance.biggo.com/news/202604240158_Google_Deep_Research_Max_AI_agents_launch"
+    },
+    {
+      "name": "Project Mariner",
+      "maker": "Google",
+      "what": "Managed web-browsing agent now available to Google Cloud enterprise customers — autonomously navigates the public web to complete research and data extraction tasks on behalf of users.",
+      "url": "https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era"
+    },
+    {
+      "name": "Copilot for Security",
+      "maker": "Microsoft",
+      "what": "Now generally available in 40+ countries — autonomous security triage and response integrated with Azure Sentinel and Defender; first enterprise-grade AI security operations product at GA.",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "name": "Codex GitHub Plugin (expanded)",
+      "maker": "OpenAI",
+      "what": "Broader access to Codex inside GitHub for repository-level code generation, review, and refactoring — developers invoke it directly without leaving their existing GitHub workflow.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India's AI skills job posting penetration reached 17% this week — up from 12.8% in January — as enterprises race to hire ahead of the agentic AI wave; the pace of increase is the fastest in any three-month window since AI hiring data was tracked.",
+      "url": "https://aifundingtracker.com/top-ai-startups-india/"
+    },
+    {
+      "text": "TCS announced AI revenue crossed $2.3B annualised in FY26, with AI-powered services now contributing to 40%+ of new large-deal wins — a signal that Indian IT services are completing the transition from labour arbitrage to AI-augmented delivery.",
+      "url": "https://upstox.com/news/business-news/latest-updates/ai-factories-150-mn-startup-fund-50-bn-global-south-push-who-announced-what-at-india-ai-impact-summit/article-189619/"
+    },
+    {
+      "text": "NASSCOM reported India's overall IT workforce grew to 59 lakh in FY26, driven by GCC (Global Capability Centre) expansion that is absorbing talent faster than traditional IT services are shedding it.",
+      "url": "https://www.businessworld.in/article/indian-it-heads-into-2026-as-ai-scales-up-reshaping-spending-talent-and-delivery-models-585533"
+    },
+    {
+      "text": "India's DPDP Act implementation rules are expected in Q2 2026 — companies are accelerating AI compliance infrastructure purchases ahead of the rules taking effect, creating a new enterprise software category in India.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    },
+    {
+      "text": "Krutrim achieved 100K enterprise API customers this month — India's first domestically built LLM at commercial scale, serving government, BFSI, and regional language content verticals at costs 60-70% below US model providers.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    }
+  ],
+  "closing_insight": "GPT-5.5 shipping on the same day Google announces Deep Research Max and Perplexity hits $450M ARR is not coincidence — Thursday April 23 is the day enterprise AI went from a strategic discussion to a competitive procurement decision happening simultaneously at every major company."
+}
