@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-25T08:00:00",
+  "intro": "Saturday brings the market's verdict on the week's two biggest shocks: Google's $40B Anthropic bet and DeepSeek V4's open-weight frontier model at one-seventh of GPT-5.5 pricing. Tencent and Alibaba are moving fast to co-invest in DeepSeek, India's AI Impact Summit wraps its first full day with $30B+ in announced commitments, and the VC funding supercycle shows no signs of slowing — $242B into AI in Q1 alone.",
+  "top_stories": [
+    {
+      "headline": "Tencent and Alibaba in Advanced Talks to Take Stakes in DeepSeek — Potential 20% Tencent Position",
+      "summary": "Tencent is proposing to acquire up to a 20% stake in DeepSeek in what would be the company's first external funding round, with Alibaba also in advanced talks for a separate position. If completed, the deal would transform DeepSeek from an independent Chinese AI lab into a jointly-backed national AI champion with the distribution and compute resources of China's two largest technology conglomerates. The strategic logic is clear: Tencent and Alibaba each want DeepSeek V4 integrated into their own product ecosystems — WeChat and Alibaba Cloud respectively — while DeepSeek gains the infrastructure and distribution scale to compete with GPT-5.5 and Claude Opus 4.7 globally.",
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/",
+      "tag": "Funding"
+    },
+    {
+      "headline": "DeepSeek V4's Apache 2.0 Pricing Forces Enterprise AI API Reprice — Mid-Tier Vendors Face 80% Cost Compression",
+      "summary": "With DeepSeek V4-Pro available at approximately $0.70/M input (versus GPT-5.5's $5/M), enterprise AI procurement teams are repricing every API budget line that does not require demonstrably frontier-grade capability. Analysis from several enterprise AI consultancies projects that 40-60% of current mid-tier API spend (Cohere, AI21, Mistral API, and similar) will migrate to DeepSeek V4 or other open-weight models within 90 days for cost-sensitive workloads. The remaining spend will bifurcate into self-hosted open-weight for commodity tasks and frontier closed models for mission-critical workflows.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
+      "tag": "Models"
+    },
+    {
+      "headline": "India AI Impact Summit Day 2 — $30B+ in Announcements, NVIDIA Deepens IndiaAI Mission Partnership",
+      "summary": "The second day of India's AI Impact Summit produced additional commitments: NVIDIA deepened its IndiaAI Mission partnership by committing GPU infrastructure and developer tooling to all 12 shortlisted model-building organisations. Total announced investment at the Summit exceeded $30B, spanning Google's $15B India AI infrastructure pledge, Adani Group's $100B data centre commitment, and multiple sovereign cloud and developer programme announcements. The Summit's New Delhi Declaration is being cited by global AI governance bodies as the first multilateral AI commitment from the Global South.",
+      "url": "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "AI Funding Supercycle Continues: $242B Deployed in Q1 2026, 58% of April Deals Involve AI",
+      "summary": "Venture capital data for Q1 2026 shows $242 billion deployed into AI companies — the largest single-quarter AI investment figure ever recorded. Of 1,314 deals tracked in April 2026, 764 (58%) involved AI or machine learning companies, a figure that has grown every quarter since Q3 2024. Infrastructure, enterprise software, and vertical AI agents are the three highest-conviction investment themes. The data confirms that the AI funding environment is not normalising — it is accelerating, driven by enterprise adoption of agentic AI products and the capital requirements of frontier model training.",
+      "url": "https://inforcapital.com/blog/2026-04-25-the-ai-funding-supercycle-1314-deals-in-april-show-where-real-capital-is-going/",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Google-Anthropic $40B Deal: The Infrastructure Economics Behind the Largest AI Investment in History",
+      "summary": "Market analysis of Google's $40B Anthropic commitment reveals the economic logic: at Anthropic's $30B ARR growing 3× quarterly, Google Cloud earns infrastructure margin on a compute dependency that compounds automatically as Anthropic grows. The five-gigawatt compute pledge — equivalent to more than three years of Google's current annual data centre power capacity at the time of announcement — creates a physical infrastructure lock-in that contractually binds Anthropic's growth to Google Cloud's revenue. Analyst estimates place Google Cloud's potential infrastructure revenue from Anthropic at $9-15B annually at current ARR, growing toward $25-40B as Anthropic's revenue scales.",
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "tag": "Funding"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "DeepSeek V4 running on Huawei Ascend 910B chips rather than Nvidia GPUs is already being cited in US Congressional briefings as evidence that export controls on Nvidia hardware have accelerated rather than impeded China's AI chip independence.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "Anthropic's $30B ARR with multi-cloud distribution (Bedrock + Vertex + Azure) means its revenue is structurally resistant to single-cloud dependency — a capital efficiency argument that justifies the $350B valuation Google paid.",
+      "url": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html"
+    },
+    {
+      "text": "India's 27 established AI and Data Labs (with 543 more identified for future development) are absorbing 8,000+ undergraduates, 5,000 postgraduates, and 500 PhD students in AI research — the world's largest publicly funded AI education infrastructure.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+    },
+    {
+      "text": "OpenAI's GPT-Rosalind, announced this week for life sciences, is the first major AI model targeted specifically at pharmaceutical and clinical research workflows — a vertical AI play into a market where a single drug approval is worth $1B+.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    },
+    {
+      "text": "Krutrim hit 100K enterprise API customers this month — India's first domestically built LLM at commercial scale, serving government, BFSI, and regional language content verticals at 60-70% below US model provider pricing.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "DeepSeek V4-Pro (Self-Hosted)",
+      "maker": "DeepSeek",
+      "what": "1.6T-parameter Apache 2.0 MoE model now available for self-hosted enterprise deployment — at ~$0.70/M input, it is the cost benchmark for every open-weight production AI workload.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "Huawei Ascend 910B",
+      "maker": "Huawei",
+      "what": "The chip DeepSeek V4 was trained on — now confirmed as a viable alternative to Nvidia H100/H200 for frontier model training, undermining the premise of US export controls on Nvidia hardware.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "GPT-Rosalind",
+      "maker": "OpenAI",
+      "what": "Limited-access model for life sciences and pharmaceutical research — drug discovery, clinical trial analysis, and biomedical literature synthesis; OpenAI's first vertical-specialised model.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    },
+    {
+      "name": "Krutrim Enterprise API",
+      "maker": "Krutrim (Ola)",
+      "what": "India's first domestically built LLM now serving 100K enterprise API customers — optimised for regional Indian languages and priced 60-70% below equivalent US frontier model APIs.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "name": "IndiaAI Innovation Challenge Platform",
+      "maker": "IndiaAI Mission",
+      "what": "Government compute and funding platform supporting 12 shortlisted organisations building indigenous Indian foundational AI models — providing GPU infrastructure, datasets, and evaluation support.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India AI Impact Summit Day 2 produced NVIDIA's commitment to support all 12 IndiaAI Mission shortlisted model-building organisations with GPU infrastructure — ensuring India's sovereign AI models have access to world-class compute without depending on US export-controlled hardware.",
+      "url": "https://blogs.nvidia.com/blog/india-ai-mission-infrastructure-models/"
+    },
+    {
+      "text": "India's IndiaAI Mission has established 27 AI and Data Labs and identified 543 additional labs for future development — supporting 8,000+ undergraduates, 5,000 postgraduates, and 500 PhD students, making it the largest publicly funded AI education infrastructure globally.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+    },
+    {
+      "text": "Krutrim reached 100K enterprise API customers this month — serving government, BFSI, and regional language content verticals at 60-70% below US model provider pricing, with Hindi, Tamil, Telugu, and Bengali as primary language strengths.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "India's $29B AI funding boom in the past 12 months is being led by Sarvam AI and Krutrim in the sovereign model layer, with enterprise AI applications in BFSI, healthtech, and agritech capturing the largest share of deal count.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "India's DPDP Act implementation timeline — rules expected Q2 2026 — is driving a new wave of enterprise AI compliance infrastructure purchases, with legal, BFSI, and healthcare sectors leading compliance-certified AI adoption.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    }
+  ],
+  "closing_insight": "When Tencent and Alibaba are racing to back the same open-weight model that just demonstrated Huawei chips can train frontier AI, the premise that export controls slow Chinese AI development has officially been retired."
+}

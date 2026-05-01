@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-26T08:00:00",
+  "intro": "Sunday wrap on the most consequential AI week of 2026: Google committed $40B to Anthropic, DeepSeek V4 shipped an open-weight frontier model at one-seventh the cost of GPT-5.5, Google Cloud Next unveiled A2A and the Gemini Enterprise Agent Platform, GPT-5.5 launched with a 6× Pro pricing premium, and India held its largest AI summit ever with 20+ heads of state. Everything that mattered this week pointed in the same direction: the polite era of AI infrastructure-sharing is over.",
+  "top_stories": [
+    {
+      "headline": "Week in Review: Google's $40B Anthropic Bet, DeepSeek V4, GPT-5.5, Cloud Next, and India's AI Declaration",
+      "summary": "The week of April 21-26, 2026 will be studied as the moment enterprise AI moved from strategic discussion to competitive procurement decision. Five events defined the week: Google committed up to $40B to Anthropic at a $350B valuation; DeepSeek V4 dropped as a 1.6T Apache 2.0 model at one-seventh of GPT-5.5 pricing; GPT-5.5 launched with a 6× Pro tier premium; Google Cloud Next unveiled the Gemini Enterprise Agent Platform and A2A cross-agent protocol; and PM Modi inaugurated India's AI Impact Summit with 20+ heads of state signing the New Delhi Declaration on AI. No single prior week in AI history produced this volume of structurally significant events.",
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "India AI Impact Summit Closes — New Delhi Declaration Signed, $30B+ in Commitments, 12 Indigenous Model Builders Shortlisted",
+      "summary": "The India AI Impact Summit 2026 concluded with a signed New Delhi Declaration on AI governance, equitable access, and sovereign infrastructure — the first multilateral AI commitment from the Global South. Total announced investment exceeded $30B, spanning Google's $15B India AI infrastructure pledge, Adani Group's $100B data centre commitment, NVIDIA's IndiaAI Mission partnership, and government funding for 12 shortlisted indigenous model builders including Sarvam AI and IIT Bombay's BharatGen. India's AIGEG governance body held its first inter-ministerial coordination meeting this week, with AI procurement standards for government agencies expected by end of May.",
+      "url": "https://edunovations.com/currentaffairs/national/india-ai-impact-summit-2026-3/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "DeepSeek V4 Weekend Verdict: Enterprise Pilots Beginning, Tencent-Alibaba Talks Confirmed, Export Control Debate Reignites",
+      "summary": "Forty-eight hours after DeepSeek V4's release, enterprise AI teams report active pilots running across document processing, code generation, and long-context analysis workloads. Tencent and Alibaba investment talks have been confirmed by multiple sources, with a Tencent stake of up to 20% under active negotiation. In Washington, DeepSeek V4 trained on Huawei Ascend chips has reignited Congressional debate about the effectiveness of AI chip export controls — with several committee members calling for emergency briefings from Commerce and TSMC on the implications.",
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Google A2A Protocol Weekend Adoption: Early Partners Confirm Implementation Begins Monday",
+      "summary": "Forty-eight hours after Google's A2A protocol launch at Cloud Next, early ecosystem partners have confirmed implementation plans beginning the following week. Google's $750M partner fund is processing first-round applications, with priority given to partners that can ship A2A-compatible agents before Google I/O. The protocol's open standard status means companies including Salesforce (via Agentforce), ServiceNow, and Workday have each confirmed active A2A roadmap discussions — a faster adoption signal than any prior Google Cloud protocol launch.",
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-ai-agents-agentic-era",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Perplexity $450M ARR + Three GA Research Agents: Enterprise AI Procurement Decisions Are Happening This Weekend",
+      "summary": "With GPT-5.5, Deep Research Max, and Perplexity Computer all reaching GA in the same 48-hour window this week, enterprise AI procurement teams at major companies are actively evaluating all three simultaneously — a market dynamic that has never existed before. Perplexity's $450M ARR disclosure with 40%+ enterprise sign-ups driven by the Computer agent is being circulated in enterprise IT boardrooms as the benchmark for what an agentic AI product delivers in revenue conversion. First-mover enterprises that negotiate contracts this week set the pricing benchmark that latecomers will pay a premium to match.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/",
+      "tag": "Industry"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "TCS disclosed AI revenue of $2.3B annualised in FY26, with AI-powered services now contributing to 40%+ of new large-deal wins — confirming that Indian IT services has completed its transition from labour arbitrage to AI-augmented delivery.",
+      "url": "https://upstox.com/news/business-news/latest-updates/ai-factories-150-mn-startup-fund-50-bn-global-south-push-who-announced-what-at-india-ai-impact-summit/article-189619/"
+    },
+    {
+      "text": "Anthropic's $30B ARR crossed $9B at end-2025 and has grown more than 3× in under four months — the fastest ARR ramp of any AI company and the clearest signal that Claude Opus 4.7 has found enterprise product-market fit.",
+      "url": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html"
+    },
+    {
+      "text": "Anthropic outspent OpenAI in federal lobbying for the first time in Q1 2026 ($1.6M vs $1M) — the first quarter Anthropic treated policy as a primary competitive moat rather than a compliance cost.",
+      "url": "https://www.axios.com/2026/04/21/anthropic-outspends-openai-biggest-lobbying-quarter"
+    },
+    {
+      "text": "India's NASSCOM reported the overall IT workforce grew to 59 lakh in FY26, driven by GCC expansion absorbing talent faster than traditional IT services shed it — a net talent absorption that keeps India's AI talent pool growing despite global IT sector contraction.",
+      "url": "https://www.businessworld.in/article/indian-it-heads-into-2026-as-ai-scales-up-reshaping-spending-talent-and-delivery-models-585533"
+    },
+    {
+      "text": "The GPT-5.5 system card's $25,000 bio safety bug bounty (April 28–July 27) is OpenAI's first public model safety bounty at this scale — a credibility signal specifically designed to counter Anthropic's Constitutional AI safety differentiation in regulated enterprise procurement.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "GPT-5.5 (Standard + Pro)",
+      "maker": "OpenAI",
+      "what": "Launched Thursday — agentic computer use, multi-tool execution, code and research workflows; $5/M input standard, $30/M input Pro. The week's most deployed new model.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "name": "DeepSeek V4-Pro",
+      "maker": "DeepSeek",
+      "what": "1.6T Apache 2.0 open-weight model at ~$0.70/M input — the open-weight frontier cost benchmark that will reprice enterprise AI API budgets across Q2 2026.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "Gemini Enterprise Agent Platform + A2A",
+      "maker": "Google",
+      "what": "Launched at Cloud Next — unified enterprise agent build/scale/govern stack with A2A cross-platform agent protocol and $750M partner fund. Early partners confirm implementation begins this week.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "CommandCore by Arinox AI / KOGO",
+      "maker": "Arinox AI",
+      "what": "India's first sovereign agentic 'AI-in-a-box' — air-gapped NVIDIA-Qualcomm hardware running KOGO OS, shipping from ₹10 lakh/unit to defence, BFSI, and government customers.",
+      "url": "https://asanify.com/blog/news/open-source-frontier-ai-april-25-2026/"
+    },
+    {
+      "name": "Perplexity Computer Agent",
+      "maker": "Perplexity",
+      "what": "The agent product driving 40%+ of Perplexity's enterprise sign-ups and $450M ARR — now GA alongside GPT-5.5 agentic research and Deep Research Max in a simultaneous three-way enterprise research agent market.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India AI Impact Summit concluded with the New Delhi Declaration signed by 20+ heads of state — the first multilateral AI governance commitment from the Global South, covering AI safety, sovereign infrastructure, and equitable access principles.",
+      "url": "https://edunovations.com/currentaffairs/national/india-ai-impact-summit-2026-3/"
+    },
+    {
+      "text": "TCS confirmed AI revenue crossed $2.3B annualised in FY26 with 40%+ of new large deals AI-powered — a signal that India's IT services sector has structurally shifted from labour cost arbitrage to AI-augmented service delivery.",
+      "url": "https://upstox.com/news/business-news/latest-updates/ai-factories-150-mn-startup-fund-50-bn-global-south-push-who-announced-what-at-india-ai-impact-summit/article-189619/"
+    },
+    {
+      "text": "NASSCOM: India's IT workforce grew to 59 lakh in FY26, with GCC expansion absorbing talent faster than traditional IT services shed it — India's AI developer talent pool is growing at the moment of peak global AI demand.",
+      "url": "https://www.businessworld.in/article/indian-it-heads-into-2026-as-ai-scales-up-reshaping-spending-talent-and-delivery-models-585533"
+    },
+    {
+      "text": "India's 14 Indian startups raised $47M+ this week across AI, gaming, education, healthcare, legaltech, and wealth-tech — AI-led household services and enterprise CloudOps/SRE emerging as the highest-conviction funding themes in the current India cohort.",
+      "url": "https://www.newskart.com/recent-startup-funding-updates-in-india-21-27-april-2026/"
+    },
+    {
+      "text": "India's AIGEG is expected to publish AI procurement standards for government agencies by end of May 2026 — the standards will likely reference safety benchmark scores as minimum capability thresholds, following the US OSTP template.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    }
+  ],
+  "closing_insight": "In one week, every major AI alliance went public, every pricing signal pointed toward workflow-outcome billing rather than token counts, and India signed a multilateral AI declaration with 20 heads of state. The polite infrastructure-sharing era of AI is completely over — every bet is now explicit, every alliance is now public, and the cost floor for frontier intelligence is dropping faster than anyone's revenue model assumed."
+}
