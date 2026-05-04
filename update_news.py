@@ -152,27 +152,28 @@ def extract_json(text: str) -> str:
 
 def generate(client: anthropic.Anthropic, prompt: str, label: str) -> dict:
     print(f"  Generating {label} edition...")
-    with client.messages.stream(
+    response = client.messages.create(
         model="claude-opus-4-7",
         max_tokens=16000,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         messages=[{"role": "user", "content": prompt}],
-    ) as stream:
-        response = stream.get_final_message()
+    )
+    print(f"  stop_reason={response.stop_reason}, blocks={[b.type for b in response.content]}")
 
     text_parts = [block.text for block in response.content if block.type == "text"]
     raw_text = "\n".join(text_parts).strip()
 
     if not raw_text:
-        print(f"ERROR: No text in {label} response (stop_reason={response.stop_reason}).",
-              file=sys.stderr)
+        print(f"ERROR: No text in {label} response.", file=sys.stderr)
+        for block in response.content:
+            print(f"  block type={block.type}: {str(block)[:200]}", file=sys.stderr)
         sys.exit(1)
 
     try:
         return json.loads(extract_json(raw_text))
     except json.JSONDecodeError as exc:
         print(f"ERROR: Failed to parse {label} JSON: {exc}", file=sys.stderr)
-        print(raw_text[:1000], file=sys.stderr)
+        print(raw_text[:2000], file=sys.stderr)
         sys.exit(1)
 
 
