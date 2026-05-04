@@ -157,7 +157,6 @@ def generate(client: anthropic.Anthropic, prompt: str, label: str) -> dict:
         max_tokens=16000,
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
         messages=[{"role": "user", "content": prompt}],
-        extra_headers={"anthropic-beta": "web-search-2025-03-05"},
     ) as stream:
         response = stream.get_final_message()
 
@@ -183,7 +182,10 @@ def main() -> None:
         print("ERROR: ANTHROPIC_API_KEY not set.", file=sys.stderr)
         sys.exit(1)
 
-    client    = anthropic.Anthropic(api_key=api_key)
+    client    = anthropic.Anthropic(
+        api_key=api_key,
+        default_headers={"anthropic-beta": "web-search-2025-03-05"},
+    )
     now_ist   = datetime.now(IST)
     today_str = now_ist.strftime("%B %-d, %Y")
     gen_at    = now_ist.replace(hour=8, minute=0, second=0, microsecond=0).strftime("%Y-%m-%dT%H:%M:%S")
