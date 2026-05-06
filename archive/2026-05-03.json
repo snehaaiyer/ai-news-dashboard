@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-03T08:00:00",
+  "intro": "Sunday sets up a consequential week: Claude Enterprise 3.0 goes GA on May 12, OpenAI's chip acquisition is expected to close within 60 days, and the EU AI Office's first formal enforcement proceeding heads into its first hearing. The week-one AI data is in — and the verdict is that adoption is outpacing every model by 2-3×. Monday will bring the first full week of enterprise procurement decisions on all three GA research agents simultaneously.",
+  "top_stories": [
+    {
+      "headline": "Week in Review: AI Production Phase Begins — Adoption Rates 2-3× All Prior Forecasts Across Every Metric",
+      "summary": "The first full week of post-GPT-5.5 enterprise AI production has produced data that exceeds every prior adoption forecast. GPT-5.5 Pro at 34% of enterprise API volume (vs 10-15% forecast), DeepSeek V4 at 100,000 self-hosted production instances (vs 20,000 forecast), Llama 4 Maverick at 2.1M downloads in five days (vs 500,000 forecast), and Perplexity at $500M ARR (vs end-of-year target). The common thread: every AI product that launched or accelerated in the week of April 21-26 is performing at 2-3× the adoption rate that analysts and companies modelled.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "The Coming Week: Claude Enterprise 3.0 GA (May 12), OpenAI Chip Deal Expected, EU AI Act First Hearing",
+      "summary": "Three events will define the week of May 4-10: Anthropic's Claude Enterprise 3.0 general availability on May 12 (the most significant AI compliance product launch ever); OpenAI's chip acquisition expected to close within 60 days, with a formal announcement possibly this week; and the EU AI Act's first formal enforcement hearing in the retail facial recognition case. Each event marks a different dimension of AI maturation — compliance, hardware independence, and regulation — all converging in the same two-week window.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Perplexity Memory Agent + Three GA Research Agents: Enterprise Procurement Has Become a Three-Way Simultaneous Evaluation",
+      "summary": "Enterprise AI procurement teams at Fortune 500 companies are for the first time simultaneously evaluating GPT-5.5 (agentic research), Deep Research Max (enterprise data + web), and Perplexity Computer (autonomous task execution) in live head-to-head trials. Perplexity's memory-enabled agent is consistently outperforming on procurement speed — enterprises are reaching contract in 18 days on average versus 45 days for GPT-5.5 enterprise and 60+ days for Deep Research Max. The procurement speed gap is becoming Perplexity's primary competitive advantage.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "OpenAI's Safety Bounty Week One: No Critical Findings, But Three 'High-Severity' Submissions Under Extended Review",
+      "summary": "OpenAI published its first week of bio safety bug bounty statistics: 47 submissions received, zero critical findings confirmed, three classified as 'high-severity' and under extended bio safety team review. The company said it will publish results of any confirmed findings — a commitment that regulators are watching closely as evidence of OpenAI's transparency on safety. The bug bounty programme is also generating a secondary benefit: security researchers who engage are being offered expedited access to GPT-5.5 Pro for research purposes, expanding OpenAI's safety research community.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Google Cloud Confirms Anthropic Revenue Already Visible in Q1 Infrastructure Numbers",
+      "summary": "Google Cloud CFO confirmed in an investor Q&A that Anthropic's compute spend on Google Cloud is already visible as a material contributor to Q1 2026 infrastructure revenue — one week after the $40B investment closed. The speed of revenue contribution reflects that Anthropic's existing compute workloads immediately moved onto Google Cloud infrastructure as part of the deal terms. Google said Anthropic's five-gigawatt commitment will require multi-year data centre expansion that is already underway.",
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/",
+      "tag": "Funding"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Microsoft's Copilot for Security hit 15,000 enterprise customers in two weeks of GA — adding 5,000 new customers in the second week alone, sustaining the adoption acceleration rather than showing the typical post-launch slowdown.",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "text": "India's NASSCOM revised its AI talent demand projection upward for the third time this year — now forecasting 5.2 lakh AI/ML roles in India by end of 2026, up from the 4 lakh projection made in April.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "DeepSeek's Tencent and Alibaba investors are reportedly discussing a joint infrastructure fund to accelerate Huawei Ascend chip production for AI workloads — a Chinese sovereign compute initiative that mirrors the US CHIPS Act strategy.",
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/"
+    },
+    {
+      "text": "Anthropic is hiring 200+ compliance and regulatory affairs staff globally in May 2026 — its largest single-month headcount addition ever and a signal that Claude Enterprise 3.0's compliance infrastructure requires significant human expertise alongside the technical certification.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "text": "A2A protocol adoption has now been confirmed by SAP, Oracle, and Workday — meaning every major enterprise SaaS platform has committed to A2A integration, making it effectively mandatory for any enterprise AI agent that needs to work within existing software stacks.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Perplexity Memory Agent (18-Day Deal Cycle)",
+      "maker": "Perplexity",
+      "what": "Memory-enabled Computer agent now converting enterprise procurement in 18 days average vs 45-60 days for GPT-5.5 and Deep Research Max — procurement speed has become Perplexity's primary competitive advantage.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    },
+    {
+      "name": "Microsoft Copilot for Security (15K Customers)",
+      "maker": "Microsoft",
+      "what": "15,000 enterprise customers in two weeks of GA — 5,000 added in week two, sustaining launch momentum rather than showing post-launch deceleration; the fastest enterprise security product adoption in Microsoft history.",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "name": "A2A Protocol (SAP + Oracle + Workday Confirmed)",
+      "maker": "Google + Enterprise SaaS",
+      "what": "SAP, Oracle, and Workday confirmations mean every major enterprise SaaS platform has committed to A2A — making it effectively mandatory for any enterprise AI agent operating within existing software stacks.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "OpenAI GPT-5.5 Safety Bounty (Week 1 Stats)",
+      "maker": "OpenAI",
+      "what": "47 submissions, 0 critical confirmed, 3 high-severity under review — the transparency of weekly public stats is positioning OpenAI's safety programme as the enterprise security credibility differentiator against Anthropic's Constitutional AI.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/"
+    },
+    {
+      "name": "Google Cloud Anthropic Infrastructure",
+      "maker": "Google",
+      "what": "Anthropic's compute already visible in Google Cloud Q1 revenue — five-gigawatt commitment requires multi-year data centre expansion already underway, confirming the infrastructure dependency is real and immediate.",
+      "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "NASSCOM revised its AI talent demand projection to 5.2 lakh AI/ML roles in India by end 2026 — the third upward revision this year, reflecting GCC expansion and enterprise AI deployment rates exceeding all prior forecasts.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "India's AI skilling ecosystem responded to the demand surge: Coursera India saw a 340% week-over-week increase in AI course enrolments in the week of April 28, driven by enterprise mandates for employee AI upskilling.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "Zoho's ZohoAI Agent Suite international rollout begins in May — starting with Southeast Asia and the Middle East, where Zoho already has strong SME penetration and where India-built AI at Indian pricing is a compelling proposition.",
+      "url": "https://www.zoho.com/"
+    },
+    {
+      "text": "India's IndiaAI Mission labs collectively produced 47 research papers in April 2026 — the highest single-month output since the Mission launched, with multilingual NLP and computer vision for Indian contexts as the dominant research themes.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+    },
+    {
+      "text": "PhonePe's Krutrim fraud detection system expanded to international payment corridors — covering India-UAE, India-US, and India-UK payment flows, extending its 94% pre-completion detection rate to cross-border UPI transactions.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    }
+  ],
+  "closing_insight": "Every AI adoption metric from week one of the post-GPT-5.5 era is 2-3× above forecast — which means the forecasts were wrong, not the market. Adjust your models before Monday's procurement decisions set new baselines."
+}

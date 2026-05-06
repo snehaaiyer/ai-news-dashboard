@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-28T08:00:00",
+  "intro": "Tuesday marks the official launch of OpenAI's $25,000 bio safety bug bounty — the most adversarially tested AI safety programme ever run publicly. GPT-5.5 enters its first full working day in enterprise hands with early deployment teams reporting workflow automation rates above expectations. Microsoft's Azure OpenAI Service confirms GPT-5.5 API availability to all Azure enterprise customers, and the EU AI Act's first wave of prohibited-use enforcement begins.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Bio Safety Bug Bounty Opens — $25,000 for Universal GPT-5.5 Jailbreak, 340+ Researchers Registered Day One",
+      "summary": "OpenAI's bio safety challenge officially opened on Tuesday with more than 340 security researchers registered on day one, targeting universal jailbreak detection in GPT-5.5's biological safety guardrails. The $25,000 maximum payout is the largest single AI safety bounty ever offered publicly. OpenAI's safety team confirmed it has already received and triaged 12 preliminary submissions in the first 24 hours, none of which constitute critical findings. The programme runs through July 27 and is being watched closely by regulated enterprise buyers as a live demonstration of OpenAI's safety confidence.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Microsoft Azure OpenAI Service Confirms GPT-5.5 API for All Enterprise Customers",
+      "summary": "Microsoft confirmed that GPT-5.5 standard and Pro tier APIs are now available to all Azure OpenAI Service enterprise customers without a waitlist. The availability includes GPT-5.5's full agentic computer use capabilities via the Azure API — giving enterprises already on Azure the ability to deploy GPT-5.5 without migrating to OpenAI's direct API. Microsoft said Azure OpenAI Service now serves over 60,000 enterprise customers and that GPT-5.5 is the fastest-adopted new model in the service's history, exceeding GPT-5.4 adoption in the first 48 hours.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+      "tag": "Industry"
+    },
+    {
+      "headline": "EU AI Act Prohibited-Use Enforcement Begins — First Wave Targets Biometric Categorisation and Social Scoring",
+      "summary": "The EU AI Act's first enforcement wave became active on April 28, prohibiting AI systems used for biometric categorisation by sensitive characteristics, real-time remote biometric identification in public spaces, and social scoring by public authorities. European AI companies and multinationals operating in the EU are subject to fines of up to €35M or 7% of global turnover for violations. The enforcement focuses on systems already in deployment — not new products — meaning several existing enterprise AI deployments are under immediate compliance review.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    },
+    {
+      "headline": "DeepSeek V4 Open-Source Community Hits 50,000 GitHub Stars and 8,000 Enterprise Forks in Four Days",
+      "summary": "DeepSeek V4-Pro's GitHub repository crossed 50,000 stars and 8,000 enterprise forks within four days of release — the fastest open-weight frontier model repository growth ever recorded. Community deployments have appeared on AWS, Google Cloud, and Azure using spot instance configurations at estimated costs of $0.40-0.60 per million tokens — further below the $0.70/M API price. Several large enterprises have confirmed internal V4 deployments are already in production for document processing and code generation workloads.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
+      "tag": "Models"
+    },
+    {
+      "headline": "Anthropic Claude Constitutional AI Whitepaper Updated — Regulatory Submission Framework Included",
+      "summary": "Anthropic published an expanded version of its Constitutional AI whitepaper that includes a formal regulatory submission framework — a structured documentation set that regulated enterprises and government agencies can use to justify Claude deployments in compliance-sensitive contexts. The framework maps Constitutional AI principles to NIST AI RMF controls, EU AI Act risk categories, and US OSTP guidance. The timing — a day after the EU AI Act enforcement began — positions Anthropic as the first AI company to publish compliance mapping documentation covering all three major regulatory frameworks simultaneously.",
+      "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "GPT-5.5 agentic computer use is completing an average of 73% of assigned software QA tasks autonomously in early enterprise pilots — a completion rate that exceeds the 60% threshold most enterprise buyers require before replacing human testers.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "text": "Google's A2A protocol SDK published on GitHub with Apache 2.0 licence — the open-source release accelerates community adoption independent of the $750M partner fund, with 2,000+ GitHub stars on the first day.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "text": "India's Krutrim launched a dedicated BFSI (Banking, Financial Services, Insurance) API tier with RBI-compliant data handling and Hindi/regional language support — targeting the $4B Indian BFSI AI market ahead of DPDP Act enforcement.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "EU AI Act violations in the first enforcement wave are expected to include several facial recognition deployments in retail and a social scoring system used by a European municipal government — the first real-world test of €35M fine authority.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    {
+      "text": "Microsoft Copilot for Security hit 10,000 enterprise customer activations in its first week of GA — a milestone Microsoft is citing as the fastest enterprise security product adoption in the company's history.",
+      "url": "https://www.artificialintelligence-news.com/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "GPT-5.5 on Azure OpenAI Service",
+      "maker": "Microsoft / OpenAI",
+      "what": "Full GPT-5.5 standard and Pro APIs now available without waitlist to all 60,000+ Azure OpenAI Service enterprise customers — including agentic computer use and multi-tool workflow capabilities.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+    },
+    {
+      "name": "Anthropic Constitutional AI Compliance Framework",
+      "maker": "Anthropic",
+      "what": "Regulatory submission framework mapping Constitutional AI to NIST AI RMF, EU AI Act, and US OSTP guidance — the first multi-framework compliance documentation package from any AI company.",
+      "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback"
+    },
+    {
+      "name": "DeepSeek V4 Self-Hosted (Community)",
+      "maker": "Community / DeepSeek",
+      "what": "Community-optimised DeepSeek V4-Pro deployment configs for AWS, GCP, and Azure spot instances at $0.40-0.60/M tokens — further below the official API price, enabling zero-commitment self-hosted frontier AI.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "A2A Protocol SDK",
+      "maker": "Google",
+      "what": "Apache 2.0 open-source SDK for Agent2Agent protocol integration — Python, TypeScript, and Go libraries enabling any developer to build A2A-native agents without the $750M partner programme.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Krutrim BFSI API",
+      "maker": "Krutrim (Ola)",
+      "what": "RBI-compliant AI API tier for Indian banking and financial services — regional language support, data localisation, and financial document processing optimised for India's BFSI compliance environment.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Krutrim launched a dedicated BFSI API tier with RBI-compliant data handling — the first domestically built Indian LLM with a financial services compliance layer, targeting 200+ Indian banks and NBFCs.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "Sarvam AI began its NVIDIA-backed multilingual foundation model training run — the largest sovereign AI training compute commitment in Indian history, targeting 22 official Indian languages at frontier capability.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's MeitY opened a 30-day public comment period on the AIGEG draft AI procurement framework — inviting enterprise AI vendors, startups, and civil society to submit evaluation criteria proposals before the May 31 finalisation deadline.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    },
+    {
+      "text": "IIT Bombay's BharatGen project received its first tranche of IndiaAI Mission compute allocation — 512 H100 GPUs for 90 days, equivalent to approximately ₹15 crore in compute value, for pre-training its Hindi-first foundation model.",
+      "url": "https://ddnews.gov.in/en/indiaai-mission-shortlists-12-teams-for-indigenous-ai-models-minister-updates-rajya-sabha/"
+    },
+    {
+      "text": "Indian IT exports are projected to reach $220B in FY27, with AI-powered services accounting for 35% of the total — up from 25% in FY26 — as GCCs shift from cost arbitrage to AI-augmented high-value service delivery.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    }
+  ],
+  "closing_insight": "The EU AI Act's first enforcement day and OpenAI's bio safety bounty opening on the same Tuesday is not coincidence — both are proof that AI regulation has moved from policy documents to enforceable reality, and the companies that treated compliance as a future problem are now treating it as an immediate one."
+}

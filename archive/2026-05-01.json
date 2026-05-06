@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-01T08:00:00",
+  "intro": "Friday — May Day — and the AI earnings season is confirming what the capital flows predicted: Google Cloud Q1 AI revenue grew 82%, Anthropic's $30B ARR run rate is being cited in every hyperscaler earnings call, and OpenAI's chip acquisition talks are confirmed by a second source. Meta's Llama 4 Maverick is now the most-downloaded open-weight model in history, surpassing Llama 3 in five days.",
+  "top_stories": [
+    {
+      "headline": "Google Cloud Q1 2026 Earnings: AI Revenue +82%, Gemini Enterprise Bookings Exceed Full-Year 2025 in One Quarter",
+      "summary": "Google Cloud reported Q1 2026 results with AI-specific revenue growing 82% year-over-year, with Gemini Enterprise Agent Platform bookings in Q1 alone exceeding the full-year 2025 total for Vertex AI. CFO Ruth Porat said the $40B Anthropic investment is 'immediately accretive' to Google Cloud revenue as Anthropic's compute spend flows through Google infrastructure. Total Google Cloud revenue reached $14.2B in Q1 — a 38% increase — with AI services now representing over half of new workload growth.",
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next/welcome-to-google-cloud-next26",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Llama 4 Maverick Is Now the Most-Downloaded Open-Weight Model in History — Surpassed Llama 3 in Five Days",
+      "summary": "Meta confirmed that Llama 4 Maverick has surpassed Llama 3's all-time download record in just five days of availability, with over 2.1 million downloads via Hugging Face and Meta AI Studio. Benchmark data showing Maverick within 8% of GPT-5.5 on reasoning tasks, combined with its open-weight licensing, has driven enterprise developers to treat it as their primary cost-optimisation alternative to GPT-5.5. Meta said fine-tuning requests for Maverick have exceeded its infrastructure capacity and it is expanding Maverick fine-tuning compute.",
+      "url": "https://ai.meta.com/blog/",
+      "tag": "Models"
+    },
+    {
+      "headline": "OpenAI Chip Acquisition Confirmed: Targeting Inference-Optimised Silicon to Reduce Hyperscaler Dependency",
+      "summary": "Two independent sources confirmed OpenAI is in advanced acquisition discussions for an AI chip design startup focused on inference-optimised silicon. The acquisition would give OpenAI proprietary chip IP to negotiate better compute rates with hyperscalers and potentially offer dedicated inference capacity to enterprise customers — a vertical integration play similar to Google's TPU and Amazon's Trainium strategies. OpenAI's board has approved exploration of the deal; final terms are being negotiated. A closing announcement is expected within 60 days.",
+      "url": "https://openai.com/news/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Anthropic Claude Enterprise 3.0 General Availability Set for May 12 — Healthcare First, Government by June",
+      "summary": "Anthropic announced Claude Enterprise 3.0 will reach general availability on May 12, with healthcare sector customers onboarded first, financial services following in the week of May 19, and government and defence customers by end of June. The phased rollout reflects the time required for HIPAA BAA countersignature, data residency configuration, and FedRAMP In-Process compliance review for each customer. Anthropic said the 800+ early access applications are being processed in order of regulatory complexity — healthcare first because HIPAA documentation is the most standardised.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "EU AI Act Enforcement Escalates: First Formal Fine Under Consideration for Retail Facial Recognition",
+      "summary": "The EU AI Office confirmed it has moved one of its initial investigations — a retailer using real-time biometric categorisation of customers — to a formal enforcement proceeding, putting the company at risk of a fine of up to €35M or 7% of global turnover. Legal experts say this is the fastest movement from investigation to formal proceeding in any EU digital regulation enforcement action, signalling the EU AI Office intends to use its enforcement authority at full speed rather than building cases slowly.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Amazon Web Services confirmed Anthropic's Claude Opus 4.7 is now the most-used AI model on Amazon Bedrock by token volume — surpassing Claude 3.5 Sonnet, which had held the top spot since mid-2025.",
+      "url": "https://aws.amazon.com/bedrock/"
+    },
+    {
+      "text": "OpenAI's Codex CLI crossed 1 million active developer users in its first month — the fastest developer tool adoption milestone in GitHub history, exceeding GitHub Copilot's first-month user count.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    },
+    {
+      "text": "India's Zepto deployed a Krutrim-based demand forecasting agent that reduced inventory waste by 31% and improved same-day delivery fulfilment by 18% — the most detailed public ROI disclosure from any Indian quick-commerce AI deployment.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "DeepSeek V4 self-hosted deployments hit 100,000 production instances globally — surpassing GPT-4 Turbo's estimated self-hosted footprint and making it the most widely deployed frontier-competitive open-weight model in history.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "Perplexity's memory-enabled Computer agent is being trialled by three of the top five global management consulting firms for competitive intelligence and M&A research workflows — Perplexity's first confirmed Fortune 50 consulting firm customers.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Llama 4 Maverick (2.1M Downloads)",
+      "maker": "Meta",
+      "what": "Most-downloaded open-weight model in history — 2.1M downloads in five days, within 8% of GPT-5.5 on reasoning; fine-tuning via Meta AI Studio now at infrastructure capacity limit.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (GA May 12)",
+      "maker": "Anthropic",
+      "what": "General availability confirmed for May 12 with phased rollout — healthcare first, financial services May 19, government by June; 800+ enterprise sign-ups being processed by regulatory complexity.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "Amazon Bedrock + Claude Opus 4.7",
+      "maker": "AWS / Anthropic",
+      "what": "Claude Opus 4.7 is now the most-used model on Amazon Bedrock by token volume — confirming Anthropic's multi-cloud distribution strategy is driving adoption across both AWS and Google Cloud simultaneously.",
+      "url": "https://aws.amazon.com/bedrock/"
+    },
+    {
+      "name": "OpenAI Codex CLI (1M Users)",
+      "maker": "OpenAI",
+      "what": "Crossed 1 million active developer users in its first month — fastest developer tool milestone in GitHub history, now the primary AI coding tool for teams outside the GitHub Copilot ecosystem.",
+      "url": "https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github"
+    },
+    {
+      "name": "Zepto AI Demand Forecasting",
+      "maker": "Zepto / Krutrim",
+      "what": "India's first detailed public AI ROI disclosure in quick commerce — 31% inventory waste reduction and 18% same-day delivery improvement from Krutrim-based demand forecasting agent.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Zepto's Krutrim-based demand forecasting agent disclosed 31% inventory waste reduction and 18% same-day delivery improvement — the most detailed public AI ROI figure from any Indian quick-commerce company.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "India's AI exports are tracking at $8B for FY26 — the government revised its FY27 projection to $14B as AI-enhanced IT services billing rates outperform traditional outsourcing faster than forecast.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "Zoho's ZohoAI Agent Suite launched to Indian SMEs at ₹2,999/month per seat — the first Indian enterprise AI agent product priced for the SME market rather than large enterprise, targeting India's 63 million small business base.",
+      "url": "https://www.zoho.com/"
+    },
+    {
+      "text": "IndiaAI Mission's 27 established AI labs collectively trained 140+ AI models in April 2026 — the most productive single month for Indian AI research infrastructure since the Mission was established.",
+      "url": "https://indiaai.gov.in/article/indiaai-innovation-challenge-2026"
+    },
+    {
+      "text": "India's DPDP consultation is on track to close May 15 with record participation — NASSCOM expects to submit a consolidated industry position covering AI-specific data handling, consent requirements, and cross-border data flow for AI training.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    }
+  ],
+  "closing_insight": "Google Cloud's Q1 AI revenue growing 82% while simultaneously being Anthropic's cloud host is the compounding flywheel in action — every dollar Anthropic earns is a Google Cloud revenue event, and every Google Cloud infrastructure improvement makes Anthropic faster and cheaper to run."
+}

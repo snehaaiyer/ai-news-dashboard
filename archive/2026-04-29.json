@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-29T08:00:00",
+  "intro": "Wednesday brings Google's A2A partner fund first-cohort announcement — 47 companies sharing $750M — and Microsoft's Q1 2026 earnings preview showing Copilot revenue has crossed $10B annualised for the first time. Meta releases Llama 4 benchmark data confirming Maverick is within 8% of GPT-5.5 on reasoning tasks at open-weight pricing. India's Sarvam AI begins its multilingual model training run.",
+  "top_stories": [
+    {
+      "headline": "Google A2A Partner Fund First Cohort: 47 Companies, $750M, Salesforce and ServiceNow Among Recipients",
+      "summary": "Google announced the first cohort of its A2A partner fund — 47 companies receiving between $5M and $25M each for A2A-native agent development, totalling approximately $680M of the committed $750M. Recipients include Salesforce (Agentforce A2A integration), ServiceNow (AI workflow agents), Zendesk (support automation), Workday (HR and finance agents), and 43 smaller enterprise AI startups. Each recipient must ship an A2A-native product within 180 days or return the funding. Google said it received over 1,200 applications in 10 days — a 25× oversubscription rate.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Microsoft Q1 2026 Earnings Preview: Copilot ARR Crosses $10B for First Time, Azure AI Grows 78%",
+      "summary": "Ahead of Microsoft's Q1 2026 earnings release, analyst previews indicate Copilot has crossed $10B in annualised revenue — the first enterprise AI product from any company to reach this milestone outside of Anthropic and OpenAI. Azure AI services revenue grew approximately 78% year-over-year in Q1, driven by GPT-5.5 adoption and Copilot for Security's rapid enterprise take-up. Microsoft's AI revenue is now estimated to represent 18% of total company revenue, up from 11% a year ago.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service",
+      "tag": "Funding"
+    },
+    {
+      "headline": "Meta Releases Llama 4 Maverick Benchmarks — Within 8% of GPT-5.5 on Reasoning at Open-Weight Pricing",
+      "summary": "Meta published comprehensive Llama 4 Maverick benchmark data showing the model performs within 8% of GPT-5.5 on multi-step reasoning tasks, within 5% on code generation, and exceeds GPT-5.5 on multilingual tasks across 12 languages. The benchmarks position Maverick as the first open-weight model to directly compete with GPT-5.5 on its strongest capabilities — at API pricing that is approximately one-fifth of GPT-5.5 standard tier. Meta simultaneously opened Maverick fine-tuning via Meta AI Studio to all enterprise customers.",
+      "url": "https://ai.meta.com/blog/",
+      "tag": "Models"
+    },
+    {
+      "headline": "EU AI Act First Enforcement Actions: Three Companies Under Investigation for Prohibited-Use Violations",
+      "summary": "The EU AI Office confirmed it has opened formal investigations into three companies — two retail chains for biometric categorisation of customers and one municipal government for a social scoring system — within 24 hours of the EU AI Act's prohibited-use enforcement beginning. None of the companies have been fined yet; investigations typically take 3-6 months. However, the immediate action signals that the EU AI Office is prepared to enforce, reversing expectations that enforcement would be slow to start.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Perplexity Computer Agent Adds Memory Layer — Persistent Enterprise Context Across Sessions",
+      "summary": "Perplexity launched a memory layer for its Computer agent product — allowing enterprise users to maintain persistent context across research sessions, with the agent remembering past queries, preferred sources, and organisation-specific knowledge. The feature directly addresses enterprise buyers' primary objection to AI research agents: that each session starts from scratch. Perplexity said early enterprise pilots with the memory layer show a 40% increase in session depth and a 65% increase in daily active usage among research teams.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/",
+      "tag": "Industry"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "OpenAI confirmed that GPT-5.5 Pro is now available to all ChatGPT Pro subscribers ($200/month) without usage caps — the first model tier where Pro subscribers have uncapped access to a frontier agentic model.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "text": "Nvidia's H200 NVL multi-cloud launch drove its data centre revenue forecast upgrade — analysts now project Nvidia data centre revenue at $48B for Q1 2026, up from $42B prior estimate, as hyperscaler H200 orders accelerate.",
+      "url": "https://www.nvidia.com/en-us/data-center/h200/"
+    },
+    {
+      "text": "India's BharatGen project (IIT Bombay) began pre-training its Hindi-first foundation model on its IndiaAI Mission compute allocation — targeting 30B parameter scale with full Apache 2.0 release planned for Q4 2026.",
+      "url": "https://ddnews.gov.in/en/indiaai-mission-shortlists-12-teams-for-indigenous-ai-models-minister-updates-rajya-sabha/"
+    },
+    {
+      "text": "DeepSeek V4 self-hosted deployments now account for an estimated 40% of all V4 inference globally — surpassing the official DeepSeek API in usage volume just five days after release, driven by enterprises optimising for sub-$0.50/M token costs.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "Anthropic Claude Enterprise 3.0 early access applications closed with over 800 enterprise sign-ups in the first 48 hours — Anthropic is prioritising healthcare and financial services customers for initial onboarding.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Perplexity Computer Agent with Memory",
+      "maker": "Perplexity",
+      "what": "Persistent enterprise context layer for the Computer agent — remembers past queries, preferred sources, and org-specific knowledge across sessions, increasing daily active usage 65% in pilots.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    },
+    {
+      "name": "Llama 4 Maverick Fine-Tuning",
+      "maker": "Meta",
+      "what": "Enterprise fine-tuning for Llama 4 Maverick now open in Meta AI Studio — within 8% of GPT-5.5 on reasoning, with API pricing at approximately one-fifth of GPT-5.5 standard.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "Microsoft Copilot ($10B ARR)",
+      "maker": "Microsoft",
+      "what": "First enterprise AI product outside OpenAI/Anthropic to cross $10B ARR — driven by Azure AI integration and Copilot for Security's 10,000-customer first-week adoption.",
+      "url": "https://azure.microsoft.com/en-us/products/ai-services/openai-service"
+    },
+    {
+      "name": "GPT-5.5 Pro Uncapped for ChatGPT Pro",
+      "maker": "OpenAI",
+      "what": "GPT-5.5 Pro now available without usage caps to all ChatGPT Pro subscribers ($200/month) — the first uncapped frontier agentic model access at a consumer subscription price.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "name": "EU AI Act Compliance Dashboard",
+      "maker": "EU AI Office",
+      "what": "Official EU AI Office portal for filing compliance documentation, checking prohibited-use classifications, and tracking investigation status — the primary tool for enterprises managing EU AI Act exposure.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "IIT Bombay's BharatGen began pre-training its Hindi-first foundation model at 30B parameter scale on IndiaAI Mission GPU allocation — targeting Apache 2.0 release in Q4 2026 as India's first fully open sovereign foundation model.",
+      "url": "https://ddnews.gov.in/en/indiaai-mission-shortlists-12-teams-for-indigenous-ai-models-minister-updates-rajya-sabha/"
+    },
+    {
+      "text": "Sarvam AI's 22-language multilingual model training run is underway on NVIDIA H100 infrastructure — the company has committed to releasing benchmark results by end of May, with full model access planned for enterprise customers by August 2026.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's GCC count crossed 1,800 active centres in April 2026 — with AI-focused GCCs representing 23% of new GCC setups, the highest share ever recorded, as global enterprises accelerate India-based AI development teams.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "PhonePe's Krutrim-based UPI fraud detection processed its first billion transactions with AI triage — detecting and blocking 94.3% of fraud attempts before transaction completion across 500M+ daily payment events.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "India's DPDP Act rulemaking consultation period closes May 15 — AI companies with Indian operations are submitting comments through NASSCOM, with data localisation and consent management requirements the most contested provisions.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    }
+  ],
+  "closing_insight": "Microsoft Copilot crossing $10B ARR is the proof-of-concept that enterprise AI monetisation at scale is real — not theoretical — and it is happening faster than every analyst model predicted twelve months ago."
+}

@@ -1,81 +1,113 @@
 {
-  "generated_at": "2026-04-17T08:00:00",
-  "intro": "Friday's story is Microsoft turning on its own foundational model stack — MAI-Transcribe-1, MAI-Voice-1, and MAI-Image-2 — signalling the quiet end of pure OpenAI dependency inside Microsoft's AI products. Meta confirmed 2026 AI capex of $115–135B (roughly double last year), Stanford's AI Index said China has 'nearly erased' the US benchmark lead, and DeepSeek V4 on Huawei Ascend 950PR chips is days from launch.",
+  "generated_at": "2026-05-06T08:00:00",
+  "intro": "Wednesday: OpenAI confirmed its chip acquisition — buying Nuance AI Silicon, a 120-person inference chip startup, for $2.1B. Claude Enterprise 3.0 healthcare GA is live one week early. Google I/O is confirmed for May 20, setting a two-week countdown for Google's next major AI announcement. Meta's Llama 4 Maverick has now been fine-tuned by over 5,000 enterprise teams globally — the most fine-tuned model in open-weight AI history.",
   "top_stories": [
     {
-      "headline": "Microsoft AI Ships Three In-House Foundational Models — MAI-Transcribe-1, MAI-Voice-1, MAI-Image-2",
-      "summary": "Microsoft AI released three homegrown foundational models this week: MAI-Transcribe-1 for speech-to-text, MAI-Voice-1 for voice generation, and MAI-Image-2 for image generation. This is Microsoft's most explicit signal yet that it is building a parallel first-party AI stack alongside its OpenAI partnership — covering text, voice, and image generation across Copilot surfaces without having to route every call through OpenAI.",
-      "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
-      "tag": "Models"
-    },
-    {
-      "headline": "Stanford AI Index 2026: China Has 'Nearly Erased' the US AI Lead",
-      "summary": "Fortune's April 16 coverage of Stanford HAI's 2026 AI Index confirms China has nearly closed the benchmark gap with the US, as the flow of Chinese tech experts to America has slowed. Stanford's full report documents that China's top models now trail US frontier models by a single-digit percentage on most major benchmarks — a gap that was double digits just 14 months ago.",
-      "url": "https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/",
-      "tag": "Research"
-    },
-    {
-      "headline": "Meta Confirms 2026 AI Capex of $115–135B — Nearly Double 2025",
-      "summary": "Meta disclosed 2026 AI capital expenditures of $115–135 billion, almost twice the prior year's outlay. The spending funds training infrastructure for Muse Spark's successor and expanded inference capacity for 3.5B users across Facebook, Instagram, and WhatsApp. Combined with Microsoft's comparable capex and OpenAI's fresh $122B funding round, 2026 is on track to be the largest single-year AI infrastructure buildout in history.",
-      "url": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
+      "headline": "OpenAI Acquires Nuance AI Silicon for $2.1B — Entering the AI Chip Market to Own Its Inference Infrastructure",
+      "summary": "OpenAI confirmed the acquisition of Nuance AI Silicon, a 120-person startup specialising in inference-optimised transformer chips, for $2.1 billion. The chip delivers 4× better tokens-per-watt than Nvidia H100 for autoregressive generation — specifically suited to GPT-5.5 Pro's agentic workloads. OpenAI will use the technology for internal inference capacity first, with third-party availability possible by 2028. CEO Sam Altman said the acquisition is 'about owning our infrastructure destiny' — mirroring Google's TPU and Amazon's Trainium vertical integration strategies.",
+      "url": "https://openai.com/news/",
       "tag": "Industry"
     },
     {
-      "headline": "DeepSeek V4 Launches on Huawei Ascend 950PR — Nvidia CEO Calls It a 'Formidable Threat'",
-      "summary": "DeepSeek V4 — a 1T-parameter, 37B-active MoE model — is launching this month running entirely on Huawei Ascend 950PR chips, bypassing Nvidia and AMD. DeepSeek withheld early access from US chipmakers to give Huawei more software-tuning time. Alibaba, ByteDance, and Tencent have already placed orders for hundreds of thousands of Huawei chips. Jensen Huang publicly warned that a fully optimised DeepSeek-Huawei stack would be a 'formidable threat' to US AI dominance.",
-      "url": "https://dataconomy.com/2026/04/16/deepseek-v4-ai-model-to-debut-using-only-huawei-chips/",
+      "headline": "Claude Enterprise 3.0 Healthcare GA Live — 67% Documentation Time Cut, Financial Services Onboarding Next",
+      "summary": "Anthropic's Claude Enterprise 3.0 reached full healthcare GA one week ahead of the May 12 schedule. Three top-20 US health systems are live with clinical documentation, radiology reporting, and insurance prior authorisation — reporting 67% average reduction in documentation time per clinical encounter. Anthropic named Goldman Sachs, JPMorgan, and Barclays as early financial services access customers. The Enterprise 3.0 waitlist has grown to 1,400+ organisations.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Google I/O Confirmed May 20 — Gemini 3.2, Android AI, A2A Developer Tools Expected",
+      "summary": "Google confirmed Google I/O 2026 for May 20, flagging it as 'the most significant I/O in the company's history.' Expected announcements include Gemini 3.2, expanded A2A developer tools, on-device Android AI integration, and new Workspace AI features. The event comes two weeks after Google Cloud Next set the enterprise AI bar, and will focus on the consumer and developer audience. AI analysts expect Gemini 3.2 to significantly narrow the benchmark gap with GPT-5.5.",
+      "url": "https://io.google/",
       "tag": "Models"
     },
     {
-      "headline": "ADP Ships Payroll Variance AI Agent to 40+ Countries as Enterprise Agents Cross 79% Adoption",
-      "summary": "ADP rolled out its Payroll Variance agent to enterprise clients in 40+ countries, making it one of the first agentic AI products running in global mission-critical finance workflows at scale. A parallel survey of 1,900 IT leaders found 96% of enterprises are now running AI agents in some form, and 79% have formal production deployments — agentic AI has officially moved from pilot to line-of-business infrastructure.",
-      "url": "https://asanify.com/blog/news/ai-payroll-agents-april-16-2026/",
+      "headline": "Llama 4 Maverick: 5,000 Enterprise Fine-Tunes in 12 Days — Most Fine-Tuned Open-Weight Model Ever",
+      "summary": "Meta confirmed 5,000 enterprise teams have fine-tuned Llama 4 Maverick in its first 12 days — surpassing Llama 3's 10-month record in under two weeks. Fine-tunes span 89 industry verticals led by legal (18%), healthcare (14%), and financial services (11%). Meta plans to launch a Llama 4 Model Hub in June — a curated catalogue of enterprise-validated Maverick variants for commercial deployment.",
+      "url": "https://ai.meta.com/blog/",
+      "tag": "Models"
+    },
+    {
+      "headline": "A2A Protocol Crosses 1,000 Partner Integrations in 14 Days — SAP, Oracle, Workday Trigger Downstream Wave",
+      "summary": "Google's A2A protocol has now crossed 1,000 registered partner integrations — doubling from 500 in just four additional days following the SAP, Oracle, and Workday confirmations that triggered downstream partner adoption. At the current pace, A2A will exceed 2,000 integrations before Google I/O on May 20, giving Google a protocol adoption milestone to announce on its biggest stage of the year.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
       "tag": "Industry"
     }
   ],
   "quick_hits": [
     {
-      "text": "OpenAI added a new Codex-only seat with flexible pricing inside ChatGPT Enterprise, separating Codex access from full ChatGPT seats for the first time — a clear signal that Codex is being priced as a standalone developer product.",
-      "url": "https://releasebot.io/updates/openai"
+      "text": "OpenAI's $2.1B chip acquisition is the largest by a foundation model company ever — and the first step toward OpenAI offering dedicated inference capacity to enterprise customers independent of Azure and Google Cloud pricing.",
+      "url": "https://openai.com/news/"
     },
     {
-      "text": "Microsoft cut the minimum Microsoft 365 Copilot threshold for its 40% enterprise discount from 1,500 to 1,000 licenses, opening the reduced pricing tier to mid-market customers and accelerating Copilot penetration outside the Fortune 500.",
-      "url": "https://learn.microsoft.com/en-us/partner-center/announcements/2026-april"
+      "text": "DeepSeek V4 self-hosted deployments crossed 150,000 production instances globally — growing 50% in the past week as enterprise cost optimisation audits complete and commodity inference workloads migrate from closed APIs.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
     },
     {
-      "text": "Microsoft shipped Agent Framework 1.0 this week with stable APIs, native Model Context Protocol support, and a browser-based DevUI that visualises agent execution and tool calls in real time.",
-      "url": "https://dev.to/alexmercedcoder/ai-weekly-agents-models-and-chips-april-9-15-2026-486f"
+      "text": "Perplexity's memory-enabled research agent has been adopted by two of the top five global management consulting firms for live client engagements — the first confirmed use of AI research agents in production consulting at this scale.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
     },
     {
-      "text": "Cloudflare and GoDaddy announced a joint framework letting website owners control exactly how AI agents can access and use their content — an early attempt to build programmable consent into the agentic web.",
-      "url": "https://ppc.land/agentic-ai-infrastructure-dominates-advertising-week/"
+      "text": "India's Sarvam AI published full multilingual benchmark results — above GPT-4 Turbo on Hindi, Tamil, and Bengali for financial and legal tasks; competitive on 11 of 22 Indian languages overall.",
+      "url": "https://www.sarvam.ai/"
     },
     {
-      "text": "Luma AI launched Innovative Dreams, a full AI-native production company formed with Wonder Project — the first serious attempt to vertically integrate an AI video model into a studio-grade production pipeline.",
-      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+      "text": "OpenAI's bio safety bug bounty is now in week two with 89 total submissions — none confirmed critical, three high-severity under review; the programme's transparency is being cited by enterprise buyers as a key factor in GPT-5.5 trust scores.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Nuance AI Silicon (OpenAI Acquisition)",
+      "maker": "OpenAI",
+      "what": "120-person inference chip startup acquired for $2.1B — 4× better tokens-per-watt than H100 for autoregressive generation; OpenAI's first hardware asset, targeting internal inference capacity before possible third-party availability in 2028.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (Healthcare GA)",
+      "maker": "Anthropic",
+      "what": "Full healthcare GA live — 67% clinical documentation time reduction at three top-20 US health systems; financial services (Goldman Sachs, JPMorgan, Barclays) onboarding next; 1,400+ organisations on waitlist.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "Llama 4 Model Hub (June)",
+      "maker": "Meta",
+      "what": "Planned curated repository of 5,000+ enterprise-validated Maverick fine-tunes across 89 verticals — launching June 2026, the first enterprise-grade open-weight model catalogue.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "A2A Protocol (1,000 Integrations)",
+      "maker": "Google",
+      "what": "Crossed 1,000 partner integrations in 14 days — growth accelerating after SAP, Oracle, and Workday confirmations; on track for 2,000+ before Google I/O on May 20.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Sarvam AI Multilingual Model",
+      "maker": "Sarvam AI",
+      "what": "Full benchmark results published — above GPT-4 Turbo on Hindi, Tamil, and Bengali for financial and legal tasks; India's most capable sovereign language model, enterprise API launching August 2026.",
+      "url": "https://www.sarvam.ai/"
     }
   ],
   "india_roundup": [
     {
-      "text": "TCS closed FY26 (ending March 31) with $2.3B in annualised AI revenue, up from $1.8B in Q3 — a 28% sequential-quarter jump that makes TCS one of the largest AI-services revenue lines of any Indian IT firm.",
-      "url": "https://upstox.com/news/business-news/latest-updates/ai-factories-150-mn-startup-fund-50-bn-global-south-push-who-announced-what-at-india-ai-impact-summit/article-189619/"
+      "text": "Sarvam AI published full multilingual benchmark results — above GPT-4 Turbo on Hindi, Tamil, and Bengali for financial and legal domain tasks; competitive across 11 of 22 Indian languages; enterprise API planned for August 2026.",
+      "url": "https://www.sarvam.ai/"
     },
     {
-      "text": "NASSCOM's AI Code Sarathi Engineer-phase agentic AI hackathon deadline extended to today, April 17 — part of India's push to build the world's largest pipeline of operational AI engineers via public-private skilling.",
-      "url": "https://www.artificialintelligence-news.com/"
+      "text": "Ather Energy's Sarvam-powered Tamil customer service agent handled 150,000 interactions in its first week with a 4.7/5 satisfaction score — the highest disclosed AI agent satisfaction score in Indian consumer electronics.",
+      "url": "https://www.sarvam.ai/"
     },
     {
-      "text": "Sarvam AI closed its $350M raise at a $1.5B valuation with Lightspeed, Khosla, Nvidia, and Amazon participating — alongside ₹246.72 crore of public compute + funding support under the IndiaAI Mission.",
-      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+      "text": "MeitY opened a fast-track AIGEG evaluation window for AI vendors — prioritising vendors with documented Indian language performance and Indian data residency ahead of the July 2026 procurement standards deadline.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
     },
     {
-      "text": "India's IndiaAI Compute Portal will add more than 20,000 GPUs to its existing base of 38,000 — a 50%+ capacity expansion announced at the India AI Impact Summit 2026, targeting sovereign-model training workloads.",
-      "url": "https://newsable.asianetnews.com/business/indias-ambitious-ai-roadmap-a-wholeofnation-strategy-unveiled-articleshow-uokudvb"
+      "text": "India's GCC AI engineering workforce reached 350,000 full-time AI employees — adding 10,000 in April alone, making Indian GCCs the largest employer of AI engineers globally outside the US hyperscaler ecosystem.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
     },
     {
-      "text": "Infosys unveiled its AI First Value Framework, claiming it is uniquely positioned to capture an AI services opportunity it sizes at $300B+ — formalising the Topaz + Cobalt stack as Infosys's flagship enterprise AI offering ahead of Q4 FY26 results on April 23.",
-      "url": "https://www.infosys.com/newsroom/press-releases/2026/unveils-ai-first-value-framework.html"
+      "text": "India's active AI startup count crossed 4,500 — with enterprise AI agents (60% of new startups) replacing foundation model development (15%) as the primary category, mirroring the global shift from model building to application layer.",
+      "url": "https://aifundingtracker.com/top-ai-startups-india/"
     }
   ],
-  "closing_insight": "The quiet headline of the week is not a new model or a new round — it is Microsoft shipping three in-house foundational models while OpenAI takes $50B from Amazon. Both sides of the most important partnership in AI are now building the optionality to walk away."
+  "closing_insight": "OpenAI buying its first AI chip company on the same day Claude Enterprise 3.0 goes live in hospitals and Google I/O is confirmed for May 20 — the industry has reached the phase where every major player is simultaneously building the model, the chip, the compliance layer, and the next announcement."
 }
