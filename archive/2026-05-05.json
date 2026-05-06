@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-05T08:00:00",
+  "intro": "Tuesday: OpenAI announced GPT-5.5 is now available to all ChatGPT Free users with a daily usage cap — the fastest model rollout to free tier in OpenAI's history. Anthropic's Claude Enterprise 3.0 healthcare onboarding began one week ahead of schedule. EU AI Act's first enforcement hearing concluded with the judge requesting additional evidence, extending the proceeding. India's DPDP consultation closed with 680 submissions.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Brings GPT-5.5 to ChatGPT Free Tier — Daily Cap, No Computer Use, Fastest Frontier Model Democratisation Ever",
+      "summary": "OpenAI announced GPT-5.5 is now available to all ChatGPT Free users with a daily message cap and without the agentic computer use features reserved for Pro and Enterprise tiers. The rollout took 13 days from launch — far faster than GPT-5.4's 90-day rollout to free users and GPT-4's 6-month rollout. OpenAI said the decision to accelerate free access reflects 'confidence in the safety profile established through the bug bounty programme' and a strategic goal to maintain ChatGPT's user base ahead of Gemini's consumer push. GPT-5.5 free replaces GPT-5.4 as the default free model.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Anthropic Claude Enterprise 3.0 Healthcare Onboarding Begins — One Week Ahead of Schedule",
+      "summary": "Anthropic began onboarding the first healthcare customers to Claude Enterprise 3.0 one week ahead of the May 12 GA date, citing faster-than-expected HIPAA BAA processing. The first customers include three top-20 US health systems using Claude for clinical documentation assistance, radiology report generation, and insurance prior authorisation workflows. Anthropic said healthcare customers are seeing an average 67% reduction in documentation time per clinical encounter in early deployments — a productivity metric that is driving rapid internal expansion beyond the initial pilot cohorts.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "EU AI Act First Hearing Adjourned — Judge Requests Additional Evidence on Biometric System Proportionality",
+      "summary": "The EU AI Act's first formal enforcement hearing — the retail facial recognition case — was adjourned after the presiding judge requested additional evidence on whether the retailer's biometric system met the proportionality test under the Act. The extension gives the company 30 days to submit evidence. Legal experts say the proportionality test outcome will define how broadly 'prohibited' biometric categorisation is interpreted, making this case the precedent for hundreds of similar systems currently under preliminary review.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    },
+    {
+      "headline": "India DPDP Consultation Closes with 680 Submissions — AI Data Handling the Most Contested Issue",
+      "summary": "India's DPDP Act rulemaking consultation closed on May 5 with 680 formal submissions — the largest consultation response in Indian digital regulation history, nearly triple the prior record set by the IT Rules consultation in 2021. AI data handling, consent for AI training, and cross-border data transfer for AI model development are the three most contested issues by submission volume. MeitY is expected to publish a summary of submissions by end of May and finalise rules by July 2026.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Tencent-DeepSeek Integration Roadmap Published: WeChat AI, Tencent Cloud API, and QQ Assistant by Q3 2026",
+      "summary": "Following confirmation of Tencent's 18% stake, the companies published a joint integration roadmap: WeChat AI assistant powered by V4 (Q3 2026), Tencent Cloud enterprise API access to V4 with Tencent data residency (Q2 2026), and QQ Assistant V4 integration for gaming and social use cases (Q4 2026). The roadmap spans Tencent's entire product ecosystem — 2.5B users across WeChat, QQ, and Tencent Cloud combined — making it the largest AI product deployment commitment in history by user count.",
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/",
+      "tag": "Industry"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "GPT-5.5 free tier rollout caused ChatGPT's daily active user count to jump 34% in 24 hours — the largest single-day DAU increase since ChatGPT's original launch, driven by users upgrading their experience from GPT-5.4 to GPT-5.5.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "text": "Anthropic's healthcare customers are reporting 67% reduction in clinical documentation time per encounter — a productivity metric that translates directly to 2-3 additional patient appointments per clinician per day, the most compelling AI ROI disclosure in healthcare AI to date.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "text": "Llama 4 Maverick fine-tuning capacity has been tripled and is again oversubscribed — Meta is now processing fine-tuning requests from 14,000 enterprise teams globally, with a 3-week average wait for new slots.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "text": "India's DPDP consultation's 680 submissions set a new record for Indian digital regulation participation — NASSCOM's consolidated submission spans 140 pages and covers AI training data consent, model output liability, and cross-border compute dependencies.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    },
+    {
+      "text": "Microsoft Copilot for Security is now processing over 1 million security alerts per day with AI triage — the first enterprise AI security product at this throughput scale, with customers reporting 71% reduction in mean time to investigate per alert.",
+      "url": "https://www.artificialintelligence-news.com/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "GPT-5.5 Free Tier",
+      "maker": "OpenAI",
+      "what": "GPT-5.5 now available to all ChatGPT Free users with daily cap and no computer use — 13 days from launch to free tier, the fastest frontier model democratisation in OpenAI history; replaced GPT-5.4 as the default free model.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (Healthcare Early GA)",
+      "maker": "Anthropic",
+      "what": "Healthcare onboarding began one week ahead of schedule — three top-20 US health systems live with clinical documentation, radiology report generation, and prior authorisation workflows; 67% documentation time reduction reported.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "DeepSeek V4 on Tencent Cloud",
+      "maker": "Tencent / DeepSeek",
+      "what": "Tencent Cloud enterprise API access to DeepSeek V4 with Chinese data residency launching Q2 2026 — the first frontier-competitive AI API with full Chinese regulatory compliance for enterprise data handling.",
+      "url": "https://www.indexbox.io/blog/tencent-and-alibaba-in-talks-to-invest-in-ai-startup-deepseek/"
+    },
+    {
+      "name": "Copilot for Security (1M Alerts/Day)",
+      "maker": "Microsoft",
+      "what": "Now processing over 1 million security alerts per day with AI triage — 71% reduction in mean time to investigate, the highest throughput of any enterprise AI security product at GA.",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "name": "Llama 4 Maverick Fine-Tuning (14K Queue)",
+      "maker": "Meta",
+      "what": "14,000 enterprise fine-tuning requests globally with 3-week average wait after third capacity expansion — demand continuing to outpace Meta's infrastructure scale-up.",
+      "url": "https://ai.meta.com/blog/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India's DPDP consultation closed with 680 submissions — a 3× record, with AI data handling, consent for training data, and cross-border compute the three most contested issues; MeitY finalisation expected by July 2026.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    },
+    {
+      "text": "NASSCOM's DPDP submission spans 140 pages covering AI training data consent, model output liability, and cross-border compute dependency — the most comprehensive industry AI regulatory position paper published in India.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "India's Ather Energy deployed an AI-native customer service agent using Sarvam AI's multilingual model for Tamil-speaking customers — the first production deployment of a Sarvam model outside the company's own infrastructure.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's government AI deployments are accelerating ahead of AIGEG procurement standards — DigiYatra expanded its AI passenger matching to 45 airports, and CoWIN's successor health platform integrated a multilingual AI triage layer.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    },
+    {
+      "text": "India's AI startup ecosystem crossed 4,500 active startups in April 2026 — up from 2,800 in April 2025 — with 60% of new startups in the enterprise AI agent category rather than foundation model or infrastructure.",
+      "url": "https://aifundingtracker.com/top-ai-startups-india/"
+    }
+  ],
+  "closing_insight": "OpenAI bringing GPT-5.5 to free users in 13 days signals a new norm: the competitive pressure from Gemini and open-weight models has compressed the frontier-to-free timeline from months to days, permanently changing what 'free AI' means."
+}

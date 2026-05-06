@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-02T08:00:00",
+  "intro": "Saturday analysis: the first full week after GPT-5.5's launch has produced more data than the prior six months of AI adoption combined. Enterprise deployment rates, open-weight community activity, compliance market formation, and hyperscaler earnings all tell the same story — the AI market has shifted from pilot phase to production phase in a single week.",
+  "top_stories": [
+    {
+      "headline": "GPT-5.5 Week-One Enterprise Metrics: 12,000 New API Customers, Pro Tier 34% of Enterprise Volume",
+      "summary": "OpenAI released GPT-5.5 first-week adoption metrics: 12,000 new enterprise API customers activated, with the Pro tier ($30/M input) representing 34% of enterprise API volume by token count — far exceeding the 10-15% that analysts had forecast for a premium tier. The agentic computer use feature is the primary driver: 78% of Pro tier customers have computer use enabled on their primary workflow. Enterprise deployment is concentrated in software development (32%), financial research (24%), and legal document processing (18%).",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "tag": "Models"
+    },
+    {
+      "headline": "DeepSeek V4 Self-Hosted at 100K Production Instances — Enterprise Cost Savings Averaging $2.3M Annually Per Deployment",
+      "summary": "DeepSeek V4's 100,000 production self-hosted instances are generating an estimated average of $2.3M per year in API cost savings compared to equivalent GPT-5.5 standard usage — a total market cost reduction of $230B annualised if the deployments sustain current volumes. Cost optimisation teams at major enterprises are treating V4 self-hosting as a mandatory first step before any AI budget negotiation with closed-model vendors. The Apache 2.0 licence means these savings are permanent — no licence fee creep, no vendor lock-in.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
+      "tag": "Models"
+    },
+    {
+      "headline": "A2A Protocol Weekend Developer Activity: 15,000 GitHub Commits, First Production Deployments Confirmed",
+      "summary": "The A2A protocol's open-source SDK has accumulated 15,000 GitHub commits from the developer community in its first 10 days, with confirmed production deployments at five enterprise customers. The early production deployments are cross-platform agent workflows connecting Salesforce Agentforce agents with Google Gemini Enterprise agents — exactly the multi-vendor agent coordination A2A was designed for. Google confirmed that the community SDK is fully compatible with its official partner implementation and will incorporate community contributions into future versions.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Anthropic's Compliance Moat Expands: ISO 27001 and CSA STAR Certifications Added to Enterprise 3.0",
+      "summary": "Anthropic added ISO 27001 and CSA STAR Level 2 certifications to the Claude Enterprise 3.0 compliance portfolio, expanding its security certification stack ahead of the May 12 GA date. The addition means Claude Enterprise 3.0 now carries the most comprehensive compliance certification portfolio of any foundation model — covering US federal (FedRAMP), European (GDPR-aligned data residency), healthcare (HIPAA), financial services (SOC 2), cloud security (CSA STAR), and information security (ISO 27001) requirements simultaneously.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Meta Expands Llama 4 Fine-Tuning Capacity — 3× Infrastructure Scale-Up After Week-One Oversubscription",
+      "summary": "Meta announced a 3× expansion of its Llama 4 Maverick fine-tuning infrastructure after week-one demand exceeded capacity. The company said enterprise fine-tuning requests came from 140 countries, with the largest volumes from the US, India, Germany, Japan, and Brazil. Meta is prioritising fine-tuning access based on enterprise size and use case — healthcare, legal, and financial services customers are in the first queue, followed by developer tools and enterprise SaaS.",
+      "url": "https://ai.meta.com/blog/",
+      "tag": "Models"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "OpenAI's bio safety bug bounty has received 47 submissions in its first five days — none have been confirmed as critical findings, but three are under extended review by the bio safety team with results expected within 30 days.",
+      "url": "https://openai.com/index/gpt-5-5-system-card/"
+    },
+    {
+      "text": "Google Cloud's TPU 8t is now fully allocated to existing Google Cloud enterprise customers — external buyers cannot access TPU 8t capacity until a second production batch is available in Q3 2026, giving committed Cloud customers a 2-quarter compute advantage.",
+      "url": "https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-ai-agents-agentic-era"
+    },
+    {
+      "text": "India's Sarvam AI published its first multilingual model benchmark preview — showing competitive performance with GPT-4 Turbo on 8 of 22 target Indian languages, with Tamil and Bengali as the strongest-performing languages in early evaluation.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "EU AI Act's first formal enforcement proceeding (the retail facial recognition case) has drawn 12 amicus briefs from civil society organisations — the proceeding is becoming a test case for the full scope of EU AI Act enforcement authority.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    {
+      "text": "DeepSeek V4's Apache 2.0 licence has been cited in 34 enterprise legal memos as the reason self-hosted deployment is approved without external legal review — open-source licensing is becoming the fastest procurement path for AI in regulated industries.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "GPT-5.5 Pro (34% Enterprise Share)",
+      "maker": "OpenAI",
+      "what": "First-week data confirms Pro tier at 34% of enterprise API volume — more than double analyst predictions, concentrated in software development, financial research, and legal document processing.",
+      "url": "https://openai.com/index/introducing-gpt-5-5/"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (ISO 27001 + CSA STAR)",
+      "maker": "Anthropic",
+      "what": "Most comprehensive compliance certification portfolio of any foundation model — now covering FedRAMP, GDPR, HIPAA, SOC 2, CSA STAR Level 2, and ISO 27001 simultaneously ahead of May 12 GA.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "Llama 4 Maverick Fine-Tuning (3× Capacity)",
+      "maker": "Meta",
+      "what": "Meta tripled fine-tuning infrastructure after week-one oversubscription — 2.1M downloads, 140-country demand, with healthcare, legal, and financial services in first-access queue.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "A2A SDK (15K Community Commits)",
+      "maker": "Google + Community",
+      "what": "15,000 GitHub commits in 10 days with first production cross-platform agent deployments confirmed — Salesforce Agentforce to Google Gemini Enterprise workflows now in live enterprise use.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Sarvam AI Multilingual Model (Preview)",
+      "maker": "Sarvam AI",
+      "what": "First benchmark preview of India's sovereign 22-language model — competitive with GPT-4 Turbo on 8 languages in early eval, with Tamil and Bengali as strongest performers; full release targeted Q4 2026.",
+      "url": "https://www.sarvam.ai/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Sarvam AI's multilingual model benchmark preview shows competitive GPT-4 Turbo performance on 8 of 22 Indian languages in early evaluation — the first independently verifiable performance data from an IndiaAI Mission shortlisted model.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's Zepto, Blinkit, and Swiggy Instamart are all now running AI demand forecasting agents in production — making India's quick-commerce sector the most AI-penetrated vertical in Indian consumer tech.",
+      "url": "https://www.ibtimes.com.au/indias-top-10-ai-companies-2026-sarvam-ai-krutrim-lead-sovereign-push-amid-29b-funding-boom-1866020"
+    },
+    {
+      "text": "DeepSeek V4 self-hosted deployments in Indian enterprises reached 3,400 instances — concentrated in IT services, BFSI, and pharmaceutical companies seeking to reduce per-token costs while maintaining frontier-competitive capability.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "India's GCC ecosystem is now the largest single employer of AI engineers outside the US — with 340,000 AI-focused GCC employees in India, exceeding the combined AI engineering headcount of the UK, Germany, and France.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "Zoho's ZohoAI Agent Suite crossed 10,000 paying SME customers in its first week — with an average onboarding time of 4 hours from sign-up to first agent deployment, the fastest enterprise AI product adoption rate in Indian SaaS history.",
+      "url": "https://www.zoho.com/"
+    }
+  ],
+  "closing_insight": "GPT-5.5 Pro at 34% of enterprise volume in week one, DeepSeek V4 at 100,000 production instances, and A2A at 15,000 community commits — the AI market moved from strategic discussion to production infrastructure in seven days."
+}

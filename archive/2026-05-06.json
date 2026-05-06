@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-06T08:00:00",
+  "intro": "Wednesday: OpenAI confirmed its chip acquisition — buying Nuance AI Silicon, a 120-person inference chip startup, for $2.1B. Claude Enterprise 3.0 healthcare GA is live. Google I/O is confirmed for May 20, setting a two-week countdown for Google's next major AI announcement. Meta's Llama 4 Maverick has now been fine-tuned by over 5,000 enterprise teams globally, making it the most fine-tuned model in the history of open-weight AI.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Acquires Nuance AI Silicon for $2.1B — Entering the AI Chip Market to Reduce Hyperscaler Dependency",
+      "summary": "OpenAI confirmed the acquisition of Nuance AI Silicon, a 120-person startup specialising in inference-optimised transformer chips, for $2.1 billion. Nuance AI Silicon's primary product is an inference accelerator that delivers 4× better tokens-per-watt than Nvidia H100 for autoregressive generation workloads — specifically optimised for the type of sequential token output that GPT-5.5 Pro's agentic workflows produce. OpenAI said it will develop the chip technology for internal inference capacity first, with potential third-party availability by 2028. CEO Sam Altman said the acquisition is 'about owning our infrastructure destiny.'",
+      "url": "https://openai.com/news/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Claude Enterprise 3.0 Healthcare GA Live — 67% Documentation Time Reduction, Three Top-20 Health Systems Active",
+      "summary": "Anthropic's Claude Enterprise 3.0 reached full healthcare GA on Wednesday, one week ahead of the official May 12 date. Three top-20 US health systems are live with clinical documentation, radiology report generation, and insurance prior authorisation workflows — reporting an average 67% reduction in documentation time per clinical encounter. Anthropic confirmed it is processing financial services onboarding next, with Goldman Sachs, JPMorgan, and Barclays named as early access customers. The enterprise 3.0 waitlist has now grown to 1,400+ organisations.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Google I/O Confirmed for May 20 — AI Agent Announcements, Gemini 3.2, and Android AI Integration Expected",
+      "summary": "Google confirmed Google I/O 2026 for May 20, with a developer keynote expected to cover Gemini 3.2 (the successor to Gemini 3.1 Pro launched at Cloud Next), expanded A2A developer tools, Android AI native integration with on-device Gemini, and new Workspace AI features. AI analysts expect Google I/O to be the largest single AI product announcement event since OpenAI's first GPT-4 demonstration — Google has flagged it as 'the most significant I/O in the company's history.' The two-week countdown begins today.",
+      "url": "https://io.google/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Llama 4 Maverick: 5,000 Enterprise Fine-Tuned Variants — Most Fine-Tuned Model in Open-Weight History",
+      "summary": "Meta confirmed that Llama 4 Maverick has been fine-tuned by over 5,000 enterprise teams in its first 12 days — making it the most fine-tuned foundation model in the history of open-weight AI, surpassing Llama 3's 10-month record in under two weeks. The fine-tuned variants span 89 industry verticals, with legal (18%), healthcare (14%), and financial services (11%) as the top three. Meta is cataloguing validated fine-tunes for a planned Llama 4 Model Hub launching in June — a curated repository of enterprise-tested Maverick variants available for commercial deployment.",
+      "url": "https://ai.meta.com/blog/",
+      "tag": "Models"
+    },
+    {
+      "headline": "EU AI Act Proportionality Ruling Expected in 30 Days — Sets Precedent for 200+ Pending Cases",
+      "summary": "The EU AI Office confirmed the adjourned retail biometric enforcement case will reach a ruling within 30 days following the additional evidence submission period. Legal teams across Europe are treating the proportionality ruling as the precedent for over 200 similar cases in preliminary review. If the court rules that the retailer's biometric system fails the proportionality test, it will trigger a wave of voluntary compliance restructuring across European retailers, hospitality companies, and public transport operators with similar systems.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "OpenAI's $2.1B Nuance AI Silicon acquisition is the largest AI chip company acquisition since Intel's $15.4B Mobileye deal in 2017 — and the first by a foundation model company rather than a semiconductor or hyperscaler buyer.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "text": "DeepSeek V4 self-hosted deployments crossed 150,000 production instances globally — growing 50% in the past week as enterprises complete their cost optimisation audits and migrate commodity inference workloads from closed APIs.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "Perplexity's enterprise research agent memory layer has now been adopted by two of the top five global management consulting firms for live client engagements — the first disclosed use of AI research agents in production consulting engagements at this scale.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    },
+    {
+      "text": "India's Sarvam AI published its first full multilingual benchmark results — competitive with GPT-4 Turbo on 11 of 22 Indian languages, with Hindi, Tamil, and Bengali above GPT-4 Turbo on domain-specific financial and legal tasks.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "A2A protocol implementations now exceed 1,000 registered partner integrations — doubling from 500 in 10 days to 1,000 in 14 days, with the growth rate accelerating as SAP, Oracle, and Workday confirmations triggered downstream partner adoption.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Nuance AI Silicon (OpenAI)",
+      "maker": "OpenAI",
+      "what": "Acquired for $2.1B — 120-person inference chip startup building transformer-optimised accelerators delivering 4× better tokens-per-watt than H100 for autoregressive generation; OpenAI's first hardware asset.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (Healthcare GA)",
+      "maker": "Anthropic",
+      "what": "Full healthcare GA live one week early — three top-20 US health systems active with 67% documentation time reduction; financial services (Goldman Sachs, JPMorgan, Barclays) onboarding next.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "Llama 4 Model Hub (June Launch)",
+      "maker": "Meta",
+      "what": "Planned curated repository of 5,000+ enterprise-validated Maverick fine-tunes across 89 verticals — launching June 2026 as the first enterprise-grade open-weight model catalogue.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "A2A Protocol (1,000+ Integrations)",
+      "maker": "Google + Partners",
+      "what": "Crossed 1,000 partner integrations in 14 days — doubling pace accelerating as SAP, Oracle, and Workday confirmations trigger downstream partner adoption across the enterprise software ecosystem.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Sarvam AI Multilingual Model (11 Languages)",
+      "maker": "Sarvam AI",
+      "what": "First full benchmark results: competitive with GPT-4 Turbo on 11 of 22 Indian languages, above GPT-4 Turbo on Hindi, Tamil, and Bengali for financial and legal domain tasks — India's most capable sovereign language model to date.",
+      "url": "https://www.sarvam.ai/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Sarvam AI published full multilingual benchmark results — above GPT-4 Turbo on Hindi, Tamil, and Bengali for financial and legal domain tasks; competitive on 11 of 22 Indian languages overall; full enterprise API planned for August 2026.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "Ather Energy's Sarvam-powered Tamil customer service agent has handled 150,000 customer interactions in its first week with a 4.7/5 satisfaction score — the highest disclosed customer satisfaction score for any AI agent in Indian consumer electronics.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's MeitY opened a fast-track evaluation window for AI vendors submitting under the AIGEG procurement framework ahead of the July deadline — prioritising vendors with documented performance on Indian language tasks and Indian data residency.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    },
+    {
+      "text": "India's AI startup count crossed 4,500 active companies — with enterprise AI agents (60% of new startups) displacing foundation model development (15%) as the primary category, reflecting the global shift from model building to application development.",
+      "url": "https://aifundingtracker.com/top-ai-startups-india/"
+    },
+    {
+      "text": "India's GCC AI engineering workforce reached 350,000 full-time AI-focused employees — adding 10,000 in April alone — making Indian GCCs the single largest employer of AI engineers globally outside the US hyperscaler ecosystem.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    }
+  ],
+  "closing_insight": "OpenAI buying its first AI chip company on the same day Claude Enterprise 3.0 goes live in hospitals and Google I/O is confirmed for May 20 — the industry has reached the phase where every major player is simultaneously building the model, the chip, the compliance layer, and the next announcement."
+}
