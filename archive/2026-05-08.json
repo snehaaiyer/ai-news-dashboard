@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-08T08:00:00",
+  "intro": "Friday: The week closes with Google I/O 12 days away and the enterprise AI market in full acceleration. OpenAI's GPT-5.5 bio safety bounty crossed 500 researcher submissions with zero confirmed critical findings — the strongest external safety validation in AI history. Meta previewed the Llama 4 Model Hub with a curated catalogue of 200 enterprise-validated fine-tunes, and DeepSeek V4 crossed 200,000 self-hosted production instances.",
+  "top_stories": [
+    {
+      "headline": "OpenAI Bio Safety Bounty: 500 Submissions, Zero Critical Findings — Independent Safety Validation Complete",
+      "summary": "OpenAI's bio safety bounty for GPT-5.5 Pro crossed 500 researcher submissions from 420 institutions globally, with zero confirmed critical findings after three weeks of adversarial testing. OpenAI published its weekly transparency report showing 23 high-severity submissions under extended review, all determined to be within GPT-5.5's pre-defined safety thresholds. The 500-submission milestone with no critical findings is being cited by enterprise legal teams as the definitive external safety validation for GPT-5.5 Pro, replacing internal safety audits in procurement risk assessments.",
+      "url": "https://openai.com/news/",
+      "tag": "Research"
+    },
+    {
+      "headline": "Meta Previews Llama 4 Model Hub: 200 Curated Enterprise Fine-Tunes Ready for June Launch",
+      "summary": "Meta previewed the Llama 4 Model Hub ahead of its June launch, showing a curated catalogue of 200 enterprise-validated Llama 4 Maverick fine-tunes across legal, healthcare, financial services, and manufacturing verticals. The preview includes a commercial licensing framework that allows enterprises to deploy validated fine-tunes without separate legal review. Meta said the full Hub will launch with 500+ fine-tunes and a search interface that allows enterprises to filter by vertical, performance benchmark, and compliance certification.",
+      "url": "https://ai.meta.com/blog/",
+      "tag": "Models"
+    },
+    {
+      "headline": "DeepSeek V4 Crosses 200,000 Self-Hosted Production Instances — $460M in Annual API Spend Displaced",
+      "summary": "DeepSeek V4 crossed 200,000 self-hosted production instances globally, displacing an estimated $460 million in annual closed-model API spend at the $2,300 average annual savings per deployment. The growth is driven primarily by enterprises completing Q2 cost optimisation audits that identified commodity inference workloads as candidates for self-hosted migration. DeepSeek confirmed 78% of new deployments are on Google Cloud (A3 Ultra) and AWS (P5) GPU instances, meaning hyperscalers are capturing the infrastructure revenue that closed-model API vendors are losing.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Google I/O Preview: Gemini 3.2, On-Device Android AI, and A2A Consumer Applications Confirmed",
+      "summary": "Leaked Google I/O agenda materials confirmed the keynote will cover Gemini 3.2 (with reported 40% reasoning improvement over Gemini 3.1 Pro), on-device Android AI running a 2B parameter Gemini model entirely on device without cloud calls, A2A consumer applications built on the developer SDK released Thursday, and new Google Workspace AI features for enterprise. AI analysts expect Gemini 3.2 to narrow the benchmark gap with GPT-5.5 significantly — making Google I/O the most anticipated model announcement since GPT-5.5's launch.",
+      "url": "https://io.google/",
+      "tag": "Models"
+    },
+    {
+      "headline": "India DPDP Draft Rules Leaked: AI Training Consent, Cross-Border Compute Restrictions Confirmed",
+      "summary": "Draft Indian DPDP rules leaked ahead of MeitY's formal publication, showing mandatory consent for AI training data collection, restrictions on cross-border compute for government and healthcare data, and a data fiduciary registration requirement for AI companies with more than 1 million Indian users. The leaked rules would require OpenAI, Google, and Meta to seek explicit consent from Indian users before using their data for model training — a requirement that would apply retroactively to existing datasets collected after the Act's notification date.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "OpenAI's 500-submission bio safety bounty with zero critical findings is now being referenced in 67 enterprise AI procurement risk assessments as the primary safety evidence — it has effectively become the enterprise AI safety certification standard.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "text": "Google's A2A SDK registered 3,400 developer teams in its first 48 hours — nearly triple the Google Cloud Next developer programme sign-ups from the entire April event, signalling that the SDK release is more impactful than the protocol announcement.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "text": "Perplexity's Series E capital is already being deployed: the company posted 47 enterprise compliance and legal engineering roles across London, Singapore, and Mumbai — building the regulated-market deal cycle infrastructure it raised capital to fund.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    },
+    {
+      "text": "Anthropic's Claude Enterprise 3.0 healthcare waitlist grew from 1,400 to 1,650 organisations in 48 hours after the Goldman/JPMorgan financial services onboarding announcement — financial services awareness is driving healthcare demand.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "text": "India's leaked DPDP rules would require retroactive AI training consent for Indian user data — a requirement that is technically infeasible for most foundation models already trained on web data, setting up a major compliance confrontation for July.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Llama 4 Model Hub Preview",
+      "maker": "Meta",
+      "what": "200 curated enterprise-validated fine-tunes across legal, healthcare, financial services, and manufacturing — commercial licensing framework included; full 500+ fine-tune launch scheduled for June.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "name": "GPT-5.5 Pro Bio Safety Report",
+      "maker": "OpenAI",
+      "what": "Weekly transparency report: 500 submissions, 420 institutions, zero critical findings — now cited in 67 enterprise procurement risk assessments as the primary external AI safety validation standard.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "name": "A2A SDK (3,400 Developer Teams)",
+      "maker": "Google",
+      "what": "3,400 registered developer teams in 48 hours — triple the Cloud Next developer sign-ups; connector library for Salesforce, SAP, Oracle, Workday now has 23 community-contributed extensions.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "DeepSeek V4 (200K Instances)",
+      "maker": "DeepSeek",
+      "what": "200,000 self-hosted production instances globally — $460M annual API spend displaced; 78% of new deployments on Google Cloud A3 Ultra and AWS P5, making hyperscalers the biggest beneficiaries of the API displacement.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "name": "Gemini 3.2 (I/O Preview)",
+      "maker": "Google",
+      "what": "Leaked I/O agenda confirms 40% reasoning improvement over Gemini 3.1 Pro, plus 2B on-device model for Android — expected to significantly narrow benchmark gap with GPT-5.5 when announced May 20.",
+      "url": "https://io.google/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India's leaked DPDP draft rules require explicit consent for AI training data — if finalised as leaked, this would force OpenAI, Google, and Meta to either seek retroactive consent from 700M+ Indian internet users or exclude Indian data from future training runs.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    },
+    {
+      "text": "Sarvam AI's Reliance Jio deployment prompted Airtel and BSNL to issue RFPs for comparable multilingual AI customer service agents — India's three largest telcos are now all actively evaluating Indian language AI for consumer-scale deployment.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's BharatGen pre-training hit 60% completion — ahead of the IndiaAI Mission's internal schedule; MeitY is targeting a public benchmark release in July before the AIGEG procurement window opens.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    },
+    {
+      "text": "India's AI export revenue for April 2026 reached $780M — on pace to exceed the $8B FY26 target with two months of the fiscal year still to run, driven by AI-augmented IT services billing at 2-3× traditional rates.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "Krutrim AI signed its first enterprise contract with an Indian bank — a contract to power loan underwriting AI for a mid-tier private sector bank, marking the first production deployment of a Krutrim model in Indian regulated financial services.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    }
+  ],
+  "closing_insight": "The week ends with Google I/O 12 days away, every enterprise AI metric running above forecast, and India about to produce the world's most ambitious AI data consent regulation — the AI market that existed at the start of April no longer exists, and whatever replaces it will be defined in the next 30 days."
+}

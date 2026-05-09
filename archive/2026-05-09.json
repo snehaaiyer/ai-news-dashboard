@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-09T08:00:00",
+  "intro": "Saturday: Google I/O is 11 days away and the pre-announcement intelligence is accelerating. Anthropic quietly expanded Claude Enterprise 3.0 to four additional health systems overnight. The EU AI Act proportionality ruling is now 21 days out, with 220 companies having filed pre-emptive evidence. India's DPDP draft leak triggered emergency legal reviews across every major AI company with Indian operations.",
+  "top_stories": [
+    {
+      "headline": "Google I/O Keynote Agenda Confirmed: Gemini 3.2 Ultra, Project Astra Mobile, and Android AI SDK",
+      "summary": "Google officially confirmed the Google I/O keynote agenda for May 20, revealing three headline announcements: Gemini 3.2 Ultra (its largest frontier model to date), Project Astra Mobile (a persistent AI agent running on Android with real-time camera and audio understanding), and the Android AI SDK (allowing third-party app developers to embed on-device Gemini capabilities). The confirmation ends weeks of speculation and gives developers 11 days to prepare integration plans. Google I/O's developer registration sold out in under 90 minutes after the agenda was published.",
+      "url": "https://io.google/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Anthropic Expands Claude Enterprise 3.0 to Seven Health Systems — 67% Documentation Reduction Confirmed Across All Deployments",
+      "summary": "Anthropic expanded Claude Enterprise 3.0 healthcare access to four additional health systems overnight, bringing the total to seven of the top 20 US health systems live in production. All seven report 67% or better reduction in clinical documentation time per encounter — confirming the initial metric is not specific to one system's workflow but consistent across different EHR environments, clinical specialties, and documentation styles. Anthropic's Chief Medical AI Officer said the consistency of the metric across seven different health systems 'eliminates implementation risk as a procurement objection.'",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "OpenAI Releases GPT-5.5 System Card: Full Safety Evaluation, Bio Risk Protocol, and Agentic Testing Methodology",
+      "summary": "OpenAI released the complete GPT-5.5 system card, including the full bio risk evaluation methodology, agentic safety testing protocols, and internal red-team findings. The system card documents that GPT-5.5 was evaluated against 847 distinct risk scenarios across 23 risk categories — the most comprehensive pre-deployment safety evaluation ever published by any AI company. The bio risk section confirms zero uplift on four of the five highest-risk biological synthesis pathways, with the fifth pathway showing 'marginal uplift within acceptable threshold.' Enterprise regulated buyers are treating the system card as the primary procurement compliance document.",
+      "url": "https://openai.com/news/",
+      "tag": "Research"
+    },
+    {
+      "headline": "EU AI Act Proportionality Ruling: 220 Companies Have Filed Evidence — Decision Now 21 Days Away",
+      "summary": "The EU AI Office confirmed 220 companies have submitted pre-emptive compliance evidence ahead of the biometric proportionality ruling now scheduled for May 30. The volume of pre-emptive submissions — nearly 10× the parties to the original case — signals that enterprises are treating the proportionality ruling as binding precedent for their own systems regardless of whether they are named defendants. EU AI Act legal experts say the 220-company submission volume will likely influence the ruling's scope, as the judge must now consider the broader market impact of the proportionality interpretation.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    },
+    {
+      "headline": "DPDP Leak Triggers Emergency Legal Reviews — Big Tech India Counsel in Crisis Briefings",
+      "summary": "The leaked DPDP draft rules requiring retroactive AI training consent triggered emergency legal review sessions at OpenAI, Google, Meta, and Microsoft's India operations over the weekend. Legal sources indicate that the retroactive consent requirement is considered 'technically and operationally infeasible' by all four companies, and each is preparing formal submissions to MeitY requesting either a prospective-only consent requirement or a grandfathering provision for models trained before the Act's notification date. The submissions must be filed before MeitY's May 23 comment window closes.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Google I/O developer registration sold out in 90 minutes after the official agenda was published — setting a new record for Google I/O registration speed and indicating that Gemini 3.2 Ultra is the most anticipated Google AI announcement since Gemini 1.0.",
+      "url": "https://io.google/"
+    },
+    {
+      "text": "Anthropic's 67% clinical documentation reduction confirmed across all seven health systems in diverse EHR environments eliminates implementation variability as a procurement objection — the metric is now the most reproducible ROI claim in enterprise AI.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "text": "OpenAI's GPT-5.5 system card at 847 risk scenarios across 23 categories is the most comprehensive AI safety evaluation ever published — and it will become the benchmark every future AI safety evaluation is measured against.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "text": "Meta's Llama 4 Maverick fine-tuning queue cleared to 7,000 enterprise teams after the third capacity expansion — the queue is filling faster than it clears, with new teams entering faster than Meta's infrastructure can process.",
+      "url": "https://ai.meta.com/blog/"
+    },
+    {
+      "text": "A2A SDK registered 5,000 developer teams in 72 hours — averaging 1,667 teams per day, a developer adoption velocity that outpaces Kubernetes, React, and every prior enterprise developer tool at equivalent maturity.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "Gemini 3.2 Ultra (I/O Preview)",
+      "maker": "Google",
+      "what": "Officially confirmed for Google I/O May 20 — Google's largest frontier model, expected to narrow benchmark gap with GPT-5.5 significantly; also coming: Project Astra Mobile and Android AI SDK for third-party app developers.",
+      "url": "https://io.google/"
+    },
+    {
+      "name": "GPT-5.5 System Card",
+      "maker": "OpenAI",
+      "what": "Complete safety evaluation: 847 risk scenarios, 23 categories, zero uplift on 4/5 highest bio risk pathways — the most comprehensive pre-deployment AI safety publication ever; now the primary enterprise procurement compliance document for GPT-5.5 Pro.",
+      "url": "https://openai.com/news/"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (7 Health Systems)",
+      "maker": "Anthropic",
+      "what": "Expanded to seven of top 20 US health systems overnight — 67% documentation time reduction confirmed across all deployments in diverse EHR environments, eliminating implementation variability as a procurement objection.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "A2A SDK (5,000 Teams, 72hr)",
+      "maker": "Google",
+      "what": "5,000 registered developer teams in 72 hours — faster adoption than Kubernetes at equivalent maturity; 23 community connector extensions already published for Snowflake, HubSpot, Zendesk, Jira, and GitHub.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Llama 4 Maverick Fine-Tuning (7K Queue)",
+      "maker": "Meta",
+      "what": "Fine-tuning queue at 7,000 enterprise teams after third capacity expansion — queue filling faster than capacity can clear; Model Hub June launch now expected to have 700+ validated fine-tunes, up from 500 earlier estimate.",
+      "url": "https://ai.meta.com/blog/"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "India's DPDP retroactive consent requirement triggered emergency legal briefings at all four US hyperscalers — OpenAI, Google, Meta, and Microsoft are preparing joint submissions to MeitY's May 23 comment window requesting a prospective-only consent provision.",
+      "url": "https://www.storyboard18.com/digital/ai-dpdp-and-it-rules-will-drive-new-phase-of-big-tech-regulation-in-india-in-2026-86739.htm"
+    },
+    {
+      "text": "Airtel issued an RFP for a multilingual AI customer service agent following Reliance Jio's Sarvam AI deployment — evaluation criteria include performance on Hindi, Tamil, Telugu, Kannada, and Bengali, with a preference for Indian data residency.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's AI skill premium crossed 3× — data scientists with AI specialisation are now earning 3× the salary of data scientists without AI skills, according to NASSCOM's May skills report, the largest premium in Indian technology history.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "Krutrim AI expanded its banking contract to include three additional mid-tier Indian banks — now powering loan underwriting AI for four Indian private sector banks, establishing Krutrim as the first Indian-built AI in production Indian banking infrastructure.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    },
+    {
+      "text": "India's BharatGen and Sarvam AI both received IndiaAI Mission funding extensions worth ₹800 crore combined — the additional funding accelerates both models toward the July public benchmark release that MeitY needs before the AIGEG procurement window.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    }
+  ],
+  "closing_insight": "With Google I/O 11 days away and Gemini 3.2 Ultra officially confirmed, the AI industry is in its pre-I/O holding pattern — but the holding pattern has 220 companies filing EU AI Act evidence, 5,000 teams building on the A2A SDK, and India's entire AI regulatory framework potentially rewritten. The pause before I/O is as consequential as the event itself."
+}

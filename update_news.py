@@ -30,7 +30,7 @@ OPERATOR_FILE = BASE_DIR / "ai_news_operator.json"
 GENERAL_SCHEMA = """
 {
   "generated_at": "<YYYY-MM-DDTHH:MM:SS — today at 08:00:00>",
-  "intro": "2–3 sentence opening hook summarising the day's biggest AI themes",
+  "intro": "<Dayname>: 2–3 sentence opening hook. Must open with the full day name (e.g. 'Saturday: …').",
   "top_stories": [
     {"headline": "...", "summary": "2–3 sentence summary.", "url": "https://...", "tag": "<Models|Research|Funding|Policy|Industry>"},
     ... (exactly 5 items)
@@ -102,8 +102,8 @@ OPERATOR_SCHEMA = """
 """
 
 
-def build_general_prompt(today: str, generated_at: str) -> str:
-    return f"""Today is {today}. You are an AI news curator for the "Daily AI Wrap-Up" dashboard.
+def build_general_prompt(today: str, generated_at: str, day_name: str) -> str:
+    return f"""Today is {today} ({day_name}). You are an AI news curator for the "Daily AI Wrap-Up" dashboard.
 
 Search the web for the most important AI news published in the last 24–48 hours, then return a single JSON object matching this schema exactly:
 
@@ -115,11 +115,12 @@ Rules:
 - tools_products: 5 noteworthy AI tools or product launches/updates today. Each needs a name, maker, one-sentence "what", and a real URL.
 - india_roundup: 5 India-specific AI items with real URLs.
 - generated_at must be exactly: "{generated_at}"
+- The intro field MUST begin with exactly "{day_name}: " (day name, colon, space).
 - Return ONLY the raw JSON — no markdown fences, no preamble."""
 
 
-def build_operator_prompt(today: str, generated_at: str) -> str:
-    return f"""Today is {today}. You are an expert in AI, advertising, and monetization writing a high-quality daily newsletter for operators — PMs, marketers, and founders.
+def build_operator_prompt(today: str, generated_at: str, day_name: str) -> str:
+    return f"""Today is {today} ({day_name}). You are an expert in AI, advertising, and monetization writing a high-quality daily newsletter for operators — PMs, marketers, and founders.
 
 Search the web for today's most important AI news, then interpret it through the lens of revenue generation, ad ecosystems, and growth/distribution. Focus especially on Meta, Google, OpenAI, and Microsoft developments.
 
@@ -152,21 +153,37 @@ def extract_json(text: str) -> str:
 
 def generate(client: anthropic.Anthropic, prompt: str, label: str) -> dict:
     print(f"  Generating {label} edition...")
-    response = client.messages.create(
-        model="claude-opus-4-7",
-        max_tokens=16000,
-        tools=[{"type": "web_search_20250305", "name": "web_search"}],
-        messages=[{"role": "user", "content": prompt}],
-    )
-    print(f"  stop_reason={response.stop_reason}, blocks={[b.type for b in response.content]}")
+    messages = [{"role": "user", "content": prompt}]
+    response = None
 
-    text_parts = [block.text for block in response.content if block.type == "text"]
+    for round_num in range(15):  # web search can take several rounds
+        response = client.messages.create(
+            model="claude-opus-4-7",
+            max_tokens=16000,
+            tools=[{"type": "web_search_20250305", "name": "web_search"}],
+            messages=messages,
+        )
+        print(f"  [round {round_num + 1}] stop_reason={response.stop_reason}, "
+              f"blocks={[b.type for b in response.content]}")
+
+        if response.stop_reason != "tool_use":
+            break
+
+        # Append assistant turn and continue — server injects search results
+        messages.append({"role": "assistant", "content": response.content})
+        messages.append({"role": "user", "content": [
+            {"type": "tool_result", "tool_use_id": blk.id, "content": ""}
+            for blk in response.content
+            if blk.type == "tool_use"
+        ]})
+
+    text_parts = [blk.text for blk in response.content if blk.type == "text"]
     raw_text = "\n".join(text_parts).strip()
 
     if not raw_text:
         print(f"ERROR: No text in {label} response.", file=sys.stderr)
-        for block in response.content:
-            print(f"  block type={block.type}: {str(block)[:200]}", file=sys.stderr)
+        for blk in response.content:
+            print(f"  block type={blk.type}: {str(blk)[:200]}", file=sys.stderr)
         sys.exit(1)
 
     try:
@@ -189,14 +206,15 @@ def main() -> None:
     )
     now_ist   = datetime.now(IST)
     today_str = now_ist.strftime("%B %-d, %Y")
+    day_name  = now_ist.strftime("%A")
     gen_at    = now_ist.replace(hour=8, minute=0, second=0, microsecond=0).strftime("%Y-%m-%dT%H:%M:%S")
     date_str  = now_ist.strftime("%Y-%m-%d")
 
-    print(f"Daily AI news update — {today_str}")
+    print(f"Daily AI news update — {today_str} ({day_name})")
 
     # Generate both editions
-    general_data  = generate(client, build_general_prompt(today_str, gen_at),  "general")
-    operator_data = generate(client, build_operator_prompt(today_str, gen_at), "operator")
+    general_data  = generate(client, build_general_prompt(today_str, gen_at, day_name),  "general")
+    operator_data = generate(client, build_operator_prompt(today_str, gen_at, day_name), "operator")
 
     # Save main files
     for path, data in [(OUTPUT_FILE, general_data), (OPERATOR_FILE, operator_data)]:
