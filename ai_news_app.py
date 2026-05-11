@@ -14,7 +14,9 @@ GITHUB_RAW_URL      = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_
 OPERATOR_RAW_URL    = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/{GITHUB_BRANCH}/ai_news_operator.json"
 ARCHIVE_BASE_URL    = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/{GITHUB_BRANCH}/archive"
 LOCAL_FALLBACK      = Path(__file__).parent / "ai_news_daily.json"
-LOCAL_OP_FALLBACK   = Path(__file__).parent / "ai_news_operator.json"
+LOCAL_OP_FALLBACK     = Path(__file__).parent / "ai_news_operator.json"
+LOCAL_COURSE_FALLBACK = Path(__file__).parent / "claude_code_course.json"
+COURSE_RAW_URL        = f"https://raw.githubusercontent.com/{GITHUB_USER}/{GITHUB_REPO}/{GITHUB_BRANCH}/claude_code_course.json"
 
 # Tag display config
 TAG_CONFIG = {
@@ -318,6 +320,53 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 div[data-baseweb="tab-list"] { gap: 0.4rem; border-bottom: 1px solid #21262d !important; }
 div[data-baseweb="tab"] { background: transparent !important; border-radius: 6px 6px 0 0 !important; color: #8b949e !important; font-size: 0.82rem !important; font-weight: 600 !important; padding: 0.4rem 0.9rem !important; }
 div[aria-selected="true"] { color: #58a6ff !important; border-bottom: 2px solid #58a6ff !important; }
+
+/* ── Course edition ── */
+.course-header {
+    background: linear-gradient(135deg, #0d1117 0%, #0f1a2d 100%);
+    border: 1px solid #30363d; border-top: 3px solid #58a6ff;
+    border-radius: 14px; padding: 1.5rem 1.8rem; margin-bottom: 1.5rem;
+}
+.course-meta { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #58a6ff; margin-bottom: 0.5rem; }
+.course-title { font-size: 1.3rem; font-weight: 800; color: #e6edf3; margin-bottom: 0.3rem; }
+.course-subtitle { font-size: 0.95rem; color: #c9d1d9; margin-bottom: 0.4rem; line-height: 1.5; }
+.course-desc { font-size: 0.83rem; color: #8b949e; margin-bottom: 1rem; line-height: 1.6; }
+.course-progress-row { display: flex; align-items: center; gap: 0.8rem; }
+.course-progress-bar { flex: 1; height: 6px; background: #21262d; border-radius: 999px; overflow: hidden; }
+.course-progress-fill { height: 100%; background: #58a6ff; border-radius: 999px; }
+.course-progress-label { font-size: 0.78rem; color: #8b949e; white-space: nowrap; }
+
+.lesson-full {
+    background: #0d1117; border: 1px solid #21262d;
+    border-radius: 12px; padding: 1.4rem 1.6rem; margin-bottom: 1.5rem;
+}
+.lesson-day-badge { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.3rem; }
+.lesson-title-lg { font-size: 1.1rem; font-weight: 700; color: #e6edf3; margin-bottom: 0.8rem; }
+.concept-tag { display: inline-block; background: #161b22; border: 1px solid #30363d; border-radius: 4px; padding: 0.12rem 0.45rem; font-size: 0.69rem; color: #8b949e; margin: 0 0.2rem 0.5rem 0; }
+.lesson-section-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #8b949e; margin: 1rem 0 0.4rem; }
+.lesson-body { font-size: 0.9rem; color: #c9d1d9; line-height: 1.7; }
+.lesson-mm-box { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 0.9rem 1.1rem; margin: 0.5rem 0; }
+.lesson-mm-headline { font-size: 0.9rem; font-weight: 700; color: #58a6ff; margin-bottom: 0.4rem; }
+.lesson-mm-body { font-size: 0.87rem; color: #c9d1d9; line-height: 1.7; }
+.lesson-step { display: flex; gap: 0.6rem; padding: 0.28rem 0; font-size: 0.87rem; color: #c9d1d9; line-height: 1.65; }
+.step-num { color: #58a6ff; font-weight: 700; flex-shrink: 0; min-width: 1.4rem; }
+.step-text { flex: 1; }
+.lesson-try-step { font-size: 0.87rem; color: #c9d1d9; line-height: 1.65; padding: 0.28rem 0; }
+.lesson-code { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.79rem; color: #c9d1d9; font-family: 'SF Mono','Consolas','Monaco',monospace; white-space: pre-wrap; overflow-x: auto; margin: 0.4rem 0; display: block; }
+.lesson-resources { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.4rem 0; }
+.lesson-resource { background: #1c2128; border: 1px solid #30363d; border-radius: 6px; padding: 0.2rem 0.6rem; font-size: 0.78rem; color: #58a6ff; text-decoration: none; display: inline-block; }
+.lesson-resource:hover { border-color: #58a6ff; }
+.lesson-takeaway { background: #0f2d0f; border: 1px solid #238636; border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.88rem; color: #56d364; line-height: 1.6; margin-top: 0.9rem; }
+
+.module-header-row { display: flex; align-items: flex-start; gap: 0.8rem; padding: 0.9rem 1.3rem; background: #0d1117; border: 1px solid #21262d; border-radius: 10px; margin-top: 1rem; margin-bottom: 0.3rem; }
+.module-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 0.35rem; }
+.module-num-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #8b949e; margin-bottom: 0.1rem; }
+.module-title-text { font-size: 1rem; font-weight: 700; color: #e6edf3; margin-bottom: 0.2rem; }
+.module-desc-text { font-size: 0.82rem; color: #8b949e; line-height: 1.5; }
+.lesson-row-today { padding: 0.5rem 1.3rem; background: #0d1117; border: 1px solid #21262d; border-top: none; border-radius: 0 0 0 0; font-size: 0.87rem; color: #58a6ff; font-weight: 600; display: flex; align-items: center; }
+.today-badge { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: #1f3a6e; color: #58a6ff; border-radius: 4px; padding: 0.1rem 0.4rem; margin-left: auto; }
+.lesson-row-locked { padding: 0.45rem 1.3rem; background: #0d1117; border: 1px solid #21262d; border-top: none; font-size: 0.84rem; color: #484f58; display: flex; align-items: center; }
+.lesson-unlock-date { font-size: 0.72rem; color: #484f58; margin-left: auto; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -371,6 +420,108 @@ def load_operator(date_str=None):
         with open(LOCAL_OP_FALLBACK) as f:
             return json.load(f)
     return None
+
+@st.cache_data(ttl=86400)
+def load_course():
+    try:
+        resp = requests.get(COURSE_RAW_URL, timeout=8)
+        if resp.status_code == 200:
+            return resp.json()
+    except Exception:
+        pass
+    if LOCAL_COURSE_FALLBACK.exists():
+        with open(LOCAL_COURSE_FALLBACK) as f:
+            return json.load(f)
+    return None
+
+def format_step_html(step):
+    step = step.strip()
+    if step.startswith("```"):
+        lines = step.split("\n")
+        code_lines = lines[1:]
+        if code_lines and code_lines[-1].strip() == "```":
+            code_lines = code_lines[:-1]
+        code_content = (
+            "\n".join(code_lines)
+            .replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        )
+        return f'<pre class="lesson-code">{code_content}</pre>'
+    return f'<div class="lesson-try-step">{step}</div>'
+
+def render_lesson_full(lesson, color="#58a6ff", show_header=False):
+    how_html = "".join(
+        f'<div class="lesson-step"><span class="step-num">{i+1}.</span><span class="step-text">{s}</span></div>'
+        for i, s in enumerate(lesson.get("how_it_works", []))
+    )
+    try_html = "".join(format_step_html(s) for s in lesson.get("try_it_steps", []))
+    resources = lesson.get("resources", [])
+    res_html  = "".join(
+        f'<a class="lesson-resource" href="{r["url"]}" target="_blank">↗ {r["label"]}</a>'
+        for r in resources
+    )
+    concepts_html = "".join(
+        f'<span class="concept-tag">{c}</span>' for c in lesson.get("concepts", [])
+    )
+    res_section = (
+        f'<div class="lesson-section-label">Resources</div>'
+        f'<div class="lesson-resources">{res_html}</div>'
+    ) if res_html else ""
+    header_html = (
+        f'<div class="lesson-day-badge" style="color:{color};">Day {lesson["day"]} · {lesson.get("duration_mins", 10)} min</div>'
+        f'<div class="lesson-title-lg">{lesson["title"]}</div>'
+    ) if show_header else ""
+    border = f"border-left: 4px solid {color};" if show_header else ""
+    st.markdown(f"""
+<div class="lesson-full" style="{border}">
+  {header_html}
+  <div class="lesson-concepts">{concepts_html}</div>
+  <div class="lesson-section-label">The Problem</div>
+  <div class="lesson-body">{lesson.get("problem", "")}</div>
+  <div class="lesson-mm-box">
+    <div class="lesson-mm-headline">🧠 {lesson.get("mental_model_headline", "")}</div>
+    <div class="lesson-mm-body">{lesson.get("mental_model_body", "")}</div>
+  </div>
+  <div class="lesson-section-label">How It Works</div>
+  <div class="lesson-steps">{how_html}</div>
+  <div class="lesson-section-label">🛠 Try It — {lesson.get("try_it_instruction", "")}</div>
+  <div class="lesson-try-steps">{try_html}</div>
+  {res_section}
+  <div class="lesson-takeaway">💡 {lesson.get("key_takeaway", "")}</div>
+</div>
+""", unsafe_allow_html=True)
+
+def render_module_card(module, today_dt):
+    color   = module.get("color", "#58a6ff")
+    lessons = module.get("lessons", [])
+    st.markdown(f"""
+<div class="module-header-row">
+  <span class="module-dot" style="background:{color};"></span>
+  <div>
+    <div class="module-num-label">Module {module['id']}</div>
+    <div class="module-title-text">{module['title']}</div>
+    <div class="module-desc-text">{module.get('description', '')}</div>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+    for lesson in lessons:
+        unlock_dt      = date.fromisoformat(lesson["unlock_date"])
+        is_today_l     = unlock_dt == today_dt
+        is_unlocked    = unlock_dt <= today_dt
+        if is_today_l:
+            st.markdown(
+                f'<div class="lesson-row-today">▶ Day {lesson["day"]}: {lesson["title"]}'
+                f'<span class="today-badge">TODAY ↑</span></div>',
+                unsafe_allow_html=True,
+            )
+        elif is_unlocked:
+            with st.expander(f"Day {lesson['day']}: {lesson['title']}"):
+                render_lesson_full(lesson, color)
+        else:
+            st.markdown(
+                f'<div class="lesson-row-locked">🔒 Day {lesson["day"]}: {lesson["title"]}'
+                f'<span class="lesson-unlock-date">Unlocks {unlock_dt.strftime("%b %-d")}</span></div>',
+                unsafe_allow_html=True,
+            )
 
 def render_tool(tool):
     name  = tool.get("name", "")
@@ -456,13 +607,22 @@ date_str      = selected_date.strftime("%Y-%m-%d") if is_archive else None
 if "edition" not in st.session_state:
     st.session_state["edition"] = "📰 General"
 is_operator = st.session_state["edition"] == "💼 Operator Edition"
+is_course   = st.session_state["edition"] == "🛠️ Claude Code"
 
 # ── Load data ─────────────────────────────────────────────────────────────────
 data, source   = load_news(date_str)
 op_data        = load_operator(date_str)
+course_data    = load_course()
 day_short, weekday = today_display()
-active_data    = op_data if is_operator else data
-updated_str    = format_generated_at(active_data["generated_at"]) if active_data else "Awaiting first run…"
+if is_course:
+    active_data = course_data
+    updated_str = "Claude Code for Builders · Unlocks one lesson per day"
+elif is_operator:
+    active_data = op_data
+    updated_str = format_generated_at(active_data["generated_at"]) if active_data else "Awaiting first run…"
+else:
+    active_data = data
+    updated_str = format_generated_at(active_data["generated_at"]) if active_data else "Awaiting first run…"
 
 # ── Hero ──────────────────────────────────────────────────────────────────────
 st.markdown(f"""
@@ -482,7 +642,7 @@ toggle_col, _, btn_col = st.columns([4, 5, 1])
 with toggle_col:
     st.radio(
         "Edition",
-        ["📰 General", "💼 Operator Edition"],
+        ["📰 General", "💼 Operator Edition", "🛠️ Claude Code"],
         horizontal=True,
         label_visibility="collapsed",
         key="edition",
@@ -493,26 +653,26 @@ with btn_col:
         st.rerun()
 
 # ── Archive picker (main page) ────────────────────────────────────────────────
-with st.expander("📅 Browse Archive"):
-    st.caption(f"Editions available from Apr 8 onwards — select a past date to read it.")
-    st.date_input(
-        "Select date",
-        value=selected_date,
-        min_value=archive_start,
-        max_value=today_date,
-        key="archive_date",
-        label_visibility="collapsed",
-    )
-
-if is_archive:
-    st.markdown(
-        f'<div class="archive-banner">📂 Viewing archive for <strong>{selected_date.strftime("%B %-d, %Y")}</strong> — '
-        f'use the Browse Archive picker above to change date.</div>',
-        unsafe_allow_html=True,
-    )
+if not is_course:
+    with st.expander("📅 Browse Archive"):
+        st.caption(f"Editions available from Apr 8 onwards — select a past date to read it.")
+        st.date_input(
+            "Select date",
+            value=selected_date,
+            min_value=archive_start,
+            max_value=today_date,
+            key="archive_date",
+            label_visibility="collapsed",
+        )
+    if is_archive:
+        st.markdown(
+            f'<div class="archive-banner">📂 Viewing archive for <strong>{selected_date.strftime("%B %-d, %Y")}</strong> — '
+            f'use the Browse Archive picker above to change date.</div>',
+            unsafe_allow_html=True,
+        )
 
 # ── Empty state ───────────────────────────────────────────────────────────────
-if not active_data:
+if not active_data and not is_course:
     edition_label = "Operator Edition" if is_operator else "news"
     msg = (f"No {edition_label} archive found for {selected_date.strftime('%B %-d, %Y')}."
            if is_archive else
@@ -525,6 +685,63 @@ if not active_data:
       <p>{msg}</p>
     </div>
     """, unsafe_allow_html=True)
+    st.stop()
+
+# ══════════════════════════════════════════════════════════════════════════════
+# COURSE EDITION
+# ══════════════════════════════════════════════════════════════════════════════
+if is_course:
+    if not course_data:
+        st.markdown("""
+        <div class="empty-state"><div class="icon">📭</div>
+        <h2>Course not loaded</h2><p>Refresh the page to try again.</p></div>
+        """, unsafe_allow_html=True)
+        st.stop()
+
+    course   = course_data.get("course", {})
+    modules  = course.get("modules", [])
+    today_dt = datetime.now(IST).date()
+
+    all_lessons      = [l for m in modules for l in m.get("lessons", [])]
+    unlocked_lessons = [l for l in all_lessons if date.fromisoformat(l["unlock_date"]) <= today_dt]
+    today_lesson     = next(
+        (l for l in all_lessons if date.fromisoformat(l["unlock_date"]) == today_dt), None
+    )
+    progress_pct = int(len(unlocked_lessons) / max(len(all_lessons), 1) * 100)
+
+    st.markdown(f"""
+<div class="course-header">
+  <div class="course-meta">🛠️ {course.get('total_modules', 5)} modules · {course.get('total_lessons', 15)} lessons · one per day</div>
+  <div class="course-title">{course.get('title', '')}</div>
+  <div class="course-subtitle">{course.get('subtitle', '')}</div>
+  <div class="course-desc">{course.get('description', '')}</div>
+  <div class="course-progress-row">
+    <div class="course-progress-bar"><div class="course-progress-fill" style="width:{progress_pct}%;"></div></div>
+    <div class="course-progress-label">{len(unlocked_lessons)}/{len(all_lessons)} unlocked</div>
+  </div>
+</div>
+""", unsafe_allow_html=True)
+
+    if today_lesson:
+        module_color = "#58a6ff"
+        for m in modules:
+            if any(l["id"] == today_lesson["id"] for l in m.get("lessons", [])):
+                module_color = m.get("color", "#58a6ff")
+                break
+        st.markdown(
+            f'<div class="section-label">🌟 &nbsp;Today\'s Lesson — Day {today_lesson["day"]} of {len(all_lessons)}</div>',
+            unsafe_allow_html=True,
+        )
+        render_lesson_full(today_lesson, module_color, show_header=True)
+
+    st.markdown('<div class="section-label">📚 &nbsp;All Modules</div>', unsafe_allow_html=True)
+    for module in modules:
+        render_module_card(module, today_dt)
+
+    st.markdown(
+        '<div class="footer">Claude Code for Builders · Powered by Streamlit &nbsp;·&nbsp; Generated by Claude</div>',
+        unsafe_allow_html=True,
+    )
     st.stop()
 
 # ══════════════════════════════════════════════════════════════════════════════
