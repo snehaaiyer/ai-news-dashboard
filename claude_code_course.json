@@ -1,0 +1,533 @@
+{
+  "generated_at": "2026-05-11T08:00:00",
+  "course": {
+    "title": "Claude Code for Builders",
+    "subtitle": "From chatting with Claude to shipping production work with a full agentic stack.",
+    "description": "15 lessons. 5 modules. One unlocks every day. By the end you will know exactly what a skill, an MCP server, a hook, and a worktree are — and when to reach for each one.",
+    "total_modules": 5,
+    "total_lessons": 15,
+    "start_date": "2026-05-11",
+    "modules": [
+      {
+        "id": 1,
+        "title": "The Mindset Shift",
+        "color": "#58a6ff",
+        "description": "Understand what Claude Code actually is, how it reads your project, and what it means to work in agentic mode.",
+        "lessons": [
+          {
+            "id": "1-1",
+            "day": 1,
+            "title": "Claude Code Is Not a Chatbot",
+            "unlock_date": "2026-05-11",
+            "duration_mins": 10,
+            "concepts": ["CLI", "filesystem access", "shell access", "session context"],
+            "problem": "You have been using Claude by pasting code into a chat window, waiting for a response, manually copying the output, and applying it yourself. For anything beyond two or three files this is slow and error-prone. You are doing the work of a build tool by hand.",
+            "mental_model_headline": "Chat Claude is a contractor you call on the phone. Claude Code is one who sits in your office.",
+            "mental_model_body": "When you chat with Claude, you describe what you want and Claude describes what to do — then you do the work. Claude Code puts the contractor inside your project. They have their own desk, can open your files directly, run your tests, commit to git, and check their own output. You shift from transcribing instructions to approving work.",
+            "how_it_works": [
+              "Claude Code is a CLI tool. You run `claude` in your terminal inside a project directory.",
+              "It has direct filesystem access — it reads and writes files without you pasting anything.",
+              "It has shell access — it can run `npm test`, `pytest`, `git commit`, or any command you permit.",
+              "Within a session it remembers everything it has read and done. Cross-session memory requires CLAUDE.md (Lesson 4).",
+              "The four tools it uses constantly: Read (opens files), Edit (modifies files), Write (creates files), Bash (runs commands). Everything Claude Code does is one of these four things."
+            ],
+            "try_it_instruction": "Install Claude Code and run it inside a real project you own.",
+            "try_it_steps": [
+              "Run: `npm install -g @anthropic-ai/claude-code`",
+              "cd into any project you have worked on before.",
+              "Run: `claude`",
+              "Ask: 'Describe this project in three sentences. What is its main purpose, what does it depend on, and what is the entry point?'",
+              "Notice: Claude reads your actual files. You did not paste anything."
+            ],
+            "key_takeaway": "Claude Code is an agent with hands — the shift from chat to CLI is the shift from describing work to delegating it.",
+            "resources": [
+              {"label": "Install Claude Code (npm)", "url": "https://www.npmjs.com/package/@anthropic-ai/claude-code"},
+              {"label": "Claude Code overview — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/overview"},
+              {"label": "Quickstart guide", "url": "https://docs.anthropic.com/en/docs/claude-code/quickstart"}
+            ]
+          },
+          {
+            "id": "1-2",
+            "day": 2,
+            "title": "How Claude Reads Your Project",
+            "unlock_date": "2026-05-12",
+            "duration_mins": 10,
+            "concepts": ["context window", "file exploration", "priority order", "project conventions"],
+            "problem": "You drop Claude into a project and ask a reasonable question. The answer is generic. Claude misses obvious context — your stack, your naming conventions, your architecture decisions. You spend half the conversation correcting it.",
+            "mental_model_headline": "Claude reads your codebase like a detective, not a reader.",
+            "mental_model_body": "A detective arriving at a scene does not read every document in the building — they look for the most diagnostic clues first. Claude does the same. It checks your directory structure to infer architecture. It reads package.json or pyproject.toml to learn your dependencies. It reads CLAUDE.md before anything else. Your job is not to give Claude everything — it is to make the most important context findable first.",
+            "how_it_works": [
+              "Claude has a finite context window. It cannot load your entire codebase at once.",
+              "It uses a priority order when exploring: (1) CLAUDE.md, (2) root-level config files (package.json, tsconfig.json, pyproject.toml), (3) entry points (index.ts, main.py, app.py), (4) files relevant to your specific question.",
+              "Conventional project structure helps enormously. A /components, /api, /tests layout tells Claude more than ten sentences of description.",
+              "Claude will ask to read more files if it needs them — but it will not read files it has no reason to suspect are relevant.",
+              "If your project breaks convention (e.g., non-standard folder names, unusual build system), put that information in CLAUDE.md."
+            ],
+            "try_it_instruction": "Make Claude's exploration strategy visible before it answers anything.",
+            "try_it_steps": [
+              "Open Claude Code in a project you know well.",
+              "Before asking your actual question, say: 'Before you answer anything, tell me which files you would read to understand this project and in what order. Do not read them yet — just list them.'",
+              "Compare Claude's list to what you would have told it to read.",
+              "The gap between those two lists is what CLAUDE.md should fill."
+            ],
+            "key_takeaway": "Claude does not read everything — it reads what it can find fast. Make the most important context the most findable.",
+            "resources": [
+              {"label": "Memory and CLAUDE.md — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/memory"},
+              {"label": "Claude Code settings reference", "url": "https://docs.anthropic.com/en/docs/claude-code/settings"}
+            ]
+          },
+          {
+            "id": "1-3",
+            "day": 3,
+            "title": "Goals Not Tasks — The Agentic Shift",
+            "unlock_date": "2026-05-13",
+            "duration_mins": 12,
+            "concepts": ["agentic mode", "goal specification", "task decomposition", "verification loop"],
+            "problem": "You ask Claude for one thing at a time. Write this function. Fix this test. Update the docs. You are the orchestrator, breaking work into micro-steps and sequencing them by hand. That is still you doing most of the thinking.",
+            "mental_model_headline": "Task mode: you break the work. Agentic mode: Claude breaks the work.",
+            "mental_model_body": "There are two modes of working with Claude Code. In task mode, you hand Claude one discrete action. In agentic mode, you hand Claude an outcome and it figures out the sequence of actions itself. The difference is who does the decomposition. For anything more than a one-liner, agentic mode is faster and produces better results — because Claude can see the whole work surface at once and plan across it.",
+            "how_it_works": [
+              "In agentic mode Claude: reads your goal, explores the codebase, plans the sequence of changes (you will see it use TodoWrite internally), executes them, runs verification after each significant step, fixes failures before moving on, and reports what it did.",
+              "The key to agentic mode is a well-specified goal — not a well-specified implementation.",
+              "Bad goal: 'Make the API faster.' Claude has no way to know what fast means or what it is allowed to change.",
+              "Good goal: 'The /users endpoint responds in over 2 seconds. Profile it, find the bottleneck, and fix it without changing the response schema. Run the existing load tests after and confirm improvement.'",
+              "Three things a good goal has: (1) the observable problem, (2) the acceptance criteria, (3) the constraints."
+            ],
+            "try_it_instruction": "Write one agentic goal and hand it to Claude without breaking it into steps.",
+            "try_it_steps": [
+              "Pick a feature or fix you have been meaning to do.",
+              "Write a single goal statement covering: what should change, how you will know it worked, and any constraints (do not change X, must pass Y tests).",
+              "Give it to Claude with no follow-up instructions.",
+              "Watch the first thing Claude does — it should explore before it acts. If it starts editing immediately without exploring, your goal was underspecified."
+            ],
+            "key_takeaway": "The agentic shift is moving from 'do this' to 'achieve this.' The bigger the goal, the more value you get from letting Claude decompose it.",
+            "resources": [
+              {"label": "Agentic patterns — Claude Code docs", "url": "https://docs.anthropic.com/en/docs/claude-code/common-tasks"},
+              {"label": "Extended thinking for complex goals", "url": "https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Your Toolkit",
+        "color": "#3fb950",
+        "description": "Master the three layers that make Claude Code yours: CLAUDE.md for persistent context, settings for behaviour, and skills for repeatable workflows.",
+        "lessons": [
+          {
+            "id": "2-1",
+            "day": 4,
+            "title": "CLAUDE.md — The Briefing Document",
+            "unlock_date": "2026-05-14",
+            "duration_mins": 12,
+            "concepts": ["CLAUDE.md", "project instructions", "global instructions", "persistent context"],
+            "problem": "Every new Claude Code session starts from scratch. You re-explain your stack, your conventions, your git workflow, what not to do. Claude makes the same mistakes it made last week. You are paying a context tax on every session.",
+            "mental_model_headline": "CLAUDE.md is the briefing document you give a contractor on day one — except Claude re-reads it every single session.",
+            "mental_model_body": "A good contractor briefing covers: what the project is, what they can and cannot touch, how the team works, and the one thing you always get wrong without it. CLAUDE.md is exactly that. It sits in your project root. Claude reads it before it reads anything else, every session. One hour writing it saves you ten hours of repeated corrections.",
+            "how_it_works": [
+              "Two locations: (1) `PROJECT_ROOT/CLAUDE.md` — project-specific, checked into git, seen by everyone on the team. (2) `~/.claude/CLAUDE.md` — global, applies to every project on your machine.",
+              "CLAUDE.md is plain markdown. No special syntax. Claude reads it as instructions.",
+              "What belongs in it: project overview (2-3 sentences), tech stack, git workflow, coding conventions, what Claude must never do (e.g., 'never modify the database schema directly'), and anything Claude got wrong last time.",
+              "What does not belong: things that change per-task (put those in your prompt), things Claude should discover from the code (let it explore).",
+              "You can import other files from CLAUDE.md using `@path/to/file` — useful for pulling in a CONVENTIONS.md or ARCHITECTURE.md."
+            ],
+            "try_it_instruction": "Write your first CLAUDE.md for a project you actively work on.",
+            "try_it_steps": [
+              "Open the root directory of your most-used project.",
+              "Create CLAUDE.md with these four sections: ## Project (2 sentences on what it does), ## Stack (languages, frameworks, key dependencies), ## Git Workflow (branch naming, commit style, whether to push), ## Never (one thing Claude keeps getting wrong).",
+              "Start a new Claude Code session in that project.",
+              "Ask the same question you used in Lesson 1. Compare the answer quality."
+            ],
+            "key_takeaway": "CLAUDE.md is not documentation — it is a persistent instruction layer that runs before every session. Treat it as a living file.",
+            "resources": [
+              {"label": "CLAUDE.md and memory — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/memory"},
+              {"label": "Example CLAUDE.md (Claude Code repo)", "url": "https://github.com/anthropics/claude-code/blob/main/CLAUDE.md"}
+            ]
+          },
+          {
+            "id": "2-2",
+            "day": 5,
+            "title": "Settings and Permissions",
+            "unlock_date": "2026-05-15",
+            "duration_mins": 10,
+            "concepts": ["settings.json", "allowlist", "permission modes", "project vs global settings"],
+            "problem": "Claude keeps asking permission for the same actions every session — running tests, reading a config file, calling git status. You approve the same things fifty times. Or the opposite: Claude does something you did not expect and you have no idea what it is allowed to do.",
+            "mental_model_headline": "Permissions are the fence. Settings are the default behaviour inside the fence.",
+            "mental_model_body": "Every tool Claude uses — reading a file, running a command, writing to disk — can be pre-approved or require your confirmation each time. The allowlist defines what Claude can do without asking. Outside the allowlist, Claude always asks. Inside the allowlist, it acts. Get this right once per project and you stop approving the same things forever.",
+            "how_it_works": [
+              "Settings live in `.claude/settings.json` (project-level) or `~/.claude/settings.json` (global). Project settings take precedence.",
+              "The `allow` array is a list of tool+pattern pairs that Claude can use without confirmation.",
+              "Format: `{\"allow\": [\"Bash(npm test)\", \"Bash(git status)\", \"Read(**)\", \"Edit(src/**)\"]}`",
+              "Permission modes: Default (Claude asks for most things), Auto-approve (Claude acts on all allowed tools without asking), Manual (Claude asks for everything including allowed tools — useful for reviewing).",
+              "You can set the mode per-session with `--permission-mode auto` or in settings.json.",
+              "Security note: Never put `Bash(**)` in your global allowlist. Scope Bash permissions to specific commands."
+            ],
+            "try_it_instruction": "Add an allowlist to a project so Claude stops asking about your three most common commands.",
+            "try_it_steps": [
+              "Run Claude Code and note the three Bash commands it asks permission for most often.",
+              "Create `.claude/settings.json` in your project root.",
+              "Add: `{\"allow\": [\"Bash(npm test)\", \"Bash(npm run lint)\", \"Bash(git status)\", \"Bash(git diff)\"]}` — replace with your actual commands.",
+              "Start a new session. Claude will now run those commands without asking."
+            ],
+            "key_takeaway": "Set permissions once per project. Narrow Bash permissions to specific commands — never allow all Bash globally.",
+            "resources": [
+              {"label": "Settings reference — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/settings"},
+              {"label": "IAM and permissions — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/iam"}
+            ]
+          },
+          {
+            "id": "2-3",
+            "day": 6,
+            "title": "Skills — Your Command Vocabulary",
+            "unlock_date": "2026-05-16",
+            "duration_mins": 12,
+            "concepts": ["skills", "slash commands", ".claude/commands/", "skill arguments", "reusable workflows"],
+            "problem": "You do the same workflow over and over — generate a PR description, write a changelog entry, create a test file for a new module, produce a standup update. You re-explain the format every time. The output is inconsistent.",
+            "mental_model_headline": "A skill is a macro. You record a workflow once, name it, and run it with /skill-name forever.",
+            "mental_model_body": "Skills are markdown files that live in `.claude/commands/`. Each file is a prompt template for a specific workflow. When you type `/skill-name` in Claude Code, it loads that file as your prompt and runs it. Skills can accept arguments — so `/create-test UserService` tells Claude to write tests for UserService using your exact format, every time, without re-explanation.",
+            "how_it_works": [
+              "Skills live in `.claude/commands/skill-name.md`. The filename becomes the slash command.",
+              "A skill file is a markdown prompt. Write it exactly as you would write a prompt — but for reuse.",
+              "Arguments: use `$ARGUMENTS` anywhere in the skill file. Whatever you type after the slash command replaces `$ARGUMENTS`.",
+              "Example: `/create-test UserService` → Claude runs the create-test skill with `$ARGUMENTS = UserService`.",
+              "Global skills live in `~/.claude/commands/` and are available in every project.",
+              "Skills can reference your CLAUDE.md context — they execute inside the same session, so all your project context is already loaded.",
+              "The difference between a skill and a prompt: a skill is one you will run again. If you have typed the same prompt more than three times, it should be a skill."
+            ],
+            "try_it_instruction": "Write one skill for a workflow you repeat at least weekly.",
+            "try_it_steps": [
+              "Create the directory: `mkdir -p .claude/commands`",
+              "Create `.claude/commands/pr-description.md` with this content:",
+              "```\nLook at the diff between the current branch and main.\nWrite a pull request description with:\n- A one-line summary of what changed and why\n- A bullet list of the specific changes\n- Any migration steps or breaking changes\n- How to test it\nKeep it factual. No marketing language.\n$ARGUMENTS\n```",
+              "In Claude Code, type: `/pr-description`",
+              "Claude generates your PR description from the actual diff — no manual writing."
+            ],
+            "key_takeaway": "If you have typed the same prompt more than three times, it is a skill waiting to be written.",
+            "resources": [
+              {"label": "Slash commands / skills — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/slash-commands"},
+              {"label": "Example skills in Claude Code repo", "url": "https://github.com/anthropics/claude-code/tree/main/.claude/commands"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Connecting the World",
+        "color": "#d2a8ff",
+        "description": "MCP (Model Context Protocol) is how Claude connects to external tools, data, and APIs. This module covers the concept, the setup, and the connectors you will actually use.",
+        "lessons": [
+          {
+            "id": "3-1",
+            "day": 7,
+            "title": "What MCP Is and Why It Changes Everything",
+            "unlock_date": "2026-05-17",
+            "duration_mins": 14,
+            "concepts": ["Model Context Protocol", "MCP server", "MCP client", "tools", "resources", "server-side tools"],
+            "problem": "Claude knows what you tell it and what is in its training data. It cannot see your Jira tickets, your Notion docs, your database records, your Slack threads. So when you ask 'what should I work on this sprint?', it gives a generic answer — because it is blind to your actual context.",
+            "mental_model_headline": "MCP is USB-C for AI. Any tool that implements the standard can plug directly into Claude.",
+            "mental_model_body": "Before MCP, connecting Claude to an external tool meant building a custom integration from scratch for every tool. MCP is the standard that makes this composable. You install an MCP server for a tool (GitHub, Jira, Slack, your database). Claude discovers what that server can do. From then on, Claude can read from and act on that tool as naturally as it reads your files. The standard is open — anyone can build a server for any data source.",
+            "how_it_works": [
+              "MCP uses a client-server architecture. Claude Code is the client. An MCP server is an adapter that wraps a data source or tool.",
+              "Each MCP server exposes a list of 'tools' — named actions Claude can call. Example: the GitHub MCP server exposes tools like `list_pull_requests`, `create_issue`, `get_file_contents`.",
+              "When Claude needs information from GitHub, it calls the appropriate tool. The MCP server executes the actual GitHub API call and returns the result to Claude.",
+              "Claude never calls GitHub's API directly — it always goes through the MCP server. This means the server controls what Claude can access and what it cannot.",
+              "Two types of MCP tools: read tools (Claude fetches data, read-only) and write tools (Claude creates, updates, or deletes — requires explicit permission scoping).",
+              "MCP servers communicate over stdio (a local process) or HTTP (a remote server). For most tools you will use, someone has already built the server."
+            ],
+            "try_it_instruction": "Install one MCP server and watch Claude use it without you explaining what it can do.",
+            "try_it_steps": [
+              "Install the filesystem MCP server: `npm install -g @modelcontextprotocol/server-filesystem`",
+              "Add it to your Claude settings.json:",
+              "```json\n{\n  \"mcpServers\": {\n    \"filesystem\": {\n      \"command\": \"mcp-server-filesystem\",\n      \"args\": [\"/path/to/a/directory/you/want/Claude/to/access\"]\n    }\n  }\n}```",
+              "Start Claude Code and ask: 'What MCP tools do you have available?'",
+              "Claude will list the filesystem tools. Then ask it to summarise the contents of a directory it could not previously see."
+            ],
+            "key_takeaway": "Without MCP, Claude is smart but blind to your tools. With MCP, it can see everything those tools can see — and act on them.",
+            "resources": [
+              {"label": "Model Context Protocol — introduction", "url": "https://modelcontextprotocol.io/introduction"},
+              {"label": "MCP server registry (GitHub)", "url": "https://github.com/modelcontextprotocol/servers"},
+              {"label": "Filesystem MCP server (npm)", "url": "https://www.npmjs.com/package/@modelcontextprotocol/server-filesystem"}
+            ]
+          },
+          {
+            "id": "3-2",
+            "day": 8,
+            "title": "Your First MCP Server",
+            "unlock_date": "2026-05-18",
+            "duration_mins": 14,
+            "concepts": ["MCP server anatomy", "stdio transport", "tools definition", "handlers", "MCP registry", "debugging MCP"],
+            "problem": "You want Claude to read from a data source that does not have a pre-built MCP server. Or you want to understand what is happening inside the MCP servers you already use — so you can configure them correctly and debug when they break.",
+            "mental_model_headline": "An MCP server is a program that answers Claude's questions about a data source. It has two parts: a menu and a kitchen.",
+            "mental_model_body": "The menu is the tools list — it tells Claude what the server can do. The kitchen is the handlers — it implements each thing the menu promised. When Claude calls a tool, the server runs the handler, fetches or acts on the data, and returns the result. That is all an MCP server is. The complexity is in what the data source requires, not in the MCP layer itself.",
+            "how_it_works": [
+              "A minimal MCP server in Python or TypeScript has three parts: a list of tool definitions (name, description, input schema), handler functions for each tool, and a transport layer (usually stdio for local servers).",
+              "The tool description is critical — Claude reads it to decide whether to call this tool. Write it like you are writing a function docstring for someone who cannot see the implementation.",
+              "The input schema uses JSON Schema format. Claude uses it to know what arguments to pass.",
+              "For most use cases, check the MCP registry first: github.com/modelcontextprotocol/servers — there are servers for GitHub, Slack, Notion, PostgreSQL, Google Drive, Brave Search, and dozens more.",
+              "To debug an MCP connection: check Claude's output for tool call logs, verify the server process is running (stdio servers run as child processes), and check that the server name in settings.json matches exactly."
+            ],
+            "try_it_instruction": "Configure the GitHub MCP server and use it to pull live context into Claude.",
+            "try_it_steps": [
+              "Install: `npm install -g @modelcontextprotocol/server-github`",
+              "Add to settings.json (requires a GitHub personal access token):",
+              "```json\n{\n  \"mcpServers\": {\n    \"github\": {\n      \"command\": \"mcp-server-github\",\n      \"env\": { \"GITHUB_TOKEN\": \"your-token-here\" }\n    }\n  }\n}```",
+              "Start Claude Code and ask: 'List the open pull requests in [your-repo]. Summarise what each one does in one sentence.'",
+              "Claude reads your actual open PRs. You did not paste anything."
+            ],
+            "key_takeaway": "Most MCP servers you will ever need already exist. Check the registry before building. Build only when the tool is genuinely custom to your workflow.",
+            "resources": [
+              {"label": "MCP server registry", "url": "https://github.com/modelcontextprotocol/servers"},
+              {"label": "GitHub MCP server", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/github"},
+              {"label": "Build an MCP server — quickstart", "url": "https://modelcontextprotocol.io/quickstart/server"}
+            ]
+          },
+          {
+            "id": "3-3",
+            "day": 9,
+            "title": "Connectors — Giving Claude Hands",
+            "unlock_date": "2026-05-19",
+            "duration_mins": 12,
+            "concepts": ["write connectors", "read vs write", "GitHub connector", "Jira connector", "permission scoping", "audit trail"],
+            "problem": "You can now give Claude eyes — it can read your Jira tickets, your PRs, your Slack threads. But it still cannot act on them. After Claude drafts a Jira ticket, you copy-paste it manually. The last mile is still you.",
+            "mental_model_headline": "Read connectors give Claude eyes. Write connectors give Claude hands.",
+            "mental_model_body": "A connector with write access does not just let Claude see your tools — it lets Claude act inside them. Claude can create the Jira ticket, not just draft it. Claude can open the PR, not just describe it. Claude can post the Slack summary, not just generate it. The architectural shift is significant: Claude becomes an actor in your workflow, not just an advisor.",
+            "how_it_works": [
+              "Write access requires explicit configuration in the MCP server setup — most servers default to read-only.",
+              "GitHub write connector: enables Claude to create branches, open PRs, add comments, create issues. Requires a token with repo write scope.",
+              "Jira write connector: enables Claude to create and update tickets, move items between sprints, add comments. Requires an API token with project write access.",
+              "Permission scoping is essential: give Claude write access only to the specific repos, projects, or channels it needs — not your entire account.",
+              "Every write action Claude takes through an MCP connector is logged by the receiving tool (GitHub, Jira, Slack) under the account whose token was used. This creates an audit trail.",
+              "Safety pattern: use a dedicated service account token for Claude connectors, not your personal token. This separates Claude's actions from your human actions in audit logs."
+            ],
+            "try_it_instruction": "Use the GitHub connector to have Claude create a real artefact in your repository.",
+            "try_it_steps": [
+              "Ensure your GitHub MCP server token has repo write scope.",
+              "In Claude Code, say: 'Look at the diff between this branch and main. Create a GitHub issue summarising the changes as a code review request. Label it \"needs-review\".'",
+              "Claude creates the issue. Check GitHub — it is there.",
+              "Then say: 'Update the issue description to add a checklist of the specific files changed.'",
+              "Claude updates it. You never left Claude Code."
+            ],
+            "key_takeaway": "Write connectors make Claude an actor, not an advisor. Scope write permissions tightly and use a service account token.",
+            "resources": [
+              {"label": "MCP tools concept — write actions", "url": "https://modelcontextprotocol.io/docs/concepts/tools"},
+              {"label": "GitHub personal access tokens", "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"},
+              {"label": "GitHub MCP server (write tools)", "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/github"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Automating Your Workflow",
+        "color": "#ffa657",
+        "description": "Hooks automate the guardrails. Multi-step workflows let Claude run full sequences without babysitting. Parallel agents multiply your throughput.",
+        "lessons": [
+          {
+            "id": "4-1",
+            "day": 10,
+            "title": "Hooks — Automated Guardrails",
+            "unlock_date": "2026-05-20",
+            "duration_mins": 12,
+            "concepts": ["PreToolUse hook", "PostToolUse hook", "Stop hook", "Notification hook", "hook scripts", "shell exit codes"],
+            "problem": "You want things to happen automatically at specific moments in Claude's workflow — run tests before any commit, format code after any file edit, check git status before Claude stops, alert you when a long task finishes. Right now you do all of this manually.",
+            "mental_model_headline": "Hooks are tripwires. You place them at specific moments in Claude's workflow. When Claude crosses one, your script runs.",
+            "mental_model_body": "Claude Code has four moments where you can intercept: before a tool runs (PreToolUse), after a tool runs (PostToolUse), when Claude finishes a session (Stop), and when Claude wants to notify you (Notification). At each moment, you can run a shell script. The script's exit code and output can block Claude, modify its behaviour, or just log what happened.",
+            "how_it_works": [
+              "Hooks are configured in `.claude/settings.json` under the `hooks` key.",
+              "PreToolUse: runs before Claude uses any tool. Exit code 1 blocks the tool call. Useful for: requiring tests to pass before any commit, validating file paths before writes.",
+              "PostToolUse: runs after a tool completes. Useful for: auto-formatting after file edits, logging what changed.",
+              "Stop: runs when Claude ends a session. Useful for: checking for unpushed commits, summarising what was done, sending a notification.",
+              "Notification: runs when Claude sends a notification event. Useful for: routing alerts to Slack or a desktop notification.",
+              "Hook scripts receive context as environment variables or stdin (tool name, file path, command run). Use this to write conditional hooks.",
+              "Example Stop hook: a script that runs `git status` and prints a warning if there are uncommitted changes — exactly like the hook that has been running in this project."
+            ],
+            "try_it_instruction": "Write a Stop hook that tells you what Claude changed in the session.",
+            "try_it_steps": [
+              "Create `.claude/hooks/session-summary.sh`:",
+              "```bash\n#!/bin/bash\necho '--- Session Summary ---'\necho 'Modified files:'\ngit diff --name-only HEAD\necho 'Untracked files:'\ngit ls-files --others --exclude-standard\necho '-----------------------'```",
+              "Make it executable: `chmod +x .claude/hooks/session-summary.sh`",
+              "Add to `.claude/settings.json`:",
+              "```json\n{\n  \"hooks\": {\n    \"Stop\": [{\"command\": \".claude/hooks/session-summary.sh\"}]\n  }\n}```",
+              "End your next Claude session. The hook runs and prints what changed."
+            ],
+            "key_takeaway": "Hooks make Claude's workflow enforce your team's standards automatically — no manual checking required.",
+            "resources": [
+              {"label": "Claude Code hooks — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/hooks"},
+              {"label": "Hook event types reference", "url": "https://docs.anthropic.com/en/docs/claude-code/hooks#hook-types"}
+            ]
+          },
+          {
+            "id": "4-2",
+            "day": 11,
+            "title": "Multi-Step Agentic Workflows",
+            "unlock_date": "2026-05-21",
+            "duration_mins": 14,
+            "concepts": ["workflow composition", "skill chaining", "self-correction", "verification steps", "TodoWrite", "auto-approve mode"],
+            "problem": "You want Claude to run a complete sequence — read specs, write code, run tests, fix any failures, commit — without you babysitting each step. Currently you are present for every transition, approving each action manually.",
+            "mental_model_headline": "A multi-step workflow is a recipe. Write the steps once. Claude follows them in order, checks its own work, and only surfaces genuine blockers.",
+            "mental_model_body": "The reason you babysit Claude is usually one of three things: permissions (Claude asks before each action), uncertainty (Claude is not sure what to do next), or recovery (Claude does not know what to do when something fails). A well-designed multi-step workflow solves all three: permissions are pre-configured in settings, the next step is explicit in the skill, and recovery steps are part of the recipe.",
+            "how_it_works": [
+              "Write multi-step workflows as skills (Lesson 6). Each step is a numbered instruction.",
+              "Use verification steps explicitly: 'After writing the tests, run them. If any fail, fix the failures before proceeding to step 4.'",
+              "Claude tracks its own progress using TodoWrite internally — you can observe this in the output.",
+              "For fully automated workflows (CI-style), use `--dangerously-skip-permissions` with a narrow allowlist. This removes all confirmation prompts — use only in automated pipelines, never interactively.",
+              "The most robust multi-step skills include: an exploration phase (read the relevant files first), an execution phase (make the changes), a verification phase (run tests/linters), and a reporting phase (summarise what was done).",
+              "Skill chaining: a skill can reference another skill. End one skill with 'Now run /verify' to chain into a second skill automatically."
+            ],
+            "try_it_instruction": "Write a /ship skill that runs a complete feature-to-PR workflow.",
+            "try_it_steps": [
+              "Create `.claude/commands/ship.md` with these steps:",
+              "```\n1. Read the current branch diff vs main. Understand what changed and why.\n2. Run the test suite. If any tests fail, fix them before continuing.\n3. Run the linter. Fix any errors before continuing.\n4. Write a commit message following conventional commits format: type(scope): description.\n5. Stage all changed files and commit with that message.\n6. Write a PR description covering: what changed, why, how to test it.\n7. Report: list the commit hash, the files changed, and the PR description.\n\nTarget: $ARGUMENTS```",
+              "Type `/ship` in Claude Code.",
+              "Claude runs the full sequence: test → lint → commit → PR description. You review the output and push."
+            ],
+            "key_takeaway": "A good multi-step workflow has four phases: explore, execute, verify, report. Write the verify and report phases explicitly — Claude will not add them unless you ask.",
+            "resources": [
+              {"label": "Conventional commits specification", "url": "https://www.conventionalcommits.org/en/v1.0.0/"},
+              {"label": "Common agentic tasks — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/common-tasks"},
+              {"label": "CLI flags reference", "url": "https://docs.anthropic.com/en/docs/claude-code/cli-reference"}
+            ]
+          },
+          {
+            "id": "4-3",
+            "day": 12,
+            "title": "Parallel Agents and Worktrees",
+            "unlock_date": "2026-05-22",
+            "duration_mins": 14,
+            "concepts": ["git worktrees", "parallel agents", "Agent tool", "isolation", "merge strategy", "when to parallelize"],
+            "problem": "A large task — migrating an API, refactoring a module, building a feature with frontend and backend work — takes hours sequentially. You want Claude working on multiple parts simultaneously, but without the agents stepping on each other.",
+            "mental_model_headline": "Worktrees are parallel universes of your codebase. Each agent gets its own universe. They cannot collide.",
+            "mental_model_body": "A git worktree lets you check out multiple branches of the same repo simultaneously, each in its own directory. Claude Agent A works in worktree-A on the frontend. Claude Agent B works in worktree-B on the API. They share no files. When both are done, you review and merge. The risk of parallel work (conflicting edits) is eliminated by isolating each agent's scope.",
+            "how_it_works": [
+              "Create a worktree: `git worktree add ../project-feature-a feature-a-branch`",
+              "This creates a new directory (`../project-feature-a`) checked out to `feature-a-branch`. Changes there do not affect your main working directory.",
+              "Run a Claude Code session in each worktree directory independently: `cd ../project-feature-a && claude`",
+              "The Agent tool (used within a Claude session) can spawn sub-agents for discrete sub-tasks. These sub-agents run in the same worktree as the parent.",
+              "When to parallelize: independent tasks (frontend + backend), tasks with a clear interface boundary (you define the API contract, each agent implements one side), or large refactors broken into non-overlapping modules.",
+              "When not to parallelize: tasks with shared state, tasks where the output of one depends on the output of another, or tasks where the overhead of coordination outweighs the time saved.",
+              "After both agents finish: review each branch independently, then merge the simpler one first and resolve any conflicts in the second."
+            ],
+            "try_it_instruction": "Run two parallel Claude agents on isolated parts of a project.",
+            "try_it_steps": [
+              "Pick a project with a clear frontend/backend split, or any two independent modules.",
+              "Create two worktrees: `git worktree add ../project-a task-a` and `git worktree add ../project-b task-b`",
+              "Open two terminal windows. In each, `cd` to one of the worktree directories and run `claude`.",
+              "Give each agent a goal scoped to its module. Do not let the goals overlap.",
+              "When both finish, review separately: `cd ../project-a && git diff main` and `cd ../project-b && git diff main`",
+              "Merge the simpler one first. Clean up: `git worktree remove ../project-a`"
+            ],
+            "key_takeaway": "Parallel agents multiply throughput. Worktrees prevent collisions. Use both only when the tasks are genuinely independent.",
+            "resources": [
+              {"label": "git worktree — official docs", "url": "https://git-scm.com/docs/git-worktree"},
+              {"label": "Sub-agents — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents"},
+              {"label": "Parallel development patterns", "url": "https://docs.anthropic.com/en/docs/claude-code/common-tasks"}
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Builder Patterns",
+        "color": "#f85149",
+        "description": "How the full stack fits together, how to recover when things go wrong, and how to ship production-ready work with Claude as a systematic part of the process.",
+        "lessons": [
+          {
+            "id": "5-1",
+            "day": 13,
+            "title": "The Builder Stack — How It All Fits",
+            "unlock_date": "2026-05-23",
+            "duration_mins": 12,
+            "concepts": ["stack layers", "day-in-the-life", "layer dependencies", "coverage audit"],
+            "problem": "You have learned all the pieces individually. But when you sit down to work, you are not sure which layer to reach for first — or whether your current workflow is missing something that would make everything else faster.",
+            "mental_model_headline": "Six layers. Each does one job. Together they handle everything.",
+            "mental_model_body": "The builder stack from bottom to top: CLAUDE.md (persistent context — always on, never optional), Settings and Permissions (behaviour boundaries — set once per project), Skills (repeatable workflows — your playbook, growing over time), MCP Connectors (external context and actions — eyes and hands in your tools), Hooks (automated guardrails — invisible but always running), Agents (the workers — invoked for specific tasks). Each layer depends on the one below it. Good CLAUDE.md makes better skills. Good permissions make safer hooks. Good hooks make autonomous agents safe.",
+            "how_it_works": [
+              "Layer 1 — CLAUDE.md: defines what Claude knows about your project. Without this, every other layer is working with incomplete context.",
+              "Layer 2 — Settings/Permissions: defines what Claude is allowed to do. Without this, Claude asks for everything — breaking flow.",
+              "Layer 3 — Skills: codifies your repeated workflows. Without this, you retype the same prompts and get inconsistent output.",
+              "Layer 4 — MCP Connectors: connects Claude to your tools. Without this, Claude works only with what is in your local filesystem.",
+              "Layer 5 — Hooks: enforces standards automatically. Without this, you manually check everything Claude produces.",
+              "Layer 6 — Agents: executes goals autonomously. Without the other five layers set up, agents are unsafe or ineffective.",
+              "A day-in-the-life of a builder with the full stack: morning standup skill runs against Jira connector, returns what to work on → agentic coding session with auto-approved permissions → hooks run tests and lint on every commit → /ship skill creates PR via GitHub connector → Stop hook checks nothing is unpushed."
+            ],
+            "try_it_instruction": "Audit your current setup against the six layers. Find the missing one.",
+            "try_it_steps": [
+              "For each layer, answer yes or no: (1) Does this project have a CLAUDE.md? (2) Does it have a .claude/settings.json with an allowlist? (3) Does it have at least one skill in .claude/commands/? (4) Does it have at least one MCP server configured? (5) Does it have at least one hook? (6) Have you run an agentic multi-step task this week?",
+              "The first 'no' in the list is your highest-leverage improvement.",
+              "Fix just that one layer this session. One layer at a time compounds faster than trying to add everything at once."
+            ],
+            "key_takeaway": "The full stack is not complex — it is six layers each doing one job. The first missing layer is always worth more than adding a sixth layer you already have.",
+            "resources": [
+              {"label": "Claude Code full documentation", "url": "https://docs.anthropic.com/en/docs/claude-code/overview"},
+              {"label": "Claude Code GitHub repository", "url": "https://github.com/anthropics/claude-code"}
+            ]
+          },
+          {
+            "id": "5-2",
+            "day": 14,
+            "title": "Debugging and Recovery",
+            "unlock_date": "2026-05-24",
+            "duration_mins": 12,
+            "concepts": ["git recovery", "corrective feedback", "/clear command", "session management", "reading Claude's reasoning", "context drift"],
+            "problem": "Claude did something wrong — it edited the wrong file, misunderstood the goal, or got stuck in a loop. You do not know how to recover without starting over and losing all the context you built up.",
+            "mental_model_headline": "Claude is reversible. Everything it does goes through files and git. The worst case is always git reset.",
+            "mental_model_body": "The fear of Claude making a mistake is rational — but the consequence is almost always recoverable. If Claude edits files, git shows you exactly what changed. If Claude runs a bad command, you can see it in the output. If Claude goes in the wrong direction, you can course-correct mid-session without losing context. The builder who knows the recovery workflow works faster than the builder who never makes mistakes — because they take bigger risks.",
+            "how_it_works": [
+              "See what changed: `git diff` shows every file Claude has modified. `git diff --name-only` shows just the list.",
+              "Undo a bad edit: `git checkout -- path/to/file` restores one file. `git reset --hard HEAD` restores everything to the last commit.",
+              "Correct mid-session: describe what went wrong specifically. 'The function you wrote in auth.py does not handle the case where the token is expired. It returns 500 instead of 401. Fix only that case — do not touch the rest of the file.' Specificity is the variable. Vague correction → vague fix.",
+              "Context drift: after many back-and-forth corrections, Claude's context fills with conflicting instructions. Signs: Claude starts repeating earlier mistakes, or its responses get longer and more cautious. Fix: `/clear` resets the conversation context but keeps your session. Claude re-reads CLAUDE.md and starts fresh — without you needing to restart the whole CLI.",
+              "When to start a new session: if the task has fundamentally changed, if you have spent more time correcting than building, or if /clear did not resolve the drift.",
+              "Reading Claude's reasoning: before Claude acts, it often shows its plan. Read it. If the plan is wrong, say so before it executes. Interrupting a bad plan is cheaper than undoing a bad execution."
+            ],
+            "try_it_instruction": "Practice the recovery workflow intentionally so it is automatic when you need it.",
+            "try_it_steps": [
+              "In a safe test project, ask Claude to make a change you know will be wrong: 'Rename all instances of userId to user_id throughout the entire codebase.'",
+              "Let it run. Then inspect: `git diff --name-only` — see everything it touched.",
+              "Undo one file: `git checkout -- src/api/users.ts`",
+              "Undo everything: `git reset --hard HEAD`",
+              "Notice: you are back to the start in one command. Practice this until it is muscle memory."
+            ],
+            "key_takeaway": "The fastest recovery is the one you are not afraid to use. Know `git diff`, `git checkout --`, and `git reset --hard HEAD` by instinct.",
+            "resources": [
+              {"label": "git reset — official docs", "url": "https://git-scm.com/docs/git-reset"},
+              {"label": "git checkout — restore files", "url": "https://git-scm.com/docs/git-checkout"},
+              {"label": "Session management — Claude Code docs", "url": "https://docs.anthropic.com/en/docs/claude-code/common-tasks"}
+            ]
+          },
+          {
+            "id": "5-3",
+            "day": 15,
+            "title": "Shipping Production-Ready Work",
+            "unlock_date": "2026-05-25",
+            "duration_mins": 14,
+            "concepts": ["review skill", "security checklist", "production standards", "CLAUDE.md as living documentation", "the full workflow"],
+            "problem": "Claude helps you build fast but you are not confident the output is production-ready. You do a manual review that takes as long as the build did. You have traded one bottleneck for another.",
+            "mental_model_headline": "Production-readiness is a checklist. Checklists are skills. Skills run automatically.",
+            "mental_model_body": "Every thing you check manually before shipping — no console.logs, tests passing, no hardcoded secrets, PR description written, types correct — can be encoded in a skill. Claude runs the checklist. You review the results. The bottleneck moves from 'did I check everything?' to 'does the output meet the bar?'. That is a much better bottleneck to have.",
+            "how_it_works": [
+              "A /ship-check skill runs before any PR is raised. It verifies: tests pass, linter passes, no debug artifacts (console.log, debugger, TODO), no hardcoded secrets (checked via pattern scan), PR description exists and covers the what and why.",
+              "A /security-review skill checks for OWASP top 10 patterns in the diff: SQL injection, XSS, insecure direct object references, missing auth checks, exposed credentials.",
+              "CLAUDE.md as living documentation: after every significant session, update CLAUDE.md to capture any new patterns, conventions, or constraints that emerged. CLAUDE.md is not a one-time document — it is the running record of what your project requires.",
+              "The full production workflow: (1) Agentic task with CLAUDE.md context → (2) hooks enforce tests and lint on every write → (3) /ship-check runs before commit → (4) /security-review on the diff → (5) /ship creates PR via GitHub connector → (6) Stop hook confirms nothing is unpushed.",
+              "You are now the approver, not the implementer. That is the shift this entire course has been building toward."
+            ],
+            "try_it_instruction": "Write a /ship-check skill that encodes your production standards.",
+            "try_it_steps": [
+              "Create `.claude/commands/ship-check.md`:",
+              "```\nRun a production readiness check on the current diff vs main.\n\nCheck each of the following and report pass/fail for each:\n1. Tests: run the test suite. All tests must pass.\n2. Lint: run the linter. No errors (warnings are acceptable).\n3. Debug artifacts: search for console.log, debugger, print statements left in production code.\n4. Secrets: search for hardcoded API keys, passwords, or tokens (patterns: sk-, pk-, password=, secret=).\n5. Types: if TypeScript, run tsc --noEmit. No type errors.\n6. PR description: does a PR description exist? Does it explain what changed and why?\n\nFor any failed check, fix it before reporting done.\nReport a final summary: READY TO SHIP or NEEDS FIXES with the list.```",
+              "Run `/ship-check` before your next PR.",
+              "Iterate on the checklist until it catches everything you currently catch manually."
+            ],
+            "key_takeaway": "You are done when the checklist runs itself. Build the skill, trust the output, be the approver.",
+            "resources": [
+              {"label": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/"},
+              {"label": "Claude Code security model", "url": "https://docs.anthropic.com/en/docs/claude-code/security"},
+              {"label": "Full builder workflow — Anthropic docs", "url": "https://docs.anthropic.com/en/docs/claude-code/common-tasks"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

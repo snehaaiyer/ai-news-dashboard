@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-05-07T08:00:00",
+  "intro": "Thursday: OpenAI's chip acquisition settled into the market as a long-term infrastructure story while the industry focused on what comes next. Google released the A2A developer SDK, giving any team a standard library to build cross-platform agent workflows. Anthropic confirmed financial services onboarding has started, with Goldman Sachs and JPMorgan beginning Claude Enterprise 3.0 integration.",
+  "top_stories": [
+    {
+      "headline": "Google Releases A2A Developer SDK — Any Team Can Now Build Cross-Platform AI Agents in One Afternoon",
+      "summary": "Google released the official A2A Developer SDK, providing Python, TypeScript, and Java libraries that implement the Agent-to-Agent protocol out of the box. The SDK includes pre-built connectors for Salesforce, SAP, Oracle, Workday, and Google Workspace, plus a local testing harness. Google said the SDK is designed so a developer with no prior A2A experience can have a cross-platform agent workflow running in under four hours. Over 1,200 teams registered for SDK early access in the first six hours after release.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Anthropic Begins Financial Services Onboarding — Goldman, JPMorgan, Barclays First in Line",
+      "summary": "Anthropic confirmed it has begun financial services onboarding for Claude Enterprise 3.0, with Goldman Sachs, JPMorgan Chase, and Barclays named as early access customers. The financial services tier adds SEC and FCA compliance documentation, audit trail logging for all AI-generated outputs, and a dedicated infrastructure zone with financial-grade data segregation. Anthropic expects the financial services GA to follow the healthcare GA by approximately one week, targeting May 19.",
+      "url": "https://www.anthropic.com/news/claude-enterprise",
+      "tag": "Industry"
+    },
+    {
+      "headline": "OpenAI Nuance AI Silicon Integration Timeline: Internal Inference Tests Begin Q3, Third-Party Access 2028",
+      "summary": "OpenAI released a more detailed integration timeline for Nuance AI Silicon following the $2.1B acquisition. Internal inference tests using Nuance's transformer accelerator chips are scheduled to begin in Q3 2026, with a full internal migration for GPT-6 inference workloads targeted for mid-2027. Third-party enterprise access to OpenAI-hosted Nuance silicon is planned for 2028, when production chip capacity is expected to match enterprise demand. OpenAI said the acquisition team is 'on track to begin tape-out of the first production-scale chip by September.'",
+      "url": "https://openai.com/news/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Perplexity Raises $500M Series E at $14B Valuation — Memory Layer and Enterprise Push Cited",
+      "summary": "Perplexity AI raised a $500M Series E at a $14 billion valuation, led by SoftBank Vision Fund 3, with participation from IVP and existing investors. The round brings Perplexity's total funding to $1.3B. CEO Aravind Srinivas said the capital will fund global enterprise sales expansion, memory layer infrastructure, and a dedicated compliance stack for regulated enterprise verticals. The raise comes as Perplexity's ARR hit $500M — a number the company achieved 12 months ahead of its internal forecast.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/",
+      "tag": "Funding"
+    },
+    {
+      "headline": "EU AI Act: Proportionality Ruling Due in 23 Days — 200+ Companies Filing Pre-emptive Compliance Evidence",
+      "summary": "With the EU AI Act biometric proportionality ruling now 23 days away, over 200 companies with systems in the preliminary review pipeline have begun filing pre-emptive compliance evidence with the EU AI Office. Legal firms specialising in AI Act compliance reported a 400% spike in engagement requests in the 48 hours following the adjournment ruling. The proportionality test outcome will determine whether biometric categorisation systems must be deactivated, retrofitted, or can continue with enhanced documentation.",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+      "tag": "Policy"
+    }
+  ],
+  "quick_hits": [
+    {
+      "text": "Google's A2A SDK attracted 1,200 early access registrations in six hours — at this rate, A2A will have more active development teams than any prior enterprise integration standard within its first month of SDK availability.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "text": "Perplexity's $14B valuation at $500M ARR gives it a 28× ARR multiple — higher than Anthropic's last implied multiple, reflecting the market's view that Perplexity's 18-day enterprise deal cycle is a structurally superior revenue engine.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    },
+    {
+      "text": "DeepSeek V4 self-hosted deployments crossed 175,000 production instances — adding 25,000 instances in two days as enterprises completing cost audits accelerate migration from closed-model APIs.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    },
+    {
+      "text": "Microsoft Copilot for Security added its 20,000th enterprise customer — reaching this milestone in week three, versus the 12 months it took Defender for Endpoint to reach the same number.",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "text": "Llama 4 Maverick's 5,000 enterprise fine-tunes are now indexed and searchable on Hugging Face — Meta's Model Hub won't launch until June but the community catalogue is already functioning as an unofficial preview.",
+      "url": "https://ai.meta.com/blog/"
+    }
+  ],
+  "tools_products": [
+    {
+      "name": "A2A Developer SDK",
+      "maker": "Google",
+      "what": "Official Python/TypeScript/Java SDK implementing the Agent-to-Agent protocol with pre-built connectors for Salesforce, SAP, Oracle, Workday, and Google Workspace — cross-platform agent workflow in under four hours.",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform"
+    },
+    {
+      "name": "Claude Enterprise 3.0 (Financial Services)",
+      "maker": "Anthropic",
+      "what": "Financial services onboarding begun with Goldman Sachs, JPMorgan, Barclays — adds SEC/FCA compliance docs, full audit trail logging, and financial-grade data segregation; GA targeting May 19.",
+      "url": "https://www.anthropic.com/news/claude-enterprise"
+    },
+    {
+      "name": "Perplexity Enterprise (Post-Series E)",
+      "maker": "Perplexity AI",
+      "what": "$500M Series E at $14B valuation funding global enterprise expansion, memory layer infrastructure, and regulated-industry compliance stack — $500M ARR, 18-day deal cycle.",
+      "url": "https://techstory.in/perplexity-tops-450m-arr-after-record-breaking-month/"
+    },
+    {
+      "name": "Copilot for Security (20K Customers)",
+      "maker": "Microsoft",
+      "what": "Crossed 20,000 enterprise customers in week three — fastest enterprise security product growth in history, reaching in 21 days what Defender for Endpoint took 12 months to achieve.",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "name": "DeepSeek V4 (175K Instances)",
+      "maker": "DeepSeek",
+      "what": "175,000 self-hosted production instances globally — largest open-weight production deployment in history, growing 17% in two days as enterprise cost audits drive accelerated migration.",
+      "url": "https://venturebeat.com/technology/deepseek-v4-arrives-with-near-state-of-the-art-intelligence-at-1-6th-the-cost-of-opus-4-7-gpt-5-5"
+    }
+  ],
+  "india_roundup": [
+    {
+      "text": "Infosys signed three new AI-committed enterprise contracts in the US worth a combined $340M — each contract includes explicit AI delivery milestones using Claude Enterprise 3.0 and Llama 4 Maverick fine-tunes for client-specific workflows.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "India's BharatGen foundation model pre-training crossed 50% completion on IndiaAI Mission compute — the model is expected to complete pre-training by end of June, with public benchmarks planned for July.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    },
+    {
+      "text": "Reliance Jio deployed a multilingual AI customer service agent across 450 million subscribers, using Sarvam AI's model for Hindi, Tamil, Bengali, and Marathi — the largest single-deployment of an Indian language AI model to date.",
+      "url": "https://www.sarvam.ai/"
+    },
+    {
+      "text": "India's GCC AI engineering headcount crossed 355,000 — with Bengaluru adding 8,000 AI roles in May alone, driven by demand from global financial services and healthcare companies building India-based AI delivery centres.",
+      "url": "https://nasscom.in/insights/india-ai-skills-job-posting-april-2026"
+    },
+    {
+      "text": "MeitY fast-tracked AIGEG compliance reviews for three Indian AI startups — Sarvam AI, Krutrim, and Dhruva AI — ahead of the July government procurement window, making them eligible for the first AI government contract awards.",
+      "url": "https://indiaai.gov.in/article/aigeg-procurement-standards-may-2026-timeline"
+    }
+  ],
+  "closing_insight": "Perplexity raising $500M at a 28× ARR multiple on the same day Google releases the A2A SDK confirms what the market has figured out: the most valuable AI companies in 2026 are the ones that close enterprise deals fastest, not the ones with the best benchmarks."
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-05-10T08:00:00",
+  "intro": "Saturday: A quieter news day, but three significant releases land over the weekend — Google's AlphaFold 4 preprint, Mistral's open-source coding model, and the first major AI safety incident report from the UK's AI Safety Institute. Here is what matters.",
+  "top_stories": [
+    {
+      "headline": "Google DeepMind Releases AlphaFold 4 — Now Predicts Protein-Drug Interactions",
+      "summary": "DeepMind published a preprint for AlphaFold 4, which extends protein structure prediction to model protein-drug and protein-small-molecule interactions at atomic resolution. The model reduces computational drug screening time from weeks to hours. Three pharmaceutical companies — Novartis, AstraZeneca, and Pfizer — have confirmed they are integrating AlphaFold 4 into their drug discovery pipelines.",
+      "url": "https://deepmind.google",
+      "tag": "Research"
+    },
+    {
+      "headline": "UK AI Safety Institute: First Systematic AI Incident Report Documents 47 'Near-Miss' Events",
+      "summary": "The UK's AI Safety Institute released its inaugural systematic AI incident report, documenting 47 near-miss events from AI systems in healthcare, transport, and financial services from Q1-Q3 2025. The report found that 63% of incidents involved AI systems operating outside their validated parameters — highlighting gaps in production monitoring. The report calls for mandatory incident reporting as the next regulatory step.",
+      "url": "https://www.reuters.com/technology/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Mistral Releases Devstral — Open-Source Coding Model Beats GPT-4o on SWE-bench",
+      "summary": "Mistral AI released Devstral, a 24B parameter open-source model fine-tuned specifically for software engineering tasks. It achieves 46.8% on SWE-bench Verified, outperforming GPT-4o's 38.2%. Devstral is available under a permissive open-source licence and designed for self-hosted deployment in enterprise development environments.",
+      "url": "https://venturebeat.com/ai/",
+      "tag": "Models"
+    },
+    {
+      "headline": "Zoom Acquires AI Notetaker Startup Granola for $280M to Compete with Otter.ai",
+      "summary": "Zoom acquired Granola, an AI meeting notes and action item tracking platform, for $280 million. Granola's technology will be integrated into Zoom AI Companion, enabling automatic meeting summaries, CRM updates, and follow-up task generation. The acquisition positions Zoom to compete directly with Microsoft Teams' Copilot meeting intelligence and Otter.ai.",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "AI Startups Raised $28B in Q1 2026 — A Single-Quarter Record",
+      "summary": "CB Insights' Q1 2026 funding report found AI startups raised $28 billion globally, the largest single quarter in venture history. Infrastructure (chips, cloud, training platforms) attracted 42% of capital; AI-native applications took 38%; and AI-enabled vertical software accounted for 20%. US startups captured 61% of global AI funding.",
+      "url": "https://arstechnica.com/ai/",
+      "tag": "Funding"
+    }
+  ],
+  "quick_hits": [
+    {"text": "OpenAI's o3 reasoning model is now integrated into Microsoft Azure AI Foundry with SLA guarantees and enterprise support contracts.", "url": "https://azure.microsoft.com/en-us/products/ai-services/"},
+    {"text": "Hugging Face launched a free 'AI Safety Evaluation' tool that lets developers run red-teaming tests on their models against 50 known vulnerability patterns.", "url": "https://huggingface.co"},
+    {"text": "Amazon Bedrock added support for Anthropic's Claude 3.7 Sonnet and Google's Gemini 2.5 Flash, making it the first cloud to offer models from all major frontier labs.", "url": "https://aws.amazon.com/bedrock/"},
+    {"text": "Midjourney's web platform hit 3 million active subscribers — the first AI image generation service to reach this milestone without an API.", "url": "https://www.midjourney.com"},
+    {"text": "Replit launched an agentic 'Build for me' feature that turns a natural language description into a deployed full-stack app in under 5 minutes.", "url": "https://replit.com"}
+  ],
+  "tools_products": [
+    {"name": "Devstral 24B", "maker": "Mistral AI", "what": "Open-source coding model (24B parameters) fine-tuned for software engineering tasks, achieving 46.8% on SWE-bench. Available for self-hosted enterprise deployment.", "url": "https://mistral.ai"},
+    {"name": "Zoom AI Companion 3.0 (with Granola)", "maker": "Zoom", "what": "Post-acquisition update integrates Granola's meeting intelligence: automatic summaries, CRM sync, follow-up tasks, and action item tracking.", "url": "https://www.zoom.com/en/ai-assistant/"},
+    {"name": "Amazon Bedrock Multi-Lab", "maker": "AWS", "what": "Bedrock now hosts Claude, Gemini, and GPT model families — operators can route between models with a single API and consistent logging.", "url": "https://aws.amazon.com/bedrock/"},
+    {"name": "Replit 'Build for Me'", "maker": "Replit", "what": "Natural language to deployed full-stack app in under 5 minutes, with hosting, database, and domain included. No code required.", "url": "https://replit.com"},
+    {"name": "Hugging Face Safety Evals", "maker": "Hugging Face", "what": "Free tool for running red-teaming evaluations against 50 vulnerability patterns — covers jailbreaks, prompt injection, and bias tests.", "url": "https://huggingface.co"}
+  ],
+  "india_roundup": [
+    {"text": "HDFC Bank deployed an AI underwriting model that reduced personal loan approval time from 3 days to 4 hours for salaried employees, handling 1.2 million applications in the first month.", "url": "https://economictimes.indiatimes.com/tech/technology"},
+    {"text": "Bengaluru-based Sarvam AI released Sarvam-2B, a 2 billion parameter open-source model optimised for 10 Indian languages, available on Hugging Face.", "url": "https://timesofindia.indiatimes.com/technology"},
+    {"text": "The Indian Space Research Organisation (ISRO) is using AI anomaly detection to monitor 14 satellite systems in real time, reducing manual monitoring time by 70%.", "url": "https://www.thehindu.com/sci-tech/technology/"},
+    {"text": "Meesho, India's social commerce platform, launched an AI stylist feature that recommends outfits based on a user's past purchases, driving a 19% increase in average order value.", "url": "https://economictimes.indiatimes.com/tech/technology"},
+    {"text": "The Central Board of Secondary Education announced pilot AI tutoring programmes in 500 government schools across Karnataka and Uttar Pradesh starting August 2026.", "url": "https://timesofindia.indiatimes.com/technology"}
+  ],
+  "closing_insight": "AI startups raised $28B in a single quarter — more than the entire 2022 VC market raised across all sectors. When capital this concentrated moves this fast, the question is not whether there is a bubble, but who builds something durable inside it."
+}

@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-05-11T08:00:00",
+  "big_story": {
+    "headline": "OpenAI's Custom Model Programme at 50 Clients — The $2-5M/Year Proprietary AI Layer Is Real",
+    "what_happened": "OpenAI quietly expanded its Custom Model Programme from 12 to 50 enterprise clients, offering GPT-5 fine-tuning on proprietary data with exclusive model retention. Annual pricing is $2-5M per client. Sectors involved include financial services, healthcare, and legal platforms.",
+    "why_it_matters": "This is OpenAI building a differentiated enterprise tier that cannot be replicated by API access alone. Fine-tuning on proprietary data creates a model that understands your company's terminology, history, and context in ways a general model cannot. The exclusivity component — no one else gets your model — turns AI from a commodity into a moat. This is the B2B SaaS model applied to AI: land a high-value account, fine-tune to their data, and make switching cost prohibitive.",
+    "revenue_impact": "50 clients × $3.5M average = $175M ARR from Custom Models alone, likely at 80%+ gross margin since compute is incremental. At scale (500 enterprise clients) this is a $1.75B ARR line at margins that would make any SaaS CFO envious. The strategic value exceeds the revenue: each custom model client generates proprietary training data that feeds OpenAI's next model generation."
+  },
+  "key_headlines": {
+    "ads_monetization": [
+      {"summary": "Google Workspace AI included in all plans — $30/month AI add-on eliminated ahead of Google I/O", "implication": "Google is buying enterprise AI adoption at scale: sacrificing $30/month add-on revenue to make Workspace AI the default, ahead of tomorrow's I/O product announcements."},
+      {"summary": "Perplexity passes 100M monthly active users — fastest AI product after ChatGPT", "implication": "At 100M MAUs, Perplexity's ad and subscription revenue model becomes meaningful — the question is whether its user base is the right audience for the CPM rates it needs to be sustainable."}
+    ],
+    "ai_products": [
+      {"summary": "Anthropic releases CLIO: open-source production AI behaviour monitoring framework", "implication": "CLIO lowers the compliance barrier for enterprise AI deployments in regulated sectors — safety monitoring as a feature, not an afterthought."},
+      {"summary": "Cohere releases Command R+ under Apache 2.0 for sub-$10M ARR organisations", "implication": "Cohere's freemium-to-enterprise motion: give the best open-source RAG model to small companies, capture them as paid enterprise clients as they grow."}
+    ],
+    "distribution": [
+      {"summary": "US-UK AI Safety Institutes sign binding frontier model testing agreement", "implication": "Binding 90-day pre-release evaluation adds 3 months to the frontier model release cycle — a significant constraint for any lab racing to ship the next generation."},
+      {"summary": "Google I/O tomorrow: Gemini Ultra 2 and Project Astra consumer launch expected", "implication": "If Project Astra ships as described — persistent multimodal memory through your phone camera — it is the most significant consumer AI distribution event since ChatGPT's launch."}
+    ]
+  },
+  "money_moves": {
+    "revenue_shifts": [
+      "OpenAI's Custom Model Programme creates a $175M+ ARR enterprise tier at 80%+ gross margin — shifting AI revenue from volume pricing to premium exclusive contracts.",
+      "Google eliminating the Workspace AI add-on sacrifices $30/user/month in the short term to win the enterprise AI platform battle against Microsoft Copilot."
+    ],
+    "ad_inventory": [
+      "If Project Astra launches with ambient camera access, Google gains a persistent real-world context layer — the most valuable ad targeting signal ever created is what you are literally looking at.",
+      "Perplexity at 100M MAUs is approaching the scale where sponsored search results become a meaningful revenue line — expect sponsored placements in Perplexity answers within 6 months."
+    ],
+    "pricing_power": [
+      "OpenAI gains strong pricing power with Custom Models: proprietary fine-tuning creates switching costs that justify $2-5M annual contracts with multi-year renewal expectations.",
+      "Google loses short-term Workspace AI add-on revenue but gains pricing power on the next tier: if Project Astra is compelling, a $20-30/month Workspace Ultra plan becomes sellable."
+    ],
+    "winners": [
+      "OpenAI — Custom Model Programme at $175M ARR validates the enterprise AI platform thesis at premium pricing.",
+      "Google — Project Astra consumer launch (if it ships) is the most significant AI distribution event in years, reaching 3B+ Android users.",
+      "Anthropic — CLIO framework positions it as the 'safe enterprise AI' choice, differentiating from competitors on governance rather than just capability."
+    ],
+    "losers": [
+      "Mid-size AI API competitors — OpenAI's custom model exclusivity and Cohere's open-source freemium both target the same customer from opposite ends, leaving mid-tier providers squeezed.",
+      "Enterprise AI implementation consultants — as OpenAI builds direct custom model relationships with enterprises, the consulting layer that managed these integrations faces disintermediation."
+    ]
+  },
+  "operator_insight": {
+    "company": "OpenAI",
+    "strategy": "OpenAI's Custom Model Programme is a deliberate enterprise lock-in strategy masquerading as a product. By training models on a client's proprietary data and retaining those models exclusively for that client, OpenAI creates a category of AI capability that cannot be replicated with off-the-shelf API access. The $2-5M price point is not about recouping compute costs — it is about selecting clients for whom AI is core enough to justify a multi-million dollar commitment, ensuring high retention.",
+    "why_effective": "The programme compounds over time: each year of operation, the custom model gets better as it ingests more client data. Switching to a competitor means starting the fine-tuning process from zero. At year two or three of a custom model relationship, the switching cost is not the $2-5M annual fee — it is the 2-3 years of competitive advantage the model embeds. This is the highest-switching-cost AI product ever built."
+  },
+  "playbook": {
+    "marketers": [
+      "Brief your CMO on Google I/O tomorrow: if Project Astra ships ambient camera AI, the ad targeting and creative personalisation implications are significant enough to require a Q3 strategy update.",
+      "Perplexity at 100M MAUs is the moment to test sponsored placement on the platform — early data will be cheap, and the audience (high-income, research-driven) is premium."
+    ],
+    "pms": [
+      "Evaluate whether your enterprise customers qualify for OpenAI's Custom Model Programme — if your product is built on GPT-5 and your largest customers are spending $1M+/year, a custom model partnership could be a competitive moat for your product.",
+      "CLIO's open-source production monitoring framework fills a real gap in enterprise AI observability — integrate it into your API layer before regulators make it mandatory."
+    ],
+    "founders": [
+      "OpenAI's Custom Model Programme at $2-5M/year defines the floor for enterprise AI commitment. If you are pitching enterprise AI and your contract value is under $500K, you are in the commodity tier — find your way to custom, exclusive, or embedded to escape.",
+      "Google's decision to include Workspace AI for free is a reminder that bundling beats pricing in platform wars. Look at your pricing: what would you give away for free today to win the platform relationship for the next 3 years?"
+    ]
+  },
+  "trend": "AI is bifurcating into commodity and custom. Commodity AI (API access, open-source models, included features) is becoming free or near-free. Custom AI (fine-tuned on proprietary data, exclusive, embedded in workflow) commands $2-5M+ contracts. The operators who thrive will understand which tier they are in and build their competitive strategy accordingly. The middle — paid API access for generic use cases — is being squeezed from both ends.",
+  "tldr": {
+    "insight": "AI is splitting into free commodity and $2-5M+ custom — the middle tier of paid generic API access is being compressed from both ends.",
+    "opportunity": "OpenAI's Custom Model Programme is now at 50 clients — early entrants to this programme lock in a 2-3 year competitive advantage through proprietary fine-tuning.",
+    "risk": "Google's free Workspace AI and Cohere's Apache 2.0 open-source both signal that generic AI features are commoditising fast — any product whose AI moat is 'we use GPT' is now at risk."
+  }
+}

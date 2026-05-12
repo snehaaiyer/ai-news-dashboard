@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-05-11T08:00:00",
+  "intro": "Sunday: Google I/O week begins tomorrow — and today the leaks are flying. A landmark AI governance agreement between the US and UK, OpenAI's custom model programme quietly expands, and Anthropic launches a new safety evaluation framework. The week ahead will reshape the AI landscape.",
+  "top_stories": [
+    {
+      "headline": "US-UK AI Safety Partnership Signs Binding Testing Agreement for Frontier Models",
+      "summary": "The US and UK AI Safety Institutes signed a formal bilateral agreement requiring coordinated safety testing before any frontier AI model releases above a defined capability threshold. The agreement establishes shared red-teaming methodologies, incident reporting protocols, and a 90-day pre-release evaluation window for qualifying models. Canada and Australia are expected to sign within 30 days.",
+      "url": "https://www.reuters.com/technology/",
+      "tag": "Policy"
+    },
+    {
+      "headline": "Google I/O 2026 Preview: Gemini Ultra 2 and Project Astra Multimodal Agent Expected",
+      "summary": "Bloomberg and The Verge both report that tomorrow's Google I/O keynote will feature Gemini Ultra 2 with native real-time video understanding and Project Astra's consumer launch — a multimodal AI agent that can see through your phone camera, answer questions about your environment, and remember past conversations across sessions.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence",
+      "tag": "Models"
+    },
+    {
+      "headline": "OpenAI Custom Model Programme Expands to 50 Enterprise Clients with Fine-Tuning Access",
+      "summary": "OpenAI quietly expanded its Custom Model Programme — which provides direct fine-tuning access to GPT-5 on proprietary data — from 12 to 50 enterprise clients. Clients include financial services firms, healthcare systems, and legal platforms. Pricing is reported at $2-5M annually, with models trained on client data retained exclusively for that client.",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "tag": "Industry"
+    },
+    {
+      "headline": "Anthropic Publishes CLIO: A Real-Time AI Behaviour Monitoring Framework for Production Models",
+      "summary": "Anthropic released CLIO (Claude's Long-term Impact Observatory), an open-source framework for monitoring AI model behaviour in production across safety dimensions — jailbreaks, prompt injections, output quality drift, and policy violations. CLIO logs 40+ behavioural metrics in real time and generates weekly safety reports. It is now integrated into Claude's API as an opt-in monitoring layer.",
+      "url": "https://www.anthropic.com/research",
+      "tag": "Research"
+    },
+    {
+      "headline": "Inflection AI Returns with Pi 3 — Focuses on Long-Term Emotional Intelligence",
+      "summary": "Inflection AI, reconstituted after Microsoft hired its founding team, has released Pi 3 under new leadership. Pi 3 positions itself as the 'emotionally intelligent' AI with a focus on long-term relationship and wellbeing support — rather than task completion. It features persistent memory across conversations, empathetic framing, and referrals to professional support for mental health topics.",
+      "url": "https://venturebeat.com/ai/",
+      "tag": "Models"
+    }
+  ],
+  "quick_hits": [
+    {"text": "Google Workspace AI features including Duet AI and Gmail smart compose are now included in all Google Workspace plans at no additional cost, removing the $30/month AI add-on.", "url": "https://workspace.google.com/"},
+    {"text": "Perplexity AI passed 100 million monthly active users — the fastest AI product to reach this milestone outside of ChatGPT.", "url": "https://techcrunch.com/category/artificial-intelligence/"},
+    {"text": "OpenAI released a new system prompt library with 200 tested templates for enterprise use cases, available via the developer platform.", "url": "https://platform.openai.com"},
+    {"text": "Cohere released its Command R+ model under an Apache 2.0 licence for organisations with under $10M annual revenue — its largest open-source release.", "url": "https://cohere.com"},
+    {"text": "Salesforce Einstein AI surpassed 1 trillion autonomous actions per month across Sales Cloud, Service Cloud, and Marketing Cloud customers.", "url": "https://www.salesforce.com/artificial-intelligence/"}
+  ],
+  "tools_products": [
+    {"name": "CLIO (Claude's Long-term Impact Observatory)", "maker": "Anthropic", "what": "Open-source production AI monitoring framework with 40+ behavioural metrics, integrated into Claude API as an opt-in safety layer.", "url": "https://www.anthropic.com"},
+    {"name": "Pi 3", "maker": "Inflection AI", "what": "Emotionally intelligent AI assistant with persistent cross-session memory, empathetic framing, and professional support referrals for mental health topics.", "url": "https://pi.ai"},
+    {"name": "Google Workspace AI (Included)", "maker": "Google", "what": "Duet AI, Gmail smart compose, Docs AI, and Meet summaries now included in all Workspace plans — previously a $30/month add-on.", "url": "https://workspace.google.com/"},
+    {"name": "OpenAI System Prompt Library", "maker": "OpenAI", "what": "200 tested system prompt templates for enterprise use cases including customer support, legal review, financial analysis, and HR workflows.", "url": "https://platform.openai.com"},
+    {"name": "Command R+ Apache 2.0", "maker": "Cohere", "what": "Command R+ released under Apache 2.0 for organisations under $10M ARR — the most capable open-source RAG model available for self-hosted enterprise deployment.", "url": "https://cohere.com"}
+  ],
+  "india_roundup": [
+    {"text": "Paytm announced an AI-powered credit score engine for gig workers, using alternative data (ride history, UPI transactions, app usage patterns) to underwrite credit for the 100M+ informal sector workers excluded from traditional scoring.", "url": "https://economictimes.indiatimes.com/tech/technology"},
+    {"text": "NITI Aayog released a 150-page AI readiness framework for Indian government departments, with a tiered implementation roadmap from basic automation to predictive governance by 2030.", "url": "https://timesofindia.indiatimes.com/technology"},
+    {"text": "Ather Energy, India's EV maker, deployed an AI predictive maintenance system that analyses telemetry from 300,000 scooters in real time, reducing service downtime by 28%.", "url": "https://economictimes.indiatimes.com/tech/technology"},
+    {"text": "IIT Madras researchers published a breakthrough in AI-assisted detection of diabetic retinopathy, achieving 94.7% accuracy on a dataset of 500,000 retinal scans from South Indian patients.", "url": "https://www.thehindu.com/sci-tech/technology/"},
+    {"text": "Zepto, India's quick commerce platform, uses an AI demand-prediction model to optimise dark store inventory across 350 cities, reducing food waste by 22% and stockouts by 17%.", "url": "https://economictimes.indiatimes.com/tech/technology"}
+  ],
+  "closing_insight": "The US-UK AI safety agreement is the first binding international AI governance framework — not a declaration, not a communiqué, but a signed testing protocol. Every major AI development since 2022 has been faster than predicted. Safety governance will not be."
+}

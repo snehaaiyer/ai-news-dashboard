@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-05-10T08:00:00",
+  "big_story": {
+    "headline": "Zoom Acquires Granola for $280M — Meeting Intelligence Becomes the New CRM Battleground",
+    "what_happened": "Zoom acquired AI notetaker and meeting intelligence startup Granola for $280 million. Granola's technology automatically transcribes, summarises, and extracts action items from meetings, then syncs to CRM platforms. It will be integrated into Zoom AI Companion, Zoom's AI assistant that already ships to 7.5 million enterprise users.",
+    "why_it_matters": "Meeting intelligence is the highest-frequency enterprise AI touchpoint: most knowledge workers spend 30-50% of their day in meetings. Whoever controls the meeting layer controls the most valuable enterprise context — what was decided, what was promised, what comes next. This positions Zoom to compete directly with Microsoft Teams + Copilot, which already offers similar functionality to 50M+ daily users.",
+    "revenue_impact": "Granola's meeting intelligence unlocks a direct CRM integration revenue stream: automatic deal updates, follow-up reminders, and pipeline risk detection without manual CRM entry. This adds a new enterprise upsell path for Zoom — from a $14.99/month Zoom Pro seat to a $25-30/month Zoom Business AI seat with full meeting intelligence. At Zoom's 7.5M enterprise users, even 30% upgrade conversion is a $700M+ ARR opportunity."
+  },
+  "key_headlines": {
+    "ads_monetization": [
+      {"summary": "Midjourney web platform hits 3M subscribers without an API or developer tier", "implication": "Midjourney's consumer-direct subscription model at $10-30/month proves AI image generation is a mass-market subscription product — no B2B required."},
+      {"summary": "Amazon Bedrock now hosts Claude, Gemini, and GPT — single API for all frontier labs", "implication": "Multi-model hosting on a single cloud platform enables sophisticated A/B testing and cost optimisation — reducing lock-in to any single model provider."}
+    ],
+    "ai_products": [
+      {"summary": "Mistral releases Devstral 24B open-source — beats GPT-4o on SWE-bench coding benchmark", "implication": "Best-in-class coding capability is now available open-source and self-hostable — enterprise development teams no longer need cloud API for top-tier code generation."},
+      {"summary": "Replit 'Build for Me' launches: natural language to deployed app in 5 minutes", "implication": "The bottom of the software development market (MVPs, prototypes, internal tools) is being commoditised — traditional dev agencies for simple builds face a new zero-cost alternative."}
+    ],
+    "distribution": [
+      {"summary": "AI startups raised $28B in Q1 2026 — single-quarter record", "implication": "Infrastructure (42% of capital) and AI applications (38%) are the two investment theses — the 'picks and shovels' vs 'gold miners' split is now the defining VC debate."},
+      {"summary": "UK AI Safety Institute releases first systematic incident report: 47 near-misses documented", "implication": "Systematic incident reporting creates a paper trail of AI failures — mandatory reporting frameworks will raise compliance costs for all enterprise AI deployments."}
+    ]
+  },
+  "money_moves": {
+    "revenue_shifts": [
+      "Meeting intelligence becomes a standard enterprise AI upsell: Zoom, Teams, and Otter.ai are all expanding from transcription (commodity) to insight extraction (premium).",
+      "Open-source coding models (Devstral) shift enterprise AI budget from API costs to compute costs — self-hosted deployments reduce per-query costs but increase infra overhead."
+    ],
+    "ad_inventory": [
+      "Midjourney's 3M subscriber milestone at no API proves consumer AI creative is a subscription product — potential advertising inventory if Midjourney ever adds a free tier with ads.",
+      "Zoom's meeting intelligence creates a new B2B ad surface: deal stage data and action items are the most commercially valuable enterprise signals available."
+    ],
+    "pricing_power": [
+      "Zoom gains pricing power with Granola integration — AI meeting intelligence justifies a $15-20/seat premium over commodity video calling.",
+      "Commodity API providers lose pricing power as Bedrock multi-model hosting and Devstral open-source give enterprises price-comparison tools they did not have before."
+    ],
+    "winners": [
+      "Zoom — Granola acquisition positions it for the AI-era meeting platform battle with a tangible product differentiation vs Teams.",
+      "Mistral — Devstral as best open-source coding model is a distribution win: enterprises self-hosting Devstral will become Mistral enterprise customers.",
+      "AWS Bedrock — multi-lab hosting makes Bedrock the Switzerland of AI infrastructure, capturing margin from every model it hosts."
+    ],
+    "losers": [
+      "Otter.ai — directly in Zoom's crosshairs post-Granola, with Zoom able to bundle meeting intelligence at zero marginal cost to existing seats.",
+      "Traditional dev agencies — Replit 'Build for Me' commoditises simple app development, shrinking the addressable market for agencies focused on MVPs and internal tools."
+    ]
+  },
+  "operator_insight": {
+    "company": "Zoom",
+    "strategy": "Zoom's Granola acquisition is a textbook defensive expansion: Zoom knows Microsoft Teams is eating its enterprise market share via AI bundling. Rather than compete on video quality, Zoom is competing on AI depth — meeting intelligence that turns every call into structured data, action items, and CRM entries. The goal is to make Zoom the enterprise system of record for what was said and decided, not just a call platform.",
+    "why_effective": "Meeting data is the most underutilised enterprise asset: every commitment, decision, and escalation passes through a meeting, but almost none of it ends up in the CRM. Granola's core function — converting conversation to structured business data — solves a problem that every enterprise has but no one has solved at scale. If Zoom executes, it becomes the enterprise intelligence layer, not just the call software."
+  },
+  "playbook": {
+    "marketers": [
+      "Evaluate your sales team's CRM hygiene — if meeting summaries and action items are not automatically syncing to your CRM, you are flying blind on pipeline. Meeting intelligence tools (Granola, Fireflies, Otter) solve this now before Zoom bundles it.",
+      "With Q1 AI funding at $28B, your AI vendor landscape is about to get much more crowded. Build a vendor evaluation framework now so you are not evaluating 50 new entrants reactively in Q3."
+    ],
+    "pms": [
+      "Devstral 24B being self-hostable at GPT-4o+ coding quality changes the build vs buy calculation for developer tooling — run a make vs buy analysis on any AI coding feature you currently pay an API for.",
+      "Replit 'Build for Me' is a signal: the expectation for how fast a prototype should ship just dropped to 5 minutes. Pressure-test your prototyping velocity against this new baseline."
+    ],
+    "founders": [
+      "Zoom paid 10x Granola's ARR for a meeting intelligence feature they could have built — identify which of your features would be worth 10x ARR to an acquirer who needs it defensively, and build accordingly.",
+      "AWS Bedrock multi-lab hosting is the fastest path to model price comparison for enterprise buyers — if your product competes with a commodity AI feature, your pricing needs to reflect the comparison shoppers now have an easy tool to run."
+    ]
+  },
+  "trend": "Enterprise AI is entering the acquisition phase. Zoom + Granola, Microsoft + Inflection (2024), Salesforce + various AI startups — the pattern is the same: large platforms acquiring AI-native features they cannot build fast enough to stay competitive. This is good news for AI founders building workflow-specific tools: the exit opportunity is now as large as the IPO opportunity.",
+  "tldr": {
+    "insight": "Meeting intelligence is the next enterprise AI battleground — whoever structures the 'what was decided' layer controls the most valuable enterprise context.",
+    "opportunity": "AI-native meeting and workflow tools are prime acquisition targets as large platforms scramble to match Teams + Copilot's integrated AI depth.",
+    "risk": "Founders of standalone meeting AI tools (Otter.ai, Fireflies) now face bundled competition from Zoom, Teams, and eventually Google Meet — differentiation through depth is the only defence."
+  }
+}
