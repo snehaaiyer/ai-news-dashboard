@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Analysis Learning Portal</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0f1118;--surface:#1a1d2e;--card:#232640;--accent:#6c63ff;--accent2:#00c9a7;
+--text:#e8e8f0;--muted:#8b8fa3;--danger:#ff6b6b;--success:#00c9a7;--warn:#ffd93d;
+--border:#2d3152;
+}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+a{color:var(--accent);text-decoration:none}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header */
+header{background:linear-gradient(135deg,#1a1d2e 0%,#2d1b69 100%);border-bottom:1px solid var(--border);padding:24px 0;text-align:center}
+header h1{font-size:1.8rem;background:linear-gradient(135deg,#6c63ff,#00c9a7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header p{color:var(--muted);margin-top:4px;font-size:.95rem}
+
+/* Progress bar */
+.progress-bar{background:var(--surface);padding:16px 0;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.progress-inner{display:flex;align-items:center;gap:12px}
+.progress-track{flex:1;height:8px;background:var(--card);border-radius:4px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:4px;transition:width .5s ease}
+.progress-text{font-size:.85rem;color:var(--muted);white-space:nowrap}
+
+/* Navigation */
+nav{background:var(--surface);padding:12px 0;border-bottom:1px solid var(--border)}
+.nav-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.nav-tab{padding:8px 18px;border-radius:8px;cursor:pointer;font-size:.9rem;white-space:nowrap;transition:all .2s;border:1px solid transparent;background:var(--card);color:var(--muted)}
+.nav-tab:hover{border-color:var(--accent);color:var(--text)}
+.nav-tab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* Section tabs within module */
+.section-tabs{display:flex;gap:6px;margin:20px 0 16px;flex-wrap:wrap}
+.sec-tab{padding:6px 14px;border-radius:20px;cursor:pointer;font-size:.82rem;border:1px solid var(--border);background:transparent;color:var(--muted);transition:all .2s}
+.sec-tab:hover{border-color:var(--accent2);color:var(--text)}
+.sec-tab.active{background:var(--accent2);color:#0f1118;border-color:var(--accent2);font-weight:600}
+
+/* Main */
+main{padding:20px 0 60px}
+.module{display:none}
+.module.active{display:block}
+.section{display:none}
+.section.active{display:block}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
+.card h3{font-size:1.15rem;margin-bottom:12px;color:var(--accent2)}
+.card p{color:var(--text);font-size:.95rem}
+
+/* Explainer */
+.explainer{position:relative;overflow:hidden}
+.explainer .tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:.75rem;font-weight:600;margin-bottom:12px}
+.tag-concept{background:rgba(108,99,255,.15);color:var(--accent)}
+.tag-key{background:rgba(0,201,167,.15);color:var(--accent2)}
+.tag-rule{background:rgba(255,217,61,.15);color:var(--warn)}
+.tag-danger{background:rgba(255,107,107,.15);color:var(--danger)}
+
+.key-point{background:rgba(0,201,167,.08);border-left:3px solid var(--accent2);padding:12px 16px;border-radius:0 8px 8px 0;margin:12px 0}
+.key-point strong{color:var(--accent2)}
+
+/* Flashcard */
+.flashcard-container{perspective:1000px;margin:16px 0}
+.flashcard{position:relative;width:100%;min-height:220px;cursor:pointer;transform-style:preserve-3d;transition:transform .6s}
+.flashcard.flipped{transform:rotateY(180deg)}
+.flashcard-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:12px;padding:28px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.flashcard-front{background:linear-gradient(135deg,#2d1b69,#1a1d2e);border:1px solid var(--accent)}
+.flashcard-back{background:linear-gradient(135deg,#0d3b2e,#1a1d2e);border:1px solid var(--accent2);transform:rotateY(180deg)}
+.flashcard-front h4{font-size:1.1rem;color:var(--accent);margin-bottom:8px}
+.flashcard-front p{color:var(--text);font-size:1rem}
+.flashcard-back h4{font-size:.9rem;color:var(--accent2);margin-bottom:8px}
+.flashcard-back p{color:var(--text);font-size:.95rem}
+.flip-hint{font-size:.75rem;color:var(--muted);margin-top:12px}
+.flashcard-nav{display:flex;justify-content:center;gap:12px;margin-top:12px}
+.flashcard-nav button{padding:8px 20px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-size:.85rem;transition:all .2s}
+.flashcard-nav button:hover{border-color:var(--accent);background:var(--surface)}
+.fc-counter{font-size:.85rem;color:var(--muted);text-align:center;margin-top:8px}
+
+/* Example */
+.example{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin:12px 0}
+.example-label{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:600;color:var(--warn);margin-bottom:10px}
+.example-data{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px;margin:12px 0}
+.data-item{background:var(--card);padding:10px;border-radius:8px;text-align:center}
+.data-item .label{font-size:.75rem;color:var(--muted);text-transform:uppercase}
+.data-item .value{font-size:1.1rem;font-weight:700;color:var(--text)}
+
+/* Candle SVG */
+.candle-visual{display:flex;justify-content:center;gap:24px;margin:16px 0;flex-wrap:wrap}
+.candle-svg{text-align:center}
+.candle-svg p{font-size:.8rem;color:var(--muted);margin-top:6px}
+
+/* Quiz */
+.quiz-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin:16px 0}
+.quiz-card h4{color:var(--accent);margin-bottom:4px;font-size:.85rem}
+.quiz-card .question{font-size:1rem;margin-bottom:16px}
+.quiz-options{display:flex;flex-direction:column;gap:8px}
+.quiz-opt{padding:12px 16px;border-radius:8px;border:1px solid var(--border);background:var(--surface);cursor:pointer;transition:all .2s;font-size:.92rem;text-align:left}
+.quiz-opt:hover:not(.selected){border-color:var(--accent);background:rgba(108,99,255,.08)}
+.quiz-opt.correct{border-color:var(--success);background:rgba(0,201,167,.12);color:var(--success)}
+.quiz-opt.wrong{border-color:var(--danger);background:rgba(255,107,107,.1);color:var(--danger)}
+.quiz-opt.selected{pointer-events:none}
+.quiz-explain{margin-top:12px;padding:12px;border-radius:8px;font-size:.9rem;display:none}
+.quiz-explain.show{display:block}
+.quiz-explain.correct-explain{background:rgba(0,201,167,.08);border:1px solid rgba(0,201,167,.2);color:var(--accent2)}
+.quiz-explain.wrong-explain{background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.2);color:var(--danger)}
+
+.quiz-score{text-align:center;padding:20px;background:var(--card);border-radius:12px;margin-top:16px}
+.quiz-score .score-num{font-size:2.5rem;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.quiz-score p{color:var(--muted)}
+
+.btn-primary{padding:10px 24px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;font-size:.9rem;font-weight:600;transition:all .2s}
+.btn-primary:hover{background:#5a52e0;transform:translateY(-1px)}
+
+/* Table */
+.info-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem}
+.info-table th{background:var(--accent);color:#fff;padding:10px 12px;text-align:left;font-size:.82rem}
+.info-table td{padding:10px 12px;border-bottom:1px solid var(--border)}
+.info-table tr:nth-child(even){background:rgba(108,99,255,.04)}
+
+/* Responsive */
+@media(max-width:640px){
+  header h1{font-size:1.4rem}
+  .nav-tabs{gap:6px}
+  .nav-tab{padding:6px 12px;font-size:.82rem}
+  .card{padding:16px}
+  .flashcard-face{padding:20px}
+  .example-data{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Technical Analysis Mastery</h1>
+    <p>Interactive Learning Portal &mdash; From Charts to Candlestick Patterns</p>
+  </div>
+</header>
+
+<div class="progress-bar">
+  <div class="container progress-inner">
+    <span class="progress-text" id="progressLabel">0 / 36 completed</span>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <span class="progress-text" id="progressPct">0%</span>
+  </div>
+</div>
+
+<nav>
+  <div class="container">
+    <div class="nav-tabs" id="moduleTabs">
+      <div class="nav-tab active" data-mod="0">Module 1: TA Foundations</div>
+      <div class="nav-tab" data-mod="1">Module 2: Chart Types</div>
+      <div class="nav-tab" data-mod="2">Module 3: Single Patterns</div>
+      <div class="nav-tab" data-mod="3">Module 4: Multiple Patterns</div>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+
+<!-- ============== MODULE 1 ============== -->
+<div class="module active" id="mod0">
+<div class="section-tabs">
+  <div class="sec-tab active" data-sec="m0-explainer">Explainer</div>
+  <div class="sec-tab" data-sec="m0-flashcards">Flashcards</div>
+  <div class="sec-tab" data-sec="m0-examples">Examples</div>
+  <div class="sec-tab" data-sec="m0-quiz">Quiz</div>
+</div>
+
+<!-- Explainer -->
+<div class="section active" id="m0-explainer">
+<div class="card explainer">
+  <span class="tag tag-concept">Core Concept</span>
+  <h3>What is Technical Analysis?</h3>
+  <p>Technical Analysis (TA) is a research technique that identifies trading opportunities based on the actions of market participants, visualized through stock charts. Over time, patterns form within these charts and each pattern conveys a specific message about likely future price movement.</p>
+  <div class="key-point"><strong>Key Insight:</strong> Unlike Fundamental Analysis which studies a company's financials, TA only cares about historical price and volume data. The same TA concepts work across equities, commodities, forex, and crypto.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-key">Four Assumptions</span>
+  <h3>The Pillars of Technical Analysis</h3>
+  <p>TA rests on four foundational assumptions that every practitioner must internalize:</p>
+  <div class="key-point"><strong>1. Markets Discount Everything</strong> &mdash; All known and unknown information (earnings, insider activity, macro events) is already reflected in the current price. You don't need to know WHY something happened; the price chart shows you that it DID.</div>
+  <div class="key-point"><strong>2. The "How" > The "Why"</strong> &mdash; A technical analyst doesn't question why an insider bought stock. They only observe that the price reacted, confirming buying interest.</div>
+  <div class="key-point"><strong>3. Price Moves in Trends</strong> &mdash; Markets don't move randomly. NIFTY going from 6400 to 7700 happened in a phased, directional manner over 11 months &mdash; not overnight. Once a trend establishes, price tends to follow it.</div>
+  <div class="key-point"><strong>4. History Tends to Repeat Itself</strong> &mdash; Market participants react consistently to similar situations. Greed in uptrends and fear in downtrends create repeating chart patterns.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-rule">Setting Expectations</span>
+  <h3>What TA Can and Cannot Do</h3>
+  <table class="info-table">
+    <tr><th>Aspect</th><th>Reality</th></tr>
+    <tr><td><strong>Best for</strong></td><td>Short-term trades (minutes to few weeks)</td></tr>
+    <tr><td><strong>Returns per trade</strong></td><td>Small but consistent; don't expect windfalls</td></tr>
+    <tr><td><strong>Holding period</strong></td><td>Few minutes to few weeks</td></tr>
+    <tr><td><strong>Risk management</strong></td><td>Cut losses quickly; never hold hoping for recovery</td></tr>
+    <tr><td><strong>Not suitable for</strong></td><td>Long-term investment decisions (use FA instead)</td></tr>
+  </table>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">OHLC</span>
+  <h3>The Trade Summary &mdash; Open, High, Low, Close</h3>
+  <p>Every trading day produces millions of individual trades. Instead of tracking each one, we summarize with four key data points:</p>
+  <div class="key-point"><strong>Open:</strong> The first trade price when markets open (9:15 AM IST)</div>
+  <div class="key-point"><strong>High:</strong> The highest price reached during the session</div>
+  <div class="key-point"><strong>Low:</strong> The lowest price reached during the session</div>
+  <div class="key-point"><strong>Close:</strong> The final trade price at market close (3:30 PM IST) &mdash; this is the MOST important as it reflects the final consensus of the day</div>
+</div>
+</div>
+
+<!-- Flashcards -->
+<div class="section" id="m0-flashcards">
+<div class="flashcard-container" id="fc-m0">
+  <div class="flashcard" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-face flashcard-front">
+      <h4>Technical Analysis</h4>
+      <p>What is the primary data that technical analysts use?</p>
+      <span class="flip-hint">Tap to reveal answer</span>
+    </div>
+    <div class="flashcard-face flashcard-back">
+      <h4>Answer</h4>
+      <p>Historical price and volume data (OHLC). TA does not use financial statements, earnings, or any fundamental data.</p>
+    </div>
+  </div>
+</div>
+<div class="fc-counter" id="fc-m0-counter"></div>
+<div class="flashcard-nav">
+  <button onclick="prevCard('m0')">Previous</button>
+  <button onclick="nextCard('m0')">Next</button>
+</div>
+</div>
+
+<!-- Examples -->
+<div class="section" id="m0-examples">
+<div class="card">
+  <h3>Example: Reading OHLC Data</h3>
+  <p>Consider this stock's trading day summary:</p>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Open</div><div class="value">540</div></div>
+    <div class="data-item"><div class="label">High</div><div class="value">567</div></div>
+    <div class="data-item"><div class="label">Low</div><div class="value">530</div></div>
+    <div class="data-item"><div class="label">Close</div><div class="value">560</div></div>
+  </div>
+  <div class="key-point"><strong>Interpretation:</strong> The stock opened at 540, dipped to 530, rallied to 567, and settled at 560. Since Close (560) > Open (540), this was a <strong style="color:var(--accent)">positive/bullish day</strong>. The range (High - Low) = 37, showing decent volatility.</div>
+</div>
+<div class="card">
+  <h3>Example: The Street Food Analogy</h3>
+  <p><strong>Fundamental Analysis</strong> = Visiting each food vendor, tasting the food, checking ingredients (thorough but slow, covers few vendors).</p>
+  <p><strong>Technical Analysis</strong> = Observing which vendor has the longest queue and choosing that one (scalable but crowd can be wrong).</p>
+  <div class="key-point"><strong>Takeaway:</strong> Neither approach is "better." A prudent trader learns both FA and TA. Use FA for stock selection and TA for timing entry/exit points.</div>
+</div>
+</div>
+
+<!-- Quiz -->
+<div class="section" id="m0-quiz">
+<div id="quiz-m0"></div>
+</div>
+</div>
+
+<!-- ============== MODULE 2 ============== -->
+<div class="module" id="mod1">
+<div class="section-tabs">
+  <div class="sec-tab active" data-sec="m1-explainer">Explainer</div>
+  <div class="sec-tab" data-sec="m1-flashcards">Flashcards</div>
+  <div class="sec-tab" data-sec="m1-examples">Examples</div>
+  <div class="sec-tab" data-sec="m1-quiz">Quiz</div>
+</div>
+
+<div class="section active" id="m1-explainer">
+<div class="card explainer">
+  <span class="tag tag-concept">Chart Types</span>
+  <h3>Three Chart Types in Technical Analysis</h3>
+  <p>Each trading day produces 4 data points (OHLC). Regular charts like pie or column charts can't display all 4 simultaneously. TA uses three specialized chart types:</p>
+  <table class="info-table">
+    <tr><th>Chart</th><th>Data Points</th><th>Pros</th><th>Cons</th></tr>
+    <tr><td><strong>Line Chart</strong></td><td>Close only</td><td>Simple, shows trend at a glance</td><td>Ignores Open, High, Low</td></tr>
+    <tr><td><strong>Bar Chart</strong></td><td>All 4 (OHLC)</td><td>Complete data</td><td>Hard to read, lacks visual appeal</td></tr>
+    <tr><td><strong>Candlestick</strong></td><td>All 4 (OHLC)</td><td>Visual, pattern-friendly, industry standard</td><td>Requires learning patterns</td></tr>
+  </table>
+  <div class="key-point"><strong>Verdict:</strong> Japanese Candlesticks are the gold standard. They originated in 18th century Japan (rice merchant Homma Munehisa) and were introduced to the West by Steve Nison in the 1980s.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-key">Candlestick Anatomy</span>
+  <h3>Understanding the Candlestick Structure</h3>
+  <p>Every candlestick has 3 components:</p>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="80" height="200" viewBox="0 0 80 200">
+        <line x1="40" y1="10" x2="40" y2="50" stroke="#6c63ff" stroke-width="2"/>
+        <rect x="20" y="50" width="40" height="100" fill="#6c63ff" rx="3"/>
+        <line x1="40" y1="150" x2="40" y2="190" stroke="#6c63ff" stroke-width="2"/>
+        <text x="70" y="15" fill="#8b8fa3" font-size="10">High</text>
+        <text x="70" y="55" fill="#6c63ff" font-size="10">Close</text>
+        <text x="70" y="155" fill="#6c63ff" font-size="10">Open</text>
+        <text x="70" y="195" fill="#8b8fa3" font-size="10">Low</text>
+      </svg>
+      <p>Bullish Candle<br>(Close &gt; Open)</p>
+    </div>
+    <div class="candle-svg">
+      <svg width="80" height="200" viewBox="0 0 80 200">
+        <line x1="40" y1="10" x2="40" y2="50" stroke="#ff6b6b" stroke-width="2"/>
+        <rect x="20" y="50" width="40" height="100" fill="#ff6b6b" rx="3"/>
+        <line x1="40" y1="150" x2="40" y2="190" stroke="#ff6b6b" stroke-width="2"/>
+        <text x="70" y="15" fill="#8b8fa3" font-size="10">High</text>
+        <text x="70" y="55" fill="#ff6b6b" font-size="10">Open</text>
+        <text x="70" y="155" fill="#ff6b6b" font-size="10">Close</text>
+        <text x="70" y="195" fill="#8b8fa3" font-size="10">Low</text>
+      </svg>
+      <p>Bearish Candle<br>(Close &lt; Open)</p>
+    </div>
+  </div>
+  <div class="key-point"><strong>Real Body</strong> = Rectangle connecting Open and Close. <strong>Upper Shadow</strong> = Line from body top to High. <strong>Lower Shadow</strong> = Line from body bottom to Low. Long body = strong conviction. Short body = subdued activity.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-rule">Time Frames</span>
+  <h3>Choosing Your Time Frame</h3>
+  <table class="info-table">
+    <tr><th>Trader Type</th><th>Time Frame</th><th>Candles/Year</th></tr>
+    <tr><td>Long-term investor</td><td>Weekly / Monthly</td><td>12-52</td></tr>
+    <tr><td>Swing trader</td><td>Daily (EOD)</td><td>~252</td></tr>
+    <tr><td>Intraday (1-2 trades/day)</td><td>15 min</td><td>~25/day</td></tr>
+    <tr><td>High frequency</td><td>1-5 min</td><td>75/day</td></tr>
+  </table>
+  <div class="key-point"><strong>Rule:</strong> Data = information + noise. Long-term investors use weekly/monthly to filter noise. Intraday traders need 15-min or 5-min charts for granularity. Choose wrong and you're trading on noise.</div>
+</div>
+</div>
+
+<div class="section" id="m1-flashcards">
+<div class="flashcard-container" id="fc-m1">
+  <div class="flashcard" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-face flashcard-front">
+      <h4>Candlestick Components</h4>
+      <p>What are the three components of a candlestick?</p>
+      <span class="flip-hint">Tap to reveal</span>
+    </div>
+    <div class="flashcard-face flashcard-back">
+      <h4>Answer</h4>
+      <p>1. Real Body (rectangle: open to close)<br>2. Upper Shadow (body to high)<br>3. Lower Shadow (body to low)</p>
+    </div>
+  </div>
+</div>
+<div class="fc-counter" id="fc-m1-counter"></div>
+<div class="flashcard-nav">
+  <button onclick="prevCard('m1')">Previous</button>
+  <button onclick="nextCard('m1')">Next</button>
+</div>
+</div>
+
+<div class="section" id="m1-examples">
+<div class="card">
+  <h3>Example: Plotting a Bullish Candle</h3>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Open</div><div class="value">62</div></div>
+    <div class="data-item"><div class="label">High</div><div class="value">70</div></div>
+    <div class="data-item"><div class="label">Low</div><div class="value">58</div></div>
+    <div class="data-item"><div class="label">Close</div><div class="value">67</div></div>
+  </div>
+  <div class="key-point">Since Close (67) > Open (62), this is a <strong style="color:#6c63ff">BULLISH (blue) candle</strong>. Real body spans 62-67. Upper shadow: 67 to 70 (3 pts). Lower shadow: 62 to 58 (4 pts).</div>
+</div>
+<div class="card">
+  <h3>Example: Plotting a Bearish Candle</h3>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Open</div><div class="value">456</div></div>
+    <div class="data-item"><div class="label">High</div><div class="value">470</div></div>
+    <div class="data-item"><div class="label">Low</div><div class="value">420</div></div>
+    <div class="data-item"><div class="label">Close</div><div class="value">435</div></div>
+  </div>
+  <div class="key-point">Since Close (435) < Open (456), this is a <strong style="color:#ff6b6b">BEARISH (red) candle</strong>. Real body spans 456-435. Upper shadow: 456 to 470 (14 pts). Lower shadow: 435 to 420 (15 pts).</div>
+</div>
+</div>
+
+<div class="section" id="m1-quiz">
+<div id="quiz-m1"></div>
+</div>
+</div>
+
+<!-- ============== MODULE 3 ============== -->
+<div class="module" id="mod2">
+<div class="section-tabs">
+  <div class="sec-tab active" data-sec="m2-explainer">Explainer</div>
+  <div class="sec-tab" data-sec="m2-flashcards">Flashcards</div>
+  <div class="sec-tab" data-sec="m2-examples">Examples</div>
+  <div class="sec-tab" data-sec="m2-quiz">Quiz</div>
+</div>
+
+<div class="section active" id="m2-explainer">
+<div class="card explainer">
+  <span class="tag tag-rule">Three Golden Rules</span>
+  <h3>Candlestick Trading Rules</h3>
+  <div class="key-point"><strong>Rule 1: Buy Strength, Sell Weakness</strong> &mdash; Buy on bullish (blue) candle days. Sell/short on bearish (red) candle days. Strength = blue candle, Weakness = red candle.</div>
+  <div class="key-point"><strong>Rule 2: Be Flexible, Quantify & Verify</strong> &mdash; Real-world candles rarely match textbook definitions exactly. Allow minor variations but always quantify them (e.g., if High vs Close difference is 0.17%, that's acceptable).</div>
+  <div class="key-point"><strong>Rule 3: Look for Prior Trend</strong> &mdash; Bullish patterns need a prior downtrend. Bearish patterns need a prior uptrend. Exception: Marubozu works regardless of prior trend.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">Pattern: Marubozu</span>
+  <h3>The Marubozu ("Bald" in Japanese)</h3>
+  <p>A candle with NO upper or lower shadows &mdash; just the real body. It's the strongest single candle signal.</p>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <rect x="15" y="10" width="30" height="140" fill="#6c63ff" rx="3"/>
+        <text x="5" y="155" fill="#6c63ff" font-size="9">O=L</text>
+        <text x="5" y="18" fill="#6c63ff" font-size="9">C=H</text>
+      </svg>
+      <p>Bullish Marubozu<br>Open=Low, Close=High</p>
+    </div>
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <rect x="15" y="10" width="30" height="140" fill="#ff6b6b" rx="3"/>
+        <text x="5" y="18" fill="#ff6b6b" font-size="9">O=H</text>
+        <text x="5" y="155" fill="#ff6b6b" font-size="9">C=L</text>
+      </svg>
+      <p>Bearish Marubozu<br>Open=High, Close=Low</p>
+    </div>
+  </div>
+  <div class="key-point"><strong>Bullish Marubozu:</strong> Buy around closing price. Stoploss = Low of the candle. Signals extreme buying interest.<br><strong>Bearish Marubozu:</strong> Short around closing price. Stoploss = High of the candle. Signals extreme selling pressure.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">Pattern: Spinning Top & Doji</span>
+  <h3>Indecision Candles</h3>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <line x1="30" y1="10" x2="30" y2="60" stroke="#6c63ff" stroke-width="2"/>
+        <rect x="18" y="60" width="24" height="20" fill="#6c63ff" rx="2"/>
+        <line x1="30" y1="80" x2="30" y2="150" stroke="#6c63ff" stroke-width="2"/>
+      </svg>
+      <p>Spinning Top<br>Small body, long shadows</p>
+    </div>
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <line x1="30" y1="10" x2="30" y2="78" stroke="#8b8fa3" stroke-width="2"/>
+        <line x1="18" y1="78" x2="42" y2="78" stroke="#8b8fa3" stroke-width="3"/>
+        <line x1="30" y1="78" x2="30" y2="150" stroke="#8b8fa3" stroke-width="2"/>
+      </svg>
+      <p>Doji<br>Open = Close (no body)</p>
+    </div>
+  </div>
+  <div class="key-point"><strong>Spinning Top:</strong> Bulls tried going up (upper shadow), bears tried going down (lower shadow), neither won &rarr; indecision. Color doesn't matter.<br><strong>Doji:</strong> Even more extreme indecision (Open = Close exactly). Think of them as "the calm before the storm."</div>
+  <p style="margin-top:12px">In a <strong>downtrend</strong>: could signal reversal (bears losing power) or continuation (bears consolidating). In an <strong>uptrend</strong>: could signal reversal (bulls fatigued) or continuation (bulls pausing).</p>
+  <div class="key-point"><strong>Strategy:</strong> When you see spinning tops/dojis, reduce position size to 50%. If market reverses, you profit on half. If it continues, you're still invested with half.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">Pattern: Paper Umbrella</span>
+  <h3>Hammer & Hanging Man</h3>
+  <p>Both look identical &mdash; small body at top, long lower shadow (at least 2x the body length), little/no upper shadow. The NAME and MEANING depends on where they appear:</p>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <rect x="18" y="10" width="24" height="25" fill="#6c63ff" rx="2"/>
+        <line x1="30" y1="35" x2="30" y2="150" stroke="#6c63ff" stroke-width="2"/>
+      </svg>
+      <p>Hammer<br>(at bottom of downtrend)<br><strong style="color:var(--success)">BULLISH</strong></p>
+    </div>
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <rect x="18" y="10" width="24" height="25" fill="#ff6b6b" rx="2"/>
+        <line x1="30" y1="35" x2="30" y2="150" stroke="#ff6b6b" stroke-width="2"/>
+      </svg>
+      <p>Hanging Man<br>(at top of uptrend)<br><strong style="color:var(--danger)">BEARISH</strong></p>
+    </div>
+  </div>
+  <div class="key-point"><strong>Hammer trade:</strong> Go long. Stoploss = Low of hammer. Prior trend MUST be down.<br><strong>Hanging Man trade:</strong> Go short. Stoploss = High of hanging man. Prior trend MUST be up.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">Pattern: Shooting Star</span>
+  <h3>The Inverted Paper Umbrella</h3>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="60" height="160" viewBox="0 0 60 160">
+        <line x1="30" y1="10" x2="30" y2="120" stroke="#ff6b6b" stroke-width="2"/>
+        <rect x="18" y="120" width="24" height="25" fill="#ff6b6b" rx="2"/>
+        <line x1="30" y1="145" x2="30" y2="155" stroke="#ff6b6b" stroke-width="1"/>
+      </svg>
+      <p>Shooting Star<br>(at top of uptrend)<br><strong style="color:var(--danger)">BEARISH</strong></p>
+    </div>
+  </div>
+  <p>Long upper shadow (at least 2x body), small body at bottom, little/no lower shadow. Shows bulls pushed price high but bears dragged it back down.</p>
+  <div class="key-point"><strong>Trade:</strong> Short around close. Stoploss = High of the candle. Prior trend MUST be bullish. More reliable with a red body.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-danger">The Trade Trap</span>
+  <h3>Avoid Candles That Are Too Short or Too Long</h3>
+  <div class="key-point"><strong>Too Short (range &lt; 1%):</strong> Subdued trading; hard to identify direction. Signal is weak.<br><strong>Too Long (range &gt; 10%):</strong> Stoploss will be very deep. If the trade goes wrong, the loss is painful.</div>
+  <p>Stick to candles with moderate range for the best risk-reward setups.</p>
+</div>
+</div>
+
+<div class="section" id="m2-flashcards">
+<div class="flashcard-container" id="fc-m2">
+  <div class="flashcard" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-face flashcard-front">
+      <h4>Marubozu</h4>
+      <p>What defines a Bullish Marubozu?</p>
+      <span class="flip-hint">Tap to reveal</span>
+    </div>
+    <div class="flashcard-face flashcard-back">
+      <h4>Answer</h4>
+      <p>Open = Low and Close = High (no shadows). Buy at close, stoploss at low. Only pattern that doesn't need a prior trend.</p>
+    </div>
+  </div>
+</div>
+<div class="fc-counter" id="fc-m2-counter"></div>
+<div class="flashcard-nav">
+  <button onclick="prevCard('m2')">Previous</button>
+  <button onclick="nextCard('m2')">Next</button>
+</div>
+</div>
+
+<div class="section" id="m2-examples">
+<div class="card">
+  <h3>Example: Identifying a Bullish Marubozu (ACC Ltd)</h3>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Open</div><div class="value">971.8</div></div>
+    <div class="data-item"><div class="label">High</div><div class="value">1030.2</div></div>
+    <div class="data-item"><div class="label">Low</div><div class="value">970.1</div></div>
+    <div class="data-item"><div class="label">Close</div><div class="value">1028.4</div></div>
+  </div>
+  <div class="key-point">Open (971.8) ~ Low (970.1) &mdash; difference = 0.17%. High (1030.2) ~ Close (1028.4) &mdash; difference = 0.17%. Both are negligible &rarr; <strong>Valid Bullish Marubozu</strong> (Rule 2: be flexible). Buy ~1028.4, Stoploss = 970.0</div>
+</div>
+<div class="card">
+  <h3>Example: Hammer Formation (Cipla Ltd)</h3>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Open</div><div class="value">444</div></div>
+    <div class="data-item"><div class="label">High</div><div class="value">446</div></div>
+    <div class="data-item"><div class="label">Low</div><div class="value">441.5</div></div>
+    <div class="data-item"><div class="label">Close</div><div class="value">445.4</div></div>
+  </div>
+  <div class="key-point"><strong>Checklist:</strong> Prior trend is down? Yes. Body is small (444 to 445.4 = 1.4)? Yes. Lower shadow at least 2x body? Lower shadow = 444-441.5 = 2.5, body = 1.4 &rarr; ratio ~1.8x. Close enough &rarr; <strong>Valid Hammer</strong>. Buy ~444, Stoploss = 441.5</div>
+</div>
+<div class="card">
+  <h3>Example: Bearish Marubozu (BPCL)</h3>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Open</div><div class="value">355.4</div></div>
+    <div class="data-item"><div class="label">High</div><div class="value">356.0</div></div>
+    <div class="data-item"><div class="label">Low</div><div class="value">341</div></div>
+    <div class="data-item"><div class="label">Close</div><div class="value">341.7</div></div>
+  </div>
+  <div class="key-point">Open ~ High (0.17% diff), Close ~ Low (0.2% diff) &rarr; <strong>Valid Bearish Marubozu</strong>. Short at ~341.7, Stoploss = 356.0. Extreme selling pressure evident.</div>
+</div>
+</div>
+
+<div class="section" id="m2-quiz">
+<div id="quiz-m2"></div>
+</div>
+</div>
+
+<!-- ============== MODULE 4 ============== -->
+<div class="module" id="mod3">
+<div class="section-tabs">
+  <div class="sec-tab active" data-sec="m3-explainer">Explainer</div>
+  <div class="sec-tab" data-sec="m3-flashcards">Flashcards</div>
+  <div class="sec-tab" data-sec="m3-examples">Examples</div>
+  <div class="sec-tab" data-sec="m3-quiz">Quiz</div>
+</div>
+
+<div class="section active" id="m3-explainer">
+<div class="card explainer">
+  <span class="tag tag-concept">Multi-Candle Patterns</span>
+  <h3>The Engulfing Pattern</h3>
+  <p>Formed by two candles where the second candle's body completely "engulfs" (covers) the first candle's body.</p>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="100" height="180" viewBox="0 0 100 180">
+        <rect x="12" y="60" width="22" height="50" fill="#ff6b6b" rx="2"/>
+        <line x1="23" y1="45" x2="23" y2="60" stroke="#ff6b6b" stroke-width="1.5"/>
+        <line x1="23" y1="110" x2="23" y2="130" stroke="#ff6b6b" stroke-width="1.5"/>
+        <rect x="45" y="40" width="30" height="90" fill="#6c63ff" rx="2"/>
+        <line x1="60" y1="25" x2="60" y2="40" stroke="#6c63ff" stroke-width="1.5"/>
+        <line x1="60" y1="130" x2="60" y2="150" stroke="#6c63ff" stroke-width="1.5"/>
+        <text x="0" y="175" fill="#00c9a7" font-size="10">Bullish Engulfing</text>
+      </svg>
+      <p>Day 1: small red<br>Day 2: large blue engulfs<br><strong style="color:var(--success)">BULLISH</strong></p>
+    </div>
+    <div class="candle-svg">
+      <svg width="100" height="180" viewBox="0 0 100 180">
+        <rect x="12" y="50" width="22" height="50" fill="#6c63ff" rx="2"/>
+        <line x1="23" y1="35" x2="23" y2="50" stroke="#6c63ff" stroke-width="1.5"/>
+        <line x1="23" y1="100" x2="23" y2="120" stroke="#6c63ff" stroke-width="1.5"/>
+        <rect x="45" y="30" width="30" height="100" fill="#ff6b6b" rx="2"/>
+        <line x1="60" y1="15" x2="60" y2="30" stroke="#ff6b6b" stroke-width="1.5"/>
+        <line x1="60" y1="130" x2="60" y2="155" stroke="#ff6b6b" stroke-width="1.5"/>
+        <text x="0" y="175" fill="#ff6b6b" font-size="10">Bearish Engulfing</text>
+      </svg>
+      <p>Day 1: small blue<br>Day 2: large red engulfs<br><strong style="color:var(--danger)">BEARISH</strong></p>
+    </div>
+  </div>
+  <div class="key-point"><strong>Bullish Engulfing:</strong> Appears in downtrend. Day 1 = small red. Day 2 = large blue that opens below Day 1's close and closes above Day 1's open. Buy at Day 2's close, Stoploss = Low of the pattern.</div>
+  <div class="key-point"><strong>Bearish Engulfing:</strong> Appears in uptrend. Day 1 = small blue. Day 2 = large red that opens above Day 1's close and closes below Day 1's open. Short at Day 2's close, Stoploss = High of the pattern.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">Piercing Pattern & Dark Cloud Cover</span>
+  <h3>Partial Engulfing Cousins</h3>
+  <div class="key-point"><strong>Piercing Pattern (Bullish):</strong> In a downtrend. Day 1 = long red candle. Day 2 = blue candle that opens below Day 1's low but closes at least 50% INTO Day 1's body (not completely engulfing). Think: "piercing through the bearish sentiment."</div>
+  <div class="key-point"><strong>Dark Cloud Cover (Bearish):</strong> In an uptrend. Day 1 = long blue candle. Day 2 = red candle that opens above Day 1's high but closes at least 50% INTO Day 1's body. Think: "dark clouds covering the bullish sky."</div>
+  <p style="margin-top:12px">Both are <strong>weaker</strong> signals than full engulfing patterns because the reversal isn't as convincing &mdash; the second candle only covers half, not all, of the first.</p>
+</div>
+<div class="card explainer">
+  <span class="tag tag-concept">The Harami Pattern</span>
+  <h3>The Opposite of Engulfing</h3>
+  <p>"Harami" means "pregnant" in Japanese. The second candle is SMALL and fits INSIDE the first candle's body.</p>
+  <div class="candle-visual">
+    <div class="candle-svg">
+      <svg width="100" height="180" viewBox="0 0 100 180">
+        <rect x="10" y="30" width="30" height="110" fill="#ff6b6b" rx="2"/>
+        <line x1="25" y1="15" x2="25" y2="30" stroke="#ff6b6b" stroke-width="1.5"/>
+        <line x1="25" y1="140" x2="25" y2="160" stroke="#ff6b6b" stroke-width="1.5"/>
+        <rect x="50" y="60" width="24" height="35" fill="#6c63ff" rx="2"/>
+        <line x1="62" y1="50" x2="62" y2="60" stroke="#6c63ff" stroke-width="1.5"/>
+        <line x1="62" y1="95" x2="62" y2="110" stroke="#6c63ff" stroke-width="1.5"/>
+        <text x="5" y="178" fill="#00c9a7" font-size="10">Bullish Harami</text>
+      </svg>
+      <p>Day 1: large red<br>Day 2: small blue inside<br><strong style="color:var(--success)">BULLISH</strong></p>
+    </div>
+    <div class="candle-svg">
+      <svg width="100" height="180" viewBox="0 0 100 180">
+        <rect x="10" y="30" width="30" height="110" fill="#6c63ff" rx="2"/>
+        <line x1="25" y1="15" x2="25" y2="30" stroke="#6c63ff" stroke-width="1.5"/>
+        <line x1="25" y1="140" x2="25" y2="160" stroke="#6c63ff" stroke-width="1.5"/>
+        <rect x="50" y="55" width="24" height="35" fill="#ff6b6b" rx="2"/>
+        <line x1="62" y1="45" x2="62" y2="55" stroke="#ff6b6b" stroke-width="1.5"/>
+        <line x1="62" y1="90" x2="62" y2="105" stroke="#ff6b6b" stroke-width="1.5"/>
+        <text x="5" y="178" fill="#ff6b6b" font-size="10">Bearish Harami</text>
+      </svg>
+      <p>Day 1: large blue<br>Day 2: small red inside<br><strong style="color:var(--danger)">BEARISH</strong></p>
+    </div>
+  </div>
+  <div class="key-point"><strong>Bullish Harami:</strong> In downtrend. Day 1 = big red. Day 2 = small blue that fits within Day 1's range. The small Day 2 shows sellers are losing steam. Buy at Day 2 close, Stoploss = Low of Day 1.<br><strong>Bearish Harami:</strong> In uptrend. Day 1 = big blue. Day 2 = small red inside. Buyers losing steam. Short at Day 2 close, Stoploss = High of Day 1.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-key">Doji in Multi-Candle Context</span>
+  <h3>The Presence of a Doji (Special Engulfing)</h3>
+  <p>When a Doji appears as the second candle in an engulfing pattern, it adds an extra layer of indecision. A Doji after a long red candle in a downtrend is a particularly strong bullish signal &mdash; the selling completely exhausted and the market is at equilibrium.</p>
+  <div class="key-point"><strong>Trade with more conviction</strong> when a Doji forms after a strong trend candle. The contrast between conviction (Day 1) and indecision (Day 2) is a powerful reversal signal.</div>
+</div>
+<div class="card explainer">
+  <span class="tag tag-rule">Selecting Trades</span>
+  <h3>Perspective on Trade Selection</h3>
+  <table class="info-table">
+    <tr><th>Criterion</th><th>Guidance</th></tr>
+    <tr><td>Risk taker</td><td>Enter same day as pattern forms (validate by 3:20 PM)</td></tr>
+    <tr><td>Risk averse</td><td>Enter next day after confirming Day 2 follows Rule 1</td></tr>
+    <tr><td>Stoploss</td><td>Always at the pattern's extreme (low for buy, high for short)</td></tr>
+    <tr><td>Hold time</td><td>Until target hit OR stoploss hit &mdash; don't tweak mid-trade</td></tr>
+    <tr><td>Avoid</td><td>Candles with range < 1% or > 10% of price</td></tr>
+  </table>
+</div>
+</div>
+
+<div class="section" id="m3-flashcards">
+<div class="flashcard-container" id="fc-m3">
+  <div class="flashcard" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-face flashcard-front">
+      <h4>Engulfing Pattern</h4>
+      <p>What makes a Bullish Engulfing valid?</p>
+      <span class="flip-hint">Tap to reveal</span>
+    </div>
+    <div class="flashcard-face flashcard-back">
+      <h4>Answer</h4>
+      <p>Prior downtrend + Day 1 small red candle + Day 2 large blue candle whose body completely covers Day 1's body. Buy at Day 2 close, stoploss at pattern low.</p>
+    </div>
+  </div>
+</div>
+<div class="fc-counter" id="fc-m3-counter"></div>
+<div class="flashcard-nav">
+  <button onclick="prevCard('m3')">Previous</button>
+  <button onclick="nextCard('m3')">Next</button>
+</div>
+</div>
+
+<div class="section" id="m3-examples">
+<div class="card">
+  <h3>Example: Bullish Engulfing</h3>
+  <p>In a clear downtrend, two consecutive days form:</p>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Day 1 Open</div><div class="value">256</div></div>
+    <div class="data-item"><div class="label">Day 1 Close</div><div class="value">248</div></div>
+    <div class="data-item"><div class="label">Day 2 Open</div><div class="value">245</div></div>
+    <div class="data-item"><div class="label">Day 2 Close</div><div class="value">261</div></div>
+  </div>
+  <div class="key-point">Day 1 is bearish (256&rarr;248). Day 2 opens below Day 1's close (245 < 248) and closes above Day 1's open (261 > 256). Day 2's body (245-261) completely engulfs Day 1's body (248-256). <strong style="color:var(--success)">Valid Bullish Engulfing</strong>. Buy ~261, SL = Low of pattern.</div>
+</div>
+<div class="card">
+  <h3>Example: Bearish Harami</h3>
+  <p>In an uptrend, the following pattern forms:</p>
+  <div class="example-data">
+    <div class="data-item"><div class="label">Day 1 Open</div><div class="value">510</div></div>
+    <div class="data-item"><div class="label">Day 1 Close</div><div class="value">548</div></div>
+    <div class="data-item"><div class="label">Day 2 Open</div><div class="value">542</div></div>
+    <div class="data-item"><div class="label">Day 2 Close</div><div class="value">524</div></div>
+  </div>
+  <div class="key-point">Day 1 is bullish (510&rarr;548, body = 38 pts). Day 2 opens inside Day 1's body at 542 and closes inside at 524 (body = 18 pts). Day 2 fits entirely within Day 1's range. <strong style="color:var(--danger)">Valid Bearish Harami</strong>. Short ~524, SL = High of Day 1 (548).</div>
+</div>
+</div>
+
+<div class="section" id="m3-quiz">
+<div id="quiz-m3"></div>
+</div>
+</div>
+
+</div><!-- /container -->
+</main>
+
+<script>
+// ======= FLASHCARD DATA =======
+const flashcards = {
+m0: [
+  {q:"What is Technical Analysis?", a:"A research technique to identify trading opportunities by studying price and volume patterns on stock charts. It does NOT use financial statements."},
+  {q:"Name the 4 assumptions of TA.", a:"1. Markets discount everything\n2. The 'how' is more important than 'why'\n3. Price moves in trends\n4. History tends to repeat itself"},
+  {q:"What does OHLC stand for?", a:"Open, High, Low, Close — the four key data points summarizing each trading period."},
+  {q:"Which OHLC price is considered most important?", a:"The Close price — it reflects the final consensus/sentiment of the day and serves as reference for the next session."},
+  {q:"TA is best for what kind of trades?", a:"Short-term trades (minutes to few weeks). For long-term investing, use Fundamental Analysis."},
+  {q:"What is the difference between TA and FA?", a:"TA studies price charts and patterns (scalable across assets). FA studies financial statements and business fundamentals (thorough but asset-specific)."},
+  {q:"What does 'Markets discount everything' mean?", a:"All known and unknown info (earnings, insider trades, macro events) is already reflected in the current stock price."},
+  {q:"Why does 'History repeats itself' work in markets?", a:"Because human emotions (greed, fear) are consistent. Market participants react similarly to similar price situations, creating recurring patterns."},
+],
+m1: [
+  {q:"What are the 3 chart types used in TA?", a:"1. Line chart (close price only)\n2. Bar chart (all 4 OHLC values)\n3. Japanese Candlestick (all 4 OHLC, most popular)"},
+  {q:"Why can't regular charts (pie, column) be used for TA?", a:"TA requires 4 data points (OHLC) displayed simultaneously for each time period. Regular charts show only 1 data point per entry."},
+  {q:"What are the 3 components of a candlestick?", a:"1. Real Body (rectangle: Open to Close)\n2. Upper Shadow (body top to High)\n3. Lower Shadow (body bottom to Low)"},
+  {q:"How do you tell if a candle is bullish or bearish?", a:"Bullish: Close > Open (blue/green candle)\nBearish: Close < Open (red/black candle)"},
+  {q:"Who introduced candlesticks to the Western world?", a:"Steve Nison, around 1980. The technique originated in 18th century Japan with rice merchant Homma Munehisa."},
+  {q:"What does a long real body indicate?", a:"Strong buying (bullish) or selling (bearish) conviction. The longer the body, the more intense the activity."},
+  {q:"What time frame should a swing trader use?", a:"Daily/End-of-Day (EOD) charts, producing approximately 252 candles per year."},
+  {q:"What happens when you choose the wrong time frame?", a:"You trade on noise instead of information. A long-term investor using 1-min charts will be overwhelmed with meaningless data."},
+],
+m2: [
+  {q:"What defines a Bullish Marubozu?", a:"Open = Low and Close = High (no shadows). Buy at close, stoploss at low. Only pattern that doesn't need a prior trend."},
+  {q:"What defines a Bearish Marubozu?", a:"Open = High and Close = Low (no shadows). Short at close, stoploss at high. Signals extreme selling."},
+  {q:"What makes a Spinning Top?", a:"Small real body with long upper and lower shadows of approximately equal length. Indicates market indecision — neither bulls nor bears won."},
+  {q:"How is a Doji different from a Spinning Top?", a:"A Doji has virtually NO real body (Open = Close). It's an even more extreme form of indecision than a spinning top."},
+  {q:"What is the shadow-to-body ratio for a paper umbrella?", a:"The lower shadow must be at least 2x the length of the real body. Very little or no upper shadow."},
+  {q:"When is a paper umbrella called a Hammer?", a:"When it appears at the BOTTOM of a downtrend. It's a bullish reversal signal. Go long, stoploss = low."},
+  {q:"When is a paper umbrella called a Hanging Man?", a:"When it appears at the TOP of an uptrend. It's a bearish reversal signal. Go short, stoploss = high."},
+  {q:"What is a Shooting Star?", a:"An inverted paper umbrella at the top of an uptrend: long upper shadow (2x+ body), small body at bottom. Bearish. Short at close, SL = high."},
+  {q:"Why avoid trading candles with range < 1%?", a:"Range too small = subdued activity. Hard to determine direction. The signal is unreliable."},
+  {q:"What's wrong with candles over 10% range?", a:"The stoploss will be very deep. If the trade goes wrong, the loss is disproportionately large."},
+],
+m3: [
+  {q:"What is a Bullish Engulfing pattern?", a:"In a downtrend: Day 1 = small red candle, Day 2 = large blue candle whose body completely covers Day 1's body. Buy at Day 2 close, SL = pattern low."},
+  {q:"What is a Bearish Engulfing pattern?", a:"In an uptrend: Day 1 = small blue candle, Day 2 = large red candle whose body completely covers Day 1's body. Short at Day 2 close, SL = pattern high."},
+  {q:"How does the Piercing Pattern differ from Bullish Engulfing?", a:"Piercing: Day 2 (blue) closes at least 50% into Day 1 (red) body but does NOT completely engulf it. Weaker signal than full engulfing."},
+  {q:"What is the Dark Cloud Cover?", a:"Bearish mirror of Piercing Pattern. In uptrend: Day 2 (red) opens above Day 1's high and closes at least 50% into Day 1's blue body."},
+  {q:"What does 'Harami' mean in Japanese?", a:"'Pregnant.' The second candle is small and fits inside the first candle's body, like a baby in a womb."},
+  {q:"What is a Bullish Harami?", a:"In downtrend: Day 1 = large red candle, Day 2 = small blue candle that fits within Day 1's body. Sellers losing steam. Buy Day 2 close, SL = Day 1 low."},
+  {q:"What is a Bearish Harami?", a:"In uptrend: Day 1 = large blue candle, Day 2 = small red candle inside Day 1's body. Buyers losing momentum. Short Day 2 close, SL = Day 1 high."},
+  {q:"Risk taker vs Risk averse entry: what's the difference?", a:"Risk taker: enters same day at ~3:20 PM after validating pattern. Risk averse: waits for next day and enters only if it confirms Rule 1 (buy strength, sell weakness)."},
+]
+};
+
+// ======= QUIZ DATA =======
+const quizzes = {
+m0: [
+  {q:"Which of these is NOT an assumption of Technical Analysis?",opts:["Markets discount everything","Price moves in trends","A company's PE ratio determines fair value","History tends to repeat itself"],ans:2,explain:"TA does not use fundamental metrics like PE ratio. It relies solely on price/volume data."},
+  {q:"What does the 'Close' price represent?",opts:["The first trade of the day","The highest price achieved","The last traded price when market closes","The average of all trades"],ans:2,explain:"Close is the final price at market close (3:30 PM). It's the most important price as it reflects the day's final sentiment."},
+  {q:"TA is best suited for which type of investing?",opts:["Long-term buy and hold","Short-term trading","Retirement planning","Dividend investing"],ans:1,explain:"TA is designed for short-term trades (minutes to weeks). Long-term investing is better served by Fundamental Analysis."},
+  {q:"A stock opens at 200, hits a high of 220, low of 195, and closes at 210. What was the day like?",opts:["Bearish (negative day)","Bullish (positive day)","Cannot be determined","Neutral"],ans:1,explain:"Close (210) > Open (200), so it was a bullish day. The stock gained 10 points despite dipping to 195 intraday."},
+],
+m1: [
+  {q:"Which chart type is the industry standard for Technical Analysis?",opts:["Line chart","Bar chart","Japanese Candlestick","Pie chart"],ans:2,explain:"Candlesticks display all 4 OHLC data points with excellent visual clarity, making pattern identification easy."},
+  {q:"A candle with Close > Open is called:",opts:["Bearish candle","Bullish candle","Doji","Spinning top"],ans:1,explain:"When Close > Open, the day ended higher than it started, indicating bullish sentiment."},
+  {q:"The 'Upper Shadow' of a candlestick connects:",opts:["Open to Close","Body top to High","Body bottom to Low","High to Low"],ans:1,explain:"The upper shadow is the thin line extending from the top of the real body up to the high price of the period."},
+  {q:"A high-frequency trader should use which time frame?",opts:["Monthly charts","Weekly charts","Daily charts","1-5 minute charts"],ans:3,explain:"High-frequency traders need maximum granularity. 1-5 minute charts provide ~75 candles per day, sufficient for multiple trades."},
+  {q:"If Open=450, High=480, Low=440, Close=445, what type of candle is this?",opts:["Bullish (blue)","Bearish (red)","Doji","Marubozu"],ans:1,explain:"Close (445) < Open (450), making this a bearish (red) candle. The stock declined 5 points on the day."},
+],
+m2: [
+  {q:"A Bullish Marubozu has which characteristic?",opts:["Long upper and lower shadows","Open = High, Close = Low","Open = Low, Close = High (no shadows)","Small body, equal shadows"],ans:2,explain:"A Bullish Marubozu is 'bald' — no shadows. Open equals Low and Close equals High, showing pure buying dominance."},
+  {q:"A Spinning Top in a downtrend signals:",opts:["Definite reversal","Definite continuation","Indecision — be prepared for either outcome","Strong selling pressure"],ans:2,explain:"Spinning tops show neither bulls nor bears could control. In a downtrend, it could mean reversal or consolidation before more selling."},
+  {q:"The Hammer pattern requires:",opts:["Prior uptrend","Prior downtrend","No prior trend","Prior sideways market"],ans:1,explain:"A Hammer appears at the BOTTOM of a downtrend. Without a prior downtrend, the same candle shape has no defined meaning as a hammer."},
+  {q:"What is the stoploss for a Bullish Marubozu trade?",opts:["The high of the candle","The close of the candle","The low of the candle","50% of the candle body"],ans:2,explain:"For a bullish trade, the stoploss is always the low of the pattern. If price breaks below the low, the bullish thesis is invalidated."},
+  {q:"A Shooting Star has:",opts:["Long lower shadow, small body at top","Long upper shadow, small body at bottom","No shadows at all","Equal upper and lower shadows"],ans:1,explain:"A shooting star has a long upper shadow (2x+ body length), small body at the bottom, and little/no lower shadow. Bearish at top of uptrend."},
+  {q:"When should you NOT trade a candlestick pattern?",opts:["When the candle range is 5%","When the candle range is below 1% or above 10%","When the pattern appears in a trend","When the candle has shadows"],ans:1,explain:"Range < 1% = too subdued (unreliable signal). Range > 10% = stoploss too deep (painful loss if wrong). Stick to moderate ranges."},
+],
+m3: [
+  {q:"In a Bullish Engulfing, the second candle must:",opts:["Be smaller than the first","Have its body completely cover the first candle's body","Be the same color as the first","Close below the first candle's open"],ans:1,explain:"The defining feature of an engulfing pattern is that Day 2's body completely engulfs (covers) Day 1's body, showing a dramatic shift in sentiment."},
+  {q:"The Dark Cloud Cover pattern is:",opts:["A bullish reversal at a bottom","A bearish pattern in an uptrend","A continuation pattern","A triple candlestick pattern"],ans:1,explain:"Dark Cloud Cover is bearish. Day 2 (red) opens above Day 1's high but closes at least 50% into Day 1's blue body, suggesting the uptrend may be ending."},
+  {q:"A Harami is the OPPOSITE of which pattern?",opts:["Marubozu","Spinning Top","Engulfing","Shooting Star"],ans:2,explain:"In an Engulfing, Day 2 is LARGER and covers Day 1. In a Harami, Day 2 is SMALLER and fits inside Day 1. They're mirror concepts."},
+  {q:"In a Bearish Harami, Day 2 is:",opts:["A large red candle engulfing Day 1","A small red candle inside Day 1's blue body","A Doji","A Marubozu"],ans:1,explain:"Bearish Harami: In an uptrend, Day 1 = large blue, Day 2 = small red that fits within Day 1. The small Day 2 shows buyers are losing conviction."},
+  {q:"A risk averse trader should enter a trade:",opts:["Same day as the pattern forms","The next day, after confirming the candle color matches the expected direction","A week after the pattern","Only on Mondays"],ans:1,explain:"Risk averse traders wait one day to confirm. For bullish patterns, they check that the next day is a blue candle day (Rule 1: buy strength)."},
+  {q:"What does the Piercing Pattern have in common with Bullish Engulfing?",opts:["Both require a prior uptrend","Both are bearish signals","Both appear in downtrends and are bullish reversal signals","Day 2 completely engulfs Day 1 in both"],ans:2,explain:"Both are bullish reversals in downtrends. The difference: Piercing covers only 50%+ of Day 1, while Engulfing covers 100%."},
+]
+};
+
+// ======= STATE =======
+const fcState = {};
+const completed = new Set();
+const totalItems = Object.keys(quizzes).reduce((s,k) => s + quizzes[k].length, 0) +
+  Object.keys(flashcards).reduce((s,k) => s + flashcards[k].length, 0);
+
+function updateProgress(){
+  const n = completed.size;
+  const pct = Math.round(n/totalItems*100);
+  document.getElementById('progressFill').style.width = pct+'%';
+  document.getElementById('progressPct').textContent = pct+'%';
+  document.getElementById('progressLabel').textContent = n+' / '+totalItems+' completed';
+}
+
+// ======= FLASHCARD ENGINE =======
+function initFlashcards(mod){
+  if(fcState[mod]) return;
+  const cards = flashcards[mod];
+  fcState[mod] = {idx:0};
+  renderFlashcard(mod);
+}
+
+function renderFlashcard(mod){
+  const cards = flashcards[mod];
+  const idx = fcState[mod].idx;
+  const c = cards[idx];
+  const container = document.getElementById('fc-'+mod);
+  container.innerHTML = `<div class="flashcard" onclick="this.classList.toggle('flipped');markFCDone('${mod}',${idx})">
+    <div class="flashcard-face flashcard-front"><h4>Card ${idx+1}</h4><p>${c.q}</p><span class="flip-hint">Tap to reveal answer</span></div>
+    <div class="flashcard-face flashcard-back"><h4>Answer</h4><p>${c.a.replace(/\n/g,'<br>')}</p></div>
+  </div>`;
+  document.getElementById('fc-'+mod+'-counter').textContent = (idx+1)+' / '+cards.length;
+}
+
+function markFCDone(mod,idx){completed.add('fc-'+mod+'-'+idx);updateProgress()}
+function nextCard(mod){const cards=flashcards[mod];fcState[mod].idx=(fcState[mod].idx+1)%cards.length;renderFlashcard(mod)}
+function prevCard(mod){const cards=flashcards[mod];fcState[mod].idx=(fcState[mod].idx-1+cards.length)%cards.length;renderFlashcard(mod)}
+
+// ======= QUIZ ENGINE =======
+function initQuiz(mod){
+  const qs = quizzes[mod];
+  const container = document.getElementById('quiz-'+mod);
+  if(container.children.length > 0) return;
+  let html = `<h3 style="margin-bottom:16px;color:var(--accent)">Module Quiz (${qs.length} questions)</h3>`;
+  qs.forEach((q,i) => {
+    html += `<div class="quiz-card" id="qc-${mod}-${i}">
+      <h4>Question ${i+1} of ${qs.length}</h4>
+      <p class="question">${q.q}</p>
+      <div class="quiz-options">`;
+    q.opts.forEach((opt,j) => {
+      html += `<div class="quiz-opt" data-mod="${mod}" data-qi="${i}" data-oi="${j}" onclick="answerQuiz(this)">${opt}</div>`;
+    });
+    html += `</div><div class="quiz-explain" id="qe-${mod}-${i}">${q.explain}</div></div>`;
+  });
+  html += `<div class="quiz-score" id="qs-${mod}" style="display:none"><p>Your Score</p><div class="score-num" id="qsn-${mod}"></div><p id="qsm-${mod}"></p><button class="btn-primary" onclick="resetQuiz('${mod}')" style="margin-top:12px">Retake Quiz</button></div>`;
+  container.innerHTML = html;
+}
+
+const quizAnswered = {};
+function answerQuiz(el){
+  const mod = el.dataset.mod, qi = +el.dataset.qi, oi = +el.dataset.oi;
+  const key = mod+'-'+qi;
+  if(quizAnswered[key]) return;
+  quizAnswered[key] = true;
+  const correct = quizzes[mod][qi].ans;
+  const parent = el.parentElement;
+  parent.querySelectorAll('.quiz-opt').forEach((o,j) => {
+    o.classList.add('selected');
+    if(j === correct) o.classList.add('correct');
+    if(j === oi && oi !== correct) o.classList.add('wrong');
+  });
+  const explainEl = document.getElementById('qe-'+mod+'-'+qi);
+  explainEl.classList.add('show', oi === correct ? 'correct-explain' : 'wrong-explain');
+  explainEl.textContent = (oi === correct ? 'Correct! ' : 'Incorrect. ') + quizzes[mod][qi].explain;
+  completed.add('quiz-'+key);
+  updateProgress();
+  checkQuizComplete(mod);
+}
+
+function checkQuizComplete(mod){
+  const qs = quizzes[mod];
+  const allDone = qs.every((_,i) => quizAnswered[mod+'-'+i]);
+  if(!allDone) return;
+  let score = 0;
+  qs.forEach((_,i) => {
+    const card = document.getElementById('qc-'+mod+'-'+i);
+    const opts = card.querySelectorAll('.quiz-opt');
+    opts.forEach((o,j) => { if(o.classList.contains('correct') && o.dataset.oi == quizzes[mod][i].ans) score++ });
+  });
+  score = qs.reduce((s,q,i) => {
+    const card = document.getElementById('qc-'+mod+'-'+i);
+    const chosen = card.querySelector('.quiz-opt.wrong, .quiz-opt.correct:not(.wrong)');
+    return s + (chosen && chosen.classList.contains('correct') && !chosen.classList.contains('wrong') ? 1 : 0);
+  }, 0);
+  // Count correct answers properly
+  score = 0;
+  qs.forEach((q, i) => {
+    const card = document.getElementById('qc-'+mod+'-'+i);
+    const opts = card.querySelectorAll('.quiz-opt');
+    let chosenIdx = -1;
+    opts.forEach((o,j) => { if(o.classList.contains('wrong')) chosenIdx = -1; if(j == q.ans && o.classList.contains('correct')) {} });
+    // Simple: check if the explain has 'Correct!'
+    const ex = document.getElementById('qe-'+mod+'-'+i);
+    if(ex.textContent.startsWith('Correct!')) score++;
+  });
+  const scoreEl = document.getElementById('qs-'+mod);
+  scoreEl.style.display = 'block';
+  document.getElementById('qsn-'+mod).textContent = score + ' / ' + qs.length;
+  const pct = Math.round(score/qs.length*100);
+  document.getElementById('qsm-'+mod).textContent = pct >= 80 ? 'Excellent! You\'ve mastered this module.' : pct >= 60 ? 'Good effort! Review the explainers for topics you missed.' : 'Keep studying! Re-read the explainers and try again.';
+}
+
+function resetQuiz(mod){
+  const qs = quizzes[mod];
+  qs.forEach((_,i) => { delete quizAnswered[mod+'-'+i]; completed.delete('quiz-'+mod+'-'+i) });
+  document.getElementById('quiz-'+mod).innerHTML = '';
+  initQuiz(mod);
+  updateProgress();
+}
+
+// ======= NAVIGATION =======
+document.querySelectorAll('.nav-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.module').forEach(m => m.classList.remove('active'));
+    tab.classList.add('active');
+    const mod = tab.dataset.mod;
+    document.getElementById('mod'+mod).classList.add('active');
+    const modKey = 'm'+mod;
+    initFlashcards(modKey);
+    initQuiz(modKey);
+  });
+});
+
+document.querySelectorAll('.sec-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const parent = tab.closest('.module');
+    parent.querySelectorAll('.sec-tab').forEach(t => t.classList.remove('active'));
+    parent.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.sec).classList.add('active');
+  });
+});
+
+// Init first module
+initFlashcards('m0');
+initQuiz('m0');
+</script>
+</body>
+</html>
